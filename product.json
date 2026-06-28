@@ -1,8 +1,8 @@
 {
   "meta": {
-    "schema_version": "1.0.0",
+    "schema_version": "1.1.0",
     "dataset": "product",
-    "generated_at": "2026-06-27T20:14:45Z",
+    "generated_at": "2026-06-28T10:59:14Z",
     "generator": "compete/analyze_repo 0.1.0"
   },
   "entity_ref": "self",
@@ -47,11 +47,17 @@
       "notes": null
     },
     "category": {
-      "value": null,
-      "confidence": 0,
-      "unknown": true,
-      "source": null,
-      "notes": "Insufficient signal to classify product category."
+      "value": "Analytics / dashboard",
+      "confidence": 0.3,
+      "unknown": false,
+      "source": "README",
+      "provenance": {
+        "source": "README",
+        "source_type": "inference",
+        "as_of": "2026-06-28",
+        "method": "README mentions 'dashboard'"
+      },
+      "notes": null
     },
     "stage": {
       "value": null,
@@ -96,11 +102,23 @@
   },
   "features": {
     "core_features": {
-      "value": null,
-      "confidence": 0,
-      "unknown": true,
-      "source": null,
-      "notes": "No Features/Highlights bullet list found in README."
+      "value": [
+        "Repo-aware — reads your code, manifests, and README to identify the",
+        "Multi-dimensional intelligence — company profile, pricing, tech stack,",
+        "Confidence everywhere — every field is wrapped with a confidence score,",
+        "Normalized data contract — all stages write JSON validated against the",
+        "Self-contained report — one report.html file (~570 KB) opens standalone"
+      ],
+      "confidence": 0.55,
+      "unknown": false,
+      "source": "README.md",
+      "provenance": {
+        "source": "README.md",
+        "source_type": "repository",
+        "as_of": "2026-06-28",
+        "method": "bullets under README Features heading"
+      },
+      "notes": null
     },
     "ai_capabilities": {
       "value": [],

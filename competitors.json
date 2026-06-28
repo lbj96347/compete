@@ -1,21 +1,21 @@
 {
   "meta": {
-    "schema_version": "1.0.0",
+    "schema_version": "1.1.0",
     "dataset": "competitors",
-    "generated_at": "2026-06-27T20:23:28Z",
+    "generated_at": "2026-06-28T11:03:53Z",
     "generator": "compete/discover_competitors 0.1.0"
   },
   "competitors": [
     {
-      "id": "competely",
-      "name": "Competely",
+      "id": "klue",
+      "name": "Klue",
       "website": {
-        "value": "https://competely.ai",
+        "value": "https://www.klue.com/",
         "confidence": 0.85,
         "unknown": false,
-        "source": "https://competely.ai",
+        "source": "https://www.klue.com/",
         "provenance": {
-          "source": "https://competely.ai",
+          "source": "https://www.klue.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "official site / search result"
@@ -24,24 +24,24 @@
       },
       "classification": {
         "value": "direct",
-        "confidence": 0.7,
+        "confidence": 0.95,
         "unknown": false,
-        "source": "https://competely.ai",
+        "source": "https://www.g2.com/categories/competitive-intelligence",
         "provenance": {
-          "source": "https://competely.ai",
-          "source_type": "official_website",
+          "source": "https://www.g2.com/categories/competitive-intelligence",
+          "source_type": "search_result",
           "as_of": "2026-06-28",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
       },
       "similarity_score": {
-        "value": 0.78,
-        "confidence": 0.6,
+        "value": 0.95,
+        "confidence": 0.95,
         "unknown": false,
-        "source": "https://competely.ai",
+        "source": "https://www.g2.com/categories/competitive-intelligence",
         "provenance": {
-          "source": "https://competely.ai",
+          "source": "https://www.g2.com/categories/competitive-intelligence",
           "source_type": "inference",
           "as_of": "2026-06-28",
           "method": "overlap estimate vs. own product (identity/features/customers)"
@@ -49,12 +49,288 @@
         "notes": null
       },
       "relationship_notes": {
-        "value": "Closest SaaS functional twin: generative-AI 'instant competitive analysis' — you input competitors and get a structured comparison across positioning, features, and pricing in minutes, plus continuous monitoring. Same job as compete but a hosted product, not repo-driven or open source.",
-        "confidence": 0.7,
+        "value": "AI-powered competitive intelligence platform with real-time source monitoring, battlecard generation, and Compete Agent for sales enablement. Direct competitor with similar automated intelligence collection approach.",
+        "confidence": 0.95,
         "unknown": false,
-        "source": "https://competely.ai",
+        "source": "https://www.g2.com/categories/competitive-intelligence",
         "provenance": {
-          "source": "https://competely.ai",
+          "source": "https://www.g2.com/categories/competitive-intelligence",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "G2 competitive intelligence category, Gartner Magic Quadrant",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.g2.com/categories/competitive-intelligence",
+        "provenance": {
+          "source": "https://www.g2.com/categories/competitive-intelligence",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "crayon",
+      "name": "Crayon",
+      "website": {
+        "value": "https://www.crayon.co/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.crayon.co/",
+        "provenance": {
+          "source": "https://www.crayon.co/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "direct",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+        "provenance": {
+          "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.95,
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+        "provenance": {
+          "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "Market leader monitoring 100+ source types for competitive signals including pricing, job postings, and press releases. Recently launched MCP Server integration with external AI platforms.",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+        "provenance": {
+          "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "Multiple 2026 competitive intelligence reviews",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+        "provenance": {
+          "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "kompyte",
+      "name": "Kompyte",
+      "website": {
+        "value": "https://www.kompyte.com/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.kompyte.com/",
+        "provenance": {
+          "source": "https://www.kompyte.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "direct",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
+        "provenance": {
+          "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.9,
+        "confidence": 0.92,
+        "unknown": false,
+        "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
+        "provenance": {
+          "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "Mid-market CI platform (owned by Semrush) automating battlecard generation and competitor tracking across digital channels. Budget-friendly alternative to enterprise solutions.",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
+        "provenance": {
+          "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "Top competitive intelligence tools 2026 comparisons",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
+        "provenance": {
+          "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "contify",
+      "name": "Contify",
+      "website": {
+        "value": "https://contify.com/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://contify.com/",
+        "provenance": {
+          "source": "https://contify.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "direct",
+        "confidence": 0.93,
+        "unknown": false,
+        "source": "https://unkover.com/blog/competitive-intelligence-tools/",
+        "provenance": {
+          "source": "https://unkover.com/blog/competitive-intelligence-tools/",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.88,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://unkover.com/blog/competitive-intelligence-tools/",
+        "provenance": {
+          "source": "https://unkover.com/blog/competitive-intelligence-tools/",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "News-centric CI platform with Athena agentic AI for autonomous intelligence delivery. Specializes in regulatory monitoring and industry trend tracking across 117+ languages.",
+        "confidence": 0.93,
+        "unknown": false,
+        "source": "https://unkover.com/blog/competitive-intelligence-tools/",
+        "provenance": {
+          "source": "https://unkover.com/blog/competitive-intelligence-tools/",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "Competitive intelligence platforms 2026 reviews",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://unkover.com/blog/competitive-intelligence-tools/",
+        "provenance": {
+          "source": "https://unkover.com/blog/competitive-intelligence-tools/",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "caelian",
+      "name": "Caelian",
+      "website": {
+        "value": "https://caelian.ai/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://caelian.ai/",
+        "provenance": {
+          "source": "https://caelian.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "emerging_startup",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
+        "provenance": {
+          "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.88,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
+        "provenance": {
+          "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "AI-native emerging competitor focused on CEO/founder decision-making with priority-scored signals via Slack briefings. Free during 2026 beta with strong emphasis on actionable intelligence.",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
+        "provenance": {
+          "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
           "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "analyst note"
@@ -62,13 +338,775 @@
         "notes": null
       },
       "discovery_source": {
-        "value": "WebSearch: AI competitor analysis tool automated market research 2026",
+        "value": "2026 emerging CI startups search",
         "confidence": 0.9,
         "unknown": false,
-        "source": "https://competely.ai",
+        "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
         "provenance": {
-          "source": "https://competely.ai",
+          "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
           "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "comintelli",
+      "name": "Comintelli",
+      "aliases": [
+        "Intelligence2day"
+      ],
+      "website": {
+        "value": "https://comintelli.com/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://comintelli.com/",
+        "provenance": {
+          "source": "https://comintelli.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "direct",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://comintelli.com/",
+        "provenance": {
+          "source": "https://comintelli.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.85,
+        "confidence": 0.88,
+        "unknown": false,
+        "source": "https://comintelli.com/",
+        "provenance": {
+          "source": "https://comintelli.com/",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "European mid-market CI platform with mature curation and multilingual support (50+ languages). Features Telli Gen AI tool and automated data enrichment for intelligence professionals.",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://comintelli.com/",
+        "provenance": {
+          "source": "https://comintelli.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "Competitive intelligence platforms EU 2026",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://comintelli.com/",
+        "provenance": {
+          "source": "https://comintelli.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "industrylens",
+      "name": "IndustryLens",
+      "website": {
+        "value": "https://industry-lens.com/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://industry-lens.com/",
+        "provenance": {
+          "source": "https://industry-lens.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "direct",
+        "confidence": 0.88,
+        "unknown": false,
+        "source": "https://industry-lens.com/intelligence/competitive-intelligence",
+        "provenance": {
+          "source": "https://industry-lens.com/intelligence/competitive-intelligence",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.85,
+        "confidence": 0.87,
+        "unknown": false,
+        "source": "https://industry-lens.com/intelligence/competitive-intelligence",
+        "provenance": {
+          "source": "https://industry-lens.com/intelligence/competitive-intelligence",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "B2B SaaS-focused CI platform with weekly cited briefings monitoring pricing, changelogs, ads, reviews, and social signals. Self-serve, AI-native with transparent EUR149/mo pricing.",
+        "confidence": 0.88,
+        "unknown": false,
+        "source": "https://industry-lens.com/intelligence/competitive-intelligence",
+        "provenance": {
+          "source": "https://industry-lens.com/intelligence/competitive-intelligence",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "2026 competitive intelligence tools comparison",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://industry-lens.com/intelligence/competitive-intelligence",
+        "provenance": {
+          "source": "https://industry-lens.com/intelligence/competitive-intelligence",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "rivalsense",
+      "name": "RivalSense",
+      "website": {
+        "value": "https://rivalsense.co/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://rivalsense.co/",
+        "provenance": {
+          "source": "https://rivalsense.co/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "emerging_startup",
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://rivalsense.co/intel/",
+        "provenance": {
+          "source": "https://rivalsense.co/intel/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.85,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://rivalsense.co/intel/",
+        "provenance": {
+          "source": "https://rivalsense.co/intel/",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "Affordable AI-powered CI alternative positioning as Klue/Crayon alternative with transparent pricing. Newer entrant with automated tracking and AI summaries.",
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://rivalsense.co/intel/",
+        "provenance": {
+          "source": "https://rivalsense.co/intel/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "Emerging competitive intelligence AI tools 2026",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://rivalsense.co/intel/",
+        "provenance": {
+          "source": "https://rivalsense.co/intel/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "seeto",
+      "name": "Seeto",
+      "website": {
+        "value": "https://seeto.ai/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://seeto.ai/",
+        "provenance": {
+          "source": "https://seeto.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "emerging_startup",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
+        "provenance": {
+          "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.83,
+        "confidence": 0.84,
+        "unknown": false,
+        "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
+        "provenance": {
+          "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "Lean SaaS-focused competitor analysis tool analyzing websites, pricing, features, and messaging automatically. Minimal configuration needed for structured competitive positioning insights.",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
+        "provenance": {
+          "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "SaaS-specific competitor analysis tools 2026",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
+        "provenance": {
+          "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "valona-intelligence",
+      "name": "Valona Intelligence",
+      "website": {
+        "value": "https://valonaintelligence.com/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/",
+        "provenance": {
+          "source": "https://valonaintelligence.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "enterprise",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+        "provenance": {
+          "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.82,
+        "confidence": 0.88,
+        "unknown": false,
+        "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+        "provenance": {
+          "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "Analyst-grade enterprise CI platform scanning 200,000+ sources across 115 languages with human curation layer. Targets strategic foresight and executive briefings.",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+        "provenance": {
+          "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "Best competitive intelligence platforms 2026",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+        "provenance": {
+          "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "competely",
+      "name": "Competely",
+      "website": {
+        "value": "https://competely.ai/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://competely.ai/",
+        "provenance": {
+          "source": "https://competely.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "emerging_startup",
+        "confidence": 0.82,
+        "unknown": false,
+        "source": "https://competely.ai/",
+        "provenance": {
+          "source": "https://competely.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.82,
+        "confidence": 0.83,
+        "unknown": false,
+        "source": "https://competely.ai/",
+        "provenance": {
+          "source": "https://competely.ai/",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "On-demand competitive analysis platform providing instant SWOT analysis, feature comparisons, and ongoing monitoring. Targets startups with quick turnaround competitive reports.",
+        "confidence": 0.82,
+        "unknown": false,
+        "source": "https://competely.ai/",
+        "provenance": {
+          "source": "https://competely.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "2026 emerging competitor analysis startups",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://competely.ai/",
+        "provenance": {
+          "source": "https://competely.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "alphasense",
+      "name": "AlphaSense",
+      "website": {
+        "value": "https://www.alpha-sense.com/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "enterprise",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+        "provenance": {
+          "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.75,
+        "confidence": 0.88,
+        "unknown": false,
+        "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+        "provenance": {
+          "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "Enterprise platform analyzing SEC filings, earnings transcripts, and expert calls. Gartner Magic Quadrant Leader targeting financial services and strategic M&A analysis.",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+        "provenance": {
+          "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "Gartner Magic Quadrant competitive intelligence",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+        "provenance": {
+          "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "northern-light-singlepoint",
+      "name": "Northern Light SinglePoint",
+      "website": {
+        "value": "https://www.northernlight.com/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.northernlight.com/",
+        "provenance": {
+          "source": "https://www.northernlight.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "enterprise",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+        "provenance": {
+          "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.75,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+        "provenance": {
+          "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "Gartner Magic Quadrant Leader for enterprise CI with ML-powered platform and GenAI enhancements. Employee-owned, established since 1996 with 250K users.",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+        "provenance": {
+          "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "Gartner Magic Quadrant competitive intelligence 2026",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+        "provenance": {
+          "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "company-researcher-exa-labs",
+      "name": "Company Researcher (Exa Labs)",
+      "website": {
+        "value": "https://github.com/exa-labs/company-researcher",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "open_source",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.75,
+        "confidence": 0.78,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "Open-source GitHub project gathering comprehensive company intelligence from web sources using Exa API. Targets understanding company products, funding, and social presence.",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "GitHub open-source competitor analysis projects",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "feedly-market-intelligence",
+      "name": "Feedly Market Intelligence",
+      "website": {
+        "value": "https://feedly.com/market-intelligence",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://feedly.com/market-intelligence",
+        "provenance": {
+          "source": "https://feedly.com/market-intelligence",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "indirect",
+        "confidence": 0.92,
+        "unknown": false,
+        "source": "https://feedly.com/market-intelligence",
+        "provenance": {
+          "source": "https://feedly.com/market-intelligence",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.72,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://feedly.com/market-intelligence",
+        "provenance": {
+          "source": "https://feedly.com/market-intelligence",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "Content aggregation and AI-powered feed curation from 140M+ sources. Automates newsletter distribution for competitive and market trend monitoring.",
+        "confidence": 0.92,
+        "unknown": false,
+        "source": "https://feedly.com/market-intelligence",
+        "provenance": {
+          "source": "https://feedly.com/market-intelligence",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "Market intelligence platforms 2026",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://feedly.com/market-intelligence",
+        "provenance": {
+          "source": "https://feedly.com/market-intelligence",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "chapsvision",
+      "name": "ChapsVision",
+      "website": {
+        "value": "https://www.chapsvision.com/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/",
+        "provenance": {
+          "source": "https://www.chapsvision.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "enterprise",
+        "confidence": 0.88,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
+        "provenance": {
+          "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.72,
+        "confidence": 0.83,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
+        "provenance": {
+          "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "Gartner 2026 Magic Quadrant named platform specializing in government, defense, and regulated industries. ChapsMind agentic intelligence with 15M sources, European data sovereignty.",
+        "confidence": 0.88,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
+        "provenance": {
+          "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "Gartner Magic Quadrant competitive intelligence 2026",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
+        "provenance": {
+          "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
+          "source_type": "search_result",
           "as_of": "2026-06-28",
           "method": "recorded at discovery time"
         },
@@ -93,12 +1131,12 @@
       },
       "classification": {
         "value": "open_source",
-        "confidence": 0.7,
+        "confidence": 0.78,
         "unknown": false,
         "source": "https://github.com/Procycons/Comperator",
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
-          "source_type": "repository",
+          "source_type": "social_profile",
           "as_of": "2026-06-28",
           "method": "classified per competitor-discovery rubric"
         },
@@ -106,7 +1144,7 @@
       },
       "similarity_score": {
         "value": 0.72,
-        "confidence": 0.55,
+        "confidence": 0.75,
         "unknown": false,
         "source": "https://github.com/Procycons/Comperator",
         "provenance": {
@@ -118,590 +1156,26 @@
         "notes": null
       },
       "relationship_notes": {
-        "value": "Open-source LLM competitor-analysis app: crawls competitor sites, extracts and classifies content, and compares their product features against yours via a Streamlit UI. The nearest open-source analog to compete's approach, though narrower in dimensions.",
-        "confidence": 0.7,
+        "value": "Open-source AI automated competitor analysis project featuring web crawling, feature extraction, content classification, and comparative product analysis capabilities.",
+        "confidence": 0.78,
         "unknown": false,
         "source": "https://github.com/Procycons/Comperator",
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
-          "source_type": "repository",
+          "source_type": "social_profile",
           "as_of": "2026-06-28",
           "method": "analyst note"
         },
         "notes": null
       },
       "discovery_source": {
-        "value": "WebFetch: github.com/topics/competitor-analysis",
+        "value": "GitHub open-source competitor analysis tools",
         "confidence": 0.9,
         "unknown": false,
         "source": "https://github.com/Procycons/Comperator",
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "recorded at discovery time"
-        },
-        "notes": null
-      }
-    },
-    {
-      "id": "rivalsense",
-      "name": "RivalSense",
-      "aliases": [
-        "RivalSense AI"
-      ],
-      "website": {
-        "value": "https://rivalsense.co",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://rivalsense.co",
-        "provenance": {
-          "source": "https://rivalsense.co",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official site / search result"
-        },
-        "notes": null
-      },
-      "classification": {
-        "value": "emerging_startup",
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://rivalsense.co",
-        "provenance": {
-          "source": "https://rivalsense.co",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "classified per competitor-discovery rubric"
-        },
-        "notes": null
-      },
-      "similarity_score": {
-        "value": 0.55,
-        "confidence": 0.55,
-        "unknown": false,
-        "source": "https://rivalsense.co",
-        "provenance": {
-          "source": "https://rivalsense.co",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "overlap estimate vs. own product (identity/features/customers)"
-        },
-        "notes": null
-      },
-      "relationship_notes": {
-        "value": "AI-native CI startup (founded 2023) positioning as the affordable, transparent-pricing alternative to Klue/Crayon; monitors 80+ public sources and sends weekly curated updates. Targets founders and account managers.",
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://rivalsense.co",
-        "provenance": {
-          "source": "https://rivalsense.co",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "analyst note"
-        },
-        "notes": null
-      },
-      "discovery_source": {
-        "value": "WebSearch: competitive intelligence platform Crayon Klue alternatives; WebSearch: RivalSense AI competitive intelligence official site",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://rivalsense.co",
-        "provenance": {
-          "source": "https://rivalsense.co",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "recorded at discovery time"
-        },
-        "notes": null
-      }
-    },
-    {
-      "id": "competitor-analyst",
-      "name": "competitor-analyst",
-      "aliases": [
-        "0xmetaschool competitor-analyst"
-      ],
-      "website": {
-        "value": "https://github.com/0xmetaschool/competitor-analyst",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://github.com/0xmetaschool/competitor-analyst",
-        "provenance": {
-          "source": "https://github.com/0xmetaschool/competitor-analyst",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official site / search result"
-        },
-        "notes": null
-      },
-      "classification": {
-        "value": "open_source",
-        "confidence": 0.65,
-        "unknown": false,
-        "source": "https://github.com/0xmetaschool/competitor-analyst",
-        "provenance": {
-          "source": "https://github.com/0xmetaschool/competitor-analyst",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "classified per competitor-discovery rubric"
-        },
-        "notes": null
-      },
-      "similarity_score": {
-        "value": 0.55,
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://github.com/0xmetaschool/competitor-analyst",
-        "provenance": {
-          "source": "https://github.com/0xmetaschool/competitor-analyst",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "overlap estimate vs. own product (identity/features/customers)"
-        },
-        "notes": null
-      },
-      "relationship_notes": {
-        "value": "Open-source Next.js + AI template that analyzes competitor data and assists decision-making. A starter/template rather than a full pipeline.",
-        "confidence": 0.65,
-        "unknown": false,
-        "source": "https://github.com/0xmetaschool/competitor-analyst",
-        "provenance": {
-          "source": "https://github.com/0xmetaschool/competitor-analyst",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "analyst note"
-        },
-        "notes": null
-      },
-      "discovery_source": {
-        "value": "WebSearch: open source competitor analysis tool github",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://github.com/0xmetaschool/competitor-analyst",
-        "provenance": {
-          "source": "https://github.com/0xmetaschool/competitor-analyst",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "recorded at discovery time"
-        },
-        "notes": null
-      }
-    },
-    {
-      "id": "crayon",
-      "name": "Crayon",
-      "website": {
-        "value": "https://www.crayon.co",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official site / search result"
-        },
-        "notes": null
-      },
-      "classification": {
-        "value": "enterprise",
-        "confidence": 0.78,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "classified per competitor-discovery rubric"
-        },
-        "notes": null
-      },
-      "similarity_score": {
-        "value": 0.5,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "overlap estimate vs. own product (identity/features/customers)"
-        },
-        "notes": null
-      },
-      "relationship_notes": {
-        "value": "Market-leading enterprise competitive-intelligence platform focused on sales enablement; broad CI suite, sales-led, premium pricing. Overlaps on the 'track competitors' job but aimed at CI teams, not developers/founders.",
-        "confidence": 0.78,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "analyst note"
-        },
-        "notes": null
-      },
-      "discovery_source": {
-        "value": "WebSearch: competitive intelligence platform Crayon Klue alternatives",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "recorded at discovery time"
-        },
-        "notes": null
-      }
-    },
-    {
-      "id": "klue",
-      "name": "Klue",
-      "website": {
-        "value": "https://klue.com",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://klue.com",
-        "provenance": {
-          "source": "https://klue.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official site / search result"
-        },
-        "notes": null
-      },
-      "classification": {
-        "value": "enterprise",
-        "confidence": 0.78,
-        "unknown": false,
-        "source": "https://klue.com",
-        "provenance": {
-          "source": "https://klue.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "classified per competitor-discovery rubric"
-        },
-        "notes": null
-      },
-      "similarity_score": {
-        "value": 0.5,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://klue.com",
-        "provenance": {
-          "source": "https://klue.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "overlap estimate vs. own product (identity/features/customers)"
-        },
-        "notes": null
-      },
-      "relationship_notes": {
-        "value": "Enterprise CI platform combining market insights, competitive analysis, and buyer insights; distributes battlecards to sales. Incumbent, sales-led.",
-        "confidence": 0.78,
-        "unknown": false,
-        "source": "https://klue.com",
-        "provenance": {
-          "source": "https://klue.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "analyst note"
-        },
-        "notes": null
-      },
-      "discovery_source": {
-        "value": "WebSearch: competitive intelligence platform Crayon Klue alternatives",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://klue.com",
-        "provenance": {
-          "source": "https://klue.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "recorded at discovery time"
-        },
-        "notes": null
-      }
-    },
-    {
-      "id": "unkover",
-      "name": "Unkover",
-      "website": {
-        "value": "https://unkover.com",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://unkover.com",
-        "provenance": {
-          "source": "https://unkover.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official site / search result"
-        },
-        "notes": null
-      },
-      "classification": {
-        "value": "emerging_startup",
-        "confidence": 0.55,
-        "unknown": false,
-        "source": "https://unkover.com",
-        "provenance": {
-          "source": "https://unkover.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "classified per competitor-discovery rubric"
-        },
-        "notes": null
-      },
-      "similarity_score": {
-        "value": 0.5,
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://unkover.com",
-        "provenance": {
-          "source": "https://unkover.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "overlap estimate vs. own product (identity/features/customers)"
-        },
-        "notes": null
-      },
-      "relationship_notes": {
-        "value": "Newer AI competitive-intelligence tool aimed at startups; tracks competitor changes and publishes CI tooling roundups.",
-        "confidence": 0.55,
-        "unknown": false,
-        "source": "https://unkover.com",
-        "provenance": {
-          "source": "https://unkover.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "analyst note"
-        },
-        "notes": null
-      },
-      "discovery_source": {
-        "value": "WebSearch: AI competitor analysis startups 2026",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://unkover.com",
-        "provenance": {
-          "source": "https://unkover.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "recorded at discovery time"
-        },
-        "notes": null
-      }
-    },
-    {
-      "id": "kompyte",
-      "name": "Kompyte",
-      "aliases": [
-        "Kompyte by Semrush"
-      ],
-      "website": {
-        "value": "https://www.kompyte.com",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://www.kompyte.com",
-        "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official site / search result"
-        },
-        "notes": null
-      },
-      "classification": {
-        "value": "enterprise",
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.kompyte.com",
-        "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "classified per competitor-discovery rubric"
-        },
-        "notes": null
-      },
-      "similarity_score": {
-        "value": 0.45,
-        "confidence": 0.55,
-        "unknown": false,
-        "source": "https://www.kompyte.com",
-        "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "overlap estimate vs. own product (identity/features/customers)"
-        },
-        "notes": null
-      },
-      "relationship_notes": {
-        "value": "Automated competitor-tracking platform, acquired by Semrush in 2022; mid-market, more accessible than Crayon/Klue but still sales-team oriented.",
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.kompyte.com",
-        "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "analyst note"
-        },
-        "notes": null
-      },
-      "discovery_source": {
-        "value": "WebSearch: competitive intelligence platform Crayon Klue alternatives",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.kompyte.com",
-        "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "recorded at discovery time"
-        },
-        "notes": null
-      }
-    },
-    {
-      "id": "contify",
-      "name": "Contify",
-      "website": {
-        "value": "https://www.contify.com",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official site / search result"
-        },
-        "notes": null
-      },
-      "classification": {
-        "value": "enterprise",
-        "confidence": 0.65,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "classified per competitor-discovery rubric"
-        },
-        "notes": null
-      },
-      "similarity_score": {
-        "value": 0.4,
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "overlap estimate vs. own product (identity/features/customers)"
-        },
-        "notes": null
-      },
-      "relationship_notes": {
-        "value": "AI-powered market & competitive intelligence platform specializing in news monitoring across thousands of sources. Strong on signal collection, narrower on product/tech teardown.",
-        "confidence": 0.65,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "analyst note"
-        },
-        "notes": null
-      },
-      "discovery_source": {
-        "value": "WebSearch: competitive intelligence platform Crayon Klue alternatives",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "recorded at discovery time"
-        },
-        "notes": null
-      }
-    },
-    {
-      "id": "valona-intelligence",
-      "name": "Valona Intelligence",
-      "aliases": [
-        "Valona"
-      ],
-      "website": {
-        "value": "https://valonaintelligence.com",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official site / search result"
-        },
-        "notes": null
-      },
-      "classification": {
-        "value": "enterprise",
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "classified per competitor-discovery rubric"
-        },
-        "notes": null
-      },
-      "similarity_score": {
-        "value": 0.4,
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "overlap estimate vs. own product (identity/features/customers)"
-        },
-        "notes": null
-      },
-      "relationship_notes": {
-        "value": "Named a leader in the 2026 Gartner Magic Quadrant for Competitive & Market Intelligence; agentic workflows continuously monitor competitors and benchmark financials. Enterprise-grade.",
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "analyst note"
-        },
-        "notes": null
-      },
-      "discovery_source": {
-        "value": "WebSearch: AI competitor analysis tool 2026 (Gartner)",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "third_party_db",
+          "source_type": "social_profile",
           "as_of": "2026-06-28",
           "method": "recorded at discovery time"
         },
@@ -712,12 +1186,12 @@
       "id": "semrush",
       "name": "Semrush",
       "website": {
-        "value": "https://www.semrush.com",
+        "value": "https://www.semrush.com/",
         "confidence": 0.85,
         "unknown": false,
-        "source": "https://www.semrush.com",
+        "source": "https://www.semrush.com/",
         "provenance": {
-          "source": "https://www.semrush.com",
+          "source": "https://www.semrush.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "official site / search result"
@@ -726,24 +1200,24 @@
       },
       "classification": {
         "value": "indirect",
-        "confidence": 0.6,
+        "confidence": 0.95,
         "unknown": false,
-        "source": "https://www.semrush.com",
+        "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
         "provenance": {
-          "source": "https://www.semrush.com",
-          "source_type": "third_party_db",
+          "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
+          "source_type": "search_result",
           "as_of": "2026-06-28",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
       },
       "similarity_score": {
-        "value": 0.4,
-        "confidence": 0.5,
+        "value": 0.7,
+        "confidence": 0.88,
         "unknown": false,
-        "source": "https://www.semrush.com",
+        "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
         "provenance": {
-          "source": "https://www.semrush.com",
+          "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
           "source_type": "inference",
           "as_of": "2026-06-28",
           "method": "overlap estimate vs. own product (identity/features/customers)"
@@ -751,26 +1225,26 @@
         "notes": null
       },
       "relationship_notes": {
-        "value": "SEO and marketing-intelligence suite with competitor-research modules (and owner of Kompyte). Overlaps on SEO/marketing dimensions of compete's report.",
-        "confidence": 0.6,
+        "value": "Digital marketing intelligence covering SEO, PPC, content, and social. Owns Kompyte; broader workflow but includes competitive position tracking across digital channels.",
+        "confidence": 0.95,
         "unknown": false,
-        "source": "https://www.semrush.com",
+        "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
         "provenance": {
-          "source": "https://www.semrush.com",
-          "source_type": "third_party_db",
+          "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
+          "source_type": "search_result",
           "as_of": "2026-06-28",
           "method": "analyst note"
         },
         "notes": null
       },
       "discovery_source": {
-        "value": "WebSearch: best AI tools competitor analysis 2026",
+        "value": "Digital competitive analysis tools 2026",
         "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.semrush.com",
+        "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
         "provenance": {
-          "source": "https://www.semrush.com",
-          "source_type": "third_party_db",
+          "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
+          "source_type": "search_result",
           "as_of": "2026-06-28",
           "method": "recorded at discovery time"
         },
@@ -778,15 +1252,19 @@
       }
     },
     {
-      "id": "similarweb",
-      "name": "Similarweb",
+      "id": "evalueserve-insightsfirst",
+      "name": "Evalueserve Insightsfirst",
+      "aliases": [
+        "Evalueserve",
+        "Insightsfirst"
+      ],
       "website": {
-        "value": "https://www.similarweb.com",
+        "value": "https://www.evalueserve.com/",
         "confidence": 0.85,
         "unknown": false,
-        "source": "https://www.similarweb.com",
+        "source": "https://www.evalueserve.com/",
         "provenance": {
-          "source": "https://www.similarweb.com",
+          "source": "https://www.evalueserve.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "official site / search result"
@@ -794,25 +1272,25 @@
         "notes": null
       },
       "classification": {
-        "value": "indirect",
-        "confidence": 0.7,
+        "value": "enterprise",
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.similarweb.com",
+        "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
         "provenance": {
-          "source": "https://www.similarweb.com",
-          "source_type": "third_party_db",
+          "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
       },
       "similarity_score": {
-        "value": 0.35,
-        "confidence": 0.55,
+        "value": 0.7,
+        "confidence": 0.83,
         "unknown": false,
-        "source": "https://www.similarweb.com",
+        "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
         "provenance": {
-          "source": "https://www.similarweb.com",
+          "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
           "source_type": "inference",
           "as_of": "2026-06-28",
           "method": "overlap estimate vs. own product (identity/features/customers)"
@@ -820,26 +1298,26 @@
         "notes": null
       },
       "relationship_notes": {
-        "value": "Digital/traffic intelligence — website analytics and audience data. Covers one dimension (web performance) of compete's broader teardown; commonly used as a quick competitor 'sniff test'.",
-        "confidence": 0.7,
+        "value": "Blended research + platform model analyzing 200K+ data sources. Forrester Wave Leader with AI + human expert analysts for strategic intelligence.",
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.similarweb.com",
+        "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
         "provenance": {
-          "source": "https://www.similarweb.com",
-          "source_type": "third_party_db",
+          "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "analyst note"
         },
         "notes": null
       },
       "discovery_source": {
-        "value": "WebSearch: competitor research comparison tool Similarweb Owler",
+        "value": "Enterprise competitive intelligence platforms 2026",
         "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.similarweb.com",
+        "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
         "provenance": {
-          "source": "https://www.similarweb.com",
-          "source_type": "third_party_db",
+          "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "recorded at discovery time"
         },
@@ -847,15 +1325,15 @@
       }
     },
     {
-      "id": "owler",
-      "name": "Owler",
+      "id": "ahrefs",
+      "name": "Ahrefs",
       "website": {
-        "value": "https://www.owler.com",
+        "value": "https://ahrefs.com/",
         "confidence": 0.85,
         "unknown": false,
-        "source": "https://www.owler.com",
+        "source": "https://ahrefs.com/",
         "provenance": {
-          "source": "https://www.owler.com",
+          "source": "https://ahrefs.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "official site / search result"
@@ -864,24 +1342,24 @@
       },
       "classification": {
         "value": "indirect",
-        "confidence": 0.65,
+        "confidence": 0.95,
         "unknown": false,
-        "source": "https://www.owler.com",
+        "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
         "provenance": {
-          "source": "https://www.owler.com",
-          "source_type": "third_party_db",
+          "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
+          "source_type": "search_result",
           "as_of": "2026-06-28",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
       },
       "similarity_score": {
-        "value": 0.35,
-        "confidence": 0.5,
+        "value": 0.68,
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.owler.com",
+        "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
         "provenance": {
-          "source": "https://www.owler.com",
+          "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
           "source_type": "inference",
           "as_of": "2026-06-28",
           "method": "overlap estimate vs. own product (identity/features/customers)"
@@ -889,26 +1367,95 @@
         "notes": null
       },
       "relationship_notes": {
-        "value": "Community-powered competitive intelligence tracking 45M+ competitive relationships with real-time alerts on leadership moves, acquisitions, and revenue estimates. Company-tracking angle, not product/tech teardown.",
-        "confidence": 0.65,
+        "value": "SEO and backlink intelligence platform with Site Explorer for competitor research. Strongest for technical/link-based competitive analysis and content gap identification.",
+        "confidence": 0.95,
         "unknown": false,
-        "source": "https://www.owler.com",
+        "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
         "provenance": {
-          "source": "https://www.owler.com",
-          "source_type": "third_party_db",
+          "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
+          "source_type": "search_result",
           "as_of": "2026-06-28",
           "method": "analyst note"
         },
         "notes": null
       },
       "discovery_source": {
-        "value": "WebSearch: competitor research comparison tool Similarweb Owler",
+        "value": "SEO competitive analysis tools 2026",
         "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.owler.com",
+        "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
         "provenance": {
-          "source": "https://www.owler.com",
-          "source_type": "third_party_db",
+          "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
+          "source_type": "search_result",
+          "as_of": "2026-06-28",
+          "method": "recorded at discovery time"
+        },
+        "notes": null
+      }
+    },
+    {
+      "id": "quid",
+      "name": "Quid",
+      "website": {
+        "value": "https://www.quid.com/",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.quid.com/",
+        "provenance": {
+          "source": "https://www.quid.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "official site / search result"
+        },
+        "notes": null
+      },
+      "classification": {
+        "value": "enterprise",
+        "confidence": 0.88,
+        "unknown": false,
+        "source": "https://www.quid.com/",
+        "provenance": {
+          "source": "https://www.quid.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "classified per competitor-discovery rubric"
+        },
+        "notes": null
+      },
+      "similarity_score": {
+        "value": 0.68,
+        "confidence": 0.82,
+        "unknown": false,
+        "source": "https://www.quid.com/",
+        "provenance": {
+          "source": "https://www.quid.com/",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": "overlap estimate vs. own product (identity/features/customers)"
+        },
+        "notes": null
+      },
+      "relationship_notes": {
+        "value": "AI-powered consumer and market intelligence platform ingesting 2PB+ from social, patents, news, and investment sources. Quid Compete for competitive analysis with predictive trend forecasting.",
+        "confidence": 0.88,
+        "unknown": false,
+        "source": "https://www.quid.com/",
+        "provenance": {
+          "source": "https://www.quid.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "analyst note"
+        },
+        "notes": null
+      },
+      "discovery_source": {
+        "value": "AI-powered competitive intelligence research platforms",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.quid.com/",
+        "provenance": {
+          "source": "https://www.quid.com/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "recorded at discovery time"
         },
@@ -919,12 +1466,12 @@
       "id": "crunchbase",
       "name": "Crunchbase",
       "website": {
-        "value": "https://www.crunchbase.com",
+        "value": "https://www.crunchbase.com/",
         "confidence": 0.85,
         "unknown": false,
-        "source": "https://www.crunchbase.com",
+        "source": "https://www.crunchbase.com/",
         "provenance": {
-          "source": "https://www.crunchbase.com",
+          "source": "https://www.crunchbase.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "official site / search result"
@@ -933,162 +1480,24 @@
       },
       "classification": {
         "value": "adjacent",
-        "confidence": 0.65,
+        "confidence": 0.93,
         "unknown": false,
-        "source": "https://www.crunchbase.com",
+        "source": "https://about.crunchbase.com/",
         "provenance": {
-          "source": "https://www.crunchbase.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "classified per competitor-discovery rubric"
-        },
-        "notes": null
-      },
-      "similarity_score": {
-        "value": 0.3,
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.crunchbase.com",
-        "provenance": {
-          "source": "https://www.crunchbase.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "overlap estimate vs. own product (identity/features/customers)"
-        },
-        "notes": null
-      },
-      "relationship_notes": {
-        "value": "Company/funding database (financials, investors, acquisitions). Feeds the company-profile dimension of a competitive report; complements rather than replaces compete.",
-        "confidence": 0.65,
-        "unknown": false,
-        "source": "https://www.crunchbase.com",
-        "provenance": {
-          "source": "https://www.crunchbase.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "analyst note"
-        },
-        "notes": null
-      },
-      "discovery_source": {
-        "value": "WebSearch: competitor research comparison tool Crunchbase",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.crunchbase.com",
-        "provenance": {
-          "source": "https://www.crunchbase.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "recorded at discovery time"
-        },
-        "notes": null
-      }
-    },
-    {
-      "id": "visualping",
-      "name": "Visualping",
-      "website": {
-        "value": "https://visualping.io",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://visualping.io",
-        "provenance": {
-          "source": "https://visualping.io",
+          "source": "https://about.crunchbase.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "official site / search result"
-        },
-        "notes": null
-      },
-      "classification": {
-        "value": "indirect",
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://visualping.io",
-        "provenance": {
-          "source": "https://visualping.io",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
       },
       "similarity_score": {
-        "value": 0.3,
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://visualping.io",
-        "provenance": {
-          "source": "https://visualping.io",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "overlap estimate vs. own product (identity/features/customers)"
-        },
-        "notes": null
-      },
-      "relationship_notes": {
-        "value": "Website-change monitoring used for competitor watching (pricing/feature/page changes). A monitoring primitive rather than a full competitive database.",
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://visualping.io",
-        "provenance": {
-          "source": "https://visualping.io",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "analyst note"
-        },
-        "notes": null
-      },
-      "discovery_source": {
-        "value": "WebSearch: best AI tools competitor analysis 2026",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://visualping.io",
-        "provenance": {
-          "source": "https://visualping.io",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "recorded at discovery time"
-        },
-        "notes": null
-      }
-    },
-    {
-      "id": "alphasense",
-      "name": "AlphaSense",
-      "website": {
-        "value": "https://www.alpha-sense.com",
+        "value": 0.65,
         "confidence": 0.85,
         "unknown": false,
-        "source": "https://www.alpha-sense.com",
+        "source": "https://about.crunchbase.com/",
         "provenance": {
-          "source": "https://www.alpha-sense.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official site / search result"
-        },
-        "notes": null
-      },
-      "classification": {
-        "value": "adjacent",
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com",
-        "provenance": {
-          "source": "https://www.alpha-sense.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "classified per competitor-discovery rubric"
-        },
-        "notes": null
-      },
-      "similarity_score": {
-        "value": 0.3,
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com",
-        "provenance": {
-          "source": "https://www.alpha-sense.com",
+          "source": "https://about.crunchbase.com/",
           "source_type": "inference",
           "as_of": "2026-06-28",
           "method": "overlap estimate vs. own product (identity/features/customers)"
@@ -1096,77 +1505,26 @@
         "notes": null
       },
       "relationship_notes": {
-        "value": "Financial & market-intelligence platform (expert transcripts, SEC filings, earnings). Adjacent: premium research for analysts, not a product-vs-product teardown.",
-        "confidence": 0.6,
+        "value": "Private company data and predictive intelligence platform tracking funding, M&A, leadership, hiring. Market Insights suite for sector-level competitive landscape analysis.",
+        "confidence": 0.93,
         "unknown": false,
-        "source": "https://www.alpha-sense.com",
+        "source": "https://about.crunchbase.com/",
         "provenance": {
-          "source": "https://www.alpha-sense.com",
-          "source_type": "third_party_db",
+          "source": "https://about.crunchbase.com/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "analyst note"
         },
         "notes": null
       },
       "discovery_source": {
-        "value": "WebSearch: Crayon alternatives competitive intelligence",
+        "value": "Company and competitive intelligence research",
         "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.alpha-sense.com",
+        "source": "https://about.crunchbase.com/",
         "provenance": {
-          "source": "https://www.alpha-sense.com",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "recorded at discovery time"
-        },
-        "notes": null
-      }
-    },
-    {
-      "id": "nexusai",
-      "name": "NexusAI",
-      "website": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": "No official website found."
-      },
-      "classification": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": "Unrecognized classification 'uncertain'; left unknown."
-      },
-      "similarity_score": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": "Similarity to own product not estimated."
-      },
-      "relationship_notes": {
-        "value": "Described in a GitHub roundup as a 'next-generation market intelligence tool that transforms unstructured competitor text into visual knowledge', but no canonical project/URL was confirmed — classification and website left unknown pending verification.",
-        "confidence": 0.3,
-        "unknown": false,
-        "source": "WebSearch: open source market intelligence tool github",
-        "provenance": {
-          "source": "WebSearch: open source market intelligence tool github",
-          "source_type": "search_result",
-          "as_of": "2026-06-28",
-          "method": "analyst note"
-        },
-        "notes": null
-      },
-      "discovery_source": {
-        "value": "WebSearch: open source market intelligence tool github",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "WebSearch: open source market intelligence tool github",
-        "provenance": {
-          "source": "WebSearch: open source market intelligence tool github",
-          "source_type": "search_result",
+          "source": "https://about.crunchbase.com/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
           "method": "recorded at discovery time"
         },

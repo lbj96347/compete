@@ -1,126 +1,90 @@
 {
   "meta": {
-    "schema_version": "1.0.0",
+    "schema_version": "1.1.0",
     "dataset": "seo",
-    "generated_at": "2026-06-27T20:45:15Z",
+    "generated_at": "2026-06-28T11:33:34Z",
     "generator": "compete/collect_intelligence 0.1.0"
   },
   "seo": [
     {
-      "entity_ref": "competely",
+      "entity_ref": "klue",
       "meta_title": {
-        "value": "Instant Competitive Analysis - Competely",
-        "confidence": 0.95,
+        "value": "Klue | Competitive Enablement Platform",
+        "confidence": 0.6,
         "unknown": false,
-        "source": "https://competely.ai",
+        "source": "https://www.klue.com/",
         "provenance": {
-          "source": "https://competely.ai",
+          "source": "https://www.klue.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "HTML <title>"
+          "method": "inferred"
         },
         "notes": null
       },
       "meta_description": {
-        "value": "Instant AI Competitive Intelligence: Your competitors' pricing, features, messaging, marketing - analyzed instantly, monitored continuously",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://competely.ai",
-        "provenance": {
-          "source": "https://competely.ai",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "HTML meta description"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "has_sitemap": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://competely.ai/sitemap.xml",
-        "provenance": {
-          "source": "https://competely.ai/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Sitemap fetched, ~127 URLs"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "sitemap_url": {
-        "value": "https://competely.ai/sitemap.xml",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://competely.ai/sitemap.xml",
-        "provenance": {
-          "source": "https://competely.ai/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Direct fetch"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "has_robots_txt": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://competely.ai/robots.txt",
-        "provenance": {
-          "source": "https://competely.ai/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "robots.txt fetched with allow/disallow rules"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "indexed_pages": {
-        "value": 127,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://competely.ai/sitemap.xml",
-        "provenance": {
-          "source": "https://competely.ai/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Count of sitemap URLs (proxy for indexed pages)"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 100,
-        "range_high": 150,
-        "unit": "pages"
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
       },
       "keyword_focus": {
         "value": [
-          "competitive analysis",
-          "competitor analysis tool",
           "competitive intelligence",
-          "competitor monitoring",
-          "SWOT analysis",
-          "battlecard generator",
-          "Crayon/Klue alternatives"
+          "competitive enablement",
+          "win-loss analysis",
+          "battlecards",
+          "sales enablement"
         ],
-        "confidence": 0.75,
+        "confidence": 0.85,
         "unknown": false,
-        "source": "https://competely.ai/sitemap.xml",
+        "source": "https://www.klue.com/",
         "provenance": {
-          "source": "https://competely.ai/sitemap.xml",
+          "source": "https://www.klue.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Derived from product/tool/alternatives page URLs and titles"
+          "method": null
         },
         "notes": null
       },
       "blog_frequency": {
-        "value": "none",
-        "confidence": 0.6,
+        "value": "weekly to biweekly",
+        "confidence": 0.75,
         "unknown": false,
-        "source": "https://competely.ai/sitemap.xml",
+        "source": "https://klue.com/blog",
         "provenance": {
-          "source": "https://competely.ai/sitemap.xml",
+          "source": "https://klue.com/blog",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "No dated blog; static guides/tools/help pages instead"
+          "method": null
         },
         "notes": null
       },
@@ -132,29 +96,1624 @@
         "notes": null
       },
       "documentation_quality": {
-        "value": "adequate",
-        "confidence": 0.6,
+        "value": "comprehensive",
+        "confidence": 0.8,
         "unknown": false,
-        "source": "https://competely.ai/info/help",
+        "source": "https://klue.com/",
         "provenance": {
-          "source": "https://competely.ai/info/help",
-          "source_type": "official_docs",
+          "source": "https://klue.com/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "77-page help center covering features, billing, monitoring, troubleshooting"
+          "method": null
         },
         "notes": null
       },
       "internal_linking": {
-        "value": "moderate",
-        "confidence": 0.5,
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "crayon",
+      "meta_title": {
+        "value": "Crayon | Competitive Intelligence Software",
+        "confidence": 0.7,
         "unknown": false,
-        "source": "https://competely.ai/sitemap.xml",
+        "source": "https://www.crayon.co/",
         "provenance": {
-          "source": "https://competely.ai/sitemap.xml",
+          "source": "https://www.crayon.co/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "inferred"
+        },
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "competitive intelligence",
+          "competitive enablement",
+          "battlecards",
+          "sales enablement",
+          "win/loss analysis"
+        ],
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.crayon.co/",
+        "provenance": {
+          "source": "https://www.crayon.co/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": "monthly to bi-weekly",
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.crayon.co/blog",
+        "provenance": {
+          "source": "https://www.crayon.co/blog",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "comprehensive API docs",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://apidocs.crayon.com/",
+        "provenance": {
+          "source": "https://apidocs.crayon.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "kompyte",
+      "meta_title": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": true,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.kompyte.com/sitemap.xml",
+        "provenance": {
+          "source": "https://www.kompyte.com/sitemap.xml",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": "https://www.kompyte.com/sitemap.xml",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.kompyte.com/sitemap.xml",
+        "provenance": {
+          "source": "https://www.kompyte.com/sitemap.xml",
           "source_type": "inference",
           "as_of": "2026-06-28",
-          "method": "Programmatic tool/alternatives/guide pages with hub structure"
+          "method": null
         },
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": true,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.kompyte.com/",
+        "provenance": {
+          "source": "https://www.kompyte.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "competitive intelligence",
+          "competitor analysis",
+          "battlecards",
+          "win-loss analysis",
+          "sales enablement"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.kompyte.com/",
+        "provenance": {
+          "source": "https://www.kompyte.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": "multiple posts monthly",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.kompyte.com/blog",
+        "provenance": {
+          "source": "https://www.kompyte.com/blog",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "contify",
+      "meta_title": {
+        "value": "AI-Powered Competitive & Market Intelligence | Contify",
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.contify.com/",
+        "provenance": {
+          "source": "https://www.contify.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "inferred"
+        },
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "competitive intelligence",
+          "market intelligence",
+          "SWOT analysis",
+          "competitor tracking"
+        ],
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.contify.com/",
+        "provenance": {
+          "source": "https://www.contify.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": "monthly",
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.contify.com/resources/blog/",
+        "provenance": {
+          "source": "https://www.contify.com/resources/blog/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "high - API docs + knowledge base",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.contify.com/resources/",
+        "provenance": {
+          "source": "https://www.contify.com/resources/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "caelian",
+      "meta_title": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "competitive intelligence",
+          "competitor pricing intelligence",
+          "hiring signals",
+          "CI tools comparison"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://caelian.ai/blog",
+        "provenance": {
+          "source": "https://caelian.ai/blog",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": "2.5 posts/day",
+        "confidence": 0.65,
+        "unknown": false,
+        "source": "https://caelian.ai/blog",
+        "provenance": {
+          "source": "https://caelian.ai/blog",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "internal_linking": {
+        "value": "strong cross-linking blog/comparison pages",
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://caelian.ai/blog",
+        "provenance": {
+          "source": "https://caelian.ai/blog",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "comintelli",
+      "meta_title": {
+        "value": "AI-Powered Competitive Intelligence Platform | Comintelli",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://comintelli.com/",
+        "provenance": {
+          "source": "https://comintelli.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "competitive intelligence",
+          "market intelligence",
+          "AI-powered intelligence",
+          "Intelligence2day"
+        ],
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://comintelli.com/",
+        "provenance": {
+          "source": "https://comintelli.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "high - white papers + knowledge center",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://comintelli.com/knowledge-center-white-papers/",
+        "provenance": {
+          "source": "https://comintelli.com/knowledge-center-white-papers/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "industrylens",
+      "meta_title": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "competitive intelligence",
+          "B2B SaaS",
+          "competitor monitoring",
+          "AI search visibility",
+          "battlecards"
+        ],
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://industry-lens.com/resources",
+        "provenance": {
+          "source": "https://industry-lens.com/resources",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": "active/ongoing",
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://industry-lens.com/resources",
+        "provenance": {
+          "source": "https://industry-lens.com/resources",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "high - 26+ guides",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://industry-lens.com/resources",
+        "provenance": {
+          "source": "https://industry-lens.com/resources",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "rivalsense",
+      "meta_title": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": true,
+        "confidence": 0.5,
+        "unknown": false,
+        "source": "https://rivalsense.co/robots.txt",
+        "provenance": {
+          "source": "https://rivalsense.co/robots.txt",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "competitor intelligence",
+          "competitive monitoring",
+          "AI competitive analysis",
+          "key account management"
+        ],
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://rivalsense.co/intel/",
+        "provenance": {
+          "source": "https://rivalsense.co/intel/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": "ongoing",
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://rivalsense.co/intel/",
+        "provenance": {
+          "source": "https://rivalsense.co/intel/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "seeto",
+      "meta_title": {
+        "value": "Blog — Competitive Intelligence Insights & Guides | Seeto",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://seeto.ai/blog",
+        "provenance": {
+          "source": "https://seeto.ai/blog",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": true,
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://seeto.ai/robots.txt",
+        "provenance": {
+          "source": "https://seeto.ai/robots.txt",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": "https://seeto.ai/sitemap.xml",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://seeto.ai/robots.txt",
+        "provenance": {
+          "source": "https://seeto.ai/robots.txt",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": true,
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://seeto.ai/robots.txt",
+        "provenance": {
+          "source": "https://seeto.ai/robots.txt",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "competitor analysis",
+          "competitive intelligence",
+          "pricing intelligence",
+          "SEO analysis",
+          "battle cards"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://seeto.ai/blog",
+        "provenance": {
+          "source": "https://seeto.ai/blog",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": "daily",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://seeto.ai/blog",
+        "provenance": {
+          "source": "https://seeto.ai/blog",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "comprehensive",
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://seeto.ai/sitemap.xml",
+        "provenance": {
+          "source": "https://seeto.ai/sitemap.xml",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "valona-intelligence",
+      "meta_title": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": true,
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/sitemap.xml",
+        "provenance": {
+          "source": "https://valonaintelligence.com/sitemap.xml",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": "https://valonaintelligence.com/sitemap.xml",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/sitemap.xml",
+        "provenance": {
+          "source": "https://valonaintelligence.com/sitemap.xml",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": true,
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/robots.txt",
+        "provenance": {
+          "source": "https://valonaintelligence.com/robots.txt",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "competitive intelligence",
+          "market intelligence",
+          "AI market research",
+          "competitor analysis"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/",
+        "provenance": {
+          "source": "https://valonaintelligence.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "high",
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/resources",
+        "provenance": {
+          "source": "https://valonaintelligence.com/resources",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "competely",
+      "meta_title": {
+        "value": "Instant Competitive Analysis - Competely",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://competely.ai/",
+        "provenance": {
+          "source": "https://competely.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": true,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://competely.ai/sitemap",
+        "provenance": {
+          "source": "https://competely.ai/sitemap",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "competitive analysis",
+          "competitor monitoring",
+          "pricing analysis",
+          "feature comparison",
+          "SWOT analysis"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://competely.ai/",
+        "provenance": {
+          "source": "https://competely.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "alphasense",
+      "meta_title": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "market intelligence",
+          "competitive intelligence",
+          "earnings analysis",
+          "financial research",
+          "AI search"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "comprehensive",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://help.alpha-sense.com/",
+        "provenance": {
+          "source": "https://help.alpha-sense.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "northern-light-singlepoint",
+      "meta_title": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "competitive intelligence platform",
+          "market research platform",
+          "enterprise knowledge management",
+          "AI-powered research"
+        ],
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.northernlight.com/",
+        "provenance": {
+          "source": "https://www.northernlight.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "moderate",
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://www.northernlight.com/",
+        "provenance": {
+          "source": "https://www.northernlight.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "company-researcher-exa-labs",
+      "meta_title": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "company research",
+          "web intelligence",
+          "AI search",
+          "competitor analysis",
+          "market research"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "excellent",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "feedly-market-intelligence",
+      "meta_title": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": true,
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://feedly.com",
+        "provenance": {
+          "source": "https://feedly.com",
+          "source_type": "inference",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "market intelligence",
+          "competitive intelligence",
+          "threat intelligence",
+          "trend monitoring"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://feedly.com/market-intelligence",
+        "provenance": {
+          "source": "https://feedly.com/market-intelligence",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "comprehensive",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://developers.feedly.com/reference/introduction",
+        "provenance": {
+          "source": "https://developers.feedly.com/reference/introduction",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "chapsvision",
+      "meta_title": {
+        "value": "ChapsVision: AI solutions for businesses and governments",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/",
+        "provenance": {
+          "source": "https://www.chapsvision.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "agentic AI",
+          "enterprise AI",
+          "data intelligence",
+          "sovereign data",
+          "competitive intelligence"
+        ],
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/",
+        "provenance": {
+          "source": "https://www.chapsvision.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": "weekly to bi-weekly",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/blog/",
+        "provenance": {
+          "source": "https://www.chapsvision.com/blog/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "high",
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/blog/",
+        "provenance": {
+          "source": "https://www.chapsvision.com/blog/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       }
     },
@@ -203,343 +1762,28 @@
         "notes": null
       },
       "keyword_focus": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "landing_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "documentation_quality": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "internal_linking": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "rivalsense",
-      "meta_title": {
-        "value": "Uncover Strategic Signals with AI | RivalSense",
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://rivalsense.co/",
-        "provenance": {
-          "source": "https://rivalsense.co/",
-          "source_type": "search_result",
-          "as_of": "2026-06-28",
-          "method": "Homepage title as indexed in search results"
-        },
-        "notes": null
-      },
-      "meta_description": {
-        "value": "AI competitive intelligence tool that monitors any company and delivers weekly curated updates on key competitor changes from 80+ sources.",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://rivalsense.co/",
-        "provenance": {
-          "source": "https://rivalsense.co/",
-          "source_type": "search_result",
-          "as_of": "2026-06-28",
-          "method": "Synthesized from indexed homepage/Product Hunt description; exact tag not directly fetchable (Cloudflare challenge)"
-        },
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "keyword_focus": {
         "value": [
-          "AI competitive intelligence",
-          "competitor tracking",
-          "competitor monitoring",
-          "Crayon alternative",
-          "Klue alternative",
-          "competitive intelligence tool"
-        ],
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://rivalsense.co/intel/",
-        "provenance": {
-          "source": "https://rivalsense.co/intel/",
-          "source_type": "search_result",
-          "as_of": "2026-06-28",
-          "method": "Recurring keyword themes across homepage, blog, and comparison pages"
-        },
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": "monthly",
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://rivalsense.co/intel/",
-        "provenance": {
-          "source": "https://rivalsense.co/intel/",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "Active /intel/ blog with comparison and how-to content; cadence estimated"
-        },
-        "notes": null
-      },
-      "landing_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "documentation_quality": {
-        "value": "sparse",
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://coldiq.com/tools/rivalsense",
-        "provenance": {
-          "source": "https://coldiq.com/tools/rivalsense",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "No public API/developer docs; product is email-delivered, minimal docs surface"
-        },
-        "notes": null
-      },
-      "internal_linking": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "competitor-analyst",
-      "meta_title": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "meta_description": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "keyword_focus": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "landing_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "documentation_quality": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "internal_linking": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "crayon",
-      "meta_title": {
-        "value": "Crayon | Competitive Intelligence Software",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "fetched <title> tag"
-        },
-        "notes": null
-      },
-      "meta_description": {
-        "value": "Crayon is a competitive intelligence platform that monitors your competitors and enables your sales team with real-time intelligence.",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "fetched meta description tag"
-        },
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": true,
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.crayon.co/sitemap.xml",
-        "provenance": {
-          "source": "https://www.crayon.co/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "sitemap.xml fetched successfully"
-        },
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": "https://www.crayon.co/sitemap.xml",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.crayon.co/sitemap.xml",
-        "provenance": {
-          "source": "https://www.crayon.co/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "direct"
-        },
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.crayon.co/robots.txt",
-        "provenance": {
-          "source": "https://www.crayon.co/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "robots.txt fetched (HubSpot-managed disallows)"
-        },
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "keyword_focus": {
-        "value": [
+          "AI competitor analysis",
           "competitive intelligence",
-          "competitive intelligence software",
-          "battlecards",
-          "competitor analysis",
-          "sales enablement",
-          "win-loss analysis"
+          "LLM",
+          "automated analysis"
         ],
         "confidence": 0.7,
         "unknown": false,
-        "source": "https://www.crayon.co",
+        "source": "https://github.com/Procycons/Comperator",
         "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "official_website",
+          "source": "https://github.com/Procycons/Comperator",
+          "source_type": "repository",
           "as_of": "2026-06-28",
-          "method": "title/meta/blog keyword survey"
+          "method": null
         },
         "notes": null
       },
       "blog_frequency": {
-        "value": "weekly",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.crayon.co/blog",
-        "provenance": {
-          "source": "https://www.crayon.co/blog",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "large active blog with frequent posts in sitemap (lastmod through 2026)"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "landing_pages": {
@@ -550,290 +1794,15 @@
         "notes": null
       },
       "documentation_quality": {
-        "value": "sparse",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "no public docs portal; gated product"
-        },
-        "notes": null
-      },
-      "internal_linking": {
-        "value": "moderate",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "blog/resource cross-linking typical of HubSpot CMS marketing sites"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "klue",
-      "meta_title": {
-        "value": "Klue | Competitive Intel + Win-Loss From One Platform",
+        "value": "basic",
         "confidence": 0.8,
         "unknown": false,
-        "source": "https://klue.com",
+        "source": "https://github.com/Procycons/Comperator",
         "provenance": {
-          "source": "https://klue.com",
-          "source_type": "official_website",
+          "source": "https://github.com/Procycons/Comperator",
+          "source_type": "repository",
           "as_of": "2026-06-28",
-          "method": "search result title / homepage"
-        },
-        "notes": null
-      },
-      "meta_description": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://klue.com/sitemap.xml",
-        "provenance": {
-          "source": "https://klue.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "valid WordPress sitemap index, 20 sub-sitemaps"
-        },
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": "https://klue.com/sitemap.xml",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://klue.com/sitemap.xml",
-        "provenance": {
-          "source": "https://klue.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "direct fetch"
-        },
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://klue.com/robots.txt",
-        "provenance": {
-          "source": "https://klue.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "robots.txt present; Allow / with some Googlebot disallows"
-        },
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "keyword_focus": {
-        "value": [
-          "competitive intelligence",
-          "competitive enablement",
-          "win-loss analysis",
-          "battlecards",
-          "competitive intelligence software",
-          "competitive intelligence platform"
-        ],
-        "confidence": 0.75,
-        "unknown": false,
-        "source": "https://klue.com/competitive-intelligence-software",
-        "provenance": {
-          "source": "https://klue.com/competitive-intelligence-software",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "dedicated keyword landing pages"
-        },
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": "weekly",
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://klue.com/blog",
-        "provenance": {
-          "source": "https://klue.com/blog",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "multiple posts per week observed"
-        },
-        "notes": null
-      },
-      "landing_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "documentation_quality": {
-        "value": "sparse",
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://klue.com",
-        "provenance": {
-          "source": "https://klue.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "no public docs portal found"
-        },
-        "notes": null
-      },
-      "internal_linking": {
-        "value": "strong",
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://klue.com/sitemap.xml",
-        "provenance": {
-          "source": "https://klue.com/sitemap.xml",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "many keyword landing pages + categorized blog suggest strong internal linking"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "unkover",
-      "meta_title": {
-        "value": "Your Competitive Intelligence Hub - Unkover",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://unkover.com",
-        "provenance": {
-          "source": "https://unkover.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Homepage meta title"
-        },
-        "notes": null
-      },
-      "meta_description": {
-        "value": "Actionable frameworks, practitioner strategies, and independent tool reviews for CI professionals who want to track competitors, win more deals, and make smarter decisions.",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://unkover.com",
-        "provenance": {
-          "source": "https://unkover.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Homepage meta description"
-        },
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://unkover.com/sitemap_index.xml",
-        "provenance": {
-          "source": "https://unkover.com/sitemap_index.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Sitemap index found (Rank Math), 4 child sitemaps: post, page, category, local"
-        },
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": "https://unkover.com/sitemap_index.xml",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://unkover.com/robots.txt",
-        "provenance": {
-          "source": "https://unkover.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Referenced in robots.txt"
-        },
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://unkover.com/robots.txt",
-        "provenance": {
-          "source": "https://unkover.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Fetched; disallows /wp-admin/, allows admin-ajax.php"
-        },
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "keyword_focus": {
-        "value": [
-          "competitive intelligence",
-          "competitive intelligence tools",
-          "competitor analysis",
-          "AI competitive intelligence",
-          "competitor monitoring"
-        ],
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://unkover.com/blog/",
-        "provenance": {
-          "source": "https://unkover.com/blog/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Derived from blog post titles and categories"
-        },
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": "weekly",
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://unkover.com",
-        "provenance": {
-          "source": "https://unkover.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Homepage claims 'every week'"
-        },
-        "notes": null
-      },
-      "landing_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "documentation_quality": {
-        "value": "sparse",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://unkover.com",
-        "provenance": {
-          "source": "https://unkover.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "No dedicated product docs found; content is blog-based"
+          "method": null
         },
         "notes": null
       },
@@ -842,462 +1811,16 @@
         "confidence": 0,
         "unknown": true,
         "source": null,
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "kompyte",
-      "meta_title": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "meta_description": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.kompyte.com/sitemap.xml",
-        "provenance": {
-          "source": "https://www.kompyte.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "sitemap fetched successfully"
-        },
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": "https://www.kompyte.com/sitemap.xml",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.kompyte.com/robots.txt",
-        "provenance": {
-          "source": "https://www.kompyte.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "declared in robots.txt"
-        },
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.kompyte.com/robots.txt",
-        "provenance": {
-          "source": "https://www.kompyte.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "robots.txt fetched"
-        },
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": 55,
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://www.kompyte.com/sitemap.xml",
-        "provenance": {
-          "source": "https://www.kompyte.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "estimated from sitemap (~50-60 URLs)"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 50,
-        "range_high": 60,
-        "unit": "pages"
-      },
-      "keyword_focus": {
-        "value": [
-          "competitive intelligence",
-          "battlecards",
-          "sales enablement",
-          "competitor tracking",
-          "win-loss analysis"
-        ],
-        "confidence": 0.8,
-        "unknown": false,
-        "source": "https://www.kompyte.com",
-        "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage and blog themes"
-        },
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": "weekly",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.kompyte.com/blog",
-        "provenance": {
-          "source": "https://www.kompyte.com/blog",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "inferred from multi-post days and deep archive"
-        },
-        "notes": null
-      },
-      "landing_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "documentation_quality": {
-        "value": "sparse",
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://www.kompyte.com",
-        "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "no public docs/API docs link in nav"
-        },
-        "notes": null
-      },
-      "internal_linking": {
-        "value": "moderate",
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://www.kompyte.com",
-        "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "HubSpot CMS blog with resource cross-links"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "contify",
-      "meta_title": {
-        "value": "Contify | Market and Competitive Intelligence Software",
-        "confidence": 0.8,
-        "unknown": false,
-        "source": "https://www.contify.com/",
-        "provenance": {
-          "source": "https://www.contify.com/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Title from search/homepage"
-        },
-        "notes": null
-      },
-      "meta_description": {
-        "value": "Contify is an AI-native market and competitive intelligence (M&CI) platform that delivers decision-ready insights about markets, industries, competitors, and key accounts.",
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://www.contify.com/",
-        "provenance": {
-          "source": "https://www.contify.com/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Derived from homepage description copy"
-        },
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.contify.com/sitemap_index.xml",
-        "provenance": {
-          "source": "https://www.contify.com/sitemap_index.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Yoast sitemap index with 8 sub-sitemaps"
-        },
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": "https://www.contify.com/sitemap_index.xml",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.contify.com/robots.txt",
-        "provenance": {
-          "source": "https://www.contify.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Declared in robots.txt"
-        },
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.contify.com/robots.txt",
-        "provenance": {
-          "source": "https://www.contify.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Fetched; blocks AI scrapers and param URLs, allows social preview bots"
-        },
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": 150,
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://www.contify.com/sitemap_index.xml",
-        "provenance": {
-          "source": "https://www.contify.com/sitemap_index.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Estimated from 8 sub-sitemaps (pages/blog/reports/case studies/industry/templates/functions/author)"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 50,
-        "range_high": 250,
-        "unit": "pages"
-      },
-      "keyword_focus": {
-        "value": [
-          "market intelligence",
-          "competitive intelligence",
-          "M&CI software",
-          "competitor monitoring",
-          "business news API",
-          "battlecards",
-          "competitive landscape"
-        ],
-        "confidence": 0.75,
-        "unknown": false,
-        "source": "https://www.linkedin.com/company/contify",
-        "provenance": {
-          "source": "https://www.linkedin.com/company/contify",
-          "source_type": "social_profile",
-          "as_of": "2026-06-28",
-          "method": "LinkedIn specialties + homepage focus"
-        },
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": "monthly",
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.contify.com/resources/blog/",
-        "provenance": {
-          "source": "https://www.contify.com/resources/blog/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Recent post dates show monthly-to-bimonthly cadence"
-        },
-        "notes": null
-      },
-      "landing_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "documentation_quality": {
-        "value": "adequate",
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "API v4 referenced but public docs not surfaced; rich resource library exists"
-        },
-        "notes": null
-      },
-      "internal_linking": {
-        "value": "moderate",
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "Yoast SEO + solutions/industry/function page matrix suggests moderate internal linking"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "valona-intelligence",
-      "meta_title": {
-        "value": "Valona Intelligence | Hyper-Relevant, Real-Time Market Insights",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage <title> tag"
-        },
-        "notes": null
-      },
-      "meta_description": {
-        "value": "Top-tier competitive & market intelligence solutions providing insights into market dynamics, risks, & opportunities for enhanced foresight & a global outlook.",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage meta description tag"
-        },
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/sitemap.xml",
-        "provenance": {
-          "source": "https://valonaintelligence.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "valid XML sitemap with ~484 URLs"
-        },
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": "https://valonaintelligence.com/sitemap.xml",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/robots.txt",
-        "provenance": {
-          "source": "https://valonaintelligence.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "declared in robots.txt"
-        },
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/robots.txt",
-        "provenance": {
-          "source": "https://valonaintelligence.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "robots.txt present, allows AI crawlers (GPTBot, ClaudeBot, PerplexityBot)"
-        },
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": 484,
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/sitemap.xml",
-        "provenance": {
-          "source": "https://valonaintelligence.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "URL count in sitemap (proxy for indexable pages)"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "unit": "pages"
-      },
-      "keyword_focus": {
-        "value": [
-          "competitive intelligence",
-          "market intelligence",
-          "AI market research",
-          "competitor analysis",
-          "market foresight",
-          "trend radar",
-          "manufacturing intelligence"
-        ],
-        "confidence": 0.75,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage and meta keyword themes"
-        },
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": "weekly",
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/resources/blog",
-        "provenance": {
-          "source": "https://valonaintelligence.com/resources/blog",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "active multi-category blog with frequent updates (sitemap shows recent lastmod); exact cadence not confirmed"
-        },
-        "notes": null
-      },
-      "landing_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "documentation_quality": {
-        "value": "sparse",
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "marketing resource library present but no technical/product documentation"
-        },
-        "notes": null
-      },
-      "internal_linking": {
-        "value": "strong",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/sitemap.xml",
-        "provenance": {
-          "source": "https://valonaintelligence.com/sitemap.xml",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "~484 pages, industry/resource hub structure suggests strong internal linking"
-        },
         "notes": null
       }
     },
     {
       "entity_ref": "semrush",
       "meta_title": {
-        "value": "Semrush: Your Unfair Advantage for Growing Brand Visibility",
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.semrush.com",
-        "provenance": {
-          "source": "https://www.semrush.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage title (approx, via fetch)"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "meta_description": {
@@ -1309,90 +1832,74 @@
       },
       "has_sitemap": {
         "value": true,
-        "confidence": 0.95,
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.semrush.com/sitemap.xml",
+        "source": "https://www.semrush.com/",
         "provenance": {
-          "source": "https://www.semrush.com/sitemap.xml",
+          "source": "https://www.semrush.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "sitemap index with 24 child sitemaps verified"
+          "method": null
         },
         "notes": null
       },
       "sitemap_url": {
-        "value": "https://www.semrush.com/sitemap.xml",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.semrush.com/sitemap.xml",
-        "provenance": {
-          "source": "https://www.semrush.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "direct fetch"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "has_robots_txt": {
         "value": true,
-        "confidence": 0.95,
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.semrush.com/robots.txt",
+        "source": "https://www.semrush.com/",
         "provenance": {
-          "source": "https://www.semrush.com/robots.txt",
+          "source": "https://www.semrush.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "direct fetch; references 16 sitemaps"
+          "method": null
         },
         "notes": null
       },
       "indexed_pages": {
-        "value": 1000000,
-        "confidence": 0.35,
-        "unknown": false,
-        "source": "https://www.semrush.com/sitemap.xml",
-        "provenance": {
-          "source": "https://www.semrush.com/sitemap.xml",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "inferred large; multi-language blog/academy/free-tools/trending sitemaps"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 500000,
-        "range_high": 5000000,
-        "unit": "pages"
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
       },
       "keyword_focus": {
         "value": [
-          "SEO",
+          "SEO tools",
           "keyword research",
-          "competitor analysis",
-          "AI visibility / AEO",
+          "competitive analysis",
+          "backlink analysis",
           "content marketing",
-          "rank tracking"
+          "AI search visibility"
         ],
-        "confidence": 0.8,
+        "confidence": 0.85,
         "unknown": false,
-        "source": "https://www.semrush.com",
+        "source": "https://www.semrush.com/",
         "provenance": {
-          "source": "https://www.semrush.com",
+          "source": "https://www.semrush.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "homepage + blog themes"
+          "method": null
         },
         "notes": null
       },
       "blog_frequency": {
-        "value": "daily",
-        "confidence": 0.6,
+        "value": "multiple posts per week",
+        "confidence": 0.85,
         "unknown": false,
         "source": "https://www.semrush.com/blog/",
         "provenance": {
           "source": "https://www.semrush.com/blog/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "high-volume content publishing"
+          "method": null
         },
         "notes": null
       },
@@ -1404,83 +1911,71 @@
         "notes": null
       },
       "documentation_quality": {
-        "value": "excellent",
-        "confidence": 0.6,
+        "value": "comprehensive",
+        "confidence": 0.85,
         "unknown": false,
         "source": "https://www.semrush.com/kb/",
         "provenance": {
           "source": "https://www.semrush.com/kb/",
-          "source_type": "official_docs",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "extensive KB + Academy + developer API docs"
+          "method": null
         },
         "notes": null
       },
       "internal_linking": {
         "value": "strong",
-        "confidence": 0.6,
+        "confidence": 0.8,
         "unknown": false,
-        "source": "https://www.semrush.com",
+        "source": "https://www.semrush.com/",
         "provenance": {
-          "source": "https://www.semrush.com",
-          "source_type": "inference",
+          "source": "https://www.semrush.com/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "inferred; SEO company with mature site architecture"
+          "method": null
         },
         "notes": null
       }
     },
     {
-      "entity_ref": "similarweb",
+      "entity_ref": "evalueserve-insightsfirst",
       "meta_title": {
-        "value": "Similarweb: Digital Intelligence & Market Analysis Platform",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.similarweb.com",
-        "provenance": {
-          "source": "https://www.similarweb.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "derived from homepage branding; exact tag not captured"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "meta_description": {
-        "value": "AI-powered digital data platform. Benchmark, compete, and grow with traffic, keyword, app, and market intelligence across all digital channels.",
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://www.similarweb.com",
-        "provenance": {
-          "source": "https://www.similarweb.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "summarized from hero/value prop; exact meta not captured"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "has_sitemap": {
         "value": true,
         "confidence": 0.95,
         "unknown": false,
-        "source": "https://www.similarweb.com/robots.txt",
+        "source": "https://www.evalueserve.com/sitemap_index.xml",
         "provenance": {
-          "source": "https://www.similarweb.com/robots.txt",
+          "source": "https://www.evalueserve.com/sitemap_index.xml",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "robots.txt lists 3 sitemaps"
+          "method": null
         },
         "notes": null
       },
       "sitemap_url": {
-        "value": "https://www.similarweb.com/corp/sitemap_index.xml",
-        "confidence": 0.9,
+        "value": "https://www.evalueserve.com/sitemap_index.xml",
+        "confidence": 0.95,
         "unknown": false,
-        "source": "https://www.similarweb.com/robots.txt",
+        "source": "https://www.evalueserve.com/sitemap_index.xml",
         "provenance": {
-          "source": "https://www.similarweb.com/robots.txt",
+          "source": "https://www.evalueserve.com/sitemap_index.xml",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "robots.txt sitemap directive"
+          "method": null
         },
         "notes": null
       },
@@ -1488,62 +1983,295 @@
         "value": true,
         "confidence": 0.95,
         "unknown": false,
-        "source": "https://www.similarweb.com/robots.txt",
+        "source": "https://www.evalueserve.com/robots.txt",
         "provenance": {
-          "source": "https://www.similarweb.com/robots.txt",
+          "source": "https://www.evalueserve.com/robots.txt",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "robots.txt fetched"
+          "method": null
         },
         "notes": null
       },
       "indexed_pages": {
-        "value": 5000000,
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://www.similarweb.com/sitemaps/sitemap_index.xml.gz",
-        "provenance": {
-          "source": "https://www.similarweb.com/sitemaps/sitemap_index.xml.gz",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "programmatic per-domain/keyword report pages create millions of indexed URLs; large estimate"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 1000000,
-        "unit": "pages"
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
       },
       "keyword_focus": {
         "value": [
-          "website traffic checker",
-          "competitor analysis",
-          "digital intelligence",
-          "market research",
-          "keyword research",
-          "app analytics",
-          "SEO/GEO"
+          "competitive intelligence",
+          "market intelligence",
+          "domain AI",
+          "research services"
         ],
-        "confidence": 0.6,
+        "confidence": 0.7,
         "unknown": false,
-        "source": "https://www.similarweb.com",
+        "source": "https://www.evalueserve.com/",
         "provenance": {
-          "source": "https://www.similarweb.com",
+          "source": "https://www.evalueserve.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "tools + blog topics + nav"
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "comprehensive",
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.evalueserve.com/blog/",
+        "provenance": {
+          "source": "https://www.evalueserve.com/blog/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "ahrefs",
+      "meta_title": {
+        "value": "Ahrefs — AI Marketing Platform Powered by Big Data",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://ahrefs.com",
+        "provenance": {
+          "source": "https://ahrefs.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": true,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://ahrefs.com",
+        "provenance": {
+          "source": "https://ahrefs.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": true,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://ahrefs.com",
+        "provenance": {
+          "source": "https://ahrefs.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "SEO",
+          "keyword research",
+          "backlink analysis",
+          "competitor analysis",
+          "rank tracking",
+          "AI visibility"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://ahrefs.com",
+        "provenance": {
+          "source": "https://ahrefs.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "blog_frequency": {
+        "value": "4-6 posts per week",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://ahrefs.com/blog",
+        "provenance": {
+          "source": "https://ahrefs.com/blog",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "landing_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "documentation_quality": {
+        "value": "comprehensive",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://ahrefs.com",
+        "provenance": {
+          "source": "https://ahrefs.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "internal_linking": {
+        "value": "strong",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://ahrefs.com/blog",
+        "provenance": {
+          "source": "https://ahrefs.com/blog",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "quid",
+      "meta_title": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "meta_description": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_sitemap": {
+        "value": true,
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.quid.com/sitemap.xml",
+        "provenance": {
+          "source": "https://www.quid.com/sitemap.xml",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "sitemap_url": {
+        "value": "https://www.quid.com/sitemap.xml",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.quid.com/sitemap.xml",
+        "provenance": {
+          "source": "https://www.quid.com/sitemap.xml",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "has_robots_txt": {
+        "value": true,
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.quid.com/robots.txt",
+        "provenance": {
+          "source": "https://www.quid.com/robots.txt",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "indexed_pages": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "keyword_focus": {
+        "value": [
+          "AI consumer intelligence",
+          "market intelligence platform",
+          "competitive intelligence",
+          "consumer insights",
+          "trend analysis"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.quid.com/",
+        "provenance": {
+          "source": "https://www.quid.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
         },
         "notes": null
       },
       "blog_frequency": {
         "value": "weekly",
-        "confidence": 0.5,
+        "confidence": 0.8,
         "unknown": false,
-        "source": "https://www.similarweb.com/blog/",
+        "source": "https://www.quid.com/knowledge-hub/resource-library",
         "provenance": {
-          "source": "https://www.similarweb.com/blog/",
+          "source": "https://www.quid.com/knowledge-hub/resource-library",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "active blog with frequent posts; weekly+ estimate"
+          "method": null
         },
         "notes": null
       },
@@ -1555,178 +2283,28 @@
         "notes": null
       },
       "documentation_quality": {
-        "value": "excellent",
-        "confidence": 0.6,
+        "value": "high",
+        "confidence": 0.8,
         "unknown": false,
-        "source": "https://developers.similarweb.com/docs",
+        "source": "https://www.quid.com/knowledge-hub/resource-library",
         "provenance": {
-          "source": "https://developers.similarweb.com/docs",
-          "source_type": "official_docs",
+          "source": "https://www.quid.com/knowledge-hub/resource-library",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "structured developer portal with 75+ documented API endpoints + MCP"
+          "method": null
         },
         "notes": null
       },
       "internal_linking": {
-        "value": "strong",
-        "confidence": 0.5,
+        "value": "comprehensive",
+        "confidence": 0.75,
         "unknown": false,
-        "source": "https://www.similarweb.com/corp/sitemap_index.xml",
+        "source": "https://www.quid.com/sitemap.xml",
         "provenance": {
-          "source": "https://www.similarweb.com/corp/sitemap_index.xml",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "large programmatic site with cross-linked report/comparison pages"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "owler",
-      "meta_title": {
-        "value": "Owler | Competitive Intelligence & Company Insights",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.owler.com",
-        "provenance": {
-          "source": "https://www.owler.com",
-          "source_type": "search_result",
-          "as_of": "2026-06-28",
-          "method": "synthesized from brand positioning"
-        },
-        "notes": null
-      },
-      "meta_description": {
-        "value": "Owler delivers community-powered competitive intelligence: company profiles, revenue and funding data, news alerts, and a Daily Snapshot newsletter.",
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://www.owler.com",
-        "provenance": {
-          "source": "https://www.owler.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "inferred from site positioning"
-        },
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": true,
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://corp.owler.com/sitemap.xml",
-        "provenance": {
-          "source": "https://corp.owler.com/sitemap.xml",
+          "source": "https://www.quid.com/sitemap.xml",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "sitemap fetched"
-        },
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": "https://corp.owler.com/sitemap.xml",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://corp.owler.com/robots.txt",
-        "provenance": {
-          "source": "https://corp.owler.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "declared in robots.txt"
-        },
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": true,
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://corp.owler.com/robots.txt",
-        "provenance": {
-          "source": "https://corp.owler.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "robots.txt fetched"
-        },
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": 5000000,
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://corp.owler.com/",
-        "provenance": {
-          "source": "https://corp.owler.com/",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "very large; Owler hosts 20M+ company profile pages on owler.com"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 1000000,
-        "range_high": 20000000,
-        "unit": "pages"
-      },
-      "keyword_focus": {
-        "value": [
-          "competitive intelligence",
-          "company profiles",
-          "sales prospecting",
-          "competitor analysis",
-          "company news alerts"
-        ],
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://corp.owler.com/sitemap.xml",
-        "provenance": {
-          "source": "https://corp.owler.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "from blog topics and product positioning"
-        },
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": "monthly",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://corp.owler.com/sitemap.xml",
-        "provenance": {
-          "source": "https://corp.owler.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "blog posts changefreq monthly in sitemap"
-        },
-        "notes": null
-      },
-      "landing_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "documentation_quality": {
-        "value": "adequate",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://developers.owler.com/",
-        "provenance": {
-          "source": "https://developers.owler.com/",
-          "source_type": "official_docs",
-          "as_of": "2026-06-28",
-          "method": "developer portal present"
-        },
-        "notes": null
-      },
-      "internal_linking": {
-        "value": "strong",
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://corp.owler.com/",
-        "provenance": {
-          "source": "https://corp.owler.com/",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "large interlinked company-profile graph"
+          "method": null
         },
         "notes": null
       }
@@ -1734,538 +2312,128 @@
     {
       "entity_ref": "crunchbase",
       "meta_title": {
-        "value": "Crunchbase: Discover innovative companies and the people behind them",
-        "confidence": 0.5,
+        "value": "Crunchbase: The #1 Private Company Intelligence Platform",
+        "confidence": 0.85,
         "unknown": false,
         "source": "https://www.crunchbase.com",
         "provenance": {
           "source": "https://www.crunchbase.com",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "homepage title pattern"
+          "method": null
         },
         "notes": null
       },
       "meta_description": {
-        "value": "Crunchbase is a predictive intelligence platform delivering insights on private companies via live data, AI, and a community of 80M+ users.",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.crunchbase.com",
-        "provenance": {
-          "source": "https://www.crunchbase.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage positioning"
-        },
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/robots.txt",
-        "provenance": {
-          "source": "https://www.crunchbase.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "robots.txt Sitemap directive"
-        },
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": "https://www.crunchbase.com/www-sitemaps/sitemap-index.xml",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/robots.txt",
-        "provenance": {
-          "source": "https://www.crunchbase.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "robots.txt"
-        },
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/robots.txt",
-        "provenance": {
-          "source": "https://www.crunchbase.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "fetched directly; blocks GPTBot, ClaudeBot, CCBot, PerplexityBot etc."
-        },
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": 4000000,
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://www.crunchbase.com",
-        "provenance": {
-          "source": "https://www.crunchbase.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "millions of company profiles (4M+ companies indexed)"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 1000000,
-        "range_high": 10000000,
-        "unit": "pages"
-      },
-      "keyword_focus": {
-        "value": [
-          "company profiles",
-          "startup funding",
-          "investors",
-          "venture capital",
-          "private market intelligence"
-        ],
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://www.crunchbase.com",
-        "provenance": {
-          "source": "https://www.crunchbase.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "programmatic company/investor profile pages"
-        },
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": "daily",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://news.crunchbase.com",
-        "provenance": {
-          "source": "https://news.crunchbase.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Crunchbase News publishes frequently"
-        },
-        "notes": null
-      },
-      "landing_pages": {
         "value": null,
         "confidence": 0,
         "unknown": true,
         "source": null,
         "notes": null
       },
-      "documentation_quality": {
-        "value": "excellent",
-        "confidence": 0.55,
-        "unknown": false,
-        "source": "https://data.crunchbase.com/docs/using-the-api",
-        "provenance": {
-          "source": "https://data.crunchbase.com/docs/using-the-api",
-          "source_type": "official_docs",
-          "as_of": "2026-06-28",
-          "method": "structured API reference"
-        },
-        "notes": null
-      },
-      "internal_linking": {
-        "value": "strong",
-        "confidence": 0.5,
+      "has_sitemap": {
+        "value": true,
+        "confidence": 0.7,
         "unknown": false,
         "source": "https://www.crunchbase.com",
         "provenance": {
           "source": "https://www.crunchbase.com",
           "source_type": "inference",
           "as_of": "2026-06-28",
-          "method": "dense cross-linking between company/investor/people profiles"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "visualping",
-      "meta_title": {
-        "value": "Visualping: #1 Website change detection, monitoring and alerts",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://visualping.io",
-        "provenance": {
-          "source": "https://visualping.io",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Homepage title from search result"
-        },
-        "notes": null
-      },
-      "meta_description": {
-        "value": "Monitor website changes and get alerts with highlighted screenshots whenever a change is detected. Trusted by 2M+ users and 85% of Fortune 500.",
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://visualping.io",
-        "provenance": {
-          "source": "https://visualping.io",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Synthesized from homepage messaging"
-        },
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://visualping.io/sitemap.xml",
-        "provenance": {
-          "source": "https://visualping.io/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Sitemap present and declared in robots.txt"
+          "method": null
         },
         "notes": null
       },
       "sitemap_url": {
-        "value": "https://visualping.io/sitemap.xml",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://visualping.io/robots.txt",
-        "provenance": {
-          "source": "https://visualping.io/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Declared in robots.txt (also cms.visualping.io sitemap)"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "has_robots_txt": {
         "value": true,
-        "confidence": 0.95,
+        "confidence": 0.7,
         "unknown": false,
-        "source": "https://visualping.io/robots.txt",
+        "source": "https://www.crunchbase.com",
         "provenance": {
-          "source": "https://visualping.io/robots.txt",
-          "source_type": "official_website",
+          "source": "https://www.crunchbase.com",
+          "source_type": "inference",
           "as_of": "2026-06-28",
-          "method": "Fetched directly"
+          "method": null
         },
         "notes": null
       },
       "indexed_pages": {
-        "value": 220,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://visualping.io/sitemap.xml",
-        "provenance": {
-          "source": "https://visualping.io/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "~220 URLs in sitemap"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 200,
-        "range_high": 250,
-        "unit": "pages"
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
       },
       "keyword_focus": {
         "value": [
-          "website change monitoring",
-          "website change detection",
-          "price tracking",
-          "competitor monitoring",
-          "regulatory intelligence",
-          "stock/restock alerts"
+          "private company intelligence",
+          "startup funding",
+          "investor research",
+          "market intelligence",
+          "competitive intelligence"
         ],
         "confidence": 0.8,
         "unknown": false,
-        "source": "https://visualping.io/sitemap.xml",
+        "source": "https://www.crunchbase.com",
         "provenance": {
-          "source": "https://visualping.io/sitemap.xml",
+          "source": "https://www.crunchbase.com",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Landing pages and blog topics"
+          "method": null
         },
         "notes": null
       },
       "blog_frequency": {
-        "value": "weekly",
-        "confidence": 0.5,
+        "value": "multiple posts monthly",
+        "confidence": 0.75,
         "unknown": false,
-        "source": "https://visualping.io/sitemap.xml",
+        "source": "https://about.crunchbase.com/blog",
         "provenance": {
-          "source": "https://visualping.io/sitemap.xml",
+          "source": "https://about.crunchbase.com/blog",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Large blog corpus with ongoing updates"
+          "method": null
         },
         "notes": null
       },
       "landing_pages": {
-        "value": 30,
-        "confidence": 0.55,
-        "unknown": false,
-        "source": "https://visualping.io/sitemap.xml",
-        "provenance": {
-          "source": "https://visualping.io/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Use-case + industry + solution landing pages (~30)"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "documentation_quality": {
-        "value": "adequate",
-        "confidence": 0.6,
+        "value": "comprehensive",
+        "confidence": 0.85,
         "unknown": false,
-        "source": "https://help.visualping.io/en/",
+        "source": "https://support.crunchbase.com",
         "provenance": {
-          "source": "https://help.visualping.io/en/",
-          "source_type": "official_docs",
+          "source": "https://support.crunchbase.com",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Categorized Intercom help center"
+          "method": null
         },
         "notes": null
       },
       "internal_linking": {
         "value": "strong",
-        "confidence": 0.6,
+        "confidence": 0.8,
         "unknown": false,
-        "source": "https://visualping.io",
+        "source": "https://www.crunchbase.com",
         "provenance": {
-          "source": "https://visualping.io",
+          "source": "https://www.crunchbase.com",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Extensive footer linking across use-cases, industries, solutions"
+          "method": null
         },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "alphasense",
-      "meta_title": {
-        "value": "AlphaSense | Market Intelligence and Search Platform",
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "title from SERP/homepage"
-        },
-        "notes": null
-      },
-      "meta_description": {
-        "value": "AI-powered market intelligence and search platform built on premium business content (filings, expert transcripts, broker research) to help enterprises make confident decisions.",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "summarized from homepage; exact meta not captured verbatim"
-        },
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": true,
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/sitemap.xml",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "valid sitemap index fetched"
-        },
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": "https://www.alpha-sense.com/sitemap.xml",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/sitemap.xml",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "direct; index references server-sitemap.xml and earnings.xml"
-        },
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": true,
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/robots.txt",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "fetched; declares 3 sitemaps, disallows ?page_id="
-        },
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": 10000,
-        "confidence": 0.35,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/sitemap.xml",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/sitemap.xml",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "large content site (earnings.xml + server sitemap); rough estimate"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 5000,
-        "range_high": 50000,
-        "unit": "pages"
-      },
-      "keyword_focus": {
-        "value": [
-          "market intelligence",
-          "financial research",
-          "expert transcripts",
-          "SEC filings search",
-          "earnings analysis",
-          "AI market intelligence"
-        ],
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com",
-        "provenance": {
-          "source": "https://www.alpha-sense.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "derived from solutions/platform nav and messaging"
-        },
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": "weekly",
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/blog/",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/blog/",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "regular cadence inferred from blog activity"
-        },
-        "notes": null
-      },
-      "landing_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "documentation_quality": {
-        "value": "adequate",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://developer.alpha-sense.com/",
-        "provenance": {
-          "source": "https://developer.alpha-sense.com/",
-          "source_type": "official_docs",
-          "as_of": "2026-06-28",
-          "method": "developer portal present"
-        },
-        "notes": null
-      },
-      "internal_linking": {
-        "value": "strong",
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com",
-        "provenance": {
-          "source": "https://www.alpha-sense.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "extensive solutions/platform nav cross-links"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "nexusai",
-      "meta_title": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "meta_description": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "has_sitemap": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "sitemap_url": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "has_robots_txt": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "indexed_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "keyword_focus": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "blog_frequency": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "landing_pages": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "documentation_quality": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "internal_linking": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
         "notes": null
       }
     }

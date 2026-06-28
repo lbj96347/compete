@@ -1,733 +1,40 @@
 {
   "meta": {
-    "schema_version": "1.0.0",
+    "schema_version": "1.1.0",
     "dataset": "techstack",
-    "generated_at": "2026-06-27T20:45:15Z",
+    "generated_at": "2026-06-28T11:33:34Z",
     "generator": "compete/collect_intelligence 0.1.0"
   },
   "techstack": [
     {
-      "entity_ref": "competely",
+      "entity_ref": "klue",
       "frontend": {
         "value": [
-          "Next.js",
           "React"
         ],
-        "confidence": 0.85,
+        "confidence": 0.55,
         "unknown": false,
-        "source": "https://competely.ai",
+        "source": "https://stackshare.io/klue/klue",
         "provenance": {
-          "source": "https://competely.ai",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "x-powered-by: Next.js header"
-        },
-        "notes": null
-      },
-      "backend": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "framework": {
-        "value": [
-          "Next.js"
-        ],
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://competely.ai",
-        "provenance": {
-          "source": "https://competely.ai",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "x-powered-by header"
-        },
-        "notes": null
-      },
-      "database": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "hosting": {
-        "value": [
-          "Vercel"
-        ],
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://competely.ai",
-        "provenance": {
-          "source": "https://competely.ai",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "server: Vercel + x-vercel-id/x-vercel-cache headers"
-        },
-        "notes": null
-      },
-      "cloud_provider": {
-        "value": [
-          "Vercel"
-        ],
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://competely.ai",
-        "provenance": {
-          "source": "https://competely.ai",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "Vercel response headers"
-        },
-        "notes": null
-      },
-      "cdn": {
-        "value": [
-          "Vercel Edge Network"
-        ],
-        "confidence": 0.8,
-        "unknown": false,
-        "source": "https://competely.ai",
-        "provenance": {
-          "source": "https://competely.ai",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "x-vercel-cache header"
-        },
-        "notes": null
-      },
-      "deployment": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "authentication": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "analytics": {
-        "value": [
-          "Google Analytics (gtag)",
-          "Segment"
-        ],
-        "confidence": 0.8,
-        "unknown": false,
-        "source": "https://competely.ai",
-        "provenance": {
-          "source": "https://competely.ai",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "gtag and segment references in homepage HTML"
-        },
-        "notes": null
-      },
-      "payments": {
-        "value": [
-          "Stripe"
-        ],
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://competely.ai",
-        "provenance": {
-          "source": "https://competely.ai",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "Stripe references in homepage HTML bundle"
-        },
-        "notes": null
-      },
-      "monitoring": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cms": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "llm_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "inference_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "product_surface": {
-        "ai_models": {
-          "value": [
-            "AI/LLM-powered (specific provider not disclosed)"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
-          "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
-          "notes": null
-        },
-        "api_availability": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
-          "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
-          "notes": null
-        },
-        "sdks": {
-          "value": null,
-          "confidence": 0,
-          "unknown": true,
-          "source": null,
-          "notes": null
-        },
-        "mobile_apps": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
-          "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
-          "notes": null
-        },
-        "browser_extension": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
-          "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
-          "notes": null
-        },
-        "integrations": {
-          "value": [
-            "Slack (brief delivery)",
-            "Email",
-            "CSV export",
-            "PDF export"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
-          "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
-          "notes": null
-        }
-      }
-    },
-    {
-      "entity_ref": "comperator",
-      "frontend": {
-        "value": [
-          "Streamlit"
-        ],
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://raw.githubusercontent.com/Procycons/Comperator/master/requirements.txt",
-        "provenance": {
-          "source": "https://raw.githubusercontent.com/Procycons/Comperator/master/requirements.txt",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "Streamlit renders the web UI; streamlit-option-menu==0.3.13 also present"
-        },
-        "notes": null
-      },
-      "backend": {
-        "value": [
-          "Python"
-        ],
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://github.com/Procycons/Comperator",
-        "provenance": {
-          "source": "https://github.com/Procycons/Comperator",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "Language breakdown 100% Python"
-        },
-        "notes": null
-      },
-      "framework": {
-        "value": [
-          "Streamlit"
-        ],
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://raw.githubusercontent.com/Procycons/Comperator/master/requirements.txt",
-        "provenance": {
-          "source": "https://raw.githubusercontent.com/Procycons/Comperator/master/requirements.txt",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "streamlit==1.36.0 in requirements.txt; README states Streamlit-based web interface"
-        },
-        "notes": null
-      },
-      "database": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "hosting": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cloud_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cdn": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "deployment": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "authentication": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "analytics": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "payments": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "monitoring": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cms": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "llm_provider": {
-        "value": [
-          "OpenAI"
-        ],
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://raw.githubusercontent.com/Procycons/Comperator/master/requirements.txt",
-        "provenance": {
-          "source": "https://raw.githubusercontent.com/Procycons/Comperator/master/requirements.txt",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "openai==1.35.13 dependency; README requires OpenAI API key in .env"
-        },
-        "notes": null
-      },
-      "inference_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "product_surface": {
-        "ai_models": {
-          "value": [
-            "OpenAI GPT (LLM via OpenAI API)"
-          ],
-          "confidence": 0.75,
-          "unknown": false,
-          "source": "https://github.com/Procycons/Comperator",
-          "provenance": {
-            "source": "https://github.com/Procycons/Comperator",
-            "source_type": "repository",
-            "as_of": "2026-06-28",
-            "method": "README describes LLM-based analysis through OpenAI; specific model configured in config.yaml"
-          },
-          "notes": null
-        },
-        "api_availability": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
-          "source": "https://github.com/Procycons/Comperator",
-          "provenance": {
-            "source": "https://github.com/Procycons/Comperator",
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": "Standalone Streamlit app; no exposed API documented"
-          },
-          "notes": null
-        },
-        "sdks": {
-          "value": [],
-          "confidence": 0.6,
-          "unknown": false,
-          "source": "https://github.com/Procycons/Comperator",
-          "provenance": {
-            "source": "https://github.com/Procycons/Comperator",
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": "No SDKs published for the project"
-          },
-          "notes": null
-        },
-        "mobile_apps": {
-          "value": null,
-          "confidence": 0,
-          "unknown": true,
-          "source": null,
-          "notes": null
-        },
-        "browser_extension": {
-          "value": null,
-          "confidence": 0,
-          "unknown": true,
-          "source": null,
-          "notes": null
-        },
-        "integrations": {
-          "value": [
-            "OpenAI API",
-            "BeautifulSoup web crawling",
-            "NLTK",
-            "WordCloud"
-          ],
-          "confidence": 0.85,
-          "unknown": false,
-          "source": "https://raw.githubusercontent.com/Procycons/Comperator/master/requirements.txt",
-          "provenance": {
-            "source": "https://raw.githubusercontent.com/Procycons/Comperator/master/requirements.txt",
-            "source_type": "repository",
-            "as_of": "2026-06-28",
-            "method": "Derived from declared dependencies and README module descriptions"
-          },
-          "notes": null
-        }
-      }
-    },
-    {
-      "entity_ref": "rivalsense",
-      "frontend": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "backend": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "framework": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "database": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "hosting": {
-        "value": [
-          "Cloudflare"
-        ],
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://rivalsense.co/",
-        "provenance": {
-          "source": "https://rivalsense.co/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Response headers 'server: cloudflare' + cf-ray; site fronted by Cloudflare (bot challenge)"
-        },
-        "notes": null
-      },
-      "cloud_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cdn": {
-        "value": [
-          "Cloudflare"
-        ],
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://rivalsense.co/",
-        "provenance": {
-          "source": "https://rivalsense.co/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "cf-ray and Cloudflare challenge platform observed in HTTP response"
-        },
-        "notes": null
-      },
-      "deployment": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "authentication": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "analytics": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "payments": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "monitoring": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cms": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "llm_provider": {
-        "value": [
-          "OpenAI"
-        ],
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://www.starterstory.com/rivalsense-breakdown",
-        "provenance": {
-          "source": "https://www.starterstory.com/rivalsense-breakdown",
+          "source": "https://stackshare.io/klue/klue",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "Starter Story states OpenAI APIs used for data processing; inferred"
+          "method": null
         },
         "notes": null
       },
-      "inference_provider": {
+      "backend": {
         "value": null,
         "confidence": 0,
         "unknown": true,
         "source": null,
         "notes": null
       },
-      "product_surface": {
-        "ai_models": {
-          "value": [
-            "OpenAI (GPT family, inferred)"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
-          "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
-          "notes": null
-        },
-        "api_availability": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
-          "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
-          "notes": null
-        },
-        "sdks": {
-          "value": null,
-          "confidence": 0,
-          "unknown": true,
-          "source": null,
-          "notes": null
-        },
-        "mobile_apps": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
-          "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
-          "notes": null
-        },
-        "browser_extension": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
-          "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
-          "notes": null
-        },
-        "integrations": {
-          "value": [
-            "Slack",
-            "Email",
-            "LinkedIn (monitoring source)",
-            "X/Twitter (monitoring source)"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
-          "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
-          "notes": null
-        }
-      }
-    },
-    {
-      "entity_ref": "competitor-analyst",
-      "frontend": {
-        "value": [
-          "Next.js",
-          "React",
-          "Tailwind CSS"
-        ],
-        "confidence": 0.97,
-        "unknown": false,
-        "source": "https://raw.githubusercontent.com/0xmetaschool/competitor-analyst/main/package.json",
-        "provenance": {
-          "source": "https://raw.githubusercontent.com/0xmetaschool/competitor-analyst/main/package.json",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "next ^14.2.23, react ^18.2.0, tailwindcss ^3.4.0 in package.json"
-        },
-        "notes": null
-      },
-      "backend": {
-        "value": [
-          "Next.js (API routes, Node.js)"
-        ],
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://github.com/0xmetaschool/competitor-analyst",
-        "provenance": {
-          "source": "https://github.com/0xmetaschool/competitor-analyst",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "Next.js full-stack template; backend via Next API routes"
-        },
-        "notes": null
-      },
       "framework": {
-        "value": [
-          "Next.js 14"
-        ],
-        "confidence": 0.97,
-        "unknown": false,
-        "source": "https://raw.githubusercontent.com/0xmetaschool/competitor-analyst/main/package.json",
-        "provenance": {
-          "source": "https://raw.githubusercontent.com/0xmetaschool/competitor-analyst/main/package.json",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "next ^14.2.23 dependency"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "database": {
@@ -738,18 +45,10 @@
         "notes": null
       },
       "hosting": {
-        "value": [
-          "Vercel"
-        ],
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://competitor-analyst.vercel.app/",
-        "provenance": {
-          "source": "https://competitor-analyst.vercel.app/",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "Live demo hosted on Vercel per README"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "cloud_provider": {
@@ -781,10 +80,18 @@
         "notes": null
       },
       "analytics": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
+        "value": [
+          "Elasticsearch"
+        ],
+        "confidence": 0.55,
+        "unknown": false,
+        "source": "https://stackshare.io/klue/klue",
+        "provenance": {
+          "source": "https://stackshare.io/klue/klue",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
         "notes": null
       },
       "payments": {
@@ -809,18 +116,10 @@
         "notes": null
       },
       "llm_provider": {
-        "value": [
-          "OpenAI"
-        ],
-        "confidence": 0.96,
-        "unknown": false,
-        "source": "https://raw.githubusercontent.com/0xmetaschool/competitor-analyst/main/package.json",
-        "provenance": {
-          "source": "https://raw.githubusercontent.com/0xmetaschool/competitor-analyst/main/package.json",
-          "source_type": "repository",
-          "as_of": "2026-06-28",
-          "method": "openai ^4.24.1 dependency; README requires OpenAI API key"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "inference_provider": {
@@ -832,46 +131,24 @@
       },
       "product_surface": {
         "ai_models": {
-          "value": [
-            "OpenAI (model version unspecified)"
-          ],
-          "confidence": 0.7,
-          "unknown": false,
-          "source": "https://raw.githubusercontent.com/0xmetaschool/competitor-analyst/main/package.json",
-          "provenance": {
-            "source": "https://raw.githubusercontent.com/0xmetaschool/competitor-analyst/main/package.json",
-            "source_type": "repository",
-            "as_of": "2026-06-28",
-            "method": "openai SDK present; specific model not documented in README"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         },
         "api_availability": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
-          "source": "https://github.com/0xmetaschool/competitor-analyst",
-          "provenance": {
-            "source": "https://github.com/0xmetaschool/competitor-analyst",
-            "source_type": "repository",
-            "as_of": "2026-06-28",
-            "method": "No public/exposed API documented; it is a self-host app template"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         },
         "sdks": {
-          "value": [
-            "openai (npm)"
-          ],
-          "confidence": 0.85,
-          "unknown": false,
-          "source": "https://raw.githubusercontent.com/0xmetaschool/competitor-analyst/main/package.json",
-          "provenance": {
-            "source": "https://raw.githubusercontent.com/0xmetaschool/competitor-analyst/main/package.json",
-            "source_type": "repository",
-            "as_of": "2026-06-28",
-            "method": "openai SDK dependency"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         },
         "mobile_apps": {
@@ -889,18 +166,10 @@
           "notes": null
         },
         "integrations": {
-          "value": [
-            "OpenAI API"
-          ],
-          "confidence": 0.9,
-          "unknown": false,
-          "source": "https://github.com/0xmetaschool/competitor-analyst",
-          "provenance": {
-            "source": "https://github.com/0xmetaschool/competitor-analyst",
-            "source_type": "repository",
-            "as_of": "2026-06-28",
-            "method": "README requires OpenAI API key; no other integrations documented"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         }
       }
@@ -908,18 +177,10 @@
     {
       "entity_ref": "crayon",
       "frontend": {
-        "value": [
-          "JavaScript"
-        ],
-        "confidence": 0.35,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "generic web inference"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "backend": {
@@ -979,18 +240,10 @@
         "notes": null
       },
       "analytics": {
-        "value": [
-          "HubSpot"
-        ],
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "HubSpot CMS implies HubSpot analytics/CTAs present on pages"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "payments": {
@@ -1008,460 +261,25 @@
         "notes": null
       },
       "cms": {
-        "value": [
-          "HubSpot CMS"
-        ],
-        "confidence": 0.8,
-        "unknown": false,
-        "source": "https://www.crayon.co/robots.txt",
-        "provenance": {
-          "source": "https://www.crayon.co/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "robots.txt /_hcms/ and /hubfs/ paths plus hs_preview params indicate HubSpot CMS"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "llm_provider": {
-        "value": [],
-        "confidence": 0.5,
+        "value": [
+          "OpenAI / Anthropic (integrations + own MCP server)"
+        ],
+        "confidence": 0.7,
         "unknown": false,
         "source": "https://www.crayon.co/blog/crayon-launches-first-competitive-intelligence-mcp-server",
         "provenance": {
           "source": "https://www.crayon.co/blog/crayon-launches-first-competitive-intelligence-mcp-server",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "underlying LLM provider not disclosed; Crayon integrates outward with ChatGPT/Copilot/Gemini but does not state its own model vendor"
+          "method": null
         },
-        "notes": null
-      },
-      "inference_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "product_surface": {
-        "ai_models": {
-          "value": [
-            "Crayon AI",
-            "Crayon Answers (generative AI assistant)"
-          ],
-          "confidence": 0.85,
-          "unknown": false,
-          "source": "https://www.crayon.co/blog/crayon-launches-first-competitive-intelligence-mcp-server",
-          "provenance": {
-            "source": "https://www.crayon.co/blog/crayon-launches-first-competitive-intelligence-mcp-server",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "blog + product pages; underlying LLM provider not disclosed"
-          },
-          "notes": null
-        },
-        "api_availability": {
-          "value": true,
-          "confidence": 0.85,
-          "unknown": false,
-          "source": "https://www.crayon.co/blog/crayon-launches-first-competitive-intelligence-mcp-server",
-          "provenance": {
-            "source": "https://www.crayon.co/blog/crayon-launches-first-competitive-intelligence-mcp-server",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "Content API and Answers API documented in launch post"
-          },
-          "notes": null
-        },
-        "sdks": {
-          "value": null,
-          "confidence": 0,
-          "unknown": true,
-          "source": null,
-          "notes": null
-        },
-        "mobile_apps": {
-          "value": false,
-          "confidence": 0.4,
-          "unknown": false,
-          "source": "https://www.crayon.co",
-          "provenance": {
-            "source": "https://www.crayon.co",
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": "no mobile app mentioned; web/CRM-embedded product"
-          },
-          "notes": null
-        },
-        "browser_extension": {
-          "value": true,
-          "confidence": 0.5,
-          "unknown": false,
-          "source": "https://www.crayon.co",
-          "provenance": {
-            "source": "https://www.crayon.co",
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": "Crayon historically offers a web-clipper/browser extension for capturing intel; not re-verified on current site"
-          },
-          "notes": null
-        },
-        "integrations": {
-          "value": [
-            "Salesforce",
-            "HubSpot",
-            "Slack",
-            "Microsoft Teams",
-            "Gong",
-            "Chorus",
-            "Clari",
-            "Highspot",
-            "Seismic",
-            "Clozd",
-            "MCP Server (ChatGPT, Microsoft Copilot, Google Gemini, Glean)"
-          ],
-          "confidence": 0.85,
-          "unknown": false,
-          "source": "https://www.crayon.co/integrations",
-          "provenance": {
-            "source": "https://www.crayon.co/integrations",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "integrations page + MCP launch blog"
-          },
-          "notes": null
-        }
-      }
-    },
-    {
-      "entity_ref": "klue",
-      "frontend": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "backend": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "framework": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "database": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "hosting": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cloud_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cdn": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "deployment": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "authentication": {
-        "value": [
-          "Okta",
-          "Google SSO"
-        ],
-        "confidence": 0.8,
-        "unknown": false,
-        "source": "https://klue.com/product/integrations",
-        "provenance": {
-          "source": "https://klue.com/product/integrations",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "SSO integrations listed on integrations page"
-        },
-        "notes": null
-      },
-      "analytics": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "payments": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "monitoring": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cms": {
-        "value": [
-          "WordPress"
-        ],
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://klue.com/sitemap.xml",
-        "provenance": {
-          "source": "https://klue.com/sitemap.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "wp-sitemap-*.xml structure confirms WordPress for marketing site"
-        },
-        "notes": null
-      },
-      "llm_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "inference_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "product_surface": {
-        "ai_models": {
-          "value": [
-            "Compete Agent (proprietary AI / NLP, underlying LLM not disclosed)"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
-          "source": "https://klue.com/llm-info",
-          "provenance": {
-            "source": "https://klue.com/llm-info",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "AI features named; no proprietary model name disclosed"
-          },
-          "notes": null
-        },
-        "api_availability": {
-          "value": true,
-          "confidence": 0.45,
-          "unknown": false,
-          "source": "https://klue.com/product/integrations",
-          "provenance": {
-            "source": "https://klue.com/product/integrations",
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": "extensive integrations imply API; not explicitly confirmed"
-          },
-          "notes": null
-        },
-        "sdks": {
-          "value": null,
-          "confidence": 0,
-          "unknown": true,
-          "source": null,
-          "notes": null
-        },
-        "mobile_apps": {
-          "value": true,
-          "confidence": 0.85,
-          "unknown": false,
-          "source": "https://klue.com/product/integrations",
-          "provenance": {
-            "source": "https://klue.com/product/integrations",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "iOS and Android apps listed"
-          },
-          "notes": null
-        },
-        "browser_extension": {
-          "value": true,
-          "confidence": 0.85,
-          "unknown": false,
-          "source": "https://klue.com/product/integrations",
-          "provenance": {
-            "source": "https://klue.com/product/integrations",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "Chrome and Edge extensions listed"
-          },
-          "notes": null
-        },
-        "integrations": {
-          "value": [
-            "Salesforce",
-            "HubSpot",
-            "Microsoft Dynamics",
-            "Slack",
-            "Microsoft Teams",
-            "Gong",
-            "Chorus",
-            "Highspot",
-            "Seismic",
-            "Showpad",
-            "SharePoint",
-            "Guru",
-            "Okta",
-            "Google SSO"
-          ],
-          "confidence": 0.9,
-          "unknown": false,
-          "source": "https://klue.com/product/integrations",
-          "provenance": {
-            "source": "https://klue.com/product/integrations",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "integrations page enumeration"
-          },
-          "notes": null
-        }
-      }
-    },
-    {
-      "entity_ref": "unkover",
-      "frontend": {
-        "value": [
-          "WordPress (Rank Math SEO)"
-        ],
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://unkover.com/sitemap_index.xml",
-        "provenance": {
-          "source": "https://unkover.com/sitemap_index.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Sitemap generated by Rank Math SEO plugin (WordPress)"
-        },
-        "notes": null
-      },
-      "backend": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "framework": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "database": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "hosting": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cloud_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cdn": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "deployment": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "authentication": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "analytics": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "payments": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "monitoring": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cms": {
-        "value": [
-          "WordPress"
-        ],
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://unkover.com/robots.txt",
-        "provenance": {
-          "source": "https://unkover.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "robots.txt references /wp-admin/ and admin-ajax.php"
-        },
-        "notes": null
-      },
-      "llm_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
         "notes": null
       },
       "inference_provider": {
@@ -1480,16 +298,10 @@
           "notes": null
         },
         "api_availability": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "sdks": {
@@ -1500,45 +312,24 @@
           "notes": null
         },
         "mobile_apps": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "browser_extension": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "integrations": {
-          "value": [
-            "Slack",
-            "Email"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         }
       }
@@ -1546,10 +337,19 @@
     {
       "entity_ref": "kompyte",
       "frontend": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
+        "value": [
+          "HTML5",
+          "JavaScript"
+        ],
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/kompyte/technology",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/kompyte/technology",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
         "notes": null
       },
       "backend": {
@@ -1574,18 +374,10 @@
         "notes": null
       },
       "hosting": {
-        "value": [
-          "HubSpot CMS"
-        ],
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.kompyte.com/robots.txt",
-        "provenance": {
-          "source": "https://www.kompyte.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "robots.txt shows /_hcms/ and /hs/ HubSpot paths"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "cloud_provider": {
@@ -1617,10 +409,18 @@
         "notes": null
       },
       "analytics": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
+        "value": [
+          "Google Tag Manager"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/kompyte/technology",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/kompyte/technology",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
         "notes": null
       },
       "payments": {
@@ -1638,32 +438,24 @@
         "notes": null
       },
       "cms": {
-        "value": [
-          "HubSpot CMS"
-        ],
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.kompyte.com/robots.txt",
-        "provenance": {
-          "source": "https://www.kompyte.com/robots.txt",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "HubSpot-specific disallow paths in robots.txt"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "llm_provider": {
         "value": [
-          "GPT-based (Kompyte GPT product feature)"
+          "OpenAI"
         ],
-        "confidence": 0.4,
+        "confidence": 0.7,
         "unknown": false,
-        "source": "https://www.kompyte.com",
+        "source": "https://www.kompyte.com/blog/competitive-intelligence-kompyte-gpt",
         "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "inference",
+          "source": "https://www.kompyte.com/blog/competitive-intelligence-kompyte-gpt",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "homepage promotes 'Kompyte GPT' and AI Daily Summaries"
+          "method": null
         },
         "notes": null
       },
@@ -1676,19 +468,10 @@
       },
       "product_surface": {
         "ai_models": {
-          "value": [
-            "Kompyte GPT",
-            "AI Daily Summaries"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "api_availability": {
@@ -1706,51 +489,24 @@
           "notes": null
         },
         "mobile_apps": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "browser_extension": {
-          "value": true,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "integrations": {
-          "value": [
-            "HubSpot",
-            "Salesforce",
-            "Slack",
-            "Microsoft Teams",
-            "Google Drive",
-            "OneDrive",
-            "Highspot",
-            "Showpad"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         }
       }
@@ -1758,33 +514,17 @@
     {
       "entity_ref": "contify",
       "frontend": {
-        "value": [
-          "React (likely)"
-        ],
-        "confidence": 0.35,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "Inferred for app SPA; not directly verified"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "backend": {
-        "value": [
-          "Python (likely)"
-        ],
-        "confidence": 0.35,
-        "unknown": false,
-        "source": "https://www.levels.fyi/companies/contify/salaries",
-        "provenance": {
-          "source": "https://www.levels.fyi/companies/contify/salaries",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "Inferred from data/ML-heavy product and engineering roles; not directly verified"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "framework": {
@@ -1809,33 +549,673 @@
         "notes": null
       },
       "cloud_provider": {
-        "value": [
-          "AWS (likely)"
-        ],
-        "confidence": 0.35,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "Common for India SaaS; not directly verified"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
         "value": [
-          "Cloudflare"
+          "Athena agentic AI (proprietary, NLP/ML)"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.dataversity.net/contify-relies-nlp-ai-machine-learning-new-competitive-intelligence-platform/",
+        "provenance": {
+          "source": "https://www.dataversity.net/contify-relies-nlp-ai-machine-learning-new-competitive-intelligence-platform/",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "caelian",
+      "frontend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "backend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": [
+          "Claude (Anthropic) via MCP"
         ],
         "confidence": 0.6,
         "unknown": false,
-        "source": "https://www.contify.com",
+        "source": "https://caelian.ai/about",
         "provenance": {
-          "source": "https://www.contify.com",
+          "source": "https://caelian.ai/about",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "inferred from MCP integration"
+        },
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "comintelli",
+      "frontend": {
+        "value": [
+          "Java backend"
+        ],
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://comintelli.com/wp-content/uploads/2021/11/Comintelli-White-Paper-Technical-Architecture-of-Intelligence2day-S-0133-K-1.pdf",
+        "provenance": {
+          "source": "https://comintelli.com/wp-content/uploads/2021/11/Comintelli-White-Paper-Technical-Architecture-of-Intelligence2day-S-0133-K-1.pdf",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "backend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": [
+          "Proprietary LLM (Telli AI assistant)"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://news.cision.com/comintelli/r/comintelli-launches-telli",
+        "provenance": {
+          "source": "https://news.cision.com/comintelli/r/comintelli-launches-telli",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "industrylens",
+      "frontend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "backend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": [
+          "OpenAI / Google / Anthropic / Perplexity (multi)"
+        ],
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://industry-lens.com/",
+        "provenance": {
+          "source": "https://industry-lens.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "rivalsense",
+      "frontend": {
+        "value": [
+          "React / Next.js / MUI"
+        ],
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://prospeo.io/c/rivalsense-uncover-strategic-signals",
+        "provenance": {
+          "source": "https://prospeo.io/c/rivalsense-uncover-strategic-signals",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "BuiltWith/search indicate Cloudflare CDN"
+          "method": null
         },
+        "notes": null
+      },
+      "backend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "deployment": {
@@ -1854,16 +1234,16 @@
       },
       "analytics": {
         "value": [
-          "HubSpot Analytics"
+          "Google Analytics / GTM"
         ],
-        "confidence": 0.55,
+        "confidence": 0.65,
         "unknown": false,
-        "source": "https://www.contify.com",
+        "source": "https://prospeo.io/c/rivalsense-uncover-strategic-signals",
         "provenance": {
-          "source": "https://www.contify.com",
+          "source": "https://prospeo.io/c/rivalsense-uncover-strategic-signals",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "Search/BuiltWith indicate HubSpot used for analytics & marketing"
+          "method": null
         },
         "notes": null
       },
@@ -1882,33 +1262,17 @@
         "notes": null
       },
       "cms": {
-        "value": [
-          "WordPress"
-        ],
-        "confidence": 0.8,
-        "unknown": false,
-        "source": "https://www.contify.com/sitemap_index.xml",
-        "provenance": {
-          "source": "https://www.contify.com/sitemap_index.xml",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Sitemap is Yoast SEO generated (WordPress); robots.txt blocks /wp-admin"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "llm_provider": {
-        "value": [
-          "Generative AI / agentic AI (Athena AI engine)"
-        ],
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Homepage names 'Athena AI' agentic insights engine; underlying LLM vendor not disclosed"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "inference_provider": {
@@ -1920,28 +1284,171 @@
       },
       "product_surface": {
         "ai_models": {
-          "value": [
-            "Athena AI (agentic insights engine)",
-            "Contify Copilot"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "api_availability": {
-          "value": true,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "seeto",
+      "frontend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "backend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": false,
+          "confidence": 0.4,
+          "unknown": false,
+          "source": "https://seeto.ai/",
           "provenance": {
-            "source": null,
+            "source": "https://seeto.ai/",
             "source_type": "inference",
             "as_of": "2026-06-28",
             "method": null
@@ -1956,46 +1463,24 @@
           "notes": null
         },
         "mobile_apps": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "browser_extension": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "integrations": {
-          "value": [
-            "Business News API",
-            "API v4",
-            "1M+ vetted sources (news, company websites, SEC filings, social)"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         }
       }
@@ -2031,19 +1516,10 @@
         "notes": null
       },
       "hosting": {
-        "value": [
-          "Seravo (managed WordPress)",
-          "nginx"
-        ],
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "HTTP response headers: server: nginx, x-powered-by: Seravo"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "cloud_provider": {
@@ -2076,241 +1552,18 @@
       },
       "analytics": {
         "value": [
-          "Google Tag Manager",
-          "Google Analytics (gtag)"
+          "MySQL",
+          "Cloudflare"
         ],
-        "confidence": 0.85,
+        "confidence": 0.5,
         "unknown": false,
-        "source": "https://valonaintelligence.com",
+        "source": "https://www.getapp.com/all-software/a/valona-intelligence/",
         "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "official_website",
+          "source": "https://www.getapp.com/all-software/a/valona-intelligence/",
+          "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "homepage HTML includes googletagmanager and gtag scripts"
+          "method": null
         },
-        "notes": null
-      },
-      "payments": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "monitoring": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cms": {
-        "value": [
-          "WordPress"
-        ],
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage HTML shows wp-content, wp-json, WordPress generator markers"
-        },
-        "notes": null
-      },
-      "llm_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "inference_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "product_surface": {
-        "ai_models": {
-          "value": [
-            "Agentic AI / generative AI (proprietary, model providers undisclosed)"
-          ],
-          "confidence": 0.45,
-          "unknown": false,
-          "source": "https://valonaintelligence.com",
-          "provenance": {
-            "source": "https://valonaintelligence.com",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "homepage markets agentic AI; specific LLM providers not disclosed"
-          },
-          "notes": null
-        },
-        "api_availability": {
-          "value": true,
-          "confidence": 0.4,
-          "unknown": false,
-          "source": "https://valonaintelligence.com",
-          "provenance": {
-            "source": "https://valonaintelligence.com",
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": "enterprise platform with integrations implies API; not explicitly documented"
-          },
-          "notes": null
-        },
-        "sdks": {
-          "value": null,
-          "confidence": 0,
-          "unknown": true,
-          "source": null,
-          "notes": null
-        },
-        "mobile_apps": {
-          "value": false,
-          "confidence": 0.35,
-          "unknown": false,
-          "source": "https://valonaintelligence.com",
-          "provenance": {
-            "source": "https://valonaintelligence.com",
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": "no app store / mobile app references found"
-          },
-          "notes": null
-        },
-        "browser_extension": {
-          "value": false,
-          "confidence": 0.35,
-          "unknown": false,
-          "source": "https://valonaintelligence.com",
-          "provenance": {
-            "source": "https://valonaintelligence.com",
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": "no browser extension references found"
-          },
-          "notes": null
-        },
-        "integrations": {
-          "value": null,
-          "confidence": 0,
-          "unknown": true,
-          "source": null,
-          "notes": null
-        }
-      }
-    },
-    {
-      "entity_ref": "semrush",
-      "frontend": {
-        "value": [
-          "JavaScript",
-          "React"
-        ],
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://stackshare.io/semrush/semrush",
-        "provenance": {
-          "source": "https://stackshare.io/semrush/semrush",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "inferred from StackShare/job hints"
-        },
-        "notes": null
-      },
-      "backend": {
-        "value": [
-          "Python",
-          "Node.js",
-          "PHP"
-        ],
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://stackshare.io/semrush/semrush",
-        "provenance": {
-          "source": "https://stackshare.io/semrush/semrush",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "inferred from StackShare profile"
-        },
-        "notes": null
-      },
-      "framework": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "database": {
-        "value": [
-          "PostgreSQL",
-          "ClickHouse"
-        ],
-        "confidence": 0.35,
-        "unknown": false,
-        "source": "https://stackshare.io/semrush/semrush",
-        "provenance": {
-          "source": "https://stackshare.io/semrush/semrush",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "inferred; large-scale analytics workloads"
-        },
-        "notes": null
-      },
-      "hosting": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cloud_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cdn": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "deployment": {
-        "value": [
-          "Docker",
-          "Kubernetes"
-        ],
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://stackshare.io/semrush/semrush",
-        "provenance": {
-          "source": "https://stackshare.io/semrush/semrush",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "inferred from StackShare"
-        },
-        "notes": null
-      },
-      "authentication": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "analytics": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
         "notes": null
       },
       "payments": {
@@ -2335,215 +1588,163 @@
         "notes": null
       },
       "llm_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "inference_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "product_surface": {
-        "ai_models": {
-          "value": [
-            "AI visibility / AEO features",
-            "Copilot AI assistant"
-          ],
-          "confidence": 0.7,
-          "unknown": false,
-          "source": "https://www.semrush.com",
-          "provenance": {
-            "source": "https://www.semrush.com",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "homepage AI visibility positioning"
-          },
-          "notes": null
-        },
-        "api_availability": {
-          "value": true,
-          "confidence": 0.9,
-          "unknown": false,
-          "source": "https://developer.semrush.com/api/",
-          "provenance": {
-            "source": "https://developer.semrush.com/api/",
-            "source_type": "official_docs",
-            "as_of": "2026-06-28",
-            "method": "developer API docs exist"
-          },
-          "notes": null
-        },
-        "sdks": {
-          "value": null,
-          "confidence": 0,
-          "unknown": true,
-          "source": null,
-          "notes": null
-        },
-        "mobile_apps": {
-          "value": true,
-          "confidence": 0.5,
-          "unknown": false,
-          "source": "https://www.semrush.com",
-          "provenance": {
-            "source": "https://www.semrush.com",
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": "inferred; Semrush offers mobile apps for some toolkits"
-          },
-          "notes": null
-        },
-        "browser_extension": {
-          "value": true,
-          "confidence": 0.8,
-          "unknown": false,
-          "source": "https://www.semrush.com",
-          "provenance": {
-            "source": "https://www.semrush.com",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "SEO toolbar / SEOquake browser extension"
-          },
-          "notes": null
-        },
-        "integrations": {
-          "value": [
-            "Google Analytics",
-            "Google Search Console",
-            "Looker Studio",
-            "Google Business Profile",
-            "Facebook",
-            "Instagram",
-            "LinkedIn",
-            "X/Twitter",
-            "YouTube",
-            "Pinterest"
-          ],
-          "confidence": 0.75,
-          "unknown": false,
-          "source": "https://www.semrush.com/social-media/",
-          "provenance": {
-            "source": "https://www.semrush.com/social-media/",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "social toolkit + analytics integrations"
-          },
-          "notes": null
-        }
-      }
-    },
-    {
-      "entity_ref": "similarweb",
-      "frontend": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "backend": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "framework": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "database": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "hosting": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cloud_provider": {
         "value": [
-          "AWS"
-        ],
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://www.similarweb.com",
-        "provenance": {
-          "source": "https://www.similarweb.com",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "inferred typical for large data SaaS; not first-party verified"
-        },
-        "notes": null
-      },
-      "cdn": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "deployment": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "authentication": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "analytics": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "payments": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "monitoring": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cms": {
-        "value": [
-          "WordPress (Yoast SEO)"
+          "Proprietary (30+ AI models)"
         ],
         "confidence": 0.6,
         "unknown": false,
-        "source": "https://www.similarweb.com/corp/sitemap_index.xml",
+        "source": "https://valonaintelligence.com/",
         "provenance": {
-          "source": "https://www.similarweb.com/corp/sitemap_index.xml",
+          "source": "https://valonaintelligence.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "sitemap generated by Yoast SEO indicates WordPress for corp/blog"
+          "method": null
         },
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "competely",
+      "frontend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "backend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "llm_provider": {
@@ -2562,29 +1763,19 @@
       },
       "product_surface": {
         "ai_models": {
-          "value": [
-            "Similarweb AI Agents (Demand Analysis AI Agent, SEO Strategy AI Agent)",
-            "AI Studio",
-            "AI Search Intelligence"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "api_availability": {
-          "value": true,
-          "confidence": 0.6,
+          "value": false,
+          "confidence": 0.4,
           "unknown": false,
-          "source": null,
+          "source": "https://competely.ai/",
           "provenance": {
-            "source": null,
+            "source": "https://competely.ai/",
             "source_type": "inference",
             "as_of": "2026-06-28",
             "method": null
@@ -2592,99 +1783,398 @@
           "notes": null
         },
         "sdks": {
-          "value": [
-            "REST API (75+ endpoints)",
-            "MCP Server"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "mobile_apps": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "browser_extension": {
-          "value": true,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "integrations": {
-          "value": [
-            "Claude",
-            "Cursor",
-            "Base44",
-            "n8n",
-            "Data-as-a-Service feeds",
-            "MCP"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         }
       }
     },
     {
-      "entity_ref": "owler",
+      "entity_ref": "alphasense",
       "frontend": {
         "value": [
-          "jQuery",
-          "HTML5"
+          "React",
+          "TypeScript"
         ],
-        "confidence": 0.4,
+        "confidence": 0.6,
         "unknown": false,
-        "source": "https://stackshare.io/owler/owler",
+        "source": "https://stackshare.io/alphasense/alphasense",
         "provenance": {
-          "source": "https://stackshare.io/owler/owler",
+          "source": "https://stackshare.io/alphasense/alphasense",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "inference from BuiltWith/StackShare"
+          "method": null
+        },
+        "notes": null
+      },
+      "backend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": [
+          "Anthropic",
+          "Google",
+          "OpenAI",
+          "Proprietary models"
+        ],
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "northern-light-singlepoint",
+      "frontend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "backend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": [
+          "Kubernetes (cloud)"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.prnewswire.com/news-releases/northern-light-offers-cloud-deployment-options-for-singlepoint-enterprise-knowledge-management-portals-using-kubernetes-301944594.html",
+        "provenance": {
+          "source": "https://www.prnewswire.com/news-releases/northern-light-offers-cloud-deployment-options-for-singlepoint-enterprise-knowledge-management-portals-using-kubernetes-301944594.html",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "company-researcher-exa-labs",
+      "frontend": {
+        "value": [
+          "Next.js",
+          "TailwindCSS",
+          "TypeScript"
+        ],
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": null
         },
         "notes": null
       },
       "backend": {
         "value": [
-          "Java"
+          "Vercel AI SDK"
         ],
-        "confidence": 0.4,
+        "confidence": 0.85,
         "unknown": false,
-        "source": "https://stackshare.io/owler/owler",
+        "source": "https://github.com/exa-labs/company-researcher",
         "provenance": {
-          "source": "https://stackshare.io/owler/owler",
-          "source_type": "third_party_db",
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "repository",
           "as_of": "2026-06-28",
-          "method": "inference from tech-profiling tools"
+          "method": null
         },
         "notes": null
       },
@@ -2704,17 +2194,186 @@
       },
       "hosting": {
         "value": [
-          "NGINX"
+          "Vercel"
         ],
-        "confidence": 0.4,
+        "confidence": 0.8,
         "unknown": false,
-        "source": "https://stackshare.io/owler/owler",
+        "source": "https://github.com/exa-labs/company-researcher",
         "provenance": {
-          "source": "https://stackshare.io/owler/owler",
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": [
+          "Anthropic",
+          "Exa API"
+        ],
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "feedly-market-intelligence",
+      "frontend": {
+        "value": [
+          "React"
+        ],
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://stackshare.io/feedly/feedly",
+        "provenance": {
+          "source": "https://stackshare.io/feedly/feedly",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "inference"
+          "method": null
         },
+        "notes": null
+      },
+      "backend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "cloud_provider": {
@@ -2749,51 +2408,51 @@
         "value": [
           "Google Analytics"
         ],
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://stackshare.io/owler/owler",
-        "provenance": {
-          "source": "https://stackshare.io/owler/owler",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "inference from BuiltWith"
-        },
-        "notes": null
-      },
-      "payments": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "monitoring": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cms": {
-        "value": [
-          "Squarespace"
-        ],
         "confidence": 0.6,
         "unknown": false,
-        "source": "https://corp.owler.com/robots.txt",
+        "source": "https://stackshare.io/feedly/feedly",
         "provenance": {
-          "source": "https://corp.owler.com/robots.txt",
-          "source_type": "official_website",
+          "source": "https://stackshare.io/feedly/feedly",
+          "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "corp.owler.com robots.txt is Squarespace-generated"
+          "method": null
         },
         "notes": null
       },
-      "llm_provider": {
+      "payments": {
         "value": null,
         "confidence": 0,
         "unknown": true,
         "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": [
+          "Anthropic"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://feedly.com/new-features/posts/feedly-mcp-server-automate-cti-workflows-with-claude-and-the-feedly-threat-graph",
+        "provenance": {
+          "source": "https://feedly.com/new-features/posts/feedly-mcp-server-automate-cti-workflows-with-claude-and-the-feedly-threat-graph",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
         "notes": null
       },
       "inference_provider": {
@@ -2805,31 +2464,17 @@
       },
       "product_surface": {
         "ai_models": {
-          "value": [
-            "ChatGPT plugin"
-          ],
-          "confidence": 0.7,
-          "unknown": false,
-          "source": "https://corp.owler.com/integrations",
-          "provenance": {
-            "source": "https://corp.owler.com/integrations",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "ChatGPT plugin for company research"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         },
         "api_availability": {
-          "value": true,
-          "confidence": 0.85,
-          "unknown": false,
-          "source": "https://developers.owler.com/",
-          "provenance": {
-            "source": "https://developers.owler.com/",
-            "source_type": "official_docs",
-            "as_of": "2026-06-28",
-            "method": "Owler Enterprise API + developer portal"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         },
         "sdks": {
@@ -2847,72 +2492,35 @@
           "notes": null
         },
         "browser_extension": {
-          "value": true,
-          "confidence": 0.9,
-          "unknown": false,
-          "source": "https://chromewebstore.google.com/detail/owler/finkajjgokfefcnpbpimedfidoopbdil",
-          "provenance": {
-            "source": "https://chromewebstore.google.com/detail/owler/finkajjgokfefcnpbpimedfidoopbdil",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "Owler Chrome extension on Web Store"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         },
         "integrations": {
-          "value": [
-            "Salesforce",
-            "HubSpot",
-            "Slack",
-            "Microsoft Teams",
-            "ChatGPT",
-            "Google Chrome Extension"
-          ],
-          "confidence": 0.9,
-          "unknown": false,
-          "source": "https://corp.owler.com/integrations",
-          "provenance": {
-            "source": "https://corp.owler.com/integrations",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "official integrations page"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         }
       }
     },
     {
-      "entity_ref": "crunchbase",
+      "entity_ref": "chapsvision",
       "frontend": {
-        "value": [
-          "JavaScript",
-          "jQuery"
-        ],
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://stackshare.io/crunchbase/crunchbase",
-        "provenance": {
-          "source": "https://stackshare.io/crunchbase/crunchbase",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "StackShare profile lists JavaScript, jQuery"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "backend": {
-        "value": [
-          "Python",
-          "Java"
-        ],
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://stackshare.io/crunchbase/crunchbase",
-        "provenance": {
-          "source": "https://stackshare.io/crunchbase/crunchbase",
-          "source_type": "inference",
-          "as_of": "2026-06-28",
-          "method": "StackShare profile lists Python, Java"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "framework": {
@@ -2930,10 +2538,18 @@
         "notes": null
       },
       "hosting": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
+        "value": [
+          "Scaleway (sovereign EU cloud)"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/blog/chapsvision-chooses-scaleway-as-its-sovereign-cloud-partner/",
+        "provenance": {
+          "source": "https://www.chapsvision.com/blog/chapsvision-chooses-scaleway-as-its-sovereign-cloud-partner/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
         "notes": null
       },
       "cloud_provider": {
@@ -2993,207 +2609,18 @@
         "notes": null
       },
       "llm_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "inference_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "product_surface": {
-        "ai_models": {
-          "value": [
-            "Predictive company intelligence",
-            "AI-powered insights"
-          ],
-          "confidence": 0.7,
-          "unknown": false,
-          "source": "https://www.crunchbase.com",
-          "provenance": {
-            "source": "https://www.crunchbase.com",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "homepage positions predictive AI; not a named LLM"
-          },
-          "notes": null
-        },
-        "api_availability": {
-          "value": true,
-          "confidence": 0.9,
-          "unknown": false,
-          "source": "https://data.crunchbase.com/docs/using-the-api",
-          "provenance": {
-            "source": "https://data.crunchbase.com/docs/using-the-api",
-            "source_type": "official_docs",
-            "as_of": "2026-06-28",
-            "method": "read-only RESTful API at api.crunchbase.com/v4/data/"
-          },
-          "notes": null
-        },
-        "sdks": {
-          "value": null,
-          "confidence": 0,
-          "unknown": true,
-          "source": null,
-          "notes": null
-        },
-        "mobile_apps": {
-          "value": true,
-          "confidence": 0.5,
-          "unknown": false,
-          "source": "https://www.crunchbase.com",
-          "provenance": {
-            "source": "https://www.crunchbase.com",
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": "Crunchbase offers iOS/Android apps historically"
-          },
-          "notes": null
-        },
-        "browser_extension": {
-          "value": null,
-          "confidence": 0,
-          "unknown": true,
-          "source": null,
-          "notes": null
-        },
-        "integrations": {
-          "value": [
-            "Salesforce"
-          ],
-          "confidence": 0.85,
-          "unknown": false,
-          "source": "https://success.salesforce.com/answers?id=9063A000000DYq2QAG",
-          "provenance": {
-            "source": "https://success.salesforce.com/answers?id=9063A000000DYq2QAG",
-            "source_type": "third_party_db",
-            "as_of": "2026-06-28",
-            "method": "direct Salesforce integration for Business/Enterprise"
-          },
-          "notes": null
-        }
-      }
-    },
-    {
-      "entity_ref": "visualping",
-      "frontend": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "backend": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "framework": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "database": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "hosting": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cloud_provider": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cdn": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "deployment": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "authentication": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "analytics": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "payments": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "monitoring": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "cms": {
         "value": [
-          "Custom CMS (cms.visualping.io)"
+          "Llama 3.3",
+          "Custom models"
         ],
-        "confidence": 0.5,
+        "confidence": 0.8,
         "unknown": false,
-        "source": "https://visualping.io/robots.txt",
+        "source": "https://www.chapsvision.com/blog/chapsvision-chooses-scaleway-as-its-sovereign-cloud-partner/",
         "provenance": {
-          "source": "https://visualping.io/robots.txt",
+          "source": "https://www.chapsvision.com/blog/chapsvision-chooses-scaleway-as-its-sovereign-cloud-partner/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Separate sitemap at cms.visualping.io implies headless/custom CMS"
-        },
-        "notes": null
-      },
-      "llm_provider": {
-        "value": [
-          "OpenAI (ChatGPT integration)",
-          "Anthropic (Claude integration, coming soon)"
-        ],
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://visualping.io/integrations",
-        "provenance": {
-          "source": "https://visualping.io/integrations",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Integrations page lists ChatGPT (available) and Claude (coming soon); underlying detection LLM provider not named"
+          "method": null
         },
         "notes": null
       },
@@ -3206,34 +2633,17 @@
       },
       "product_surface": {
         "ai_models": {
-          "value": [
-            "AI-powered change detection",
-            "AI image analysis / OCR",
-            "Natural-language change criteria",
-            "Structured data extraction"
-          ],
-          "confidence": 0.85,
-          "unknown": false,
-          "source": "https://visualping.io/ai",
-          "provenance": {
-            "source": "https://visualping.io/ai",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "Visualping AI page features"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         },
         "api_availability": {
-          "value": true,
-          "confidence": 0.9,
-          "unknown": false,
-          "source": "https://api.visualping.io/",
-          "provenance": {
-            "source": "https://api.visualping.io/",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "Public API at api.visualping.io; listed in integrations"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         },
         "sdks": {
@@ -3244,89 +2654,58 @@
           "notes": null
         },
         "mobile_apps": {
-          "value": false,
-          "confidence": 0.5,
-          "unknown": false,
-          "source": "https://visualping.io/integrations",
-          "provenance": {
-            "source": "https://visualping.io/integrations",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "No mobile apps mentioned; product is web + Chrome extension"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         },
         "browser_extension": {
-          "value": true,
-          "confidence": 0.95,
-          "unknown": false,
-          "source": "https://chromewebstore.google.com/detail/visualping/pemhgklkefakciniebenbfclihhmmfcd",
-          "provenance": {
-            "source": "https://chromewebstore.google.com/detail/visualping/pemhgklkefakciniebenbfclihhmmfcd",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "Chrome extension in Chrome Web Store"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         },
         "integrations": {
-          "value": [
-            "Slack",
-            "Microsoft Teams",
-            "Google Sheets",
-            "Zapier",
-            "n8n",
-            "Webhooks",
-            "Discord",
-            "Google Chat",
-            "ChatGPT",
-            "Claude (coming soon)",
-            "API"
-          ],
-          "confidence": 0.9,
-          "unknown": false,
-          "source": "https://visualping.io/integrations",
-          "provenance": {
-            "source": "https://visualping.io/integrations",
-            "source_type": "official_website",
-            "as_of": "2026-06-28",
-            "method": "Integrations page enumeration"
-          },
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
           "notes": null
         }
       }
     },
     {
-      "entity_ref": "alphasense",
+      "entity_ref": "comperator",
       "frontend": {
         "value": [
-          "React",
-          "JavaScript"
+          "Streamlit"
         ],
-        "confidence": 0.45,
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.uplers.com/company/alphasense-4074",
+        "source": "https://github.com/Procycons/Comperator",
         "provenance": {
-          "source": "https://www.uplers.com/company/alphasense-4074",
-          "source_type": "third_party_db",
+          "source": "https://github.com/Procycons/Comperator",
+          "source_type": "repository",
           "as_of": "2026-06-28",
-          "method": "inferred from job-posting skill frequency"
+          "method": null
         },
         "notes": null
       },
       "backend": {
         "value": [
           "Python",
-          "Java"
+          "BeautifulSoup"
         ],
-        "confidence": 0.4,
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.uplers.com/company/alphasense-4074",
+        "source": "https://github.com/Procycons/Comperator",
         "provenance": {
-          "source": "https://www.uplers.com/company/alphasense-4074",
-          "source_type": "third_party_db",
+          "source": "https://github.com/Procycons/Comperator",
+          "source_type": "repository",
           "as_of": "2026-06-28",
-          "method": "inferred from job postings (Python listed; Java common for NLP/search stacks)"
+          "method": null
         },
         "notes": null
       },
@@ -3338,18 +2717,10 @@
         "notes": null
       },
       "database": {
-        "value": [
-          "SQL"
-        ],
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://www.uplers.com/company/alphasense-4074",
-        "provenance": {
-          "source": "https://www.uplers.com/company/alphasense-4074",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "SQL appears in job requirements; specific DB not disclosed"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "hosting": {
@@ -3360,18 +2731,10 @@
         "notes": null
       },
       "cloud_provider": {
-        "value": [
-          "AWS"
-        ],
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://www.uplers.com/company/alphasense-4074",
-        "provenance": {
-          "source": "https://www.uplers.com/company/alphasense-4074",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "AWS in job skills; Cloud Reliability/Support Engineer roles"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "cdn": {
@@ -3382,19 +2745,10 @@
         "notes": null
       },
       "deployment": {
-        "value": [
-          "Kubernetes",
-          "CI/CD"
-        ],
-        "confidence": 0.45,
-        "unknown": false,
-        "source": "https://www.uplers.com/company/alphasense-4074",
-        "provenance": {
-          "source": "https://www.uplers.com/company/alphasense-4074",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Kubernetes and CI/CD are top job skills"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "authentication": {
@@ -3405,18 +2759,10 @@
         "notes": null
       },
       "analytics": {
-        "value": [
-          "Salesforce"
-        ],
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://www.uplers.com/company/alphasense-4074",
-        "provenance": {
-          "source": "https://www.uplers.com/company/alphasense-4074",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Salesforce in job skills (CRM/GTM)"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "payments": {
@@ -3444,14 +2790,14 @@
         "value": [
           "OpenAI"
         ],
-        "confidence": 0.45,
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.uplers.com/company/alphasense-4074",
+        "source": "https://github.com/Procycons/Comperator",
         "provenance": {
-          "source": "https://www.uplers.com/company/alphasense-4074",
-          "source_type": "third_party_db",
+          "source": "https://github.com/Procycons/Comperator",
+          "source_type": "repository",
           "as_of": "2026-06-28",
-          "method": "OpenAI appears in job requirements; proprietary models also in-house"
+          "method": null
         },
         "notes": null
       },
@@ -3464,98 +2810,51 @@
       },
       "product_surface": {
         "ai_models": {
-          "value": [
-            "Smart Summaries (generative AI)",
-            "Generative Search",
-            "Deep Research",
-            "multi-agent reasoning"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "api_availability": {
-          "value": true,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "sdks": {
-          "value": [],
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "mobile_apps": {
-          "value": true,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "browser_extension": {
-          "value": false,
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         },
         "integrations": {
-          "value": [
-            "Box",
-            "SharePoint",
-            "OneNote",
-            "Evernote",
-            "Agent API / MCP tools"
-          ],
-          "confidence": 0.6,
-          "unknown": false,
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
           "source": null,
-          "provenance": {
-            "source": null,
-            "source_type": "inference",
-            "as_of": "2026-06-28",
-            "method": null
-          },
           "notes": null
         }
       }
     },
     {
-      "entity_ref": "nexusai",
+      "entity_ref": "semrush",
       "frontend": {
         "value": null,
         "confidence": 0,
@@ -3568,6 +2867,752 @@
         "confidence": 0,
         "unknown": true,
         "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": [
+          "Google Analytics 4",
+          "Google Search Console",
+          "Proprietary engine"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://improvado.io/blog/semrush-analytics",
+        "provenance": {
+          "source": "https://improvado.io/blog/semrush-analytics",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": [
+          "Semrush Copilot (AI)"
+        ],
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://www.semrush.com/",
+        "provenance": {
+          "source": "https://www.semrush.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "evalueserve-insightsfirst",
+      "frontend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "backend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": [
+          "Google Cloud"
+        ],
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
+        "provenance": {
+          "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": [
+          "Domain-specific proprietary models"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.evalueserve.com/blog/go-beyond-chatgpt-accelerate-business-growth-with-domain-specific-generative-ai/",
+        "provenance": {
+          "source": "https://www.evalueserve.com/blog/go-beyond-chatgpt-accelerate-business-growth-with-domain-specific-generative-ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "ahrefs",
+      "frontend": {
+        "value": [
+          "React",
+          "ReasonML",
+          "OCaml"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://ahrefs.com/tech",
+        "provenance": {
+          "source": "https://ahrefs.com/tech",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "backend": {
+        "value": [
+          "C++",
+          "Clickhouse fork"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://ahrefs.com/tech",
+        "provenance": {
+          "source": "https://ahrefs.com/tech",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": [
+          "Google Analytics"
+        ],
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://stackshare.io/ahrefs/ahrefs",
+        "provenance": {
+          "source": "https://stackshare.io/ahrefs/ahrefs",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": [
+          "Anthropic",
+          "OpenAI",
+          "Microsoft Copilot (via MCP)"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://ahrefs.com/blog/how-i-do-content-engineering-with-claude-code/",
+        "provenance": {
+          "source": "https://ahrefs.com/blog/how-i-do-content-engineering-with-claude-code/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "quid",
+      "frontend": {
+        "value": [
+          "React",
+          "JavaScript",
+          "D3.js"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://github.com/quid",
+        "provenance": {
+          "source": "https://github.com/quid",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "backend": {
+        "value": [
+          "Python",
+          "Java",
+          "Go"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://github.com/quid",
+        "provenance": {
+          "source": "https://github.com/quid",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": [
+          "Elasticsearch",
+          "Vector databases",
+          "Graph databases"
+        ],
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.quid.com/products/technology",
+        "provenance": {
+          "source": "https://www.quid.com/products/technology",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": [
+          "HubSpot"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.quid.com/",
+        "provenance": {
+          "source": "https://www.quid.com/",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "llm_provider": {
+        "value": [
+          "Anthropic",
+          "OpenAI",
+          "Mistral",
+          "Meta Llama"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.quid.com/products/technology",
+        "provenance": {
+          "source": "https://www.quid.com/products/technology",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "crunchbase",
+      "frontend": {
+        "value": [
+          "JavaScript",
+          "jQuery"
+        ],
+        "confidence": 0.55,
+        "unknown": false,
+        "source": "https://stackshare.io/crunchbase/crunchbase",
+        "provenance": {
+          "source": "https://stackshare.io/crunchbase/crunchbase",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "backend": {
+        "value": [
+          "Python",
+          "Java"
+        ],
+        "confidence": 0.55,
+        "unknown": false,
+        "source": "https://stackshare.io/crunchbase/crunchbase",
+        "provenance": {
+          "source": "https://stackshare.io/crunchbase/crunchbase",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
         "notes": null
       },
       "framework": {

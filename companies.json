@@ -1,122 +1,147 @@
 {
   "meta": {
-    "schema_version": "1.0.0",
+    "schema_version": "1.1.0",
     "dataset": "companies",
-    "generated_at": "2026-06-27T20:45:15Z",
+    "generated_at": "2026-06-28T11:33:34Z",
     "generator": "compete/collect_intelligence 0.1.0"
   },
   "companies": [
     {
-      "entity_ref": "competely",
+      "entity_ref": "klue",
       "company_name": {
-        "value": "Competely",
-        "confidence": 0.95,
+        "value": "Klue Labs",
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://competely.ai",
+        "source": "https://www.cbinsights.com/company/klue",
         "provenance": {
-          "source": "https://competely.ai",
-          "source_type": "official_website",
+          "source": "https://www.cbinsights.com/company/klue",
+          "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "Homepage title/branding"
+          "method": "registered name"
         },
         "notes": null
       },
       "website": {
-        "value": "https://competely.ai",
+        "value": "https://www.klue.com/",
         "confidence": 0.95,
         "unknown": false,
-        "source": "https://competely.ai",
+        "source": "https://www.klue.com/",
         "provenance": {
-          "source": "https://competely.ai",
+          "source": "https://www.klue.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Direct"
+          "method": null
         },
         "notes": null
       },
       "headquarters": {
-        "value": "Austin, TX, USA",
-        "confidence": 0.7,
+        "value": "Vancouver, British Columbia, Canada",
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://tracxn.com/d/companies/competely/__jJ4XPxKPtxNm_FlYQDxY1dHjQy2tBWUFQsPnGiirItI",
+        "source": "https://www.cbinsights.com/company/klue",
         "provenance": {
-          "source": "https://tracxn.com/d/companies/competely/__jJ4XPxKPtxNm_FlYQDxY1dHjQy2tBWUFQsPnGiirItI",
+          "source": "https://www.cbinsights.com/company/klue",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "Tracxn registered address 1606 Headway Cir, Austin TX; founder also reported in Austin"
+          "method": null
         },
         "notes": null
       },
       "founded_year": {
-        "value": 2023,
-        "confidence": 0.8,
+        "value": 2015,
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.producthunt.com/products/competely",
+        "source": "https://www.cbinsights.com/company/klue",
         "provenance": {
-          "source": "https://www.producthunt.com/products/competely",
-          "source_type": "press_release",
+          "source": "https://www.cbinsights.com/company/klue",
+          "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "Product Hunt initial launch Dec 5, 2023"
+          "method": null
         },
         "notes": null
       },
       "founders": {
         "value": [
-          "Lior Grossman"
+          "Jason Smith",
+          "Ryan Sorley",
+          "Sarathy Naicker"
         ],
         "confidence": 0.85,
         "unknown": false,
-        "source": "https://x.com/LiorGrossman",
+        "source": "https://tracxn.com/d/companies/klue",
         "provenance": {
-          "source": "https://x.com/LiorGrossman",
-          "source_type": "social_profile",
+          "source": "https://tracxn.com/d/companies/klue",
+          "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "X bio 'Building Competely.ai'; corroborated by liorgrossman.com posts on building Competely"
+          "method": null
         },
         "notes": null
       },
       "employee_estimate": {
-        "value": 2,
-        "confidence": 0.4,
+        "value": 201,
+        "confidence": 0.8,
         "unknown": false,
-        "source": "https://tracxn.com/d/companies/competely/__jJ4XPxKPtxNm_FlYQDxY1dHjQy2tBWUFQsPnGiirItI",
+        "source": "https://www.cbinsights.com/company/klue",
         "provenance": {
-          "source": "https://tracxn.com/d/companies/competely/__jJ4XPxKPtxNm_FlYQDxY1dHjQy2tBWUFQsPnGiirItI",
-          "source_type": "inference",
+          "source": "https://www.cbinsights.com/company/klue",
+          "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "Solo/indie founder operation (Lifehack Labs LLC)"
+          "method": null
         },
         "notes": null,
         "is_estimate": true,
-        "range_low": 1,
-        "range_high": 5,
+        "range_low": 150,
+        "range_high": 250,
         "unit": "people"
       },
       "funding_stage": {
-        "value": "bootstrapped",
-        "confidence": 0.65,
+        "value": "series_b",
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://tracxn.com/d/companies/competely/__jJ4XPxKPtxNm_FlYQDxY1dHjQy2tBWUFQsPnGiirItI",
+        "source": "https://techcrunch.com/2021/12/01/ai-powered-competitive-enablement-platform-klue-lands-62-million-led-by-tiger-global/",
         "provenance": {
-          "source": "https://tracxn.com/d/companies/competely/__jJ4XPxKPtxNm_FlYQDxY1dHjQy2tBWUFQsPnGiirItI",
-          "source_type": "third_party_db",
+          "source": "https://techcrunch.com/2021/12/01/ai-powered-competitive-enablement-platform-klue-lands-62-million-led-by-tiger-global/",
+          "source_type": "press_release",
           "as_of": "2026-06-28",
-          "method": "Tracxn lists company as unfunded; founder is indie hacker / YC alum building bootstrapped products"
+          "method": null
         },
         "notes": null
       },
       "total_funding": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
+        "value": 81000000,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/klue",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/klue",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 81000000,
+        "range_high": 81000000,
+        "unit": "USD"
       },
       "investors": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
+        "value": [
+          "Tiger Global Management",
+          "Salesforce Ventures",
+          "OMERS Ventures",
+          "Rhino Ventures",
+          "BDC Ventures",
+          "Craft Ventures"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://techcrunch.com/2021/12/01/ai-powered-competitive-enablement-platform-klue-lands-62-million-led-by-tiger-global/",
+        "provenance": {
+          "source": "https://techcrunch.com/2021/12/01/ai-powered-competitive-enablement-platform-klue-lands-62-million-led-by-tiger-global/",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": null
+        },
         "notes": null
       },
       "estimated_arr": {
@@ -130,49 +155,525 @@
         "value": "commercial",
         "confidence": 0.9,
         "unknown": false,
-        "source": "https://competely.ai/pricing",
+        "source": "https://www.klue.com/",
         "provenance": {
-          "source": "https://competely.ai/pricing",
-          "source_type": "pricing_page",
+          "source": "https://www.klue.com/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Paid subscription SaaS, no open-source component"
+          "method": null
         },
         "notes": null
       }
     },
     {
-      "entity_ref": "comperator",
+      "entity_ref": "crayon",
       "company_name": {
-        "value": "Procycons",
-        "confidence": 0.85,
+        "value": "Crayon",
+        "confidence": 0.95,
         "unknown": false,
-        "source": "https://github.com/Procycons/Comperator",
+        "source": "https://www.crayon.co/",
         "provenance": {
-          "source": "https://github.com/Procycons/Comperator",
-          "source_type": "repository",
+          "source": "https://www.crayon.co/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "GitHub org/owner of the repository"
+          "method": null
         },
         "notes": null
       },
       "website": {
-        "value": "https://github.com/Procycons/Comperator",
+        "value": "https://www.crayon.co",
         "confidence": 0.95,
         "unknown": false,
-        "source": "https://github.com/Procycons/Comperator",
+        "source": "https://www.crayon.co/",
         "provenance": {
-          "source": "https://github.com/Procycons/Comperator",
-          "source_type": "repository",
+          "source": "https://www.crayon.co/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Repository URL serves as project home"
+          "method": null
         },
         "notes": null
       },
       "headquarters": {
+        "value": "Boston, Massachusetts, USA",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.crayon.co/about",
+        "provenance": {
+          "source": "https://www.crayon.co/about",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2014,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/crayon-2",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/crayon-2",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "Jonah Lopin",
+          "John Osborne"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.crayon.co/about/jonah-lopin",
+        "provenance": {
+          "source": "https://www.crayon.co/about/jonah-lopin",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 73,
+        "confidence": 0.55,
+        "unknown": false,
+        "source": "https://www.linkedin.com/company/crayon-co",
+        "provenance": {
+          "source": "https://www.linkedin.com/company/crayon-co",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 51,
+        "range_high": 200,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "series_b",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/crayon-2",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/crayon-2",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "total_funding": {
+        "value": 39500000,
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/crayon-2",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/crayon-2",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 33000000,
+        "range_high": 39500000,
+        "unit": "USD"
+      },
+      "investors": {
+        "value": [
+          "Baird Capital",
+          "Baseline Ventures",
+          "Founder Collective",
+          "Common Angels"
+        ],
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.crayon.co/about",
+        "provenance": {
+          "source": "https://www.crayon.co/about",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": 7600000,
+        "confidence": 0.35,
+        "unknown": false,
+        "source": "https://getlatka.com/companies/crayon",
+        "provenance": {
+          "source": "https://getlatka.com/companies/crayon",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "2021 figure, likely higher now"
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 7600000,
+        "range_high": 30000000,
+        "unit": "USD"
+      },
+      "commercial_model": {
+        "value": "commercial",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.crayon.co/pricing-inquiry",
+        "provenance": {
+          "source": "https://www.crayon.co/pricing-inquiry",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "kompyte",
+      "company_name": {
+        "value": "Kompyte",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.kompyte.com/",
+        "provenance": {
+          "source": "https://www.kompyte.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://www.kompyte.com/",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.kompyte.com/",
+        "provenance": {
+          "source": "https://www.kompyte.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "San Francisco, California, USA",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.linkedin.com/company/kompyte",
+        "provenance": {
+          "source": "https://www.linkedin.com/company/kompyte",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2014,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/kompyte",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/kompyte",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "Sergio Ramirez Gallardo",
+          "Pere Codina",
+          "Albert Colmenero"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/kompyte",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/kompyte",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 23,
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://pitchbook.com/profiles/company/101662-75",
+        "provenance": {
+          "source": "https://pitchbook.com/profiles/company/101662-75",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 23,
+        "range_high": 28,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "acquired",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://investors.semrush.com/news/news-details/2022/Semrush-To-Acquire-Kompyte",
+        "provenance": {
+          "source": "https://investors.semrush.com/news/news-details/2022/Semrush-To-Acquire-Kompyte",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": "acquired by Semrush Feb 2022"
+        },
+        "notes": null
+      },
+      "total_funding": {
+        "value": 3590000,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/kompyte",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/kompyte",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": false,
+        "unit": "USD"
+      },
+      "investors": {
+        "value": [
+          "Swanlaab Venture Factory",
+          "Caixa Capital Risc",
+          "Adara Ventures"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/kompyte",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/kompyte",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "estimated_arr": {
         "value": null,
         "confidence": 0,
         "unknown": true,
         "source": null,
+        "notes": null
+      },
+      "commercial_model": {
+        "value": "commercial",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.kompyte.com/",
+        "provenance": {
+          "source": "https://www.kompyte.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "contify",
+      "company_name": {
+        "value": "Contify",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.contify.com/",
+        "provenance": {
+          "source": "https://www.contify.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://contify.com/",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.contify.com/",
+        "provenance": {
+          "source": "https://www.contify.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "Gurugram, Haryana, India",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.linkedin.com/company/contify",
+        "provenance": {
+          "source": "https://www.linkedin.com/company/contify",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2009,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/contify",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/contify",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "Mohit Bhakuni"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://in.linkedin.com/in/mbhakuni",
+        "provenance": {
+          "source": "https://in.linkedin.com/in/mbhakuni",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 371,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.linkedin.com/company/contify",
+        "provenance": {
+          "source": "https://www.linkedin.com/company/contify",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 350,
+        "range_high": 380,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "bootstrapped",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/contify",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/contify",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "total_funding": {
+        "value": 0,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/contify",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/contify",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "investors": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": 8200000,
+        "confidence": 0.55,
+        "unknown": false,
+        "source": "https://getlatka.com/companies/contify",
+        "provenance": {
+          "source": "https://getlatka.com/companies/contify",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 8000000,
+        "range_high": 9000000,
+        "unit": "USD"
+      },
+      "commercial_model": {
+        "value": "commercial",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.contify.com/",
+        "provenance": {
+          "source": "https://www.contify.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "caelian",
+      "company_name": {
+        "value": "Caelian",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://caelian.ai/",
+        "provenance": {
+          "source": "https://caelian.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://caelian.ai/",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://caelian.ai/",
+        "provenance": {
+          "source": "https://caelian.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "New York, USA",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://caelian.ai/about",
+        "provenance": {
+          "source": "https://caelian.ai/about",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
         "notes": null
       },
       "founded_year": {
@@ -225,15 +726,284 @@
         "notes": null
       },
       "commercial_model": {
-        "value": "open_source",
+        "value": "freemium",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://caelian.ai/pricing",
+        "provenance": {
+          "source": "https://caelian.ai/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "comintelli",
+      "company_name": {
+        "value": "Comintelli",
         "confidence": 0.95,
         "unknown": false,
-        "source": "https://github.com/Procycons/Comperator",
+        "source": "https://comintelli.com/",
         "provenance": {
-          "source": "https://github.com/Procycons/Comperator",
-          "source_type": "repository",
+          "source": "https://comintelli.com/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "MIT-licensed public GitHub repo"
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://comintelli.com/",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://comintelli.com/",
+        "provenance": {
+          "source": "https://comintelli.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "Stockholm, Sweden",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://comintelli.com/company-contact/",
+        "provenance": {
+          "source": "https://comintelli.com/company-contact/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 1999,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://se.linkedin.com/company/comintelli",
+        "provenance": {
+          "source": "https://se.linkedin.com/company/comintelli",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "Jesper Martell",
+          "Anders Thulin"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://comintelli.com/company-leadership/",
+        "provenance": {
+          "source": "https://comintelli.com/company-leadership/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 28,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://se.linkedin.com/company/comintelli",
+        "provenance": {
+          "source": "https://se.linkedin.com/company/comintelli",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 20,
+        "range_high": 35,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "acquired",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://news.cision.com/comintelli/",
+        "provenance": {
+          "source": "https://news.cision.com/comintelli/",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": "acquired by Dahlgren Capital Jan 2026"
+        },
+        "notes": null
+      },
+      "total_funding": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "investors": {
+        "value": [
+          "Dahlgren Capital"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://se.linkedin.com/posts/dahlgren-capital-ab",
+        "provenance": {
+          "source": "https://se.linkedin.com/posts/dahlgren-capital-ab",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "commercial_model": {
+        "value": "commercial",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://comintelli.com/",
+        "provenance": {
+          "source": "https://comintelli.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "industrylens",
+      "company_name": {
+        "value": "IndustryLens",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://industry-lens.com/",
+        "provenance": {
+          "source": "https://industry-lens.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://industry-lens.com/",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://industry-lens.com/",
+        "provenance": {
+          "source": "https://industry-lens.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "Berlin, Germany",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://uk.linkedin.com/company/industrylens",
+        "provenance": {
+          "source": "https://uk.linkedin.com/company/industrylens",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2024,
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://startup-map.berlin/companies/industrylens",
+        "provenance": {
+          "source": "https://startup-map.berlin/companies/industrylens",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 5,
+        "confidence": 0.55,
+        "unknown": false,
+        "source": "https://uk.linkedin.com/company/industrylens",
+        "provenance": {
+          "source": "https://uk.linkedin.com/company/industrylens",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 2,
+        "range_high": 10,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "bootstrapped",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://prospeo.io/c/industrylens-revenue",
+        "provenance": {
+          "source": "https://prospeo.io/c/industrylens-revenue",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "total_funding": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "investors": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "commercial_model": {
+        "value": "freemium",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://industry-lens.com/pricing",
+        "provenance": {
+          "source": "https://industry-lens.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": null
         },
         "notes": null
       }
@@ -249,12 +1019,12 @@
           "source": "https://rivalsense.co/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Brand name on homepage and Product Hunt"
+          "method": null
         },
         "notes": null
       },
       "website": {
-        "value": "https://rivalsense.co",
+        "value": "https://rivalsense.co/",
         "confidence": 0.95,
         "unknown": false,
         "source": "https://rivalsense.co/",
@@ -262,33 +1032,33 @@
           "source": "https://rivalsense.co/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Primary domain"
+          "method": null
         },
         "notes": null
       },
       "headquarters": {
         "value": "Riga, Latvia",
-        "confidence": 0.7,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.cbinsights.com/company/rivalsense",
+        "provenance": {
+          "source": "https://www.cbinsights.com/company/rivalsense",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2023,
+        "confidence": 0.85,
         "unknown": false,
         "source": "https://arcticstartup.com/rivalsense-raises-funding/",
         "provenance": {
           "source": "https://arcticstartup.com/rivalsense-raises-funding/",
           "source_type": "press_release",
           "as_of": "2026-06-28",
-          "method": "Multiple press sources (ArcticStartup, Silicon Canals) describe RivalSense as Riga-based"
-        },
-        "notes": null
-      },
-      "founded_year": {
-        "value": 2023,
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://siliconcanals.com/rivalsense-raises-funding/",
-        "provenance": {
-          "source": "https://siliconcanals.com/rivalsense-raises-funding/",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "Consistent across Silicon Canals, ArcticStartup, Tracxn, Starter Story"
+          "method": null
         },
         "notes": null
       },
@@ -297,44 +1067,44 @@
           "Martins Vaivars",
           "Arturs Prieditis"
         ],
-        "confidence": 0.7,
+        "confidence": 0.85,
         "unknown": false,
-        "source": "https://siliconcanals.com/rivalsense-raises-funding/",
+        "source": "https://arcticstartup.com/rivalsense-raises-funding/",
         "provenance": {
-          "source": "https://siliconcanals.com/rivalsense-raises-funding/",
+          "source": "https://arcticstartup.com/rivalsense-raises-funding/",
           "source_type": "press_release",
           "as_of": "2026-06-28",
-          "method": "Named in funding coverage; both Techstars alumni (Vaivars ex-Infogram/Oxford, Prieditis ex-Qualcomm/HP Autonomy/Cambridge)"
+          "method": null
         },
         "notes": null
       },
       "employee_estimate": {
         "value": 2,
-        "confidence": 0.45,
+        "confidence": 0.6,
         "unknown": false,
-        "source": "https://www.starterstory.com/rivalsense-breakdown",
+        "source": "https://tracxn.com/d/companies/rivalsense",
         "provenance": {
-          "source": "https://www.starterstory.com/rivalsense-breakdown",
+          "source": "https://tracxn.com/d/companies/rivalsense",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "Starter Story describes team size as the 2 founders; likely small startup"
+          "method": null
         },
         "notes": null,
         "is_estimate": true,
         "range_low": 2,
-        "range_high": 10,
+        "range_high": 3,
         "unit": "people"
       },
       "funding_stage": {
-        "value": "angel",
-        "confidence": 0.65,
+        "value": "seed",
+        "confidence": 0.85,
         "unknown": false,
         "source": "https://siliconcanals.com/rivalsense-raises-funding/",
         "provenance": {
           "source": "https://siliconcanals.com/rivalsense-raises-funding/",
           "source_type": "press_release",
           "as_of": "2026-06-28",
-          "method": "Press describes a single angel round led by Change Ventures (June 2024)"
+          "method": "angel round led by Change Ventures, Jun 2024"
         },
         "notes": null
       },
@@ -348,17 +1118,16 @@
       "investors": {
         "value": [
           "Change Ventures",
-          "Fiedler Capital",
-          "local business angels"
+          "Fiedler Capital"
         ],
-        "confidence": 0.7,
+        "confidence": 0.85,
         "unknown": false,
         "source": "https://siliconcanals.com/rivalsense-raises-funding/",
         "provenance": {
           "source": "https://siliconcanals.com/rivalsense-raises-funding/",
           "source_type": "press_release",
           "as_of": "2026-06-28",
-          "method": "Lead and participating investors named in funding coverage"
+          "method": null
         },
         "notes": null
       },
@@ -370,44 +1139,1152 @@
         "notes": null
       },
       "commercial_model": {
-        "value": "B2B SaaS subscription (self-service, transparent monthly pricing)",
+        "value": "freemium",
         "confidence": 0.85,
         "unknown": false,
-        "source": "https://coldiq.com/tools/rivalsense",
+        "source": "https://rivalsense.co/",
         "provenance": {
-          "source": "https://coldiq.com/tools/rivalsense",
-          "source_type": "third_party_db",
+          "source": "https://rivalsense.co/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "Self-service monthly subscription tiers, no enterprise contract; corroborated by positioning"
+          "method": null
         },
         "notes": null
       }
     },
     {
-      "entity_ref": "competitor-analyst",
+      "entity_ref": "seeto",
       "company_name": {
-        "value": "0xmetaschool",
-        "confidence": 0.98,
+        "value": "Seeto",
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://github.com/0xmetaschool/competitor-analyst",
+        "source": "https://seeto.ai/",
         "provenance": {
-          "source": "https://github.com/0xmetaschool/competitor-analyst",
-          "source_type": "repository",
+          "source": "https://seeto.ai/",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "GitHub org owning the repo"
+          "method": null
         },
         "notes": null
       },
       "website": {
-        "value": "https://github.com/0xmetaschool/competitor-analyst",
+        "value": "https://seeto.ai/",
         "confidence": 0.95,
         "unknown": false,
-        "source": "https://github.com/0xmetaschool/competitor-analyst",
+        "source": "https://seeto.ai/",
         "provenance": {
-          "source": "https://github.com/0xmetaschool/competitor-analyst",
+          "source": "https://seeto.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2026,
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://seeto.ai/",
+        "provenance": {
+          "source": "https://seeto.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "funding_stage": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "total_funding": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "investors": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "commercial_model": {
+        "value": "freemium",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://seeto.ai/pricing",
+        "provenance": {
+          "source": "https://seeto.ai/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "valona-intelligence",
+      "company_name": {
+        "value": "Valona Intelligence",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/",
+        "provenance": {
+          "source": "https://valonaintelligence.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://valonaintelligence.com",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/",
+        "provenance": {
+          "source": "https://valonaintelligence.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "Helsinki, Finland",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.cbinsights.com/company/valona-intelligence",
+        "provenance": {
+          "source": "https://www.cbinsights.com/company/valona-intelligence",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 1999,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/valona-intelligence",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/valona-intelligence",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "Kim Nyberg"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/valona-intelligence",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/valona-intelligence",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 231,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.cbinsights.com/company/valona-intelligence",
+        "provenance": {
+          "source": "https://www.cbinsights.com/company/valona-intelligence",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 200,
+        "range_high": 250,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "acquired",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/valona-intelligence",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/valona-intelligence",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "merged with A-INSIGHTS 2025"
+        },
+        "notes": null
+      },
+      "total_funding": {
+        "value": 16800000,
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/valona-intelligence",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/valona-intelligence",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 16000000,
+        "range_high": 17000000,
+        "unit": "USD"
+      },
+      "investors": {
+        "value": [
+          "Monterro",
+          "Innovestor"
+        ],
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/valona-intelligence",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/valona-intelligence",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "commercial_model": {
+        "value": "commercial",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/",
+        "provenance": {
+          "source": "https://valonaintelligence.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "competely",
+      "company_name": {
+        "value": "Competely",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://competely.ai/",
+        "provenance": {
+          "source": "https://competely.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://competely.ai",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://competely.ai/",
+        "provenance": {
+          "source": "https://competely.ai/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "Austin, Texas, USA",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.linkedin.com/in/liorgrossman/",
+        "provenance": {
+          "source": "https://www.linkedin.com/in/liorgrossman/",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2023,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://x.com/LiorGrossman",
+        "provenance": {
+          "source": "https://x.com/LiorGrossman",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "Lior Grossman"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.linkedin.com/in/liorgrossman/",
+        "provenance": {
+          "source": "https://www.linkedin.com/in/liorgrossman/",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "funding_stage": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "total_funding": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "investors": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "commercial_model": {
+        "value": "freemium",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://competely.ai/pricing",
+        "provenance": {
+          "source": "https://competely.ai/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "alphasense",
+      "company_name": {
+        "value": "AlphaSense",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://www.alpha-sense.com/",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "New York City, NY, USA",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2011,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/alphasense",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/alphasense",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "Jack Kokko",
+          "Raj Neervannan"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/alphasense",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/alphasense",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 3170,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/alphasense",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/alphasense",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 3000,
+        "range_high": 3300,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "late_stage",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": "$350M at $7.5B valuation"
+        },
+        "notes": null
+      },
+      "total_funding": {
+        "value": 1740000000,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/alphasense",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/alphasense",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 1500000000,
+        "range_high": 1740000000,
+        "unit": "USD"
+      },
+      "investors": {
+        "value": [
+          "Vitruvian Partners",
+          "Accenture Ventures",
+          "J.P. Morgan Asset Management",
+          "CapitalG",
+          "Goldman Sachs Alternatives",
+          "Viking Global Investors"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/alphasense",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/alphasense",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": 600000000,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 600000000,
+        "range_high": 650000000,
+        "unit": "USD"
+      },
+      "commercial_model": {
+        "value": "commercial",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/pricing/",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/pricing/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "northern-light-singlepoint",
+      "company_name": {
+        "value": "Northern Light Group, LLC",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.northernlight.com/",
+        "provenance": {
+          "source": "https://www.northernlight.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://www.northernlight.com",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.northernlight.com/",
+        "provenance": {
+          "source": "https://www.northernlight.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "Boston, Massachusetts, USA",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.linkedin.com/company/northern-light-singlepoint",
+        "provenance": {
+          "source": "https://www.linkedin.com/company/northern-light-singlepoint",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 1996,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://en.wikipedia.org/wiki/Northern_Light_Group",
+        "provenance": {
+          "source": "https://en.wikipedia.org/wiki/Northern_Light_Group",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "C. David Seuss"
+        ],
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://en.wikipedia.org/wiki/Northern_Light_Group",
+        "provenance": {
+          "source": "https://en.wikipedia.org/wiki/Northern_Light_Group",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 70,
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://www.linkedin.com/company/northern-light-singlepoint",
+        "provenance": {
+          "source": "https://www.linkedin.com/company/northern-light-singlepoint",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 51,
+        "range_high": 200,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "growth_equity",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.prnewswire.com/news-releases/northern-light-announces-23-million-investment-from-lonetree-capital-302343846.html",
+        "provenance": {
+          "source": "https://www.prnewswire.com/news-releases/northern-light-announces-23-million-investment-from-lonetree-capital-302343846.html",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "total_funding": {
+        "value": 23000000,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.prnewswire.com/news-releases/northern-light-announces-23-million-investment-from-lonetree-capital-302343846.html",
+        "provenance": {
+          "source": "https://www.prnewswire.com/news-releases/northern-light-announces-23-million-investment-from-lonetree-capital-302343846.html",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": false,
+        "unit": "USD"
+      },
+      "investors": {
+        "value": [
+          "LoneTree Capital"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.prnewswire.com/news-releases/northern-light-announces-23-million-investment-from-lonetree-capital-302343846.html",
+        "provenance": {
+          "source": "https://www.prnewswire.com/news-releases/northern-light-announces-23-million-investment-from-lonetree-capital-302343846.html",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": 20000000,
+        "confidence": 0.5,
+        "unknown": false,
+        "source": "https://www.owler.com/company/northernlight",
+        "provenance": {
+          "source": "https://www.owler.com/company/northernlight",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 15000000,
+        "range_high": 25000000,
+        "unit": "USD"
+      },
+      "commercial_model": {
+        "value": "commercial",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.northernlight.com/",
+        "provenance": {
+          "source": "https://www.northernlight.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "company-researcher-exa-labs",
+      "company_name": {
+        "value": "Company Researcher (Exa Labs)",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "repository",
           "as_of": "2026-06-28",
-          "method": "Repo URL as canonical home"
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://github.com/exa-labs/company-researcher",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "San Francisco, CA, USA",
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/exa-1b30",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/exa-1b30",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Exa Labs parent"
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2021,
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.ycombinator.com/companies/exa",
+        "provenance": {
+          "source": "https://www.ycombinator.com/companies/exa",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Exa Labs founding"
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "funding_stage": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "total_funding": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "investors": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "commercial_model": {
+        "value": "open_source",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://github.com/exa-labs/company-researcher",
+        "provenance": {
+          "source": "https://github.com/exa-labs/company-researcher",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "feedly-market-intelligence",
+      "company_name": {
+        "value": "Feedly",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://feedly.com/market-intelligence",
+        "provenance": {
+          "source": "https://feedly.com/market-intelligence",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://feedly.com",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://feedly.com",
+        "provenance": {
+          "source": "https://feedly.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "Redwood City, California, USA",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://craft.co/feedly/locations",
+        "provenance": {
+          "source": "https://craft.co/feedly/locations",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2008,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/feedly",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/feedly",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "Edwin Khodabakchian",
+          "Olivier Devaux",
+          "Cyril Moutran"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/feedly",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/feedly",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 66,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://getlatka.com/companies/feedly.com",
+        "provenance": {
+          "source": "https://getlatka.com/companies/feedly.com",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 60,
+        "range_high": 70,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "total_funding": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "investors": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "commercial_model": {
+        "value": "commercial",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://feedly.com/market-intelligence/pricing",
+        "provenance": {
+          "source": "https://feedly.com/market-intelligence/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "chapsvision",
+      "company_name": {
+        "value": "ChapsVision",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/",
+        "provenance": {
+          "source": "https://www.chapsvision.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://www.chapsvision.com/",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/",
+        "provenance": {
+          "source": "https://www.chapsvision.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "Suresnes, France",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/en-us/",
+        "provenance": {
+          "source": "https://www.chapsvision.com/en-us/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2019,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/en-us/about-us/",
+        "provenance": {
+          "source": "https://www.chapsvision.com/en-us/about-us/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "Olivier Dellenbach"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.chapsvision.com/en-us/about-us/",
+        "provenance": {
+          "source": "https://www.chapsvision.com/en-us/about-us/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 1000,
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/chapsvision/",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/chapsvision/",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 560,
+        "range_high": 1000,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "series_c",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/chapsvision",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/chapsvision",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "total_funding": {
+        "value": 283000000,
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/chapsvision",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/chapsvision",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 250000000,
+        "range_high": 283000000,
+        "unit": "USD"
+      },
+      "investors": {
+        "value": [
+          "Qualium Investissement",
+          "GENEO",
+          "Tikehau Capital",
+          "Bpifrance"
+        ],
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/chapsvision",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/chapsvision",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": 200000000,
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/chapsvision/",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/chapsvision/",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 180000000,
+        "range_high": 220000000,
+        "unit": "USD"
+      },
+      "commercial_model": {
+        "value": "commercial",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://app.dealroom.co/companies/chapsvision",
+        "provenance": {
+          "source": "https://app.dealroom.co/companies/chapsvision",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "comperator",
+      "company_name": {
+        "value": "Comperator",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://github.com/Procycons/Comperator",
+        "provenance": {
+          "source": "https://github.com/Procycons/Comperator",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://github.com/Procycons/Comperator",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://github.com/Procycons/Comperator",
+        "provenance": {
+          "source": "https://github.com/Procycons/Comperator",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": null
         },
         "notes": null
       },
@@ -469,896 +2346,14 @@
       },
       "commercial_model": {
         "value": "open_source",
-        "confidence": 0.98,
+        "confidence": 0.95,
         "unknown": false,
-        "source": "https://github.com/0xmetaschool/competitor-analyst",
+        "source": "https://github.com/Procycons/Comperator",
         "provenance": {
-          "source": "https://github.com/0xmetaschool/competitor-analyst",
+          "source": "https://github.com/Procycons/Comperator",
           "source_type": "repository",
           "as_of": "2026-06-28",
-          "method": "MIT-licensed public template repo"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "crayon",
-      "company_name": {
-        "value": "Crayon",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage branding/title"
-        },
-        "notes": null
-      },
-      "website": {
-        "value": "https://www.crayon.co",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.crayon.co",
-        "provenance": {
-          "source": "https://www.crayon.co",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "direct"
-        },
-        "notes": null
-      },
-      "headquarters": {
-        "value": "Boston, Massachusetts, USA",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://www.crayon.co/careers",
-        "provenance": {
-          "source": "https://www.crayon.co/careers",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "careers page cites Fort Point, Boston office; corroborated by Crunchbase"
-        },
-        "notes": null
-      },
-      "founded_year": {
-        "value": 2014,
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/crayon/__f4uv9J0CUo4eB49xLdFaX3tj_SpaMpwyrv9WNl7iVrg",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/crayon/__f4uv9J0CUo4eB49xLdFaX3tj_SpaMpwyrv9WNl7iVrg",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "multiple third-party DBs agree (Tracxn, Crunchbase)"
-        },
-        "notes": null
-      },
-      "founders": {
-        "value": [
-          "Jonah Lopin",
-          "John Osborne"
-        ],
-        "confidence": 0.65,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/crayon/__f4uv9J0CUo4eB49xLdFaX3tj_SpaMpwyrv9WNl7iVrg",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/crayon/__f4uv9J0CUo4eB49xLdFaX3tj_SpaMpwyrv9WNl7iVrg",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Tracxn; Lopin is CEO (ex-HubSpot VP Customer Success), Osborne former co-founder/CTO"
-        },
-        "notes": null
-      },
-      "employee_estimate": {
-        "value": 73,
-        "confidence": 0.55,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/crayon/__f4uv9J0CUo4eB49xLdFaX3tj_SpaMpwyrv9WNl7iVrg",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/crayon/__f4uv9J0CUo4eB49xLdFaX3tj_SpaMpwyrv9WNl7iVrg",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Tracxn Apr 2026 count"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 70,
-        "range_high": 120,
-        "unit": "people"
-      },
-      "funding_stage": {
-        "value": "series_b",
-        "confidence": 0.8,
-        "unknown": false,
-        "source": "https://www.businesswire.com/news/home/20210504005148/en/Crayon-Raises-%2422-Million-Series-B-to-Empower-Mid-market-Large-Enterprises-With-Competitive-Intelligence",
-        "provenance": {
-          "source": "https://www.businesswire.com/news/home/20210504005148/en/Crayon-Raises-%2422-Million-Series-B-to-Empower-Mid-market-Large-Enterprises-With-Competitive-Intelligence",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "$22M Series B announced May 2021"
-        },
-        "notes": null
-      },
-      "total_funding": {
-        "value": 39500000,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/organization/crayon-2",
-        "provenance": {
-          "source": "https://www.crunchbase.com/organization/crayon-2",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Crunchbase/Tracxn: $39.5M across 5 rounds"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 33000000,
-        "range_high": 39500000,
-        "unit": "USD"
-      },
-      "investors": {
-        "value": [
-          "Baird Capital",
-          "Baseline Ventures",
-          "Bedrock Capital",
-          "C&B Capital",
-          "Oyster Funds",
-          "Common Angels"
-        ],
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.businesswire.com/news/home/20210504005148/en/Crayon-Raises-%2422-Million-Series-B-to-Empower-Mid-market-Large-Enterprises-With-Competitive-Intelligence",
-        "provenance": {
-          "source": "https://www.businesswire.com/news/home/20210504005148/en/Crayon-Raises-%2422-Million-Series-B-to-Empower-Mid-market-Large-Enterprises-With-Competitive-Intelligence",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "Series B press release + funding announcements"
-        },
-        "notes": null
-      },
-      "estimated_arr": {
-        "value": 7600000,
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://getlatka.com/companies/crayon",
-        "provenance": {
-          "source": "https://getlatka.com/companies/crayon",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "GetLatka reported $7.6M revenue / 500 customers (2021); dated, likely higher now"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 7600000,
-        "range_high": 30000000,
-        "unit": "USD"
-      },
-      "commercial_model": {
-        "value": "commercial",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.crayon.co/pricing",
-        "provenance": {
-          "source": "https://www.crayon.co/pricing",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "proprietary SaaS, contact-sales pricing"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "klue",
-      "company_name": {
-        "value": "Klue",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://klue.com/about",
-        "provenance": {
-          "source": "https://klue.com/about",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "About page"
-        },
-        "notes": null
-      },
-      "website": {
-        "value": "https://klue.com",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://klue.com",
-        "provenance": {
-          "source": "https://klue.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage"
-        },
-        "notes": null
-      },
-      "headquarters": {
-        "value": "Vancouver, British Columbia, Canada",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://klue.com/llm-info",
-        "provenance": {
-          "source": "https://klue.com/llm-info",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official llm-info page; corroborated by Crunchbase/press"
-        },
-        "notes": null
-      },
-      "founded_year": {
-        "value": 2015,
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://klue.com/llm-info",
-        "provenance": {
-          "source": "https://klue.com/llm-info",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official llm-info page"
-        },
-        "notes": null
-      },
-      "founders": {
-        "value": [
-          "Jason Smith",
-          "Sarathy Naicker"
-        ],
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://klue.com/about",
-        "provenance": {
-          "source": "https://klue.com/about",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "About page lists Jason Smith (CEO) and Sarathy Naicker (CTO)"
-        },
-        "notes": null
-      },
-      "employee_estimate": {
-        "value": 201,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/klue",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/klue",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Tracxn employee count May 2026; company states 200+"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 200,
-        "range_high": 250,
-        "unit": "people"
-      },
-      "funding_stage": {
-        "value": "series_b",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://klue.com/blog/klue-raises-62-million-series-b-competitive-enablement",
-        "provenance": {
-          "source": "https://klue.com/blog/klue-raises-62-million-series-b-competitive-enablement",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "Klue blog announcing Series B"
-        },
-        "notes": null
-      },
-      "total_funding": {
-        "value": 81000000,
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.prnewswire.com/news-releases/category-leader-klue-raises-62m-to-accelerate-its-competitive-enablement-platform-301434600.html",
-        "provenance": {
-          "source": "https://www.prnewswire.com/news-releases/category-leader-klue-raises-62m-to-accelerate-its-competitive-enablement-platform-301434600.html",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "US$81M total across rounds per PR/TechCrunch"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 81000000,
-        "range_high": 81000000,
-        "unit": "USD"
-      },
-      "investors": {
-        "value": [
-          "Tiger Global Management",
-          "Salesforce Ventures",
-          "OMERS Ventures",
-          "BDC Capital"
-        ],
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://techcrunch.com/2021/12/01/ai-powered-competitive-enablement-platform-klue-lands-62-million-led-by-tiger-global/",
-        "provenance": {
-          "source": "https://techcrunch.com/2021/12/01/ai-powered-competitive-enablement-platform-klue-lands-62-million-led-by-tiger-global/",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "Series B led by Tiger Global w/ Salesforce Ventures; Tracxn lists OMERS, BDC"
-        },
-        "notes": null
-      },
-      "estimated_arr": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "commercial_model": {
-        "value": "commercial",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://klue.com",
-        "provenance": {
-          "source": "https://klue.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "proprietary B2B SaaS, no open-source"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "unkover",
-      "company_name": {
-        "value": "Unkover",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://unkover.com",
-        "provenance": {
-          "source": "https://unkover.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Organization name on homepage"
-        },
-        "notes": null
-      },
-      "website": {
-        "value": "https://unkover.com",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://unkover.com",
-        "provenance": {
-          "source": "https://unkover.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Direct"
-        },
-        "notes": null
-      },
-      "headquarters": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "founded_year": {
-        "value": 2024,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/unkover/__YvBdivoewU2Nqla_pBGEzepqtUKxdtuHLs_r_c8EYC4",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/unkover/__YvBdivoewU2Nqla_pBGEzepqtUKxdtuHLs_r_c8EYC4",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Third-party DB; corroborated by May 2024 beta launch on official blog"
-        },
-        "notes": null
-      },
-      "founders": {
-        "value": [
-          "Massimo Chieruzzi"
-        ],
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://rocketreach.co/massimo-chieruzzi-email_292171",
-        "provenance": {
-          "source": "https://rocketreach.co/massimo-chieruzzi-email_292171",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Massimo (@MassimoCw) listed as founder/staff; founder bio on official blog references AdEspresso (Chieruzzi's prior company), consistent identity"
-        },
-        "notes": null
-      },
-      "employee_estimate": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "funding_stage": {
-        "value": "bootstrapped",
-        "confidence": 0.55,
-        "unknown": false,
-        "source": "https://www.extruct.ai/hub/unkover-com/",
-        "provenance": {
-          "source": "https://www.extruct.ai/hub/unkover-com/",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Multiple third-party DBs report unfunded; no funding mentioned in official launch post"
-        },
-        "notes": null
-      },
-      "total_funding": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "investors": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "estimated_arr": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "commercial_model": {
-        "value": "B2B SaaS subscription",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://unkover.com/pricing/",
-        "provenance": {
-          "source": "https://unkover.com/pricing/",
-          "source_type": "pricing_page",
-          "as_of": "2026-06-28",
-          "method": "Tiered monthly/annual subscription plans"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "kompyte",
-      "company_name": {
-        "value": "Kompyte",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.kompyte.com",
-        "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage branding 'Kompyte by Semrush'"
-        },
-        "notes": null
-      },
-      "website": {
-        "value": "https://www.kompyte.com",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.kompyte.com",
-        "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "direct fetch"
-        },
-        "notes": null
-      },
-      "headquarters": {
-        "value": "Austin, TX, USA",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.linkedin.com/company/kompyte",
-        "provenance": {
-          "source": "https://www.linkedin.com/company/kompyte",
-          "source_type": "social_profile",
-          "as_of": "2026-06-28",
-          "method": "LinkedIn company page address 310 Comal, Austin TX"
-        },
-        "notes": null
-      },
-      "founded_year": {
-        "value": 2014,
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.linkedin.com/company/kompyte",
-        "provenance": {
-          "source": "https://www.linkedin.com/company/kompyte",
-          "source_type": "social_profile",
-          "as_of": "2026-06-28",
-          "method": "LinkedIn founded field; corroborated by search"
-        },
-        "notes": null
-      },
-      "founders": {
-        "value": [
-          "Pere Codina",
-          "Sergio Ramirez",
-          "Albert Colmenero"
-        ],
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/person/pere-codina",
-        "provenance": {
-          "source": "https://www.crunchbase.com/person/pere-codina",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "search results citing Crunchbase profiles; Pere Codina co-founder/CEO confirmed"
-        },
-        "notes": null
-      },
-      "employee_estimate": {
-        "value": 23,
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://pitchbook.com/profiles/company/101662-75",
-        "provenance": {
-          "source": "https://pitchbook.com/profiles/company/101662-75",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "PitchBook pre-acquisition headcount; sources vary 11-50; operates as Semrush division"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 3,
-        "range_high": 50,
-        "unit": "people"
-      },
-      "funding_stage": {
-        "value": "acquired",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.businesswire.com/news/home/20220228005533/en/Semrush-To-Acquire-Kompyte-Enhance-Competitive-Intelligence-And-Sales-Enablement-Capabilities",
-        "provenance": {
-          "source": "https://www.businesswire.com/news/home/20220228005533/en/Semrush-To-Acquire-Kompyte-Enhance-Competitive-Intelligence-And-Sales-Enablement-Capabilities",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "acquired by Semrush, announced Feb 2022"
-        },
-        "notes": null
-      },
-      "total_funding": {
-        "value": 3590000,
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/kompyte/__agcsch759Fb2vTmNwM6gCEN0H1DBq9l4XL08ehYiyeI/funding-and-investors",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/kompyte/__agcsch759Fb2vTmNwM6gCEN0H1DBq9l4XL08ehYiyeI/funding-and-investors",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Tracxn $3.59M / PitchBook $4.23M; pre-acquisition"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 3590000,
-        "range_high": 4230000,
-        "unit": "USD"
-      },
-      "investors": {
-        "value": [
-          "Adara Ventures",
-          "Swanlaab Venture Factory",
-          "500 Global",
-          "Capital Factory",
-          "Alantis Seed Capital",
-          "Conector"
-        ],
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/kompyte/__agcsch759Fb2vTmNwM6gCEN0H1DBq9l4XL08ehYiyeI/funding-and-investors",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/kompyte/__agcsch759Fb2vTmNwM6gCEN0H1DBq9l4XL08ehYiyeI/funding-and-investors",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "aggregated from Tracxn/Crunchbase search results"
-        },
-        "notes": null
-      },
-      "estimated_arr": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "commercial_model": {
-        "value": "B2B SaaS competitive intelligence platform (subsidiary of Semrush)",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.kompyte.com",
-        "provenance": {
-          "source": "https://www.kompyte.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage positioning"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "contify",
-      "company_name": {
-        "value": "Contify",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.contify.com/about-us/",
-        "provenance": {
-          "source": "https://www.contify.com/about-us/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "About page"
-        },
-        "notes": null
-      },
-      "website": {
-        "value": "https://www.contify.com",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Homepage"
-        },
-        "notes": null
-      },
-      "headquarters": {
-        "value": "Gurugram (Gurgaon), Haryana, India; with US office (New York) and London, UK",
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.linkedin.com/company/contify",
-        "provenance": {
-          "source": "https://www.linkedin.com/company/contify",
-          "source_type": "social_profile",
-          "as_of": "2026-06-28",
-          "method": "LinkedIn lists US HQ address and India/UK offices; multiple third-party DBs cite Gurugram India as primary base"
-        },
-        "notes": null
-      },
-      "founded_year": {
-        "value": 2009,
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://www.linkedin.com/company/contify",
-        "provenance": {
-          "source": "https://www.linkedin.com/company/contify",
-          "source_type": "social_profile",
-          "as_of": "2026-06-28",
-          "method": "LinkedIn 'Founded' field, corroborated by Crunchbase/search"
-        },
-        "notes": null
-      },
-      "founders": {
-        "value": [
-          "Mohit Bhakuni",
-          "Kapil Bharati"
-        ],
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://in.linkedin.com/in/mbhakuni",
-        "provenance": {
-          "source": "https://in.linkedin.com/in/mbhakuni",
-          "source_type": "social_profile",
-          "as_of": "2026-06-28",
-          "method": "Mohit Bhakuni is Founder & CEO (LinkedIn); Kapil Bharati cited as co-founder in search results"
-        },
-        "notes": null
-      },
-      "employee_estimate": {
-        "value": 371,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/contify",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/contify",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Tracxn employee count Apr 2026; LinkedIn shows ~378 / 201-500 band; Latka cites 325"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 325,
-        "range_high": 378,
-        "unit": "people"
-      },
-      "funding_stage": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "total_funding": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "investors": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "estimated_arr": {
-        "value": 8200000,
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://getlatka.com/companies/contify",
-        "provenance": {
-          "source": "https://getlatka.com/companies/contify",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Latka 2024 revenue $8.2M (up from $5.5M in 2023)"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 8000000,
-        "range_high": 8500000,
-        "unit": "USD"
-      },
-      "commercial_model": {
-        "value": "B2B SaaS enterprise market & competitive intelligence platform",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.contify.com",
-        "provenance": {
-          "source": "https://www.contify.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Homepage positioning"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "valona-intelligence",
-      "company_name": {
-        "value": "Valona Intelligence",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/about-valona",
-        "provenance": {
-          "source": "https://valonaintelligence.com/about-valona",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage and about page branding"
-        },
-        "notes": null
-      },
-      "website": {
-        "value": "https://valonaintelligence.com",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://valonaintelligence.com",
-        "provenance": {
-          "source": "https://valonaintelligence.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "direct"
-        },
-        "notes": null
-      },
-      "headquarters": {
-        "value": "Helsinki, Finland",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://fi.linkedin.com/company/valonaintelligence",
-        "provenance": {
-          "source": "https://fi.linkedin.com/company/valonaintelligence",
-          "source_type": "social_profile",
-          "as_of": "2026-06-28",
-          "method": "LinkedIn company page lists Helsinki, Uusimaa, Finland; corroborated by Dealroom/Monterro press"
-        },
-        "notes": null
-      },
-      "founded_year": {
-        "value": 1999,
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/about-valona",
-        "provenance": {
-          "source": "https://valonaintelligence.com/about-valona",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "about page states founded/trusted since 1999 (as M-Brain)"
-        },
-        "notes": null
-      },
-      "founders": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "employee_estimate": {
-        "value": 200,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/about-valona",
-        "provenance": {
-          "source": "https://valonaintelligence.com/about-valona",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "about page states 200 employees, 7 offices; LinkedIn lists ~251"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 200,
-        "range_high": 251,
-        "unit": "people"
-      },
-      "funding_stage": {
-        "value": "Acquired (private equity, majority stake by Monterro)",
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/news/monterro-acquires-finnish-market-intelligence-saas-company-m-brain",
-        "provenance": {
-          "source": "https://valonaintelligence.com/news/monterro-acquires-finnish-market-intelligence-saas-company-m-brain",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "Monterro acquired majority stake of M-Brain in 2022"
-        },
-        "notes": null
-      },
-      "total_funding": {
-        "value": 16800000,
-        "confidence": 0.55,
-        "unknown": false,
-        "source": "https://pitchbook.com/profiles/company/57263-95",
-        "provenance": {
-          "source": "https://pitchbook.com/profiles/company/57263-95",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "PitchBook reports $16.8M raised"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "unit": "USD"
-      },
-      "investors": {
-        "value": [
-          "Monterro"
-        ],
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/news/monterro-acquires-finnish-market-intelligence-saas-company-m-brain",
-        "provenance": {
-          "source": "https://valonaintelligence.com/news/monterro-acquires-finnish-market-intelligence-saas-company-m-brain",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "Monterro acquired majority stake and provided expansion capital"
-        },
-        "notes": null
-      },
-      "estimated_arr": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "commercial_model": {
-        "value": "B2B SaaS / enterprise subscription with tailored packages (contact sales)",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://valonaintelligence.com/market-intelligence-software/pricing",
-        "provenance": {
-          "source": "https://valonaintelligence.com/market-intelligence-software/pricing",
-          "source_type": "pricing_page",
-          "as_of": "2026-06-28",
-          "method": "pricing page describes tailored packages, contact-sales"
+          "method": null
         },
         "notes": null
       }
@@ -1366,453 +2361,565 @@
     {
       "entity_ref": "semrush",
       "company_name": {
-        "value": "Semrush",
+        "value": "Semrush Holdings, Inc.",
         "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.semrush.com",
-        "provenance": {
-          "source": "https://www.semrush.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage"
-        },
-        "notes": null
-      },
-      "website": {
-        "value": "https://www.semrush.com",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.semrush.com",
-        "provenance": {
-          "source": "https://www.semrush.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage"
-        },
-        "notes": null
-      },
-      "headquarters": {
-        "value": "Boston, MA, USA",
-        "confidence": 0.85,
         "unknown": false,
         "source": "https://en.wikipedia.org/wiki/Semrush",
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Semrush",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "search; corroborated by multiple sources"
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://www.semrush.com/",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.semrush.com/",
+        "provenance": {
+          "source": "https://www.semrush.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "Boston, Massachusetts, USA",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://en.wikipedia.org/wiki/Semrush",
+        "provenance": {
+          "source": "https://en.wikipedia.org/wiki/Semrush",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
         },
         "notes": null
       },
       "founded_year": {
         "value": 2008,
-        "confidence": 0.85,
+        "confidence": 0.95,
         "unknown": false,
         "source": "https://en.wikipedia.org/wiki/Semrush",
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Semrush",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "search"
+          "method": null
         },
         "notes": null
       },
       "founders": {
         "value": [
           "Oleg Shchegolev",
-          "Dmitry Melnikov"
+          "Dmitri Melnikov"
         ],
-        "confidence": 0.85,
+        "confidence": 0.9,
         "unknown": false,
         "source": "https://en.wikipedia.org/wiki/Semrush",
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Semrush",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "search"
+          "method": null
         },
         "notes": null
       },
       "employee_estimate": {
-        "value": 2349,
-        "confidence": 0.6,
+        "value": 1567,
+        "confidence": 0.8,
         "unknown": false,
-        "source": "https://tracxn.com/d/companies/semrush",
+        "source": "https://investors.semrush.com/",
         "provenance": {
-          "source": "https://tracxn.com/d/companies/semrush",
-          "source_type": "third_party_db",
+          "source": "https://investors.semrush.com/",
+          "source_type": "press_release",
           "as_of": "2026-06-28",
-          "method": "third-party profile (May 2026); pre-acquisition was 1000+ per Wikipedia"
+          "method": null
         },
         "notes": null,
-        "is_estimate": true,
-        "unit": "people"
-      },
-      "funding_stage": {
-        "value": "acquired",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://news.adobe.com/news/2026/04/adobe-completes-semrush-acquisition",
-        "provenance": {
-          "source": "https://news.adobe.com/news/2026/04/adobe-completes-semrush-acquisition",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "Adobe completed acquisition Apr 28, 2026; formerly public NYSE: SEMR"
-        },
-        "notes": null
-      },
-      "total_funding": {
-        "value": 1900000000,
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://news.adobe.com/news/2025/11/adobe-to-acquire-semrush",
-        "provenance": {
-          "source": "https://news.adobe.com/news/2025/11/adobe-to-acquire-semrush",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "Adobe acquisition equity value $1.9B all-cash ($12.00/share); represents acquisition price not VC funding"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "unit": "USD"
-      },
-      "investors": {
-        "value": [
-          "Adobe (acquirer, 2026)",
-          "Greycroft",
-          "e.ventures",
-          "Siguler Guff"
-        ],
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/organization/semrush",
-        "provenance": {
-          "source": "https://www.crunchbase.com/organization/semrush",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "search; Adobe is acquirer; pre-IPO VCs from third-party profiles"
-        },
-        "notes": null
-      },
-      "estimated_arr": {
-        "value": 471400000,
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.semrush.com/news/448771-semrush-announces-fourth-quarter-and-full-year-2025-financial-results/",
-        "provenance": {
-          "source": "https://www.semrush.com/news/448771-semrush-announces-fourth-quarter-and-full-year-2025-financial-results/",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "ARR as of Dec 31, 2025; FY2025 revenue was $443.6M (+18% YoY)"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "unit": "USD"
-      },
-      "commercial_model": {
-        "value": "commercial",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.semrush.com/prices/",
-        "provenance": {
-          "source": "https://www.semrush.com/prices/",
-          "source_type": "pricing_page",
-          "as_of": "2026-06-28",
-          "method": "paid subscription SaaS"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "similarweb",
-      "company_name": {
-        "value": "Similarweb Ltd.",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://ir.similarweb.com/news-events/press-releases/detail/145/similarweb-announces-fourth-quarter-and-fiscal-2025-results",
-        "provenance": {
-          "source": "https://ir.similarweb.com/news-events/press-releases/detail/145/similarweb-announces-fourth-quarter-and-fiscal-2025-results",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "IR press release legal name"
-        },
-        "notes": null
-      },
-      "website": {
-        "value": "https://www.similarweb.com",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.similarweb.com",
-        "provenance": {
-          "source": "https://www.similarweb.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "homepage fetch"
-        },
-        "notes": null
-      },
-      "headquarters": {
-        "value": "Tel Aviv, Israel (with New York, NY US HQ)",
-        "confidence": 0.85,
-        "unknown": false,
-        "source": "https://en.wikipedia.org/wiki/Similarweb",
-        "provenance": {
-          "source": "https://en.wikipedia.org/wiki/Similarweb",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Wikipedia/company profile"
-        },
-        "notes": null
-      },
-      "founded_year": {
-        "value": 2007,
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://en.wikipedia.org/wiki/Similarweb",
-        "provenance": {
-          "source": "https://en.wikipedia.org/wiki/Similarweb",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Wikipedia founding year"
-        },
-        "notes": null
-      },
-      "founders": {
-        "value": [
-          "Or Offer",
-          "Nir Cohen"
-        ],
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://en.wikipedia.org/wiki/Similarweb",
-        "provenance": {
-          "source": "https://en.wikipedia.org/wiki/Similarweb",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "search result; Or Offer primary founder, Nir Cohen co-founder cited"
-        },
-        "notes": null
-      },
-      "employee_estimate": {
-        "value": 1000,
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://ir.similarweb.com/news-events/press-releases/detail/145/similarweb-announces-fourth-quarter-and-fiscal-2025-results",
-        "provenance": {
-          "source": "https://ir.similarweb.com/news-events/press-releases/detail/145/similarweb-announces-fourth-quarter-and-fiscal-2025-results",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "'over 1,000 employees worldwide' per FY2025 results"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 1000,
+        "is_estimate": false,
         "unit": "people"
       },
       "funding_stage": {
         "value": "public",
         "confidence": 0.95,
         "unknown": false,
-        "source": "https://nocamels.com/2021/05/similarweb-ipo-nyse-valuation-public/",
+        "source": "https://en.wikipedia.org/wiki/Semrush",
         "provenance": {
-          "source": "https://nocamels.com/2021/05/similarweb-ipo-nyse-valuation-public/",
-          "source_type": "press_release",
+          "source": "https://en.wikipedia.org/wiki/Semrush",
+          "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "IPO on NYSE May 2021 (NYSE: SMWB)"
+          "method": null
         },
         "notes": null
       },
       "total_funding": {
-        "value": 240000000,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/organization/similarweb",
-        "provenance": {
-          "source": "https://www.crunchbase.com/organization/similarweb",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Crunchbase/Tracxn: ~$240M over 9 rounds pre-IPO"
-        },
-        "notes": null,
-        "unit": "USD"
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
       },
       "investors": {
-        "value": [
-          "ION Crossover Partners",
-          "Viola Growth",
-          "Naspers",
-          "Viola Group"
-        ],
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/organization/similarweb",
-        "provenance": {
-          "source": "https://www.crunchbase.com/organization/similarweb",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "named lead investors from search results"
-        },
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
         "notes": null
       },
       "estimated_arr": {
-        "value": 250000000,
-        "confidence": 0.55,
+        "value": 471400000,
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://ir.similarweb.com/news-events/press-releases/detail/145/similarweb-announces-fourth-quarter-and-fiscal-2025-results",
+        "source": "https://investors.semrush.com/financials/quarterly-results/default.aspx",
         "provenance": {
-          "source": "https://ir.similarweb.com/news-events/press-releases/detail/145/similarweb-announces-fourth-quarter-and-fiscal-2025-results",
-          "source_type": "press_release",
+          "source": "https://investors.semrush.com/financials/quarterly-results/default.aspx",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "FY2025 revenue $282.6M (+13%); ARR >$200M reported; ~$250M is rounded estimate"
+          "method": null
         },
         "notes": null,
-        "is_estimate": true,
-        "range_low": 200000000,
-        "range_high": 282600000,
+        "is_estimate": false,
         "unit": "USD"
       },
       "commercial_model": {
-        "value": "B2B SaaS digital/traffic intelligence platform; subscription + data-as-a-service (API/MCP), self-service + enterprise sales",
-        "confidence": 0.85,
+        "value": "commercial",
+        "confidence": 0.95,
         "unknown": false,
-        "source": "https://www.similarweb.com/corp/pricing/",
+        "source": "https://www.semrush.com/pricing/",
         "provenance": {
-          "source": "https://www.similarweb.com/corp/pricing/",
-          "source_type": "official_website",
+          "source": "https://www.semrush.com/pricing/",
+          "source_type": "pricing_page",
           "as_of": "2026-06-28",
-          "method": "pricing + product pages"
+          "method": null
         },
         "notes": null
       }
     },
     {
-      "entity_ref": "owler",
+      "entity_ref": "evalueserve-insightsfirst",
       "company_name": {
-        "value": "Owler",
+        "value": "Evalueserve",
         "confidence": 0.95,
         "unknown": false,
-        "source": "https://corp.owler.com/about",
+        "source": "https://www.evalueserve.com/",
         "provenance": {
-          "source": "https://corp.owler.com/about",
+          "source": "https://www.evalueserve.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "first-party about page"
+          "method": null
         },
         "notes": null
       },
       "website": {
-        "value": "https://www.owler.com",
+        "value": "https://www.evalueserve.com",
         "confidence": 0.95,
         "unknown": false,
-        "source": "https://www.owler.com",
+        "source": "https://www.evalueserve.com/",
         "provenance": {
-          "source": "https://www.owler.com",
+          "source": "https://www.evalueserve.com/",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "primary domain"
+          "method": null
         },
         "notes": null
       },
       "headquarters": {
-        "value": "San Mateo, CA",
+        "value": "Zug, Switzerland",
         "confidence": 0.9,
         "unknown": false,
-        "source": "https://en.wikipedia.org/wiki/Owler",
+        "source": "https://www.linkedin.com/company/evalueserve",
         "provenance": {
-          "source": "https://en.wikipedia.org/wiki/Owler",
-          "source_type": "third_party_db",
+          "source": "https://www.linkedin.com/company/evalueserve",
+          "source_type": "social_profile",
           "as_of": "2026-06-28",
-          "method": "Wikipedia + press corroboration"
+          "method": null
         },
         "notes": null
       },
       "founded_year": {
-        "value": 2011,
-        "confidence": 0.9,
+        "value": 2000,
+        "confidence": 0.85,
         "unknown": false,
-        "source": "https://en.wikipedia.org/wiki/Owler",
+        "source": "https://www.evalueserve.com/",
         "provenance": {
-          "source": "https://en.wikipedia.org/wiki/Owler",
+          "source": "https://www.evalueserve.com/",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "Wikipedia founding date"
+          "method": null
         },
         "notes": null
       },
       "founders": {
         "value": [
-          "Jim Fowler",
-          "Tim Harsch"
+          "Marc Vollenweider",
+          "Alok Aggarwal"
         ],
         "confidence": 0.85,
         "unknown": false,
-        "source": "https://en.wikipedia.org/wiki/Owler",
+        "source": "https://www.evalueserve.com/",
         "provenance": {
-          "source": "https://en.wikipedia.org/wiki/Owler",
+          "source": "https://www.evalueserve.com/",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "Wikipedia; Fowler also founded Jigsaw"
+          "method": null
         },
         "notes": null
       },
       "employee_estimate": {
-        "value": 100,
-        "confidence": 0.45,
+        "value": 6200,
+        "confidence": 0.8,
         "unknown": false,
-        "source": "https://tracxn.com/d/companies/owler/__i78e05So5KiHwoETK2vdhfgTmpkeOiPJGANO-FUKbBk",
+        "source": "https://www.linkedin.com/company/evalueserve",
         "provenance": {
-          "source": "https://tracxn.com/d/companies/owler/__i78e05So5KiHwoETK2vdhfgTmpkeOiPJGANO-FUKbBk",
-          "source_type": "third_party_db",
+          "source": "https://www.linkedin.com/company/evalueserve",
+          "source_type": "social_profile",
           "as_of": "2026-06-28",
-          "method": "inferred from third-party profiles; now a Meltwater product"
+          "method": null
         },
         "notes": null,
         "is_estimate": true,
-        "range_low": 50,
-        "range_high": 200,
+        "range_low": 6000,
+        "range_high": 6500,
         "unit": "people"
       },
       "funding_stage": {
-        "value": "acquired",
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "total_funding": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "investors": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": 869250000,
+        "confidence": 0.55,
+        "unknown": false,
+        "source": "https://growjo.com/company/Evalueserve",
+        "provenance": {
+          "source": "https://growjo.com/company/Evalueserve",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 810000000,
+        "range_high": 928000000,
+        "unit": "USD"
+      },
+      "commercial_model": {
+        "value": "commercial",
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
+        "provenance": {
+          "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "ahrefs",
+      "company_name": {
+        "value": "Ahrefs",
         "confidence": 0.95,
         "unknown": false,
-        "source": "https://www.meltwater.com/en/about/press-releases/meltwater-acquires-business-information-company-owler",
+        "source": "https://ahrefs.com",
         "provenance": {
-          "source": "https://www.meltwater.com/en/about/press-releases/meltwater-acquires-business-information-company-owler",
-          "source_type": "press_release",
+          "source": "https://ahrefs.com",
+          "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "acquired by Meltwater June 2021"
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://ahrefs.com",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://ahrefs.com",
+        "provenance": {
+          "source": "https://ahrefs.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "Singapore",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/ahrefs",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/ahrefs",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2010,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/ahrefs",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/ahrefs",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "Dmitry Gerasimenko",
+          "Igor Pikovets"
+        ],
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/ahrefs",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/ahrefs",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 152,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/ahrefs",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/ahrefs",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 143,
+        "range_high": 171,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "bootstrapped",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/ahrefs",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/ahrefs",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
         },
         "notes": null
       },
       "total_funding": {
-        "value": 30800000,
-        "confidence": 0.6,
+        "value": 0,
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://en.wikipedia.org/wiki/Owler",
+        "source": "https://www.crunchbase.com/organization/ahrefs",
         "provenance": {
-          "source": "https://en.wikipedia.org/wiki/Owler",
+          "source": "https://www.crunchbase.com/organization/ahrefs",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "reported ~$30.8M across rounds pre-acquisition"
+          "method": null
+        },
+        "notes": null,
+        "unit": "USD"
+      },
+      "investors": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": 149100000,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://getlatka.com/companies/ahrefs",
+        "provenance": {
+          "source": "https://getlatka.com/companies/ahrefs",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": false,
+        "unit": "USD"
+      },
+      "commercial_model": {
+        "value": "commercial",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://ahrefs.com/pricing",
+        "provenance": {
+          "source": "https://ahrefs.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "quid",
+      "company_name": {
+        "value": "Quid",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.quid.com/",
+        "provenance": {
+          "source": "https://www.quid.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "website": {
+        "value": "https://www.quid.com/",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.quid.com/",
+        "provenance": {
+          "source": "https://www.quid.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "headquarters": {
+        "value": "San Francisco, California, USA",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://en.wikipedia.org/wiki/Quid_Inc.",
+        "provenance": {
+          "source": "https://en.wikipedia.org/wiki/Quid_Inc.",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founded_year": {
+        "value": 2010,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://en.wikipedia.org/wiki/Quid_Inc.",
+        "provenance": {
+          "source": "https://en.wikipedia.org/wiki/Quid_Inc.",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "founders": {
+        "value": [
+          "Bob Goodson",
+          "Sean Gourley"
+        ],
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://en.wikipedia.org/wiki/Quid_Inc.",
+        "provenance": {
+          "source": "https://en.wikipedia.org/wiki/Quid_Inc.",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 267,
+        "confidence": 0.75,
+        "unknown": false,
+        "source": "https://www.linkedin.com/company/quidofficial",
+        "provenance": {
+          "source": "https://www.linkedin.com/company/quidofficial",
+          "source_type": "social_profile",
+          "as_of": "2026-06-28",
+          "method": null
         },
         "notes": null,
         "is_estimate": true,
+        "range_low": 201,
+        "range_high": 500,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "acquired",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/netbase-quid",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/netbase-quid",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "acquired by Fibonacci/APAX Jan 2025"
+        },
+        "notes": null
+      },
+      "total_funding": {
+        "value": 106000000,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/organization/quid",
+        "provenance": {
+          "source": "https://www.crunchbase.com/organization/quid",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": true,
+        "range_low": 86500000,
+        "range_high": 106000000,
         "unit": "USD"
       },
       "investors": {
         "value": [
-          "Norwest Venture Partners",
-          "Trinity Ventures"
+          "ARTIS Ventures",
+          "Atomico",
+          "Altos Ventures",
+          "Spring Lake Equity Partners"
         ],
-        "confidence": 0.7,
+        "confidence": 0.8,
         "unknown": false,
-        "source": "https://en.wikipedia.org/wiki/Owler",
+        "source": "https://www.crunchbase.com/organization/quid",
         "provenance": {
-          "source": "https://en.wikipedia.org/wiki/Owler",
+          "source": "https://www.crunchbase.com/organization/quid",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "named VC backers pre-acquisition"
+          "method": null
         },
         "notes": null
       },
@@ -1827,12 +2934,12 @@
         "value": "commercial",
         "confidence": 0.9,
         "unknown": false,
-        "source": "https://corp.owler.com/",
+        "source": "https://www.quid.com/",
         "provenance": {
-          "source": "https://corp.owler.com/",
-          "source_type": "official_website",
+          "source": "https://www.quid.com/",
+          "source_type": "press_release",
           "as_of": "2026-06-28",
-          "method": "freemium SaaS, paid subscriptions"
+          "method": "Outcomes-as-a-Service / enterprise"
         },
         "notes": null
       }
@@ -1848,7 +2955,7 @@
           "source": "https://www.crunchbase.com",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "homepage"
+          "method": null
         },
         "notes": null
       },
@@ -1861,33 +2968,33 @@
           "source": "https://www.crunchbase.com",
           "source_type": "official_website",
           "as_of": "2026-06-28",
-          "method": "homepage"
+          "method": null
         },
         "notes": null
       },
       "headquarters": {
-        "value": "San Francisco, CA (Remote-First, US)",
-        "confidence": 0.85,
+        "value": "San Francisco, California, USA",
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.linkedin.com/company/crunchbase",
+        "source": "https://tracxn.com/d/companies/crunchbase",
         "provenance": {
-          "source": "https://www.linkedin.com/company/crunchbase",
-          "source_type": "social_profile",
+          "source": "https://tracxn.com/d/companies/crunchbase",
+          "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "LinkedIn company page lists Remote First, US; HQ historically San Francisco"
+          "method": null
         },
         "notes": null
       },
       "founded_year": {
         "value": 2007,
-        "confidence": 0.95,
+        "confidence": 0.9,
         "unknown": false,
-        "source": "https://www.linkedin.com/company/crunchbase",
+        "source": "https://en.wikipedia.org/wiki/Crunchbase",
         "provenance": {
-          "source": "https://www.linkedin.com/company/crunchbase",
-          "source_type": "social_profile",
+          "source": "https://en.wikipedia.org/wiki/Crunchbase",
+          "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "LinkedIn + Wikipedia; spun out of TechCrunch"
+          "method": null
         },
         "notes": null
       },
@@ -1895,504 +3002,80 @@
         "value": [
           "Michael Arrington"
         ],
-        "confidence": 0.8,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/crunchbase",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/crunchbase",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Founded 2007 by Michael Arrington as a database for TechCrunch"
-        },
-        "notes": null
-      },
-      "employee_estimate": {
-        "value": 251,
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/crunchbase",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/crunchbase",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Tracxn May 2026; LinkedIn ~248"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 240,
-        "range_high": 260,
-        "unit": "people"
-      },
-      "funding_stage": {
-        "value": "series_d",
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/crunchbase",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/crunchbase",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Series D reported (later than spec's series_c assumption)"
-        },
-        "notes": null
-      },
-      "total_funding": {
-        "value": 56000000,
-        "confidence": 0.55,
+        "confidence": 0.85,
         "unknown": false,
         "source": "https://en.wikipedia.org/wiki/Crunchbase",
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Crunchbase",
           "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "~$56M from Series B $18M (2017) + Series C $30M (2019) plus earlier; some sources cite up to $100M including later rounds"
+          "method": null
+        },
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": 251,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://tracxn.com/d/companies/crunchbase",
+        "provenance": {
+          "source": "https://tracxn.com/d/companies/crunchbase",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
         },
         "notes": null,
         "is_estimate": true,
-        "range_low": 56000000,
-        "range_high": 100000000,
+        "range_low": 249,
+        "range_high": 260,
+        "unit": "people"
+      },
+      "funding_stage": {
+        "value": "series_d",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://clay.com/dossier/crunchbase-funding",
+        "provenance": {
+          "source": "https://clay.com/dossier/crunchbase-funding",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null
+      },
+      "total_funding": {
+        "value": 106500000,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://clay.com/dossier/crunchbase-funding",
+        "provenance": {
+          "source": "https://clay.com/dossier/crunchbase-funding",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": null
+        },
+        "notes": null,
+        "is_estimate": false,
         "unit": "USD"
       },
       "investors": {
         "value": [
           "Mayfield Fund",
-          "Emergence Capital",
           "OMERS Ventures",
-          "Verizon Ventures"
+          "8VC",
+          "Verizon Ventures",
+          "Salesforce Ventures",
+          "Emergence Capital"
         ],
-        "confidence": 0.65,
-        "unknown": false,
-        "source": "https://www.cbinsights.com/company/crunchbase",
-        "provenance": {
-          "source": "https://www.cbinsights.com/company/crunchbase",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Series B led by Mayfield, Series C led by OMERS Ventures; Verizon Ventures via TechCrunch lineage"
-        },
-        "notes": null
-      },
-      "estimated_arr": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "commercial_model": {
-        "value": "commercial",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/buy/select-product",
-        "provenance": {
-          "source": "https://www.crunchbase.com/buy/select-product",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "paid subscription product"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "visualping",
-      "company_name": {
-        "value": "Webmonitoring Technologies Inc. (Visualping)",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://visualping.io",
-        "provenance": {
-          "source": "https://visualping.io",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Footer legal entity name"
-        },
-        "notes": null
-      },
-      "website": {
-        "value": "https://visualping.io",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://visualping.io",
-        "provenance": {
-          "source": "https://visualping.io",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Direct"
-        },
-        "notes": null
-      },
-      "headquarters": {
-        "value": "Vancouver, BC, Canada",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://visualping.io",
-        "provenance": {
-          "source": "https://visualping.io",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Footer address 555 Burrard Street, Vancouver"
-        },
-        "notes": null
-      },
-      "founded_year": {
-        "value": 2016,
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://ca.linkedin.com/company/visualping",
-        "provenance": {
-          "source": "https://ca.linkedin.com/company/visualping",
-          "source_type": "social_profile",
-          "as_of": "2026-06-28",
-          "method": "LinkedIn company page; corroborated by Tracxn/CBInsights (some sources say 2015)"
-        },
-        "notes": null
-      },
-      "founders": {
-        "value": [
-          "Serge Salager"
-        ],
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/person/serge-salager",
-        "provenance": {
-          "source": "https://www.crunchbase.com/person/serge-salager",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Crunchbase CEO/founder; search corroboration"
-        },
-        "notes": null
-      },
-      "employee_estimate": {
-        "value": 30,
-        "confidence": 0.55,
-        "unknown": false,
-        "source": "https://ca.linkedin.com/company/visualping",
-        "provenance": {
-          "source": "https://ca.linkedin.com/company/visualping",
-          "source_type": "social_profile",
-          "as_of": "2026-06-28",
-          "method": "LinkedIn size 11-50; third-party DBs report 25-35"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 11,
-        "range_high": 50,
-        "unit": "people"
-      },
-      "funding_stage": {
-        "value": "Seed/Venture",
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/organization/visualping",
-        "provenance": {
-          "source": "https://www.crunchbase.com/organization/visualping",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Inferred from total raised and investor profile"
-        },
-        "notes": null
-      },
-      "total_funding": {
-        "value": 8500000,
-        "confidence": 0.55,
-        "unknown": false,
-        "source": "https://www.crunchbase.com/organization/visualping",
-        "provenance": {
-          "source": "https://www.crunchbase.com/organization/visualping",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Search results cite $8.5M raised"
-        },
-        "notes": null,
-        "unit": "USD"
-      },
-      "investors": {
-        "value": [
-          "FUSE",
-          "N49P",
-          "Mistral Venture Partners",
-          "WUTIF Capital",
-          "Google Accelerator",
-          "Wellfound"
-        ],
-        "confidence": 0.5,
-        "unknown": false,
-        "source": "https://tracxn.com/d/companies/visualping/__8I1K8AeI6MFIucPHlaM4Gg_n0fo6cvdWpjhDCsCW7Nk",
-        "provenance": {
-          "source": "https://tracxn.com/d/companies/visualping/__8I1K8AeI6MFIucPHlaM4Gg_n0fo6cvdWpjhDCsCW7Nk",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Search aggregation across Tracxn/Crunchbase"
-        },
-        "notes": null
-      },
-      "estimated_arr": {
-        "value": 7500000,
-        "confidence": 0.4,
-        "unknown": false,
-        "source": "https://growjo.com/company/Visualping",
-        "provenance": {
-          "source": "https://growjo.com/company/Visualping",
-          "source_type": "third_party_db",
-          "as_of": "2026-06-28",
-          "method": "Conflicting estimates: Latka cites $858.8K (2024), other sources ~$7.5M (2025); wide uncertainty"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 858800,
-        "range_high": 7500000,
-        "unit": "USD"
-      },
-      "commercial_model": {
-        "value": "B2B/B2C SaaS subscription (freemium)",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://visualping.io/pricing",
-        "provenance": {
-          "source": "https://visualping.io/pricing",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "Personal and Business plans plus enterprise Solutions"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "alphasense",
-      "company_name": {
-        "value": "AlphaSense",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/about/",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/about/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "official about/homepage branding"
-        },
-        "notes": null
-      },
-      "website": {
-        "value": "https://www.alpha-sense.com",
-        "confidence": 0.95,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com",
-        "provenance": {
-          "source": "https://www.alpha-sense.com",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "direct fetch"
-        },
-        "notes": null
-      },
-      "headquarters": {
-        "value": "New York, NY",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/about/",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/about/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "stated headquartered in NYC"
-        },
-        "notes": null
-      },
-      "founded_year": {
-        "value": 2011,
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/about/",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/about/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "company history"
-        },
-        "notes": null
-      },
-      "founders": {
-        "value": [
-          "Jack Kokko",
-          "Raj Neervannan"
-        ],
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/about/",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/about/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "founding story"
-        },
-        "notes": null
-      },
-      "employee_estimate": {
-        "value": 2000,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/careers/",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/careers/",
-          "source_type": "official_website",
-          "as_of": "2026-06-28",
-          "method": "'more than 2,000 employees globally' per careers/about"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 2000,
-        "range_high": 2500,
-        "unit": "people"
-      },
-      "funding_stage": {
-        "value": "late_stage",
-        "confidence": 0.7,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/press/alphasense-raises-350m-at-7-5b-valuation-and-surpasses-600m-in-annual-recurring-revenue/",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/press/alphasense-raises-350m-at-7-5b-valuation-and-surpasses-600m-in-annual-recurring-revenue/",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "multiple late-stage growth rounds; total >$1B raised"
-        },
-        "notes": null
-      },
-      "total_funding": {
-        "value": 1650000000,
-        "confidence": 0.6,
-        "unknown": false,
-        "source": "https://news.crunchbase.com/ai/huge-rounds-mistral-alphasense/",
-        "provenance": {
-          "source": "https://news.crunchbase.com/ai/huge-rounds-mistral-alphasense/",
-          "source_type": "search_result",
-          "as_of": "2026-06-28",
-          "method": "$650M (2024) + $350M (2026) plus prior rounds; press states total now exceeds $1B"
-        },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 1000000000,
-        "range_high": 1700000000,
-        "unit": "USD"
-      },
-      "investors": {
-        "value": [
-          "BDT & MSD Partners",
-          "Viking Global Investors",
-          "Goldman Sachs Alternatives",
-          "CapitalG (Alphabet)",
-          "J.P. Morgan",
-          "SoftBank Vision Fund 2",
-          "Blue Owl",
-          "Alkeon Capital",
-          "Vitruvian Partners",
-          "Accenture Ventures",
-          "D. E. Shaw Ventures",
-          "Pinegrove Opportunity Partners"
-        ],
-        "confidence": 0.75,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/press/alphasense-raises-350m-at-7-5b-valuation-and-surpasses-600m-in-annual-recurring-revenue/",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/press/alphasense-raises-350m-at-7-5b-valuation-and-surpasses-600m-in-annual-recurring-revenue/",
-          "source_type": "press_release",
-          "as_of": "2026-06-28",
-          "method": "named across 2024 $650M and 2026 $350M round announcements"
-        },
-        "notes": null
-      },
-      "estimated_arr": {
-        "value": 600000000,
         "confidence": 0.8,
         "unknown": false,
-        "source": "https://www.alpha-sense.com/press/alphasense-raises-350m-at-7-5b-valuation-and-surpasses-600m-in-annual-recurring-revenue/",
+        "source": "https://clay.com/dossier/crunchbase-funding",
         "provenance": {
-          "source": "https://www.alpha-sense.com/press/alphasense-raises-350m-at-7-5b-valuation-and-surpasses-600m-in-annual-recurring-revenue/",
-          "source_type": "press_release",
+          "source": "https://clay.com/dossier/crunchbase-funding",
+          "source_type": "third_party_db",
           "as_of": "2026-06-28",
-          "method": "company states surpassed $600M ARR as of Q1 2026"
+          "method": null
         },
-        "notes": null,
-        "is_estimate": true,
-        "range_low": 600000000,
-        "range_high": 650000000,
-        "unit": "USD"
-      },
-      "commercial_model": {
-        "value": "commercial",
-        "confidence": 0.9,
-        "unknown": false,
-        "source": "https://www.alpha-sense.com/pricing",
-        "provenance": {
-          "source": "https://www.alpha-sense.com/pricing",
-          "source_type": "pricing_page",
-          "as_of": "2026-06-28",
-          "method": "enterprise SaaS subscription, contact-sales"
-        },
-        "notes": null
-      }
-    },
-    {
-      "entity_ref": "nexusai",
-      "company_name": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "website": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "headquarters": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "founded_year": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "founders": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "employee_estimate": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "funding_stage": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "total_funding": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
-        "notes": null
-      },
-      "investors": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
         "notes": null
       },
       "estimated_arr": {
@@ -2403,10 +3086,16 @@
         "notes": null
       },
       "commercial_model": {
-        "value": null,
-        "confidence": 0,
-        "unknown": true,
-        "source": null,
+        "value": "freemium",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://about.crunchbase.com/",
+        "provenance": {
+          "source": "https://about.crunchbase.com/",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": null
+        },
         "notes": null
       }
     }
