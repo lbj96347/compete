@@ -1,5 +1,5 @@
 ---
-name: find-competitor
+name: compete
 description: >-
   Analyze the current repository to identify the product, then discover, profile,
   and compare competitors into a complete competitive intelligence database.
@@ -12,12 +12,49 @@ description: >-
   visual reports.
 ---
 
-# find-competitor
+# compete
 
 An AI product research assistant that turns the current repository into a
 competitive intelligence report. It identifies your product, discovers
 competitors, collects multi-dimensional intelligence about each, normalizes
 everything into JSON, and renders interactive visualizations.
+
+## Model Selection (auto by default, manually overridable)
+
+This skill spans cheap mechanical work and judgment-heavy synthesis, so it
+assigns models **per stage** instead of running everything on the session model.
+The default mapping is automatic — the user does **not** need to touch the model
+picker:
+
+| Stage | Default model | Why |
+| --- | --- | --- |
+| 1. Product Intelligence | **session model** (inline) | one-shot repo reasoning; cheap |
+| 2. Competitor Discovery — web research | **Haiku subagent** | bulky `WebSearch`/`WebFetch`; isolatable |
+| 3. Intelligence Collection — web research | **Haiku subagent, one per competitor** | biggest token sink; parallelizable |
+| 4. Knowledge Graph | **session model** (inline) | scoring/threat/SWOT judgment |
+| 5–6. Visualization + Report | **session model** (inline) | synthesis quality |
+
+Rules:
+
+- **Delegate the research in Stages 2 & 3 to subagents** (`Agent` tool,
+  `subagent_type: "claude"`, `model: "haiku"`). Each subagent runs the `plan`
+  output with `WebSearch`/`WebFetch` in its **own context** and returns only the
+  compact `candidates.json` / `findings.json`-shaped data. The bulky fetched
+  pages never enter the main context — this is where the token savings come from.
+  Spawn Stage 3 subagents **in parallel, one per competitor**.
+- **Keep Stages 1, 4, 5–6 on the main session model** — they need reasoning
+  quality and are already cheap.
+- **Guardrail for cheaper collectors:** instruct every research subagent to
+  **prefer `unknown: true` over guessing**. `--validate` catches structural
+  errors but not confident fabrication, and weaker models fabricate more.
+- **Manual override:** if the user specifies a model (e.g. "use sonnet for
+  research", or the `model=` / `research-model=` argument on `/compete`),
+  use that model for the research subagents instead of the Haiku default. A
+  request for "higher fidelity" research should bump collectors to Sonnet.
+  "fast"/"cheap" keeps Haiku. The user may also pin the whole run to one model.
+- This applies only inside **Claude Code** (where the `Agent` tool and per-spawn
+  `model` overrides exist). Running the Python scripts standalone has no subagent
+  layer, so model selection does not apply there.
 
 ## High-Level Workflow
 
