@@ -61,6 +61,14 @@
           "description": "Cheapest paid entry point, denormalized for the pricing matrix.",
           "$ref": "common.schema.json#/$defs/metricField"
         },
+        "estimated_mrr": {
+          "description": "Estimated monthly recurring revenue. Almost always a soft figure — set `is_estimate: true`, supply `range_low`/`range_high` for the plausible band, `unit` for the currency (e.g. USD), and keep `confidence` low. Prefer `unknown: true` over guessing. Derive from disclosed ARR (÷12), customer-count × ACV, or third-party estimates; record how in `provenance.method`.",
+          "$ref": "common.schema.json#/$defs/metricField"
+        },
+        "estimated_users": {
+          "description": "Estimated number of users/customers. A soft figure like `estimated_mrr` — set `is_estimate: true`, supply `range_low`/`range_high`, an optional `unit` (e.g. 'paid customers', 'monthly active users'), and keep `confidence` low. Prefer `unknown: true` over guessing. Derive from disclosed counts, press claims, or third-party traffic/usage estimates; record how in `provenance.method`.",
+          "$ref": "common.schema.json#/$defs/metricField"
+        },
         "plans": {
           "type": "array",
           "items": { "$ref": "#/$defs/plan" }

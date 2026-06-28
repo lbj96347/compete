@@ -105,7 +105,7 @@ Every dataset is a JSON object with a `meta` block conforming to
 }
 ```
 
-- `schema_version` is the SemVer of this contract (currently **1.0.0**). Bump
+- `schema_version` is the SemVer of this contract (currently **1.1.0**). Bump
   minor for additive fields, major for breaking changes.
 - `dataset` equals the file stem and is enumerated.
 
@@ -189,10 +189,13 @@ Array of `seo[]` keyed by `entity_ref`: `meta_title`, `meta_description`,
 ### pricing.json — pricing intelligence
 Array of `pricing[]` keyed by `entity_ref`: `pricing_page`, `pricing_model`
 (enum), `currency`, `has_free_plan`, `has_enterprise_plan`,
-`lowest_paid_monthly` (metric, denormalized for the matrix), and `plans[]`. Each
-plan: `name`, `monthly_price` (metric — use `is_estimate`/`range_*` for
-"contact us" tiers), `billing_period` (enum), `is_free`, `is_enterprise`,
-`key_features`, `limits`.
+`lowest_paid_monthly` (metric, denormalized for the matrix), `estimated_mrr`
+and `estimated_users` (metrics — soft figures, set `is_estimate: true` with a
+`range_low`/`range_high` band, an optional `unit`, and low `confidence`; prefer
+`unknown: true` over guessing), and `plans[]`. Each plan: `name`, `monthly_price`
+(metric — use `is_estimate`/`range_*` for "contact us" tiers), `billing_period`
+(enum), `is_free`, `is_enterprise`, `key_features`, `limits`. *(v1.1.0:
+`estimated_mrr`/`estimated_users` added.)*
 
 ### report.json — synthesized analysis
 Consumes every other dataset.

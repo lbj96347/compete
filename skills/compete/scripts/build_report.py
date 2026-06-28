@@ -98,6 +98,93 @@ def cell(field: Any, default: Any = None) -> dict:
     }
 
 
+def evidence_of(field: Any) -> dict:
+    """Carry a wrapped field's evidence metadata onto a view cell.
+
+    Lets the report's evidence toggle surface where a rendered value came from
+    without re-reading the source datasets. Absent on plain/None inputs.
+    """
+    if not isinstance(field, dict):
+        return {"source": None, "provenance": None, "notes": None}
+    return {
+        "source": field.get("source"),
+        "provenance": field.get("provenance"),
+        "notes": field.get("notes"),
+    }
+
+
+def link_cell(*fields: Any) -> dict:
+    """First known URL among ordered wrapped fields → a clickable link cell.
+
+    Fields are tried most-authoritative first; the winner's confidence and
+    evidence metadata are preserved. No scraping/inference — value is verbatim.
+    """
+    for f in fields:
+        value = v(f)
+        if value:
+            return {
+                "value": value,
+                "confidence": round(conf(f), 3),
+                "unknown": False,
+                "kind": "url",
+                **evidence_of(f),
+            }
+    return {
+        "value": None, "confidence": 0.0, "unknown": True, "kind": "url",
+        "source": None, "provenance": None, "notes": None,
+    }
+
+
+# Display order + short labels for social channels rendered in the matrix.
+SOCIAL_PLATFORMS = [
+    ("x", "X", "𝕏"),
+    ("linkedin", "LinkedIn", "in"),
+    ("github", "GitHub", "GH"),
+    ("youtube", "YouTube", "YT"),
+    ("discord", "Discord", "DC"),
+    ("slack", "Slack", "SL"),
+    ("reddit", "Reddit", "RD"),
+    ("facebook", "Facebook", "FB"),
+    ("instagram", "Instagram", "IG"),
+    ("tiktok", "TikTok", "TT"),
+    ("product_hunt", "Product Hunt", "PH"),
+]
+
+
+def social_cell(social_record: Any) -> dict:
+    """A list of {platform,url,handle,confidence,evidence} for the Social column.
+
+    Reads url/handle straight from the social dataset's confidence-wrapped
+    fields; a channel with neither known is dropped (no inference).
+    """
+    channels = (social_record or {}).get("social", {}) or {}
+    links = []
+    for key, label, short in SOCIAL_PLATFORMS:
+        ch = channels.get(key)
+        if not isinstance(ch, dict):
+            continue
+        url_field, handle_field = ch.get("url"), ch.get("handle")
+        url, handle = v(url_field), v(handle_field)
+        if not url and not handle:
+            continue
+        primary = url_field if url else handle_field
+        links.append({
+            "platform": key,
+            "label": label,
+            "short": short,
+            "url": url,
+            "handle": handle,
+            "confidence": round(conf(primary), 3),
+            **evidence_of(primary),
+        })
+    return {
+        "value": links,
+        "confidence": round(max((l["confidence"] for l in links), default=0.0), 3),
+        "unknown": not links,
+        "kind": "social",
+    }
+
+
 def wrap(value: Any, confidence: float, *, method: str,
          source_type: str = "inference", as_of: Optional[str] = None) -> dict:
     """Build a schema-conformant confidence-wrapped field for synthesized output."""
@@ -134,6 +221,29 @@ def as_num(field: Any) -> Optional[float]:
         return float(value)
     except (TypeError, ValueError):
         return None
+
+
+def metric_view(field: Any) -> dict:
+    """View model for a metric field carrying its estimate flag, range and unit.
+
+    The UI uses ``is_estimate``/range to label soft figures (estimated MRR, user
+    counts) honestly rather than presenting them as hard numbers. An unknown or
+    non-numeric value collapses to ``{value: None, unknown: True}`` so the
+    template renders the em-dash safely.
+    """
+    value = as_num(field)
+    f = field if isinstance(field, dict) else {}
+    low, high = f.get("range_low"), f.get("range_high")
+    return {
+        "value": value,
+        "is_estimate": bool(f.get("is_estimate")) if value is not None else False,
+        "range_low": low if isinstance(low, (int, float)) else None,
+        "range_high": high if isinstance(high, (int, float)) else None,
+        "unit": f.get("unit") if value is not None else None,
+        "confidence": round(conf(field), 3),
+        "unknown": value is None,
+        **evidence_of(field),
+    }
 
 
 # --------------------------------------------------------------------------- #
@@ -199,6 +309,7 @@ def build_entities(data: dict) -> list:
             "is_self": True,
             "name": v(identity.get("name"), "This product"),
             "website": v(identity.get("website")),
+            "website_field": identity.get("website"),
             "classification": "self",
             "similarity": 1.0,
             "company": {},
@@ -218,6 +329,7 @@ def build_entities(data: dict) -> list:
             "is_self": False,
             "name": comp.get("name") or ref,
             "website": v(comp.get("website")),
+            "website_field": comp.get("website"),
             "classification": v(comp.get("classification"), "unknown"),
             "classification_conf": conf(comp.get("classification")),
             "similarity": as_num(comp.get("similarity_score")),
@@ -414,6 +526,14 @@ def synth_swot(e: dict, scores: dict) -> dict:
     pricing = e["pricing"]
     seo = e["seo"]
     mk = e["marketing"]
+    # An absence-derived bullet ("thin SEO", "opaque pricing") is only honest when
+    # the underlying dataset record actually exists. A missing record means the
+    # dimension is *unknown*, not negative — guessing a weakness from no data
+    # would violate the "prefer unknown over guessing" rule, which matters most
+    # for the analyzed product ("self"), whose web-researched datasets are empty.
+    has_company, has_pricing, has_seo, has_social = (
+        bool(company), bool(pricing), bool(seo), bool(e["social"]))
+    has_tech = bool(e["techstack"])
 
     # --- strengths ---
     stage = (v(company.get("funding_stage")) or "").lower()
@@ -433,23 +553,23 @@ def synth_swot(e: dict, scores: dict) -> dict:
         diffs.append(v(positioning.get("positioning_statement")))
 
     # --- weaknesses ---
-    if scores["Pricing Transparency"] < 35:
+    if has_pricing and scores["Pricing Transparency"] < 35:
         weaknesses.append("Opaque or hard-to-find pricing")
-    if scores["SEO Footprint"] < 35:
+    if has_seo and scores["SEO Footprint"] < 35:
         weaknesses.append("Thin SEO footprint — low organic visibility")
-    if (v(seo.get("blog_frequency")) or "none").lower() in ("none", "rare"):
+    if has_seo and (v(seo.get("blog_frequency")) or "none").lower() in ("none", "rare"):
         weaknesses.append("Little to no content cadence")
-    if stage in ("bootstrapped", "pre-seed", "seed", ""):
+    if has_company and stage in ("bootstrapped", "pre-seed", "seed"):
         weaknesses.append("Limited funding / small team constrains pace")
-    if scores["Social Reach"] < 30:
+    if has_social and scores["Social Reach"] < 30:
         weaknesses.append("Weak social and community footprint")
 
     # --- opportunities (for THIS competitor) ---
-    if not v(pricing.get("has_free_plan")):
+    if has_pricing and not v(pricing.get("has_free_plan")):
         opportunities.append("Could add a free tier to widen the funnel")
-    if (v(seo.get("blog_frequency")) or "none").lower() in ("none", "rare"):
+    if has_seo and (v(seo.get("blog_frequency")) or "none").lower() in ("none", "rare"):
         opportunities.append("Untapped content-marketing upside")
-    if scores["Tech Depth"] < 40:
+    if has_tech and scores["Tech Depth"] < 40:
         opportunities.append("Room to deepen/modernize the product stack")
 
     # --- threats (to this competitor) ---
@@ -482,7 +602,11 @@ def synth_report(data: dict, entities: list, now_iso: str) -> dict:
     for e in entities:
         scores = capability_scores(e)
         if e["is_self"]:
-            enriched[e["ref"]] = {"scores": scores}
+            # Compute our own SWOT with the same evidence-derived heuristic so the
+            # report can show a side-by-side comparison against each competitor.
+            # Where self has no data, quadrants fall back to empty (never guessed).
+            swot, diffs = synth_swot(e, scores)
+            enriched[e["ref"]] = {"scores": scores, "swot": swot, "diffs": diffs}
             continue
         swot, diffs = synth_swot(e, scores)
         tl = threat_level(e, scores)
@@ -542,7 +666,7 @@ def synth_report(data: dict, entities: list, now_iso: str) -> dict:
 
     return {
         "meta": {
-            "schema_version": "1.0.0",
+            "schema_version": "1.1.0",
             "dataset": "report",
             "generated_at": now_iso,
             "generator": "compete/build_report 0.1.0",
@@ -694,6 +818,7 @@ COMPARISON_COLUMNS = [
     ("name", "Competitor"),
     ("classification", "Type"),
     ("similarity", "Similarity"),
+    ("website", "Website"),
     ("hq", "HQ"),
     ("founded", "Founded"),
     ("employees", "Employees"),
@@ -703,6 +828,7 @@ COMPARISON_COLUMNS = [
     ("free_plan", "Free plan"),
     ("enterprise", "Enterprise"),
     ("blog", "Blog cadence"),
+    ("social", "Social"),
     ("threat", "Threat"),
 ]
 
@@ -713,7 +839,7 @@ def build_view_models(entities: list, enriched: dict) -> dict:
     # --- comparison matrix ---
     rows = []
     for e in comp:
-        c, p, s = e["company"], e["pricing"], e["seo"]
+        c, p, s, soc = e["company"], e["pricing"], e["seo"], e["social"]
         rows.append({
             "ref": e["ref"],
             "cells": {
@@ -724,6 +850,13 @@ def build_view_models(entities: list, enriched: dict) -> dict:
                 "similarity": {"value": e.get("similarity"),
                                "confidence": 0.6,
                                "unknown": e.get("similarity") is None},
+                # Official website: companies dataset (most authoritative) →
+                # competitors roster → social presence homepage.
+                "website": link_cell(
+                    c.get("website"),
+                    e.get("website_field"),
+                    (soc.get("website") or {}).get("homepage"),
+                ),
                 "hq": cell(c.get("headquarters")),
                 "founded": cell(c.get("founded_year")),
                 "employees": cell(c.get("employee_estimate")),
@@ -733,6 +866,7 @@ def build_view_models(entities: list, enriched: dict) -> dict:
                 "free_plan": cell(p.get("has_free_plan")),
                 "enterprise": cell(p.get("has_enterprise_plan")),
                 "blog": cell(s.get("blog_frequency")),
+                "social": social_cell(soc),
                 "threat": {"value": enriched[e["ref"]].get("threat"),
                            "confidence": 0.5,
                            "unknown": enriched[e["ref"]].get("threat") is None},
@@ -772,6 +906,9 @@ def build_view_models(entities: list, enriched: dict) -> dict:
                 "billing_period": v(plan.get("billing_period")),
                 "is_free": bool(v(plan.get("is_free"))),
                 "is_enterprise": bool(v(plan.get("is_enterprise"))),
+                # Where this plan's price came from — keep the wrapper's evidence
+                # so the report can show its source without re-reading pricing.json.
+                "evidence": evidence_of(plan.get("monthly_price")),
             })
         pricing_rows.append({
             "ref": e["ref"], "name": e["name"],
@@ -780,7 +917,19 @@ def build_view_models(entities: list, enriched: dict) -> dict:
             "has_free_plan": bool(v(p.get("has_free_plan"))),
             "has_enterprise_plan": bool(v(p.get("has_enterprise_plan"))),
             "lowest_paid_monthly": as_num(p.get("lowest_paid_monthly")),
+            "estimated_mrr": metric_view(p.get("estimated_mrr")),
+            "estimated_users": metric_view(p.get("estimated_users")),
             "pricing_page": v(p.get("pricing_page")),
+            # Per-field source/provenance for the pricing row's evidence toggles.
+            # The display values above are flattened for the chart/sort; these keep
+            # the wrappers so evidence is shown beside the figure it backs.
+            "evidence": {
+                "pricing_model": evidence_of(p.get("pricing_model")),
+                "lowest_paid_monthly": evidence_of(p.get("lowest_paid_monthly")),
+                "has_free_plan": evidence_of(p.get("has_free_plan")),
+                "has_enterprise_plan": evidence_of(p.get("has_enterprise_plan")),
+                "pricing_page": evidence_of(p.get("pricing_page")),
+            },
             "plans": plans,
         })
 
@@ -827,11 +976,27 @@ def build_view_models(entities: list, enriched: dict) -> dict:
             "threat": en.get("threat"),
             "scores": en["scores"],
             "overall": round(overall(e), 1),
-            "swot": {k: as_list(en["swot"][k]) for k in
-                     ("strengths", "weaknesses", "opportunities", "threats")},
+            # Each SWOT quadrant keeps its derivation evidence (the `method` note
+            # explaining how the bullets were inferred) beside its items, so the
+            # report can show its work without flattening the wrapper away.
+            "swot": {k: {"items": as_list(en["swot"][k]), **evidence_of(en["swot"][k])}
+                     for k in ("strengths", "weaknesses", "opportunities", "threats")},
             "differentiators": en.get("diffs", []),
         })
     cards.sort(key=lambda c: c["overall"], reverse=True)
+
+    # Our own SWOT (same wrapper shape as a card's swot), so the SWOT view can
+    # render each competitor side-by-side against us. None / empty quadrants are
+    # preserved verbatim — absent data is shown as "No signal", never invented.
+    self_swot = None
+    self_name = "This product"
+    if self_e is not None:
+        self_name = self_e["name"]
+        en_self = enriched.get("self", {})
+        if "swot" in en_self:
+            self_swot = {k: {"items": as_list(en_self["swot"][k]),
+                             **evidence_of(en_self["swot"][k])}
+                         for k in ("strengths", "weaknesses", "opportunities", "threats")}
 
     return {
         "overview": overview,
@@ -839,6 +1004,8 @@ def build_view_models(entities: list, enriched: dict) -> dict:
         "radar": {"axes": RADAR_AXES, "series": radar_series},
         "pricing_matrix": {"rows": pricing_rows},
         "cards": cards,
+        "self_swot": self_swot,
+        "self_name": self_name,
     }
 
 

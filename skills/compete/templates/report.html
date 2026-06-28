@@ -95,7 +95,35 @@ td.name{font-weight:600;color:var(--txt)}
 td .cellval{display:inline-block}
 td.unk{color:var(--txt-faint);font-style:italic}
 .confbar{display:block;height:3px;border-radius:2px;background:var(--accent);margin-top:5px;opacity:.7}
+td a.ext{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(110,168,254,.3);word-break:break-all}
+td a.ext:hover{border-bottom-color:var(--accent)}
+.socwrap{display:inline-flex;flex-wrap:wrap;gap:5px}
+.soc{display:inline-flex;align-items:center;justify-content:center;min-width:24px;height:22px;padding:0 6px;
+  font-size:11px;font-weight:700;line-height:1;border-radius:6px;border:1px solid var(--line);
+  color:var(--accent);background:rgba(110,168,254,.08);text-decoration:none}
+.soc:hover{border-color:var(--accent);background:rgba(110,168,254,.16)}
+.soc.soc-noref{color:var(--txt-dim);background:transparent;cursor:default}
+.est{white-space:nowrap;cursor:help;border-bottom:1px dotted var(--txt-faint)}
+.estbadge{font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--med);
+  border:1px solid rgba(251,191,36,.4);background:rgba(251,191,36,.12);padding:1px 4px;border-radius:4px;vertical-align:1px}
 .legend-conf{display:flex;align-items:center;gap:8px;color:var(--txt-faint);font-size:12px;margin-top:10px}
+
+/* ---- evidence toggle / popover ---- */
+.ev{position:relative;display:inline-block;margin-left:5px;vertical-align:1px}
+.evtoggle{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;padding:0;
+  font-size:11px;line-height:1;border-radius:50%;border:1px solid var(--line);background:var(--panel-2);
+  color:var(--txt-faint);cursor:pointer;transition:.15s}
+.evtoggle:hover{color:var(--accent);border-color:var(--accent)}
+.evpop{display:none;position:absolute;z-index:60;top:calc(100% + 6px);left:0;min-width:220px;max-width:340px;
+  white-space:normal;text-align:left;background:var(--panel-2);border:1px solid var(--line);border-radius:10px;
+  padding:9px 11px;box-shadow:var(--shadow);font-size:12px;font-weight:400;color:var(--txt);line-height:1.45;cursor:auto}
+.evpop.open{display:block}
+.evpop::before{content:"Source & provenance";display:block;font-size:10px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--txt-faint);margin-bottom:6px}
+.evrow{display:flex;gap:8px;margin:3px 0}
+.evrow>span{flex:0 0 58px;color:var(--txt-faint);font-size:11px}
+.evrow>b,.evrow>a{font-weight:500;color:var(--txt);word-break:break-word}
+.ev-none{color:var(--txt-faint);font-style:italic}
 
 /* ---- chart boxes ---- */
 .chartbox{position:relative;height:340px}
@@ -118,6 +146,12 @@ td.unk{color:var(--txt-faint);font-style:italic}
 .swot-cell ul{margin:0;padding-left:17px;font-size:13px;color:var(--txt-dim)}
 .swot-cell li{margin:5px 0}
 .swot-cell .empty{color:var(--txt-faint);font-style:italic;font-size:13px}
+/* side-by-side us-vs-them within each quadrant */
+.swot-cmp{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.swot-side{min-width:0}
+.swot-side-h{font-size:11px;font-weight:600;letter-spacing:.03em;color:var(--txt-faint);margin-bottom:6px;display:flex;align-items:center;gap:6px;border-bottom:1px solid var(--line);padding-bottom:4px}
+.swot-side.us .swot-side-h{color:var(--accent)}
+.swot-side ul{padding-left:16px}
 
 /* ---- accordion ---- */
 .acc{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:10px;background:var(--panel)}
@@ -153,6 +187,9 @@ td.unk{color:var(--txt-faint);font-style:italic}
 .kf .b{color:var(--accent);font-weight:700;margin-top:1px}
 
 footer{max-width:var(--maxw);margin:0 auto;padding:30px 22px 50px;color:var(--txt-faint);font-size:12.5px;border-top:1px solid var(--line)}
+footer .branding{margin-top:10px;display:flex;gap:16px;flex-wrap:wrap;font-size:12px}
+footer .branding a{color:var(--txt-faint);text-decoration:none}
+footer .branding a:hover{color:var(--txt-dim);text-decoration:underline}
 .muted{color:var(--txt-faint)}
 </style>
 </head>
@@ -214,7 +251,8 @@ footer{max-width:var(--maxw);margin:0 auto;padding:30px 22px 50px;color:var(--tx
   <!-- PRICING -->
   <section class="view" id="view-pricing">
     <div class="sec-head"><h2>Pricing matrix</h2>
-      <p>Entry price, model, free / enterprise availability and plan ladders for every tracked competitor.</p></div>
+      <p>Entry price, model, free / enterprise availability and plan ladders for every tracked competitor.
+      MRR and user counts marked <span class="estbadge">est.</span> are estimates (hover for the plausible range and confidence).</p></div>
     <div class="panel" style="margin-bottom:16px">
       <h3>Entry price comparison <span class="muted" style="font-weight:400;font-size:13px">(lowest paid plan, monthly)</span></h3>
       <div class="chartbox"><canvas id="chartPrice"></canvas></div>
@@ -232,7 +270,7 @@ footer{max-width:var(--maxw);margin:0 auto;padding:30px 22px 50px;color:var(--tx
   <!-- SWOT -->
   <section class="view" id="view-swot">
     <div class="sec-head"><h2>SWOT analysis</h2>
-      <p>Per-competitor strengths, weaknesses, opportunities and threats with capability breakdown. Ranked by overall capability. Click to expand.</p></div>
+      <p>Our product side-by-side with each competitor across strengths, weaknesses, opportunities and threats, plus a capability breakdown. Ranked by overall capability. Click to expand.</p></div>
     <div id="swotAcc"></div>
   </section>
 
@@ -250,6 +288,11 @@ footer{max-width:var(--maxw);margin:0 auto;padding:30px 22px 50px;color:var(--tx
 <footer>
   <div id="footMeta"></div>
   <div style="margin-top:6px">Self-contained report generated by <b>compete / InsightKit</b>. All analytic judgments are heuristic and confidence-annotated — verify before acting. Charts rendered with Chart.js &amp; D3.</div>
+  <div class="branding">
+    <a href="https://forthrighttech.com/" target="_blank" rel="noopener noreferrer">Forthright Tech</a>
+    <a href="https://x.com/lbjhkg" target="_blank" rel="noopener noreferrer">X / @lbjhkg</a>
+    <a href="https://github.com/lbj96347" target="_blank" rel="noopener noreferrer">GitHub / lbj96347</a>
+  </div>
 </footer>
 
 <script>
@@ -264,6 +307,45 @@ const fmtN = n => (n===null||n===undefined||n!==n)?"—":(Math.round(n*100)/100)
 const cap = s => s ? s.charAt(0).toUpperCase()+s.slice(1) : s;
 const lvlClass = l => l==="high"?"hi":l==="medium"?"med":l==="low"?"lo":"";
 const esc = s => (s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---------- evidence (source / provenance) toggle ----------
+   Renders a small ⓘ button beside a value; clicking reveals a popover with the
+   field's source URL, source type, as-of date, derivation method and notes —
+   straight from the confidence wrapper, no re-reading of the datasets. Fields
+   with no evidence return "" so unknown sources stay hidden, never faked. */
+function hasEvidence(ev){
+  if(!ev||typeof ev!=="object") return false;
+  const p=ev.provenance||{};
+  return !!(ev.source||ev.notes||p.method||p.source||p.as_of||p.source_type);
+}
+function evRow(label,inner){return `<div class="evrow"><span>${esc(label)}</span>${inner}</div>`;}
+function evidenceHTML(ev){
+  if(!hasEvidence(ev)) return "";
+  const p=ev.provenance||{}, rows=[];
+  const src=ev.source||p.source;
+  if(src){
+    rows.push(evRow("Source", /^https?:\/\//.test(src)
+      ? `<a class="ext" href="${esc(src)}" target="_blank" rel="noopener noreferrer">${esc(String(src).replace(/^https?:\/\//,""))}</a>`
+      : `<b>${esc(src)}</b>`));
+  }
+  if(p.source_type) rows.push(evRow("Type", `<b>${esc(p.source_type)}</b>`));
+  if(p.as_of) rows.push(evRow("As of", `<b>${esc(p.as_of)}</b>`));
+  if(p.method) rows.push(evRow("Method", `<b>${esc(p.method)}</b>`));
+  if(ev.notes) rows.push(evRow("Notes", `<b>${esc(ev.notes)}</b>`));
+  return `<span class="ev"><button class="evtoggle" type="button" title="Show source &amp; provenance" aria-label="Show source and provenance">&#9432;</button>`
+    +`<span class="evpop">${rows.join("")}</span></span>`;
+}
+/* one delegated handler: toggle the clicked popover, close any other / outside click */
+document.addEventListener("click",e=>{
+  const btn=e.target.closest(".evtoggle");
+  if(btn){
+    const pop=btn.nextElementSibling, open=pop.classList.contains("open");
+    document.querySelectorAll(".evpop.open").forEach(p=>p.classList.remove("open"));
+    if(!open) pop.classList.add("open");
+    e.stopPropagation(); return;
+  }
+  if(!e.target.closest(".evpop")) document.querySelectorAll(".evpop.open").forEach(p=>p.classList.remove("open"));
+});
 
 /* ---------- header / hero ---------- */
 const pname = (D.meta.product && D.meta.product.name) || "this product";
@@ -355,6 +437,27 @@ renderers.matrix=function(){
   let sortKey="similarity", sortDir=-1;
   function cellHTML(c,key){
     if(!c) return '<td class="unk">—</td>';
+    if(key==="website"){
+      if(c.unknown||!c.value) return '<td class="unk">—</td>';
+      const href=esc(c.value);
+      const label=esc(String(c.value).replace(/^https?:\/\//,"").replace(/\/$/,""));
+      const cf=Math.max(0,Math.min(1,c.confidence||0));
+      const bar=cf>0?`<span class="confbar" style="width:${Math.round(cf*46)}px"></span>`:"";
+      return `<td><a class="ext" href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>${evidenceHTML(c)}${bar}</td>`;
+    }
+    if(key==="social"){
+      const links=(c&&c.value)||[];
+      if(!links.length) return '<td class="unk">—</td>';
+      const chips=links.map(l=>{
+        const tip=esc((l.label||l.platform)+(l.handle?(" · "+l.handle):""));
+        const txt=esc(l.short||l.label||l.platform);
+        const chip=l.url
+          ? `<a class="soc" href="${esc(l.url)}" target="_blank" rel="noopener noreferrer" title="${tip}">${txt}</a>`
+          : `<span class="soc soc-noref" title="${tip}">${txt}</span>`;
+        return chip+evidenceHTML(l);
+      }).join("");
+      return `<td><span class="socwrap">${chips}</span></td>`;
+    }
     let val=c.value;
     if(val===null||val===undefined||c.unknown) return '<td class="unk">—</td>';
     if(key==="similarity") val=(val*100).toFixed(0)+"%";
@@ -372,6 +475,7 @@ renderers.matrix=function(){
   function draw(){
     rows.sort((a,b)=>{
       let x=a.cells[sortKey]?a.cells[sortKey].value:null, y=b.cells[sortKey]?b.cells[sortKey].value:null;
+      if(Array.isArray(x))x=x.length||null; if(Array.isArray(y))y=y.length||null;
       if(x===null||x===undefined)return 1; if(y===null||y===undefined)return -1;
       if(typeof x==="string")return x.localeCompare(y)*sortDir;
       return (x-y)*sortDir;
@@ -433,22 +537,38 @@ renderers.pricing=function(){
   charts.price._kind="bar";
 
   const t=document.getElementById("pricingTable");
-  const head=["Competitor","Model","Free","Enterprise","Entry $/mo","Plans"];
+  const head=["Competitor","Model","Free","Enterprise","Entry $/mo","Est. MRR","Est. users","Plans"];
   t.innerHTML="<thead><tr>"+head.map(h=>`<th>${esc(h)}</th>`).join("")+"</tr></thead><tbody>"+
     rows.map(r=>{
+      const ev=r.evidence||{};
       const plans=(r.plans||[]).map(p=>{
         const price=p.is_free?"Free":p.is_enterprise?"Custom":(p.monthly_price!=null?("$"+p.monthly_price):"—");
-        return `<span class="badge">${esc(p.name)}: ${esc(price)}</span>`;
+        return `<span class="badge">${esc(p.name)}: ${esc(price)}</span>${evidenceHTML(p.evidence)}`;
       }).join(" ")||'<span class="muted">—</span>';
       const link=r.pricing_page?` <a href="${esc(r.pricing_page)}" target="_blank" rel="noopener">↗</a>`:"";
-      return `<tr><td class="name">${esc(r.name)}${link}</td>`+
-        `<td>${r.pricing_model?esc(cap(r.pricing_model)):'<span class="unk">—</span>'}</td>`+
-        `<td>${r.has_free_plan?'<span class="badge lo">✓</span>':'<span class="unk">—</span>'}</td>`+
-        `<td>${r.has_enterprise_plan?'<span class="badge">✓</span>':'<span class="unk">—</span>'}</td>`+
-        `<td>${r.lowest_paid_monthly!=null?("$"+fmtN(r.lowest_paid_monthly)):'<span class="unk">—</span>'}</td>`+
+      return `<tr><td class="name">${esc(r.name)}${link}${evidenceHTML(ev.pricing_page)}</td>`+
+        `<td>${r.pricing_model?esc(cap(r.pricing_model)):'<span class="unk">—</span>'}${evidenceHTML(ev.pricing_model)}</td>`+
+        `<td>${r.has_free_plan?'<span class="badge lo">✓</span>':'<span class="unk">—</span>'}${evidenceHTML(ev.has_free_plan)}</td>`+
+        `<td>${r.has_enterprise_plan?'<span class="badge">✓</span>':'<span class="unk">—</span>'}${evidenceHTML(ev.has_enterprise_plan)}</td>`+
+        `<td>${r.lowest_paid_monthly!=null?("$"+fmtN(r.lowest_paid_monthly)):'<span class="unk">—</span>'}${evidenceHTML(ev.lowest_paid_monthly)}</td>`+
+        `<td>${fmtEstimate(r.estimated_mrr,{prefix:"$"})}${evidenceHTML(r.estimated_mrr)}</td>`+
+        `<td>${fmtEstimate(r.estimated_users)}${evidenceHTML(r.estimated_users)}</td>`+
         `<td style="white-space:normal;min-width:240px">${plans}</td></tr>`;
     }).join("")+"</tbody>";
 };
+
+/* Render a metric_view ({value,is_estimate,range_low,range_high,unit,confidence})
+   honestly: known estimates get a ≈ prefix, an "(est.)" badge and a tooltip with
+   the plausible range/unit/confidence; an unknown value is a safe em-dash. */
+function fmtEstimate(m,{prefix=""}={}){
+  if(!m||m.value==null)return '<span class="unk">—</span>';
+  const body=prefix+fmtN(m.value);
+  if(!m.is_estimate)return esc(body);
+  const range=(m.range_low!=null&&m.range_high!=null)
+    ?`range ${prefix}${fmtN(m.range_low)}–${prefix}${fmtN(m.range_high)}`:"point estimate";
+  const tip=`Estimate — ${range}${m.unit?" "+m.unit:""} · confidence ${Math.round((m.confidence||0)*100)}%`;
+  return `<span class="est" title="${esc(tip)}">≈${esc(body)} <span class="estbadge">est.</span></span>`;
+}
 
 /* ============================================================ POSITIONING (D3) */
 let scatterDrawn=false;
@@ -462,6 +582,7 @@ function drawScatter(){
       sim:ent.similarity||0.3,threat:ent.threat};
   }).filter(p=>p.x!=null&&p.y!=null);
   const host=document.getElementById("scatter"); host.innerHTML="";
+  host.style.position="relative";
   const W=host.clientWidth||900,H=480,m={t:24,r:30,b:54,l:60};
   const svg=d3.select(host).append("svg").attr("width",W).attr("height",H);
   const x=d3.scaleLinear().domain([0,100]).range([m.l,W-m.r]);
@@ -505,7 +626,24 @@ renderers.swot=function(){
       return `<div class="scorebar"><span>${esc(a)}</span><span class="track"><span class="fill" style="width:${val}%"></span></span><span>${Math.round(val)}</span></div>`;
     }).join("");
     const sw=c.swot;
-    const cell=(arr,cls,title)=>`<div class="swot-cell ${cls}"><h4>${esc(title)}</h4>${(arr&&arr.length)?("<ul>"+arr.map(x=>`<li>${esc(x)}</li>`).join("")+"</ul>"):'<div class="empty">No signal</div>'}</div>`;
+    const selfSw=V.self_swot||{};
+    const selfName=V.self_name||"Us";
+    // One quadrant = our SWOT side-by-side with this competitor's. Each side keeps
+    // its own evidence toggle; absent data renders "No signal" (never invented).
+    const side=(q,label,us)=>{
+      const arr=(q&&q.items)||[];
+      return `<div class="swot-side${us?' us':''}">`+
+        `<div class="swot-side-h">${esc(label)}${evidenceHTML(q)}</div>`+
+        (arr.length?("<ul>"+arr.map(x=>`<li>${esc(x)}</li>`).join("")+"</ul>"):'<div class="empty">No signal</div>')+
+        `</div>`;
+    };
+    const cell=(key,cls,title)=>{
+      return `<div class="swot-cell ${cls}"><h4>${esc(title)}</h4>`+
+        `<div class="swot-cmp">`+
+          side(selfSw[key],"Us — "+selfName,true)+
+          side(sw[key],c.name,false)+
+        `</div></div>`;
+    };
     return `<div class="acc" data-i="${i}">
       <div class="acc-head">
         <span class="chev">▶</span>
@@ -518,8 +656,8 @@ renderers.swot=function(){
       </div>
       <div class="acc-body">
         <div class="swot-grid">
-          ${cell(sw.strengths,'s','Strengths')}${cell(sw.weaknesses,'w','Weaknesses')}
-          ${cell(sw.opportunities,'o','Opportunities')}${cell(sw.threats,'t','Threats')}
+          ${cell('strengths','s','Strengths')}${cell('weaknesses','w','Weaknesses')}
+          ${cell('opportunities','o','Opportunities')}${cell('threats','t','Threats')}
         </div>
         <div class="scorebars">${sb}</div>
       </div></div>`;

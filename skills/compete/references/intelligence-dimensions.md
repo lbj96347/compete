@@ -99,7 +99,11 @@ a confidence, and provenance; the script wraps it into the contract envelope.
   always **estimates** — set `is_estimate:true` and a `range_low`/`range_high`.
 - **Pricing** (`pricing.json`) — `pricing_page`, `pricing_model`, `currency`,
   `has_free_plan`, `has_enterprise_plan`, `lowest_paid_monthly` (metric,
-  denormalized for the matrix), and `plans[]` — each `{name (required),
+  denormalized for the matrix), `estimated_mrr` and `estimated_users` (metrics —
+  soft business-scale figures: set `is_estimate:true` with a
+  `range_low`/`range_high` band and low `confidence`; derive from ARR÷12,
+  customers×ACV, or third-party estimates and note how in `provenance.method`;
+  prefer `unknown:true` over guessing), and `plans[]` — each `{name (required),
   monthly_price, billing_period, is_free, is_enterprise, key_features[],
   limits[]}`. A "contact us" tier is an honest metric with `is_estimate`/`range`,
   not a fabricated number.

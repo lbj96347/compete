@@ -161,6 +161,7 @@ COMPANY_SPEC = {
 PRICING_SPEC = {  # plans handled separately (array of objects)
     "pricing_page": URL, "pricing_model": ENUM, "currency": STRING,
     "has_free_plan": BOOL, "has_enterprise_plan": BOOL, "lowest_paid_monthly": METRIC,
+    "estimated_mrr": METRIC, "estimated_users": METRIC,
 }
 PLAN_SPEC = {  # each plan also carries a required bare-string "name"
     "monthly_price": METRIC, "billing_period": ENUM, "is_free": BOOL,
@@ -483,7 +484,11 @@ def _competitor_plan(comp: dict) -> dict:
     if base:
         dims["company"].append(fetch(base + "/about", "company facts: HQ, founders, story"))
 
-    dims["pricing"] = web(f"{name} pricing plans cost per month")
+    dims["pricing"] = web(
+        f"{name} pricing plans cost per month",
+        f"{name} estimated MRR monthly recurring revenue",
+        f"{name} number of customers paying users",
+    )
     if base and not is_repo:
         dims["pricing"].insert(0, fetch(base + "/pricing",
                                         "published tiers, prices, free/enterprise, currency"))
@@ -555,8 +560,11 @@ _INPUT_FORMAT = {
     "field_value": "Each leaf is either a bare scalar or "
                    "{value, confidence:0..1, source, source_type, method, notes}. "
                    "Metric fields (employee_estimate, total_funding, estimated_arr, "
-                   "followers, monthly_price, indexed_pages) also accept "
-                   "is_estimate/range_low/range_high/unit.",
+                   "estimated_mrr, estimated_users, followers, monthly_price, "
+                   "indexed_pages) also accept is_estimate/range_low/range_high/unit. "
+                   "For soft figures like estimated_mrr/estimated_users set "
+                   "is_estimate:true with a range_low/range_high band and low "
+                   "confidence; prefer unknown:true over guessing.",
     "source_types": sorted(_SOURCE_TYPES),
     "pricing.plans": "list of { name (required), monthly_price, billing_period, "
                      "is_free, is_enterprise, key_features, limits }",
