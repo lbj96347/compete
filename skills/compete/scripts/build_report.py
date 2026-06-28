@@ -46,6 +46,12 @@ import webbrowser
 from pathlib import Path
 from typing import Any, Optional
 
+try:  # sibling module in scripts/ — shared progress reporter
+    from _progress import Progress
+except ImportError:  # pragma: no cover - allow import from another cwd
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from _progress import Progress
+
 # --------------------------------------------------------------------------- #
 # Confidence-envelope helpers
 #
@@ -860,6 +866,8 @@ def main(argv: Optional[list] = None) -> int:
                         help="Path to report.html template (default: templates/report.html)")
     parser.add_argument("--open", action="store_true", dest="open_browser",
                         help="Open the generated report in a browser")
+    parser.add_argument("--quiet", action="store_true",
+                        help="Suppress progress reporting.")
     args = parser.parse_args(argv)
 
     root = Path(__file__).resolve().parent.parent
@@ -869,19 +877,21 @@ def main(argv: Optional[list] = None) -> int:
 
     now_iso = _dt.datetime.now(_dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    print("» Loading datasets…")
+    # 6 steps: load · assemble · synthesize · view models · write json · render html
+    progress = Progress("Knowledge Graph + Report", script="build_report",
+                        total=6, enabled=not args.quiet).start("loading datasets")
     data = load_all(input_dir)
+    progress.step("loaded datasets")
 
-    print("» Assembling per-entity profiles…")
     entities = build_entities(data)
-    print(f"  {len(entities)} entities ("
-          f"{sum(1 for e in entities if not e['is_self'])} competitors + self)")
+    progress.step(f"assembled {len(entities)} entities "
+                  f"({sum(1 for e in entities if not e['is_self'])} competitors + self)")
 
-    print("» Synthesizing report.json…")
     report, enriched = synth_report(data, entities, now_iso)
+    progress.step("synthesized report.json (SWOT, threat, positioning, gaps)")
 
-    print("» Building front-end view models…")
     views = build_view_models(entities, enriched)
+    progress.step("built front-end view models")
 
     payload = {
         "meta": {
@@ -903,7 +913,7 @@ def main(argv: Optional[list] = None) -> int:
     report_path = output_dir / "report.json"
     report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n",
                            encoding="utf-8")
-    print(f"  ✓ wrote {report_path}")
+    progress.step(f"wrote {report_path}")
 
     if not template_path.exists():
         print(f"  ! template not found: {template_path}", file=sys.stderr)
@@ -912,12 +922,13 @@ def main(argv: Optional[list] = None) -> int:
     html = render_html(template, payload)
     html_path = output_dir / "report.html"
     html_path.write_text(html, encoding="utf-8")
-    print(f"  ✓ wrote {html_path} ({len(html) // 1024} KB, self-contained)")
+    progress.step(f"wrote {html_path} ({len(html) // 1024} KB, self-contained)")
+
+    progress.finish("Knowledge Graph + Report complete")
 
     if args.open_browser:
         webbrowser.open(html_path.resolve().as_uri())
 
-    print("Done.")
     return 0
 
 

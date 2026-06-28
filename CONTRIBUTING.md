@@ -55,6 +55,16 @@ The report UI lives in [`skills/compete/templates/report.html`](skills/compete/t
 `__INSIGHTKIT_DATA__` placeholder that `build_report.py` inlines. Charts use
 Chart.js and D3 from CDN — keep external dependencies to those two.
 
+All four scripts share one helper, `skills/compete/scripts/_progress.py`, for
+**progress reporting** — each stage emits consistent, greppable lines (stage
+name, completed/total steps, elapsed time, rough ETA) to **stderr** so they show
+up in Claude Code / AgentOps console logs without polluting the JSON the `plan`
+subcommands write to stdout. It is the only module the scripts import from each
+other and depends on nothing outside the standard library. Suppress it with
+`--quiet` on any script or by setting `COMPETE_NO_PROGRESS=1`. When you add a new
+unit of work, advance the stage's `Progress` with `.step()` (or `.log()` for a
+sub-step note) so the counts stay honest.
+
 ## Validating your changes
 
 Each builder script accepts `--validate` to check its output against the schema:

@@ -49,7 +49,13 @@ from pathlib import Path
 from typing import Any, Iterable, Optional
 from urllib.parse import urlparse
 
-SCHEMA_VERSION = "1.0.0"
+try:  # sibling module in scripts/ — shared progress reporter
+    from _progress import Progress
+except ImportError:  # pragma: no cover - allow import from another cwd
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from _progress import Progress
+
+SCHEMA_VERSION = "1.1.0"
 DEFAULT_GENERATOR = "compete/discover_competitors 0.1.0"
 
 # The classification taxonomy from competitors.schema.json. 'unknown' is the
@@ -538,15 +544,25 @@ def normalize_candidate(raw: dict, used_ids: set[str]) -> dict:
     return out
 
 
-def build(product: dict, candidates: list[dict], generator: str) -> tuple[dict, dict]:
+def build(product: dict, candidates: list[dict], generator: str,
+          progress: Optional[Progress] = None) -> tuple[dict, dict]:
     """Assemble competitors.json. Returns (dataset, stats)."""
     deduped, collapsed = dedupe(candidates)
     # Rank by similarity (desc) so the executive dashboard's default order is
     # the most-relevant competitors first; unknown similarity sorts last.
     deduped.sort(key=lambda c: _num(c.get("similarity_score")) or -1.0, reverse=True)
+    if progress is not None:
+        progress.set_total(len(deduped))
+        progress.log(f"deduped {len(candidates)}→{len(deduped)} candidate(s) "
+                     f"({collapsed} merged)")
 
     used_ids: set[str] = set()
-    competitors = [normalize_candidate(c, used_ids) for c in deduped]
+    competitors = []
+    for c in deduped:
+        comp = normalize_candidate(c, used_ids)
+        competitors.append(comp)
+        if progress is not None:
+            progress.step(f"normalized {comp['name']}")
 
     dataset = {
         "meta": {
@@ -646,7 +662,12 @@ def main(argv: Optional[list[str]] = None) -> int:
         except FileNotFoundError:
             print(f"error: --product {args.product} not found (run analyze_repo.py first)", file=sys.stderr)
             return 2
+        progress = Progress("Competitor Discovery — plan", script="discover_competitors",
+                            enabled=not getattr(args, "quiet", False)).start(
+            "deriving research plan from product.json")
         plan = build_plan(product)
+        progress.finish(f"plan ready: {len(plan['queries'])} queries, "
+                        f"{len(plan['fetch_hints'])} fetch hint(s)")
         text = json.dumps(plan, indent=2, ensure_ascii=False)
         if args.output:
             Path(args.output).write_text(text + "\n", encoding="utf-8")
@@ -679,8 +700,11 @@ def main(argv: Optional[list[str]] = None) -> int:
         print("warning: no candidates supplied — writing an empty-but-valid roster "
               "(graceful 'search yielded nothing' fallback).", file=sys.stderr)
 
+    progress = Progress("Competitor Discovery — build", script="discover_competitors",
+                        enabled=not args.quiet).start(
+        f"normalizing {len(candidates)} candidate(s)")
     try:
-        dataset, stats = build(product, candidates, args.generator)
+        dataset, stats = build(product, candidates, args.generator, progress)
     except ValueError as e:
         print(f"error: {e}", file=sys.stderr)
         return 1
@@ -690,11 +714,13 @@ def main(argv: Optional[list[str]] = None) -> int:
         if err and not err.startswith("SKIP"):
             print(f"error: output failed schema validation: {err}", file=sys.stderr)
             return 1
-        if not args.quiet:
-            print(f"validation: {'passed' if not err else err}", file=sys.stderr)
+        progress.log(f"schema validation {'passed' if not err else 'skipped'}")
+        if not args.quiet and err:
+            print(f"validation: {err}", file=sys.stderr)
 
     Path(args.output).write_text(json.dumps(dataset, indent=2, ensure_ascii=False) + "\n",
                                  encoding="utf-8")
+    progress.finish(f"Competitor Discovery complete: {stats['output']} competitor(s)")
     if not args.quiet:
         print(summarize(dataset, stats), file=sys.stderr)
         print(f"\nwrote {args.output}", file=sys.stderr)

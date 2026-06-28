@@ -52,7 +52,13 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 
-SCHEMA_VERSION = "1.0.0"
+try:  # sibling module in scripts/ — shared progress reporter
+    from _progress import Progress
+except ImportError:  # pragma: no cover - allow import from another cwd
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from _progress import Progress
+
+SCHEMA_VERSION = "1.1.0"
 DEFAULT_GENERATOR = "compete/collect_intelligence 0.1.0"
 
 _SOURCE_TYPES = {
@@ -413,7 +419,8 @@ def build_dataset(dim: str, dataset: str, array_key: str, spec: dict,
     return _envelope(dataset, array_key, records, generator), warnings
 
 
-def build_all(competitors: dict, findings: dict, generator: str) -> tuple[dict, list[str]]:
+def build_all(competitors: dict, findings: dict, generator: str,
+              progress: Optional[Progress] = None) -> tuple[dict, list[str]]:
     """Build all six datasets. Returns ({dataset_name: dataset_object}, warnings)."""
     refs = [c["id"] for c in competitors.get("competitors", []) if c.get("id")]
     if "self" in findings and "self" not in refs:
@@ -423,6 +430,9 @@ def build_all(competitors: dict, findings: dict, generator: str) -> tuple[dict, 
     for dim, dataset, array_key, spec in DATASETS:
         out[dataset], warns = build_dataset(dim, dataset, array_key, spec, refs, findings, generator)
         warnings.extend(warns)
+        if progress is not None:
+            n, known, total = _coverage(out[dataset], array_key)
+            progress.step(f"built {dataset}.json ({n} records, {known}/{total} fields known)")
     return out, warnings
 
 
@@ -513,12 +523,19 @@ def _competitor_plan(comp: dict) -> dict:
     return {"entity_ref": comp.get("id"), "name": name, "website": site, "dimensions": dims}
 
 
-def build_plan(competitors: dict) -> dict:
+def build_plan(competitors: dict, progress: Optional[Progress] = None) -> dict:
     comps = competitors.get("competitors", [])
+    if progress is not None:
+        progress.set_total(len(comps))
+    per_competitor = []
+    for c in comps:
+        per_competitor.append(_competitor_plan(c))
+        if progress is not None:
+            progress.step(f"planned {c.get('name') or c.get('id')}")
     return {
         "roster_size": len(comps),
         "dimensions": [d[0] for d in DATASETS],
-        "per_competitor": [_competitor_plan(c) for c in comps],
+        "per_competitor": per_competitor,
         "input_format": _INPUT_FORMAT,
         "instructions": (
             "For each competitor, run its dimension tasks with WebSearch/WebFetch. "
@@ -654,7 +671,11 @@ def main(argv: Optional[list[str]] = None) -> int:
             print(f"error: --competitors {args.competitors} not found (run discover_competitors.py first)",
                   file=sys.stderr)
             return 2
-        plan = build_plan(competitors)
+        progress = Progress("Intelligence Collection — plan", script="collect_intelligence",
+                            enabled=not getattr(args, "quiet", False)).start(
+            "deriving per-competitor research plan")
+        plan = build_plan(competitors, progress)
+        progress.finish(f"plan ready for {plan['roster_size']} competitor(s)")
         text = json.dumps(plan, indent=2, ensure_ascii=False)
         if args.output:
             Path(args.output).write_text(text + "\n", encoding="utf-8")
@@ -688,7 +709,10 @@ def main(argv: Optional[list[str]] = None) -> int:
         print("warning: no findings supplied — writing all-unknown skeletons keyed to the "
               "roster (graceful 'collection yielded nothing' fallback).", file=sys.stderr)
 
-    built, key_warnings = build_all(competitors, findings, args.generator)
+    progress = Progress("Intelligence Collection — build", script="collect_intelligence",
+                        total=len(DATASETS), enabled=not args.quiet).start(
+        f"normalizing findings into {len(DATASETS)} datasets")
+    built, key_warnings = build_all(competitors, findings, args.generator, progress)
     if key_warnings:
         shown = key_warnings[:15]
         print(f"warning: {len(key_warnings)} unrecognized finding field(s) ignored "
@@ -710,11 +734,13 @@ def main(argv: Optional[list[str]] = None) -> int:
                 return 1
             if not args.quiet:
                 print(f"validation: {dataset}.json {'passed' if not err else err}", file=sys.stderr)
+        progress.log(f"schema validation done ({len(DATASETS)} datasets)")
 
     for _dim, dataset, _key, _spec in DATASETS:
         path = out_dir / f"{dataset}.json"
         path.write_text(json.dumps(built[dataset], indent=2, ensure_ascii=False) + "\n",
                         encoding="utf-8")
+    progress.finish(f"Intelligence Collection complete: {len(DATASETS)} datasets written")
 
     if not args.quiet:
         print(summarize(built), file=sys.stderr)

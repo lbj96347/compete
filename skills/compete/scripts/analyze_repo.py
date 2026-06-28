@@ -38,7 +38,13 @@ try:  # Python 3.11+
 except ModuleNotFoundError:  # pragma: no cover - older interpreters
     tomllib = None  # type: ignore
 
-SCHEMA_VERSION = "1.0.0"
+try:  # sibling module in scripts/ — shared progress reporter
+    from _progress import Progress
+except ImportError:  # pragma: no cover - allow import from another cwd
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from _progress import Progress
+
+SCHEMA_VERSION = "1.1.0"
 DEFAULT_GENERATOR = "compete/analyze_repo 0.1.0"
 
 # Directories never worth walking for source-level signals.
@@ -693,12 +699,19 @@ def detect_category(deps: set[str], readme_text: str, ai_caps: list[str]) -> dic
 # Orchestration
 # ---------------------------------------------------------------------------
 
-def analyze(repo: Path, generator: str) -> dict:
+def analyze(repo: Path, generator: str, progress: Optional[Progress] = None) -> dict:
+    def _step(msg: str) -> None:
+        if progress is not None:
+            progress.step(msg)
+
     manifests = collect_manifests(repo)
+    _step(f"parsed manifests ({len(manifests['sources'])} found, "
+          f"{len(manifests['deps'])} deps)")
     deps: set[str] = manifests["deps"]
     readme_path = find_readme(repo)
     readme_text = read_text(readme_path) if readme_path else ""
     readme_rel = readme_path.name if readme_path else None
+    _step(f"read README ({readme_rel or 'none found'})")
 
     # ---- Identity ----
     m_name, m_name_src = manifests["name"]
@@ -756,6 +769,8 @@ def analyze(repo: Path, generator: str) -> dict:
         "pricing_model": unknown(notes="Pricing is not derivable from source; collected later from the website/pricing page."),
     }
 
+    _step("extracted identity (name, category, stage, deployment)")
+
     # ---- Features ----
     ai_pairs = map_deps(deps, AI_DEPS)
     ai_caps = [lbl for lbl, _ in ai_pairs]
@@ -800,6 +815,8 @@ def analyze(repo: Path, generator: str) -> dict:
             notes="Target workflow is a narrative judgment; left for analyst/report synthesis."),
     }
 
+    _step("extracted features (capabilities, platforms, integrations, APIs)")
+
     # ---- Customers ----
     customers = {
         "target_users": detect_target_users(readme_text),
@@ -808,6 +825,7 @@ def analyze(repo: Path, generator: str) -> dict:
         "personas": unknown(notes="Buyer personas require market research, collected later."),
         "use_cases": unknown(notes="Use cases require website/marketing analysis, collected later."),
     }
+    _step("extracted target customers")
 
     return {
         "meta": {
@@ -886,20 +904,30 @@ def main(argv: Optional[list[str]] = None) -> int:
         print(f"error: --repo {repo} is not a directory", file=sys.stderr)
         return 2
 
-    product = analyze(repo, args.generator)
-
     schemas_dir = Path(__file__).resolve().parent.parent / "schemas"
-    if args.validate and schemas_dir.is_dir():
+    will_validate = bool(args.validate and schemas_dir.is_dir())
+    # 5 analysis sub-steps + (validate) + write
+    total = 5 + (1 if will_validate else 0) + 1
+    progress = Progress("Product Intelligence", script="analyze_repo",
+                        total=total, enabled=not args.quiet).start(
+        f"analyzing repo {repo.name}")
+
+    product = analyze(repo, args.generator, progress)
+
+    if will_validate:
         err = validate(product, schemas_dir)
         if err and not err.startswith("SKIP"):
             print(f"error: output failed schema validation: {err}", file=sys.stderr)
             return 1
-        if not args.quiet:
-            print(f"validation: {'passed' if not err else err}", file=sys.stderr)
+        progress.step(f"schema validation {'passed' if not err else 'skipped'}")
+        if not args.quiet and err:
+            print(f"validation: {err}", file=sys.stderr)
 
     out_path = Path(args.output) if args.output else (repo / "product.json")
     out_path.write_text(json.dumps(product, indent=2, ensure_ascii=False) + "\n",
                         encoding="utf-8")
+    progress.step(f"wrote {out_path.name}")
+    progress.finish("Product Intelligence complete")
 
     if not args.quiet:
         print(summarize(product), file=sys.stderr)
