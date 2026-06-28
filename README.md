@@ -287,6 +287,20 @@ Contributions are welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md) for the
 data-contract rules, schema-validation workflow, and how to regenerate the
 sample report.
 
+## Built by
+
+`compete` is an open-source project built by [forthrighttech](https://x.com/lbjhkg),
+developed with the help of a few products I build:
+
+- **[tokkong](http://tokkong.forthrighttech.com)** — private AI that runs local LLMs
+  on your machine.
+- **[whiskey](https://whiskey.asktobuild.app)** — an AI keyboard with on-device,
+  local transcription.
+- **[lounge](https://lounge.asktobuild.app)** — a macOS menu bar manager, with
+  support for macOS 27.
+
+Find me on X: [@lbjhkg](https://x.com/lbjhkg).
+
 ## License
 
 [MIT](LICENSE) © 2026 forthrighttech
