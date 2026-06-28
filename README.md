@@ -29,7 +29,7 @@ recommendations.
   source, provenance, and an explicit `unknown` fallback. Nothing is asserted
   without showing its work. Verify before acting.
 - **Normalized data contract** — all stages write JSON validated against the
-  schemas in [`schemas/`](schemas/), joined by `entity_ref`. Visualizations
+  schemas in [`skills/find-competitor/schemas/`](skills/find-competitor/schemas/), joined by `entity_ref`. Visualizations
   consume the data, never scrape directly.
 - **Self-contained report** — one `report.html` file (~570 KB) opens standalone
   in any browser. The only external dependencies are the Chart.js and D3 CDN
@@ -39,32 +39,63 @@ recommendations.
 
 ## Installation
 
-`find-competitor` is a Claude Code Skill. Install it by placing this directory
-under your Claude skills folder.
+`find-competitor` is packaged as a **Claude Code plugin**. The plugin bundles
+three things that work together:
 
-### Personal (all projects)
+- the **`find-competitor` skill** (`skills/find-competitor/`) — the workflow,
+  scripts, schemas, and report template;
+- the **`/competitor` slash command** (`commands/competitor.md`) — a one-shot
+  entry point that drives the whole pipeline;
+- the plugin manifest (`.claude-plugin/plugin.json`).
 
-```bash
-git clone https://github.com/libingjun/find-competitor.git \
-  ~/.claude/skills/find-competitor
+### Recommended — install from the marketplace
+
+```text
+/plugin marketplace add forthrighttech/find-competitor
+/plugin install find-competitor
 ```
 
-### Project-scoped (one repository)
+The first command registers this repository as a plugin marketplace (it ships a
+[`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json)); the second
+installs the plugin. Restart or start a new session and confirm with `/plugin`
+— `find-competitor` should be listed as enabled, the `/competitor` command
+available, and the `find-competitor` skill discoverable via `/skills`.
+
+### Manual — clone into your plugins folder
 
 ```bash
-git clone https://github.com/libingjun/find-competitor.git \
+git clone https://github.com/forthrighttech/find-competitor.git \
+  ~/.claude/plugins/find-competitor
+```
+
+The plugin must live at a directory whose root contains
+`.claude-plugin/plugin.json` (with `skills/` and `commands/` alongside it).
+Claude Code discovers it on the next session.
+
+### Skill-only (no plugin)
+
+If you only want the skill without the slash command, clone just the skill
+subtree into your skills folder:
+
+```bash
+# Personal (all projects)
+git clone https://github.com/forthrighttech/find-competitor.git /tmp/find-competitor && \
+  cp -r /tmp/find-competitor/skills/find-competitor ~/.claude/skills/find-competitor
+
+# Project-scoped (one repository)
+cp -r /tmp/find-competitor/skills/find-competitor \
   /path/to/your-repo/.claude/skills/find-competitor
 ```
 
-Either way the skill must live at `.../.claude/skills/find-competitor/` with
-`SKILL.md` at its root. Claude Code discovers it automatically on the next
-session — confirm with `/skills` (it should appear as `find-competitor`).
+The skill must live at `.../.claude/skills/find-competitor/` with `SKILL.md` at
+its root. Confirm with `/skills` (it should appear as `find-competitor`). You
+trigger it in natural language rather than with `/competitor`.
 
 ### Requirements
 
 - **Claude Code** with web access (`WebSearch` / `WebFetch`) for competitor
   discovery and intelligence collection.
-- **Python 3.9+** for the helper scripts in [`scripts/`](scripts/). The
+- **Python 3.9+** for the helper scripts in [`skills/find-competitor/scripts/`](skills/find-competitor/scripts/). The
   collection and rendering scripts use only the standard library — no `pip
   install` required.
 
@@ -72,34 +103,62 @@ session — confirm with `/skills` (it should appear as `find-competitor`).
 
 ## Usage
 
-Open Claude Code in the repository you want analyzed and ask in natural
-language. The skill triggers on phrases such as:
+### The `/competitor` command (recommended)
+
+Open Claude Code in the repository you want analyzed and run:
+
+```text
+/competitor
+```
+
+With no argument, Stage 1 **auto-detects** the product from the current repo and
+the command runs the full pipeline end to end, writing the report to
+`./insightkit-output/`.
+
+You can also pass an **optional seed** — a competitor URL or name:
+
+```text
+/competitor https://www.crayon.co
+/competitor Klue
+```
+
+A seed is folded into Discovery as a known competitor candidate and is used to
+anchor the product's market/category, instead of relying solely on
+auto-detection. The seed is slugified into an `entity_ref` (e.g. `crayon`),
+classified, and appears in the roster alongside the auto-discovered competitors.
+
+### Natural language
+
+If you installed the skill without the command — or just prefer plain language —
+ask Claude directly. The skill triggers on phrases such as:
 
 > "Find my competitors"
 > "Run a competitive analysis on this repo"
 > "Who are my competitors and how do I compare?"
 > "Build me a competitive landscape / positioning matrix / SWOT"
 
-Claude runs the pipeline end to end. You can also drive any stage manually:
+### Run any stage manually
+
+Claude runs the pipeline end to end. You can also drive any stage yourself:
 
 ```bash
 # 1. Product Intelligence — analyze the repo, write product.json
-python scripts/analyze_repo.py --repo . --validate
+python skills/find-competitor/scripts/analyze_repo.py --repo . --validate
 
 # 2. Competitor Discovery — plan searches, then normalize results
-python scripts/discover_competitors.py plan  --product product.json
+python skills/find-competitor/scripts/discover_competitors.py plan  --product product.json
 #    (Claude runs the plan with WebSearch/WebFetch → candidates.json)
-python scripts/discover_competitors.py build --product product.json \
+python skills/find-competitor/scripts/discover_competitors.py build --product product.json \
   --candidates candidates.json --validate
 
 # 3. Intelligence Collection — per-competitor company/pricing/tech/social/marketing/SEO
-python scripts/collect_intelligence.py plan  --competitors competitors.json
+python skills/find-competitor/scripts/collect_intelligence.py plan  --competitors competitors.json
 #    (Claude runs the plan with WebSearch/WebFetch → findings.json)
-python scripts/collect_intelligence.py build --competitors competitors.json \
+python skills/find-competitor/scripts/collect_intelligence.py build --competitors competitors.json \
   --findings findings.json --validate
 
 # 4 + 5. Knowledge Graph + Visualization — synthesize report.json and render report.html
-python scripts/build_report.py --input-dir . --output-dir ./insightkit-output
+python skills/find-competitor/scripts/build_report.py --input-dir . --output-dir ./insightkit-output
 #    add --open to also launch the report in a browser
 ```
 
@@ -159,9 +218,9 @@ repo ──▶ analyze_repo.py ──▶ product.json
 ```
 
 The normalized JSON datasets are the contract between stages. Each is validated
-against a schema in [`schemas/`](schemas/); the rules (confidence-wrapped
+against a schema in [`skills/find-competitor/schemas/`](skills/find-competitor/schemas/); the rules (confidence-wrapped
 fields, `unknown` fallback, `entity_ref` joins) are documented in
-[`references/data-schema.md`](references/data-schema.md).
+[`skills/find-competitor/references/data-schema.md`](skills/find-competitor/references/data-schema.md).
 
 ---
 
@@ -169,12 +228,15 @@ fields, `unknown` fallback, `entity_ref` joins) are documented in
 
 | Path | Purpose |
 | --- | --- |
-| [`SKILL.md`](SKILL.md) | Skill definition, trigger keywords, and high-level workflow. |
+| [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json) | Plugin manifest (name, version, author, license). |
+| [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) | Marketplace entry for one-step `/plugin install`. |
+| [`commands/competitor.md`](commands/competitor.md) | The `/competitor` slash command (optional seed argument). |
+| [`skills/find-competitor/SKILL.md`](skills/find-competitor/SKILL.md) | Skill definition, trigger keywords, and high-level workflow. |
 | [`PRD.md`](PRD.md) | Full research scope and product vision. |
-| [`references/`](references/) | Detailed instructions for each pipeline stage. |
-| [`scripts/`](scripts/) | Python helpers for collection, normalization, and rendering. |
-| [`templates/`](templates/) | The self-contained `report.html` template. |
-| [`schemas/`](schemas/) | JSON schemas for every normalized dataset. |
+| [`skills/find-competitor/references/`](skills/find-competitor/references/) | Detailed instructions for each pipeline stage. |
+| [`skills/find-competitor/scripts/`](skills/find-competitor/scripts/) | Python helpers for collection, normalization, and rendering. |
+| [`skills/find-competitor/templates/`](skills/find-competitor/templates/) | The self-contained `report.html` template. |
+| [`skills/find-competitor/schemas/`](skills/find-competitor/schemas/) | JSON schemas for every normalized dataset. |
 | [`insightkit-output/`](insightkit-output/) | Sample rendered report. |
 
 ---
@@ -227,4 +289,4 @@ sample report.
 
 ## License
 
-[MIT](LICENSE) © 2026 libingjun
+[MIT](LICENSE) © 2026 forthrighttech

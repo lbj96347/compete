@@ -27,6 +27,21 @@ flowchart TD
     F --> G[Interactive Report]
 ```
 
+### 2.1 Invocation
+
+InsightKit ships as a Claude Code plugin. The pipeline is driven end to end by
+the **`/competitor`** slash command, run from inside the repository to be
+analyzed:
+
+- `/competitor` — auto-detect the product from the current repo, then discover
+  competitors and render the report.
+- `/competitor <url-or-name>` — additionally seed Discovery with a known
+  competitor, anchoring the product's market/category.
+
+The same workflow is also exposed as the `find-competitor` skill, which Claude
+triggers from natural-language requests ("find my competitors", "run a
+competitive analysis on this repo").
+
 ---
 
 ## 3. Product Intelligence

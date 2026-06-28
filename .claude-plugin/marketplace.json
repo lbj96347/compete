@@ -1,0 +1,28 @@
+{
+  "name": "find-competitor",
+  "owner": {
+    "name": "forthrighttech"
+  },
+  "metadata": {
+    "description": "Competitive intelligence report generator for Claude Code.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "find-competitor",
+      "source": "./",
+      "description": "Turn the current repository into a complete competitive intelligence report: discover competitors and render a self-contained interactive HTML report.",
+      "version": "0.1.0",
+      "author": {
+        "name": "forthrighttech"
+      },
+      "license": "MIT",
+      "keywords": [
+        "competitive-intelligence",
+        "competitor-analysis",
+        "research",
+        "report"
+      ]
+    }
+  ]
+}
