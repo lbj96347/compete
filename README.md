@@ -15,8 +15,6 @@ report) with dashboards, comparison matrices, capability radars, pricing
 ladders, a positioning scatter, SWOT accordions, and prioritized
 recommendations.
 
-![InsightKit competitive landscape report](insightkit-output/screenshots/overview.png)
-
 ---
 
 ## Highlights
@@ -44,41 +42,49 @@ A walkthrough of the seven tabbed views in a generated **InsightKit** report
 
 <table>
   <tr>
-    <td width="50%">
+    <td>
       <img src="screenshots/Screenshot%202026-06-28%20at%2020.21.28.png" width="100%" alt="Overview dashboard with stat cards, competitor-classification and threat-distribution doughnut charts, and an executive summary">
       <br><sub><b>Overview</b> — stat cards, classification &amp; threat doughnuts, and the executive summary.</sub>
     </td>
-    <td width="50%">
+  </tr>
+  <tr>
+    <td>
       <img src="screenshots/Screenshot%202026-06-28%20at%2020.21.38.png" width="100%" alt="Sortable competitor comparison matrix with confidence-bar cells for type, similarity, website, HQ, and founding year">
       <br><sub><b>Comparison</b> — sortable matrix with per-cell confidence bars across every dimension.</sub>
     </td>
   </tr>
   <tr>
-    <td width="50%">
+    <td>
       <img src="screenshots/Screenshot%202026-06-28%20at%2020.21.43.png" width="100%" alt="Capability radar chart plotting six 0-100 axes for the product versus toggleable competitor series">
       <br><sub><b>Radar</b> — six 0–100 capability axes, self vs. competitors, with toggleable series.</sub>
     </td>
-    <td width="50%">
+  </tr>
+  <tr>
+    <td>
       <img src="screenshots/Screenshot%202026-06-28%20at%2020.21.48.png" width="100%" alt="Pricing matrix with an entry-price bar chart and a plan-ladder table showing free, enterprise, and estimated MRR columns">
       <br><sub><b>Pricing</b> — entry-price bar chart plus a free/enterprise plan-ladder table.</sub>
     </td>
   </tr>
   <tr>
-    <td width="50%">
+    <td>
       <img src="screenshots/Screenshot%202026-06-28%20at%2020.21.52.png" width="100%" alt="D3 positioning scatter plotting entry price against company scale, with bubble size reflecting functional similarity and color reflecting threat">
       <br><sub><b>Positioning</b> — D3 scatter of price × scale; bubble size = similarity, color = threat.</sub>
     </td>
-    <td width="50%">
+  </tr>
+  <tr>
+    <td>
       <img src="screenshots/Screenshot%202026-06-28%20at%2020.21.56.png" width="100%" alt="SWOT analysis list of competitors ranked by overall capability score, each tagged with type and a competitive threat level">
       <br><sub><b>SWOT</b> — competitors ranked by overall capability, each tagged with threat level.</sub>
     </td>
   </tr>
   <tr>
-    <td width="50%">
+    <td>
       <img src="screenshots/Screenshot%202026-06-28%20at%2020.22.04.png" width="100%" alt="Expanded SWOT card for a single competitor showing side-by-side strengths, weaknesses, opportunities, threats, and a per-axis capability breakdown">
       <br><sub><b>SWOT (expanded)</b> — side-by-side strengths/weaknesses/opportunities/threats with a capability breakdown.</sub>
     </td>
-    <td width="50%">
+  </tr>
+  <tr>
+    <td>
       <img src="screenshots/Screenshot%202026-06-28%20at%2020.22.09.png" width="100%" alt="Opportunities view listing market whitespace gaps with impact ratings alongside prioritized recommendation cards">
       <br><sub><b>Opportunities</b> — market-gap whitespace and prioritized recommendations.</sub>
     </td>
@@ -229,7 +235,7 @@ you can see the report without running the pipeline:
 | --- | --- |
 | [`report.html`](insightkit-output/report.html) | Self-contained interactive report — open in any browser. |
 | [`report.json`](insightkit-output/report.json) | Synthesized analytic layer (executive summary, SWOT, positioning, gaps, recommendations), schema-valid. |
-| [`screenshots/overview.png`](insightkit-output/screenshots/overview.png) | The overview dashboard pictured above. |
+| [`screenshots/overview.png`](insightkit-output/screenshots/overview.png) | The overview dashboard shown in the Screenshots gallery. |
 
 The sample analyzes this very repository (`compete`) against **17
 discovered competitors**, classifying each by type and competitive threat. The
