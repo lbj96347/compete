@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://find-competitor.dev/schemas/techstack.schema.json",
+  "title": "techstack.json — Technology Intelligence",
+  "description": "Inferred technology stack per competitor (PRD §Technology Intelligence). Most values are inferred from page markup, headers, DNS, job posts, or open-source code, so `confidence` and provenance.method matter heavily here. Joined by `entity_ref`.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "techstack"],
+  "properties": {
+    "meta": { "$ref": "common.schema.json#/$defs/datasetMeta" },
+    "techstack": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/techstack" }
+    }
+  },
+
+  "$defs": {
+    "techstack": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref"],
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+
+        "frontend": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "backend": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "framework": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "database": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "hosting": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "cloud_provider": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "cdn": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "deployment": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "authentication": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "analytics": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "payments": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "monitoring": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "cms": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "llm_provider": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "inference_provider": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+
+        "product_surface": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Productized technology surface (PRD §Product Information).",
+          "properties": {
+            "ai_models": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+            "api_availability": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "sdks": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+            "mobile_apps": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "browser_extension": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "integrations": { "$ref": "common.schema.json#/$defs/stringArrayField" }
+          }
+        }
+      }
+    }
+  }
+}

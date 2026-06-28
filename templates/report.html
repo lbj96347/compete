@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InsightKit · Competitive Intelligence Report</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script>
+<style>
+:root{
+  --bg:#0b0e14; --bg-soft:#121722; --panel:#161c28; --panel-2:#1d2535;
+  --line:#27303f; --txt:#e6ebf4; --txt-dim:#9aa7bd; --txt-faint:#6b7892;
+  --accent:#6ea8fe; --accent-2:#a78bfa; --accent-3:#34d399;
+  --hi:#f87171; --med:#fbbf24; --lo:#34d399;
+  --radius:14px; --shadow:0 10px 30px rgba(0,0,0,.35);
+  --maxw:1200px;
+}
+html[data-theme="light"]{
+  --bg:#f5f7fb; --bg-soft:#eef1f7; --panel:#ffffff; --panel-2:#f3f6fc;
+  --line:#dde3ee; --txt:#1a2233; --txt-dim:#566179; --txt-faint:#8a94a8;
+  --shadow:0 10px 30px rgba(20,30,60,.08);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);color:var(--txt);line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0;font-weight:650;letter-spacing:-.015em}
+.mono{font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace}
+
+/* ---- top bar ---- */
+header.topbar{position:sticky;top:0;z-index:50;backdrop-filter:blur(12px);
+  background:color-mix(in srgb,var(--bg) 82%,transparent);border-bottom:1px solid var(--line)}
+.topbar-in{max-width:var(--maxw);margin:0 auto;padding:14px 22px;display:flex;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:-.02em}
+.brand .dot{width:11px;height:11px;border-radius:3px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 0 14px var(--accent)}
+.brand small{color:var(--txt-faint);font-weight:500;font-size:12px}
+nav.tabs{display:flex;gap:4px;margin-left:auto;flex-wrap:wrap}
+nav.tabs button{background:transparent;border:0;color:var(--txt-dim);font:inherit;font-size:13px;
+  padding:7px 12px;border-radius:9px;cursor:pointer;transition:.15s}
+nav.tabs button:hover{color:var(--txt);background:var(--panel)}
+nav.tabs button.active{color:var(--txt);background:var(--panel-2);box-shadow:inset 0 0 0 1px var(--line)}
+.theme-toggle{background:var(--panel);border:1px solid var(--line);color:var(--txt-dim);
+  width:34px;height:34px;border-radius:9px;cursor:pointer;font-size:15px}
+
+/* ---- hero ---- */
+.hero{max-width:var(--maxw);margin:0 auto;padding:46px 22px 10px}
+.hero .eyebrow{color:var(--accent);font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+.hero h1{font-size:clamp(28px,4vw,44px);margin:10px 0 6px;line-height:1.08}
+.hero p{color:var(--txt-dim);max-width:680px;font-size:15.5px}
+.hero .gen{color:var(--txt-faint);font-size:12.5px;margin-top:10px}
+
+/* ---- layout ---- */
+main{max-width:var(--maxw);margin:0 auto;padding:18px 22px 80px}
+section.view{display:none;animation:fade .35s ease}
+section.view.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.sec-head{margin:26px 0 16px}
+.sec-head h2{font-size:22px}
+.sec-head p{color:var(--txt-dim);font-size:14px;margin:5px 0 0;max-width:760px}
+
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.grid{display:grid;gap:16px}
+.cols-2{grid-template-columns:repeat(2,1fr)}
+.cols-3{grid-template-columns:repeat(3,1fr)}
+.cols-4{grid-template-columns:repeat(4,1fr)}
+@media(max-width:900px){.cols-2,.cols-3,.cols-4{grid-template-columns:1fr}}
+
+/* ---- stat cards ---- */
+.stat{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;position:relative;overflow:hidden}
+.stat::after{content:"";position:absolute;inset:0 auto 0 0;width:3px;background:linear-gradient(var(--accent),var(--accent-2))}
+.stat .k{color:var(--txt-faint);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.stat .val{font-size:34px;font-weight:720;letter-spacing:-.03em;margin-top:4px}
+.stat .sub{color:var(--txt-dim);font-size:13px;margin-top:3px}
+
+/* ---- chips & badges ---- */
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:600;padding:3px 9px;border-radius:999px;
+  border:1px solid var(--line);color:var(--txt-dim);white-space:nowrap}
+.badge.hi{color:#fff;background:rgba(248,113,113,.18);border-color:rgba(248,113,113,.45);color:var(--hi)}
+.badge.med{background:rgba(251,191,36,.15);border-color:rgba(251,191,36,.4);color:var(--med)}
+.badge.lo{background:rgba(52,211,153,.13);border-color:rgba(52,211,153,.4);color:var(--lo)}
+.badge.direct{color:var(--accent);border-color:rgba(110,168,254,.45);background:rgba(110,168,254,.12)}
+.dotline{display:inline-block;width:7px;height:7px;border-radius:50%}
+
+/* ---- table ---- */
+.tablewrap{overflow:auto;border:1px solid var(--line);border-radius:var(--radius)}
+table{border-collapse:collapse;width:100%;font-size:13.5px;min-width:760px}
+th,td{text-align:left;padding:11px 13px;border-bottom:1px solid var(--line);white-space:nowrap}
+thead th{position:sticky;top:0;background:var(--panel-2);color:var(--txt-dim);font-weight:600;font-size:12px;
+  letter-spacing:.03em;text-transform:uppercase;cursor:pointer;user-select:none}
+thead th:hover{color:var(--txt)}
+tbody tr:hover{background:var(--panel-2)}
+td.name{font-weight:600;color:var(--txt)}
+td .cellval{display:inline-block}
+td.unk{color:var(--txt-faint);font-style:italic}
+.confbar{display:block;height:3px;border-radius:2px;background:var(--accent);margin-top:5px;opacity:.7}
+.legend-conf{display:flex;align-items:center;gap:8px;color:var(--txt-faint);font-size:12px;margin-top:10px}
+
+/* ---- chart boxes ---- */
+.chartbox{position:relative;height:340px}
+.chartbox.tall{height:420px}
+.chart-cap{color:var(--txt-faint);font-size:12.5px;margin-top:10px;text-align:center}
+
+/* ---- radar controls ---- */
+.toggle-row{display:flex;flex-wrap:wrap;gap:7px;margin-top:14px}
+.toggle{font-size:12px;padding:5px 11px;border-radius:999px;border:1px solid var(--line);background:var(--panel-2);
+  color:var(--txt-dim);cursor:pointer;display:flex;align-items:center;gap:6px;transition:.15s}
+.toggle.on{color:var(--txt);box-shadow:inset 0 0 0 1px var(--accent)}
+.toggle .sw{width:9px;height:9px;border-radius:50%}
+
+/* ---- swot ---- */
+.swot-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border-radius:12px;overflow:hidden;margin-top:14px}
+.swot-cell{background:var(--panel);padding:14px 16px}
+.swot-cell h4{font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:9px;display:flex;align-items:center;gap:7px}
+.swot-cell.s h4{color:var(--lo)} .swot-cell.w h4{color:var(--hi)}
+.swot-cell.o h4{color:var(--accent)} .swot-cell.t h4{color:var(--med)}
+.swot-cell ul{margin:0;padding-left:17px;font-size:13px;color:var(--txt-dim)}
+.swot-cell li{margin:5px 0}
+.swot-cell .empty{color:var(--txt-faint);font-style:italic;font-size:13px}
+
+/* ---- accordion ---- */
+.acc{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin-bottom:10px;background:var(--panel)}
+.acc-head{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;user-select:none}
+.acc-head:hover{background:var(--panel-2)}
+.acc-head .nm{font-weight:650;font-size:15px}
+.acc-head .meta{margin-left:auto;display:flex;align-items:center;gap:9px}
+.acc-head .chev{transition:.2s;color:var(--txt-faint)}
+.acc.open .chev{transform:rotate(90deg)}
+.acc-body{display:none;padding:0 16px 16px;border-top:1px solid var(--line)}
+.acc.open .acc-body{display:block}
+.scorebars{display:grid;grid-template-columns:1fr;gap:7px;margin-top:14px}
+.scorebar{display:grid;grid-template-columns:150px 1fr 42px;align-items:center;gap:10px;font-size:12.5px;color:var(--txt-dim)}
+.scorebar .track{height:7px;background:var(--panel-2);border-radius:4px;overflow:hidden}
+.scorebar .fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--accent),var(--accent-2))}
+
+/* ---- cards ---- */
+.cardgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.ccard{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px}
+.ccard h3{font-size:16px;display:flex;align-items:center;gap:8px}
+.ccard .row{display:flex;justify-content:space-between;font-size:13px;color:var(--txt-dim);margin-top:7px;gap:10px}
+.ccard .row b{color:var(--txt);font-weight:600}
+.ccard .notes{font-size:12.5px;color:var(--txt-faint);margin-top:11px;line-height:1.5}
+
+/* ---- opportunity / recs ---- */
+.opp{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;padding:15px 17px;margin-bottom:12px;background:var(--panel)}
+.opp h4{font-size:15px;display:flex;align-items:center;gap:9px}
+.opp p{color:var(--txt-dim);font-size:13.5px;margin:7px 0 0}
+.opp .ents{margin-top:9px;display:flex;flex-wrap:wrap;gap:5px}
+.opp.high{border-left-color:var(--hi)} .opp.medium{border-left-color:var(--med)} .opp.low{border-left-color:var(--lo)}
+.rec{border-left-color:var(--accent-2)}
+.kf{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--txt-dim);margin:9px 0}
+.kf .b{color:var(--accent);font-weight:700;margin-top:1px}
+
+footer{max-width:var(--maxw);margin:0 auto;padding:30px 22px 50px;color:var(--txt-faint);font-size:12.5px;border-top:1px solid var(--line)}
+.muted{color:var(--txt-faint)}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-in">
+    <div class="brand"><span class="dot"></span> InsightKit <small id="brandProduct"></small></div>
+    <nav class="tabs" id="tabs"></nav>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">◐</button>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="eyebrow">Competitive Intelligence Report</div>
+  <h1 id="heroTitle">Competitive Landscape</h1>
+  <p id="heroSub"></p>
+  <div class="gen" id="heroGen"></div>
+</div>
+
+<main>
+  <!-- OVERVIEW -->
+  <section class="view active" id="view-overview">
+    <div class="grid cols-4" id="statCards"></div>
+    <div class="grid cols-2" style="margin-top:16px">
+      <div class="panel">
+        <h3>Competitor classification</h3>
+        <div class="chartbox"><canvas id="chartClass"></canvas></div>
+      </div>
+      <div class="panel">
+        <h3>Competitive threat distribution</h3>
+        <div class="chartbox"><canvas id="chartThreat"></canvas></div>
+      </div>
+    </div>
+    <div class="panel" style="margin-top:16px">
+      <h3>Executive summary</h3>
+      <p id="execSummary" class="muted" style="margin-top:8px;color:var(--txt-dim)"></p>
+      <div id="keyFindings" style="margin-top:14px"></div>
+    </div>
+  </section>
+
+  <!-- COMPARISON MATRIX -->
+  <section class="view" id="view-matrix">
+    <div class="sec-head"><h2>Competitor comparison matrix</h2>
+      <p>Side-by-side attributes joined across all datasets. Click a column header to sort. The bar under each cell shows collection confidence.</p></div>
+    <div class="tablewrap"><table id="matrixTable"></table></div>
+    <div class="legend-conf"><span class="confbar" style="width:60px"></span> bar width ∝ confidence · <i>italic / “—”</i> = data not determined</div>
+  </section>
+
+  <!-- RADAR -->
+  <section class="view" id="view-radar">
+    <div class="sec-head"><h2>Capability radar</h2>
+      <p>Six capability axes (0–100), each derived transparently from the joined data. Toggle competitors to compare against this product.</p></div>
+    <div class="panel">
+      <div class="chartbox tall"><canvas id="chartRadar"></canvas></div>
+      <div class="toggle-row" id="radarToggles"></div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="view" id="view-pricing">
+    <div class="sec-head"><h2>Pricing matrix</h2>
+      <p>Entry price, model, free / enterprise availability and plan ladders for every tracked competitor.</p></div>
+    <div class="panel" style="margin-bottom:16px">
+      <h3>Entry price comparison <span class="muted" style="font-weight:400;font-size:13px">(lowest paid plan, monthly)</span></h3>
+      <div class="chartbox"><canvas id="chartPrice"></canvas></div>
+    </div>
+    <div class="tablewrap"><table id="pricingTable"></table></div>
+  </section>
+
+  <!-- POSITIONING -->
+  <section class="view" id="view-positioning">
+    <div class="sec-head"><h2>Positioning matrix</h2>
+      <p id="posDesc">Entry price versus company scale &amp; maturity. Bubble size reflects functional similarity to this product.</p></div>
+    <div class="panel"><div id="scatter" style="height:480px"></div></div>
+  </section>
+
+  <!-- SWOT -->
+  <section class="view" id="view-swot">
+    <div class="sec-head"><h2>SWOT analysis</h2>
+      <p>Per-competitor strengths, weaknesses, opportunities and threats with capability breakdown. Ranked by overall capability. Click to expand.</p></div>
+    <div id="swotAcc"></div>
+  </section>
+
+  <!-- OPPORTUNITIES -->
+  <section class="view" id="view-opps">
+    <div class="sec-head"><h2>Opportunity gaps &amp; recommendations</h2>
+      <p>Market whitespace surfaced by the analysis, and the prioritized actions that follow from it.</p></div>
+    <div class="grid cols-2">
+      <div><h3 style="margin-bottom:12px">Opportunity gaps</h3><div id="oppList"></div></div>
+      <div><h3 style="margin-bottom:12px">Recommendations</h3><div id="recList"></div></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div id="footMeta"></div>
+  <div style="margin-top:6px">Self-contained report generated by <b>find-competitor / InsightKit</b>. All analytic judgments are heuristic and confidence-annotated — verify before acting. Charts rendered with Chart.js &amp; D3.</div>
+</footer>
+
+<script>
+const INSIGHTKIT = __INSIGHTKIT_DATA__;
+</script>
+<script>
+(function(){
+"use strict";
+const D = INSIGHTKIT, V = D.views, R = D.report;
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const fmtN = n => (n===null||n===undefined||n!==n)?"—":(Math.round(n*100)/100).toLocaleString();
+const cap = s => s ? s.charAt(0).toUpperCase()+s.slice(1) : s;
+const lvlClass = l => l==="high"?"hi":l==="medium"?"med":l==="low"?"lo":"";
+const esc = s => (s==null?"":String(s)).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+/* ---------- header / hero ---------- */
+const pname = (D.meta.product && D.meta.product.name) || "this product";
+document.getElementById("brandProduct").textContent = "· " + pname;
+document.getElementById("heroTitle").textContent = pname + " — Competitive Landscape";
+document.getElementById("heroSub").textContent =
+  (R.executive_summary && R.executive_summary.market_overview && R.executive_summary.market_overview.value) || "";
+document.getElementById("heroGen").textContent =
+  "Generated " + (D.meta.generated_at||"") + " · " + (D.meta.generator||"");
+document.getElementById("footMeta").textContent =
+  "report.json + report.html · " + V.overview.competitor_count + " competitors analyzed · " + (D.meta.generated_at||"");
+
+/* ---------- tabs ---------- */
+const TABS = [
+  ["overview","Overview"],["matrix","Comparison"],["radar","Radar"],
+  ["pricing","Pricing"],["positioning","Positioning"],["swot","SWOT"],["opps","Opportunities"]
+];
+const tabsEl = document.getElementById("tabs");
+let rendered = {overview:true};
+TABS.forEach(([id,label],i)=>{
+  const b=document.createElement("button");
+  b.textContent=label; b.dataset.id=id; if(i===0)b.classList.add("active");
+  b.onclick=()=>activate(id);
+  tabsEl.appendChild(b);
+});
+function activate(id){
+  document.querySelectorAll("nav.tabs button").forEach(b=>b.classList.toggle("active",b.dataset.id===id));
+  document.querySelectorAll("section.view").forEach(s=>s.classList.toggle("active",s.id==="view-"+id));
+  if(!rendered[id]){ (renderers[id]||function(){})(); rendered[id]=true; }
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+/* ---------- theme ---------- */
+const root=document.documentElement;
+document.getElementById("themeToggle").onclick=()=>{
+  root.setAttribute("data-theme", root.getAttribute("data-theme")==="dark"?"light":"dark");
+  // recolor existing charts
+  Object.values(charts).forEach(c=>{ if(c){c.options=themeChart(c.options,c._kind);c.update();} });
+  if(scatterDrawn) drawScatter();
+};
+const charts={};
+
+/* ============================================================ OVERVIEW */
+(function overview(){
+  const o=V.overview;
+  const sc=document.getElementById("statCards");
+  const cards=[
+    ["Competitors", o.competitor_count, "tracked across the market"],
+    ["Direct rivals", o.direct_count, "head-to-head functional overlap"],
+    ["Free plans", o.free_plan_count+" / "+o.competitor_count, "offer a free tier"],
+    ["Avg. entry price", o.avg_entry_price!=null?("$"+o.avg_entry_price):"—",
+      o.price_range?("range $"+o.price_range[0]+"–$"+o.price_range[1]+"/mo"):"no public pricing"]
+  ];
+  sc.innerHTML=cards.map(c=>`<div class="stat"><div class="k">${esc(c[0])}</div><div class="val">${esc(c[1])}</div><div class="sub">${esc(c[2])}</div></div>`).join("");
+
+  const es=R.executive_summary||{};
+  document.getElementById("execSummary").textContent=(es.summary&&es.summary.value)||"";
+  const kf=(es.key_findings&&es.key_findings.value)||[];
+  document.getElementById("keyFindings").innerHTML=kf.map(f=>`<div class="kf"><span class="b">▸</span><span>${esc(f)}</span></div>`).join("");
+})();
+
+const renderers={};
+renderers.overview=function(){
+  const o=V.overview;
+  const classLabels=Object.keys(o.classifications), classVals=classLabels.map(k=>o.classifications[k]);
+  const palette=[css("--accent"),css("--accent-2"),css("--accent-3"),css("--med"),css("--hi"),css("--txt-faint")];
+  charts.class=new Chart(document.getElementById("chartClass"),{
+    type:"doughnut",
+    data:{labels:classLabels.map(cap),datasets:[{data:classVals,backgroundColor:palette,borderColor:css("--panel"),borderWidth:2}]},
+    options:themeChart({cutout:"60%"},"doughnut")
+  });
+  charts.class._kind="doughnut";
+  const t=o.threats;
+  charts.threat=new Chart(document.getElementById("chartThreat"),{
+    type:"doughnut",
+    data:{labels:["High","Medium","Low"],datasets:[{data:[t.high,t.medium,t.low],
+      backgroundColor:[css("--hi"),css("--med"),css("--lo")],borderColor:css("--panel"),borderWidth:2}]},
+    options:themeChart({cutout:"60%"},"doughnut")
+  });
+  charts.threat._kind="doughnut";
+};
+// overview charts need to render now since it's the default-active view
+renderers.overview(); rendered.overview=true;
+
+/* ============================================================ MATRIX */
+renderers.matrix=function(){
+  const cols=V.comparison.columns, rows=V.comparison.rows;
+  const t=document.getElementById("matrixTable");
+  let sortKey="similarity", sortDir=-1;
+  function cellHTML(c,key){
+    if(!c) return '<td class="unk">—</td>';
+    let val=c.value;
+    if(val===null||val===undefined||c.unknown) return '<td class="unk">—</td>';
+    if(key==="similarity") val=(val*100).toFixed(0)+"%";
+    else if(key==="lowest_price") val="$"+fmtN(val);
+    else if(val===true) val="✓"; else if(val===false) val="✗";
+    else if(key==="classification"||key==="threat"||key==="funding_stage"||key==="pricing_model"||key==="blog") val=cap(String(val));
+    let cls=key==="name"?"name":"";
+    let badge="";
+    if(key==="threat"){const lc=lvlClass(c.value);return `<td><span class="badge ${lc}">${esc(val)}</span></td>`;}
+    if(key==="classification" && c.value==="direct") return `<td><span class="badge direct">${esc(val)}</span></td>`;
+    const cf=Math.max(0,Math.min(1,c.confidence||0));
+    const bar=cf>0?`<span class="confbar" style="width:${Math.round(cf*46)}px"></span>`:"";
+    return `<td class="${cls}"><span class="cellval">${esc(val)}</span>${bar}</td>`;
+  }
+  function draw(){
+    rows.sort((a,b)=>{
+      let x=a.cells[sortKey]?a.cells[sortKey].value:null, y=b.cells[sortKey]?b.cells[sortKey].value:null;
+      if(x===null||x===undefined)return 1; if(y===null||y===undefined)return -1;
+      if(typeof x==="string")return x.localeCompare(y)*sortDir;
+      return (x-y)*sortDir;
+    });
+    t.innerHTML="<thead><tr>"+cols.map(c=>`<th data-k="${c[0]}">${esc(c[1])}${sortKey===c[0]?(sortDir<0?" ▾":" ▴"):""}</th>`).join("")+"</tr></thead>"+
+      "<tbody>"+rows.map(r=>"<tr>"+cols.map(c=>cellHTML(r.cells[c[0]],c[0])).join("")+"</tr>").join("")+"</tbody>";
+    t.querySelectorAll("th").forEach(th=>th.onclick=()=>{const k=th.dataset.k;if(k===sortKey)sortDir*=-1;else{sortKey=k;sortDir=(k==="name"||k==="hq")?1:-1;}draw();});
+  }
+  draw();
+};
+
+/* ============================================================ RADAR */
+renderers.radar=function(){
+  const axes=V.radar.axes, series=V.radar.series;
+  const palette=[css("--accent"),css("--accent-2"),css("--accent-3"),css("--med"),css("--hi"),"#22d3ee","#f472b6"];
+  const state=series.map((s,i)=>i<4); // show first 4 by default
+  function hex2rgba(h,a){h=h.replace("#","");if(h.length===3)h=h.split("").map(x=>x+x).join("");const n=parseInt(h,16);return `rgba(${n>>16&255},${n>>8&255},${n&255},${a})`;}
+  function build(){
+    const ds=series.map((s,i)=>{
+      const color=s.is_self?css("--accent-3"):palette[i%palette.length];
+      return {label:s.name,data:s.scores,hidden:!state[i],
+        borderColor:color,backgroundColor:hex2rgba(color, s.is_self?0.28:0.10),
+        borderWidth:s.is_self?2.5:1.6,pointRadius:2.5,pointBackgroundColor:color,
+        borderDash:s.is_self?[]:[]};
+    });
+    if(charts.radar)charts.radar.destroy();
+    charts.radar=new Chart(document.getElementById("chartRadar"),{
+      type:"radar",data:{labels:axes,datasets:ds},
+      options:themeChart({scales:{r:{min:0,max:100,ticks:{stepSize:25}}}},"radar")
+    });
+    charts.radar._kind="radar";
+  }
+  const tg=document.getElementById("radarToggles");
+  tg.innerHTML="";
+  series.forEach((s,i)=>{
+    const color=s.is_self?css("--accent-3"):palette[i%palette.length];
+    const el=document.createElement("button");
+    el.className="toggle"+(state[i]?" on":"");
+    el.innerHTML=`<span class="sw" style="background:${color}"></span>${esc(s.name)}${s.is_self?" ★":""}`;
+    el.onclick=()=>{state[i]=!state[i];el.classList.toggle("on",state[i]);charts.radar.setDatasetVisibility(i,state[i]);charts.radar.update();};
+    tg.appendChild(el);
+  });
+  build();
+};
+
+/* ============================================================ PRICING */
+renderers.pricing=function(){
+  const rows=V.pricing_matrix.rows.slice().sort((a,b)=>{
+    const x=a.lowest_paid_monthly, y=b.lowest_paid_monthly;
+    if(x==null)return 1; if(y==null)return -1; return x-y;
+  });
+  const priced=rows.filter(r=>r.lowest_paid_monthly!=null);
+  charts.price=new Chart(document.getElementById("chartPrice"),{
+    type:"bar",
+    data:{labels:priced.map(r=>r.name),datasets:[{label:"$/mo (entry)",data:priced.map(r=>r.lowest_paid_monthly),
+      backgroundColor:priced.map(r=>r.has_free_plan?css("--accent-3"):css("--accent")),borderRadius:6}]},
+    options:themeChart({indexAxis:"y",plugins:{legend:{display:false}},scales:{x:{beginAtZero:true,title:{display:true,text:"USD / month"}}}},"bar")
+  });
+  charts.price._kind="bar";
+
+  const t=document.getElementById("pricingTable");
+  const head=["Competitor","Model","Free","Enterprise","Entry $/mo","Plans"];
+  t.innerHTML="<thead><tr>"+head.map(h=>`<th>${esc(h)}</th>`).join("")+"</tr></thead><tbody>"+
+    rows.map(r=>{
+      const plans=(r.plans||[]).map(p=>{
+        const price=p.is_free?"Free":p.is_enterprise?"Custom":(p.monthly_price!=null?("$"+p.monthly_price):"—");
+        return `<span class="badge">${esc(p.name)}: ${esc(price)}</span>`;
+      }).join(" ")||'<span class="muted">—</span>';
+      const link=r.pricing_page?` <a href="${esc(r.pricing_page)}" target="_blank" rel="noopener">↗</a>`:"";
+      return `<tr><td class="name">${esc(r.name)}${link}</td>`+
+        `<td>${r.pricing_model?esc(cap(r.pricing_model)):'<span class="unk">—</span>'}</td>`+
+        `<td>${r.has_free_plan?'<span class="badge lo">✓</span>':'<span class="unk">—</span>'}</td>`+
+        `<td>${r.has_enterprise_plan?'<span class="badge">✓</span>':'<span class="unk">—</span>'}</td>`+
+        `<td>${r.lowest_paid_monthly!=null?("$"+fmtN(r.lowest_paid_monthly)):'<span class="unk">—</span>'}</td>`+
+        `<td style="white-space:normal;min-width:240px">${plans}</td></tr>`;
+    }).join("")+"</tbody>";
+};
+
+/* ============================================================ POSITIONING (D3) */
+let scatterDrawn=false;
+renderers.positioning=function(){ drawScatter(); scatterDrawn=true; };
+function drawScatter(){
+  const pm=R.positioning_matrix||{};
+  const pts=(pm.points||[]).map(p=>{
+    const ent=(V.cards.find(c=>c.ref===p.entity_ref))||{};
+    return {ref:p.entity_ref,name:ent.name||p.entity_ref,
+      x:p.x&&!p.x.unknown?p.x.value:null,y:p.y&&!p.y.unknown?p.y.value:null,
+      sim:ent.similarity||0.3,threat:ent.threat};
+  }).filter(p=>p.x!=null&&p.y!=null);
+  const host=document.getElementById("scatter"); host.innerHTML="";
+  const W=host.clientWidth||900,H=480,m={t:24,r:30,b:54,l:60};
+  const svg=d3.select(host).append("svg").attr("width",W).attr("height",H);
+  const x=d3.scaleLinear().domain([0,100]).range([m.l,W-m.r]);
+  const y=d3.scaleLinear().domain([0,100]).range([H-m.b,m.t]);
+  const r=d3.scaleSqrt().domain([0,1]).range([6,22]);
+  const cline=css("--line"),cdim=css("--txt-dim"),cfaint=css("--txt-faint");
+  // grid
+  svg.append("g").selectAll("line.gx").data(x.ticks(5)).join("line")
+    .attr("x1",d=>x(d)).attr("x2",d=>x(d)).attr("y1",m.t).attr("y2",H-m.b).attr("stroke",cline).attr("stroke-dasharray","2,3");
+  svg.append("g").selectAll("line.gy").data(y.ticks(5)).join("line")
+    .attr("y1",d=>y(d)).attr("y2",d=>y(d)).attr("x1",m.l).attr("x2",W-m.r).attr("stroke",cline).attr("stroke-dasharray","2,3");
+  // axes
+  svg.append("g").attr("transform",`translate(0,${H-m.b})`).call(d3.axisBottom(x).ticks(5)).attr("color",cfaint);
+  svg.append("g").attr("transform",`translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5)).attr("color",cfaint);
+  const xl=(pm.x_axis_label&&pm.x_axis_label.value)||"Entry price (low → premium)";
+  const yl=(pm.y_axis_label&&pm.y_axis_label.value)||"Company scale & maturity";
+  svg.append("text").attr("x",(W)/2).attr("y",H-12).attr("text-anchor","middle").attr("fill",cdim).attr("font-size",12.5).text(xl);
+  svg.append("text").attr("transform","rotate(-90)").attr("x",-(H)/2).attr("y",16).attr("text-anchor","middle").attr("fill",cdim).attr("font-size",12.5).text(yl);
+  const col=t=>t==="high"?css("--hi"):t==="medium"?css("--med"):css("--lo");
+  const tip=d3.select(host).append("div").style("position","absolute").style("pointer-events","none")
+    .style("background",css("--panel-2")).style("border","1px solid "+cline).style("border-radius","8px")
+    .style("padding","7px 10px").style("font-size","12.5px").style("color",css("--txt")).style("opacity",0).style("box-shadow",css("--shadow"));
+  const g=svg.append("g").selectAll("g.pt").data(pts).join("g");
+  g.append("circle").attr("cx",d=>x(d.x)).attr("cy",d=>y(d.y)).attr("r",d=>r(d.sim))
+    .attr("fill",d=>col(d.threat)).attr("fill-opacity",.5).attr("stroke",d=>col(d.threat)).attr("stroke-width",1.5)
+    .on("mousemove",function(ev,d){
+      const rect=host.getBoundingClientRect();
+      tip.style("opacity",1).html(`<b>${esc(d.name)}</b><br>price idx ${d.x.toFixed(0)} · scale ${d.y.toFixed(0)}<br>similarity ${(d.sim*100).toFixed(0)}% · threat ${esc(d.threat||"—")}`)
+        .style("left",(ev.clientX-rect.left+14)+"px").style("top",(ev.clientY-rect.top-10)+"px");
+    }).on("mouseleave",()=>tip.style("opacity",0));
+  g.append("text").attr("x",d=>x(d.x)).attr("y",d=>y(d.y)-r(d.sim)-5).attr("text-anchor","middle")
+    .attr("fill",cdim).attr("font-size",11).text(d=>d.name);
+}
+
+/* ============================================================ SWOT */
+renderers.swot=function(){
+  const host=document.getElementById("swotAcc");
+  host.innerHTML=V.cards.map((c,i)=>{
+    const sb=V.radar.axes.map(a=>{
+      const val=c.scores[a]||0;
+      return `<div class="scorebar"><span>${esc(a)}</span><span class="track"><span class="fill" style="width:${val}%"></span></span><span>${Math.round(val)}</span></div>`;
+    }).join("");
+    const sw=c.swot;
+    const cell=(arr,cls,title)=>`<div class="swot-cell ${cls}"><h4>${esc(title)}</h4>${(arr&&arr.length)?("<ul>"+arr.map(x=>`<li>${esc(x)}</li>`).join("")+"</ul>"):'<div class="empty">No signal</div>'}</div>`;
+    return `<div class="acc" data-i="${i}">
+      <div class="acc-head">
+        <span class="chev">▶</span>
+        <span class="nm">${esc(c.name)}</span>
+        <span class="badge ${c.classification==='direct'?'direct':''}">${esc(cap(c.classification||'—'))}</span>
+        <span class="meta">
+          <span class="muted" style="font-size:12.5px">overall ${c.overall}</span>
+          <span class="badge ${lvlClass(c.threat)}">threat: ${esc(c.threat||'—')}</span>
+        </span>
+      </div>
+      <div class="acc-body">
+        <div class="swot-grid">
+          ${cell(sw.strengths,'s','Strengths')}${cell(sw.weaknesses,'w','Weaknesses')}
+          ${cell(sw.opportunities,'o','Opportunities')}${cell(sw.threats,'t','Threats')}
+        </div>
+        <div class="scorebars">${sb}</div>
+      </div></div>`;
+  }).join("");
+  host.querySelectorAll(".acc-head").forEach(h=>h.onclick=()=>h.parentElement.classList.toggle("open"));
+};
+
+/* ============================================================ OPPORTUNITIES */
+renderers.opps=function(){
+  const opps=R.opportunity_gaps||[];
+  document.getElementById("oppList").innerHTML=opps.map(o=>{
+    const imp=(o.impact&&o.impact.value)||"";
+    const desc=(o.description&&o.description.value)||"";
+    const ents=(o.related_entities||[]).map(r=>{const c=V.cards.find(x=>x.ref===r);return `<span class="badge">${esc(c?c.name:r)}</span>`;}).join("");
+    return `<div class="opp ${esc(imp)}"><h4>${esc(o.title)} <span class="badge ${lvlClass(imp)}">${esc(imp||'—')} impact</span></h4>
+      <p>${esc(desc)}</p>${ents?`<div class="ents">${ents}</div>`:""}</div>`;
+  }).join("")||'<p class="muted">No gaps identified.</p>';
+
+  const recs=R.recommendations||[];
+  document.getElementById("recList").innerHTML=recs.map(rc=>{
+    const pr=(rc.priority&&rc.priority.value)||"";
+    const rat=(rc.rationale&&rc.rationale.value)||"";
+    return `<div class="opp rec"><h4>${esc(rc.title)} <span class="badge ${lvlClass(pr)}">${esc(pr||'—')} priority</span></h4>
+      <p>${esc(rat)}</p></div>`;
+  }).join("")||'<p class="muted">No recommendations.</p>';
+};
+
+/* ---------- Chart.js theming ---------- */
+function themeChart(extra,kind){
+  const txt=css("--txt-dim"), grid=css("--line"), faint=css("--txt-faint");
+  const base={responsive:true,maintainAspectRatio:false,
+    plugins:{legend:{labels:{color:txt,boxWidth:12,font:{size:12}},position:kind==="doughnut"?"bottom":"top"},
+      tooltip:{backgroundColor:css("--panel-2"),titleColor:css("--txt"),bodyColor:txt,borderColor:grid,borderWidth:1}}};
+  if(kind==="radar"){base.scales={r:{min:0,max:100,angleLines:{color:grid},grid:{color:grid},
+    pointLabels:{color:txt,font:{size:12}},ticks:{color:faint,backdropColor:"transparent",stepSize:25}}};}
+  if(kind==="bar"){base.scales={x:{ticks:{color:txt},grid:{color:grid}},y:{ticks:{color:txt},grid:{color:grid}}};}
+  // deep-ish merge for scales/plugins
+  const out=JSON.parse(JSON.stringify(base));
+  if(extra){
+    for(const k in extra){
+      if(k==="scales"||k==="plugins"){out[k]=Object.assign(out[k]||{},extra[k]);
+        for(const kk in extra[k]) out[k][kk]=Object.assign(out[k][kk]||{},extra[k][kk]);}
+      else out[k]=extra[k];
+    }
+  }
+  return out;
+}
+
+window.addEventListener("resize",()=>{ if(scatterDrawn && document.getElementById("view-positioning").classList.contains("active")) drawScatter(); });
+})();
+</script>
+</body>
+</html>

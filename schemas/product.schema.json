@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://find-competitor.dev/schemas/product.schema.json",
+  "title": "product.json — Own Product Intelligence",
+  "description": "Intelligence extracted from the analyzed local repository: the product whose competitive landscape InsightKit is mapping. Exactly one product. Every leaf is a confidence-wrapped field from common.schema.json.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "entity_ref", "identity", "features", "customers"],
+  "properties": {
+    "meta": { "$ref": "common.schema.json#/$defs/datasetMeta" },
+    "entity_ref": {
+      "description": "Always the literal 'self' so per-competitor datasets can also describe the own product using the same join key.",
+      "$ref": "common.schema.json#/$defs/entityRef",
+      "const": "self"
+    },
+
+    "identity": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Product Identity (PRD §Product Intelligence).",
+      "properties": {
+        "name": { "$ref": "common.schema.json#/$defs/stringField" },
+        "tagline": { "$ref": "common.schema.json#/$defs/stringField" },
+        "description": { "$ref": "common.schema.json#/$defs/textField" },
+        "category": { "$ref": "common.schema.json#/$defs/stringField" },
+        "stage": {
+          "description": "Maturity stage, e.g. idea / prototype / alpha / beta / ga / mature.",
+          "$ref": "common.schema.json#/$defs/enumField"
+        },
+        "deployment_model": {
+          "description": "OSS, SaaS, self-hosted, hybrid, etc.",
+          "$ref": "common.schema.json#/$defs/enumField"
+        },
+        "business_model": { "$ref": "common.schema.json#/$defs/stringField" },
+        "pricing_model": { "$ref": "common.schema.json#/$defs/stringField" }
+      }
+    },
+
+    "features": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Features (PRD §Product Intelligence).",
+      "properties": {
+        "core_features": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "ai_capabilities": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "platforms": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "integrations": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "apis": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "target_workflow": { "$ref": "common.schema.json#/$defs/textField" }
+      }
+    },
+
+    "customers": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Customers (PRD §Product Intelligence).",
+      "properties": {
+        "target_users": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "industries": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "company_size": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "personas": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "use_cases": { "$ref": "common.schema.json#/$defs/stringArrayField" }
+      }
+    }
+  }
+}

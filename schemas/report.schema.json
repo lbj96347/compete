@@ -1,0 +1,121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://find-competitor.dev/schemas/report.schema.json",
+  "title": "report.json — Synthesized Competitive Analysis",
+  "description": "The analytical layer that consumes all other datasets and produces the narrative consumed by visualizations (Executive Dashboard, SWOT, Positioning Matrix, Opportunity Gap, Recommendation Engine — PRD §Visualizations). All analytic judgments remain confidence-wrapped so the report can surface its own uncertainty.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "executive_summary", "competitor_analysis"],
+  "properties": {
+    "meta": { "$ref": "common.schema.json#/$defs/datasetMeta" },
+
+    "executive_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Top-of-report synthesis for the Executive Dashboard.",
+      "properties": {
+        "summary": { "$ref": "common.schema.json#/$defs/textField" },
+        "market_overview": { "$ref": "common.schema.json#/$defs/textField" },
+        "key_findings": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "competitor_count": { "$ref": "common.schema.json#/$defs/integerField" }
+      }
+    },
+
+    "competitor_analysis": {
+      "type": "array",
+      "description": "Per-competitor (and optionally 'self') SWOT and positioning. Joined by `entity_ref`.",
+      "items": { "$ref": "#/$defs/competitorAnalysis" }
+    },
+
+    "positioning_matrix": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Axes + plotted points for the Positioning Matrix visualization.",
+      "properties": {
+        "x_axis_label": { "$ref": "common.schema.json#/$defs/stringField" },
+        "y_axis_label": { "$ref": "common.schema.json#/$defs/stringField" },
+        "points": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["entity_ref"],
+            "properties": {
+              "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+              "x": { "$ref": "common.schema.json#/$defs/numberField" },
+              "y": { "$ref": "common.schema.json#/$defs/numberField" }
+            }
+          }
+        }
+      }
+    },
+
+    "opportunity_gaps": {
+      "type": "array",
+      "description": "Whitespace / unmet-need findings for the Opportunity Gap visualization.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title"],
+        "properties": {
+          "title": { "type": "string" },
+          "description": { "$ref": "common.schema.json#/$defs/textField" },
+          "impact": {
+            "description": "Estimated impact: low / medium / high.",
+            "$ref": "common.schema.json#/$defs/enumField"
+          },
+          "related_entities": {
+            "type": "array",
+            "items": { "$ref": "common.schema.json#/$defs/entityRef" }
+          }
+        }
+      }
+    },
+
+    "recommendations": {
+      "type": "array",
+      "description": "Prioritized actions for the Recommendation Engine.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["title"],
+        "properties": {
+          "title": { "type": "string" },
+          "rationale": { "$ref": "common.schema.json#/$defs/textField" },
+          "priority": {
+            "description": "low / medium / high.",
+            "$ref": "common.schema.json#/$defs/enumField"
+          },
+          "confidence": { "$ref": "common.schema.json#/$defs/confidence" }
+        }
+      }
+    }
+  },
+
+  "$defs": {
+    "competitorAnalysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref"],
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+        "swot": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "SWOT visualization input.",
+          "properties": {
+            "strengths": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+            "weaknesses": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+            "opportunities": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+            "threats": { "$ref": "common.schema.json#/$defs/stringArrayField" }
+          }
+        },
+        "threat_level": {
+          "description": "Competitive threat to the own product: low / medium / high.",
+          "$ref": "common.schema.json#/$defs/enumField"
+        },
+        "differentiators": { "$ref": "common.schema.json#/$defs/stringArrayField" }
+      }
+    }
+  }
+}

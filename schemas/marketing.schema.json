@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://find-competitor.dev/schemas/marketing.schema.json",
+  "title": "marketing.json — Marketing & Content Intelligence",
+  "description": "Positioning, demand-gen, content marketing, and sales-motion signals per competitor (PRD §Marketing Intelligence, §Content Marketing, §Sales Intelligence). Joined by `entity_ref`.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "marketing"],
+  "properties": {
+    "meta": { "$ref": "common.schema.json#/$defs/datasetMeta" },
+    "marketing": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/marketing" }
+    }
+  },
+
+  "$defs": {
+    "marketing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref"],
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+
+        "positioning": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Brand positioning & messaging (PRD §Marketing Intelligence).",
+          "properties": {
+            "positioning_statement": { "$ref": "common.schema.json#/$defs/textField" },
+            "hero_headline": { "$ref": "common.schema.json#/$defs/stringField" },
+            "value_proposition": { "$ref": "common.schema.json#/$defs/textField" },
+            "primary_cta": { "$ref": "common.schema.json#/$defs/stringField" },
+            "pricing_strategy": { "$ref": "common.schema.json#/$defs/stringField" },
+            "launch_style": { "$ref": "common.schema.json#/$defs/stringField" }
+          }
+        },
+
+        "programs": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Growth & retention programs (PRD §Marketing Intelligence).",
+          "properties": {
+            "newsletter": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "webinar": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "referral_program": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "affiliate_program": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "community": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "case_studies": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "customer_stories": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "email_capture_strategy": { "$ref": "common.schema.json#/$defs/stringField" }
+          }
+        },
+
+        "content": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Content marketing analysis (PRD §Content Marketing).",
+          "properties": {
+            "blog_topics": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+            "uses_ai_generated_content": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "documentation_quality": {
+              "description": "e.g. none / sparse / adequate / excellent.",
+              "$ref": "common.schema.json#/$defs/enumField"
+            },
+            "tutorials": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "videos": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "podcasts": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "release_cadence": {
+              "description": "How often product/content ships, e.g. weekly / monthly / quarterly.",
+              "$ref": "common.schema.json#/$defs/enumField"
+            }
+          }
+        },
+
+        "sales_motion": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Sales motion signals (PRD §Sales Intelligence).",
+          "properties": {
+            "free_trial": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "freemium": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "self_service": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "enterprise_contact": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "annual_discount": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "demo_booking": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "has_sales_team": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "partner_program": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "marketplace_presence": { "$ref": "common.schema.json#/$defs/booleanField" }
+          }
+        },
+
+        "hiring": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Hiring signals (PRD §Hiring Intelligence).",
+          "properties": {
+            "careers_page": { "$ref": "common.schema.json#/$defs/urlField" },
+            "open_positions": { "$ref": "common.schema.json#/$defs/integerField" },
+            "engineering_hiring": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "ai_hiring": { "$ref": "common.schema.json#/$defs/booleanField" },
+            "remote_policy": {
+              "description": "e.g. remote / hybrid / onsite.",
+              "$ref": "common.schema.json#/$defs/enumField"
+            },
+            "tech_hints_from_jobs": { "$ref": "common.schema.json#/$defs/stringArrayField" }
+          }
+        }
+      }
+    }
+  }
+}

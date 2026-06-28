@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://find-competitor.dev/schemas/companies.schema.json",
+  "title": "companies.json — Company Profiles",
+  "description": "Business/company profile per competitor (PRD §Company Profile). Joined to competitors.json by `entity_ref`. Funding, ARR, and headcount are typically estimates — express precision via `confidence` and the metricField range/is_estimate fields.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "companies"],
+  "properties": {
+    "meta": { "$ref": "common.schema.json#/$defs/datasetMeta" },
+    "companies": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/company" }
+    }
+  },
+
+  "$defs": {
+    "company": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref"],
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+        "company_name": { "$ref": "common.schema.json#/$defs/stringField" },
+        "website": { "$ref": "common.schema.json#/$defs/urlField" },
+        "headquarters": { "$ref": "common.schema.json#/$defs/stringField" },
+        "founded_year": { "$ref": "common.schema.json#/$defs/integerField" },
+        "founders": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "employee_estimate": {
+          "description": "Headcount; usually an estimate or range.",
+          "$ref": "common.schema.json#/$defs/metricField"
+        },
+        "funding_stage": {
+          "description": "e.g. bootstrapped / pre_seed / seed / series_a / series_b+ / public / acquired.",
+          "$ref": "common.schema.json#/$defs/enumField"
+        },
+        "total_funding": {
+          "description": "Cumulative disclosed funding; metricField with `unit` (e.g. 'USD').",
+          "$ref": "common.schema.json#/$defs/metricField"
+        },
+        "investors": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "estimated_arr": {
+          "description": "Annual recurring revenue when publicly available; almost always an estimate.",
+          "$ref": "common.schema.json#/$defs/metricField"
+        },
+        "commercial_model": {
+          "description": "open_source / commercial / open_core / dual_license, etc.",
+          "$ref": "common.schema.json#/$defs/enumField"
+        }
+      }
+    }
+  }
+}

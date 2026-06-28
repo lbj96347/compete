@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://find-competitor.dev/schemas/pricing.schema.json",
+  "title": "pricing.json — Pricing Intelligence",
+  "description": "Pricing model and plan breakdown per competitor (PRD §Product Information). Feeds the Pricing Matrix visualization. Joined by `entity_ref`. Each plan's price is a metricField so estimated/quote-based tiers can be represented honestly.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "pricing"],
+  "properties": {
+    "meta": { "$ref": "common.schema.json#/$defs/datasetMeta" },
+    "pricing": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/pricing" }
+    }
+  },
+
+  "$defs": {
+    "plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "A single pricing tier.",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "description": "Tier name as published (e.g. Free, Pro, Team, Enterprise).",
+          "type": "string"
+        },
+        "monthly_price": {
+          "description": "Per-seat or flat monthly price; metricField with `unit` (currency). Use is_estimate/range for 'contact us' tiers.",
+          "$ref": "common.schema.json#/$defs/metricField"
+        },
+        "billing_period": {
+          "description": "e.g. monthly / annual / usage / one_time / custom.",
+          "$ref": "common.schema.json#/$defs/enumField"
+        },
+        "is_free": { "$ref": "common.schema.json#/$defs/booleanField" },
+        "is_enterprise": { "$ref": "common.schema.json#/$defs/booleanField" },
+        "key_features": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "limits": { "$ref": "common.schema.json#/$defs/stringArrayField" }
+      }
+    },
+
+    "pricing": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref"],
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+        "pricing_page": { "$ref": "common.schema.json#/$defs/urlField" },
+        "pricing_model": {
+          "description": "Overall model, e.g. free / freemium / subscription / usage_based / one_time / open_source / contact_sales.",
+          "$ref": "common.schema.json#/$defs/enumField"
+        },
+        "currency": {
+          "description": "ISO-4217 currency the published prices are in.",
+          "$ref": "common.schema.json#/$defs/stringField"
+        },
+        "has_free_plan": { "$ref": "common.schema.json#/$defs/booleanField" },
+        "has_enterprise_plan": { "$ref": "common.schema.json#/$defs/booleanField" },
+        "lowest_paid_monthly": {
+          "description": "Cheapest paid entry point, denormalized for the pricing matrix.",
+          "$ref": "common.schema.json#/$defs/metricField"
+        },
+        "plans": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/plan" }
+        }
+      }
+    }
+  }
+}

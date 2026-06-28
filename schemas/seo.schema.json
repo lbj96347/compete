@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://find-competitor.dev/schemas/seo.schema.json",
+  "title": "seo.json — SEO Intelligence",
+  "description": "Search-presence signals per competitor (PRD §SEO Intelligence). Feeds the SEO Scorecard visualization. Joined by `entity_ref`.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "seo"],
+  "properties": {
+    "meta": { "$ref": "common.schema.json#/$defs/datasetMeta" },
+    "seo": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/seo" }
+    }
+  },
+
+  "$defs": {
+    "seo": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref"],
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+
+        "meta_title": { "$ref": "common.schema.json#/$defs/stringField" },
+        "meta_description": { "$ref": "common.schema.json#/$defs/textField" },
+        "has_sitemap": { "$ref": "common.schema.json#/$defs/booleanField" },
+        "sitemap_url": { "$ref": "common.schema.json#/$defs/urlField" },
+        "has_robots_txt": { "$ref": "common.schema.json#/$defs/booleanField" },
+        "indexed_pages": {
+          "description": "Approximate number of indexed pages; usually estimated.",
+          "$ref": "common.schema.json#/$defs/metricField"
+        },
+        "keyword_focus": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "blog_frequency": {
+          "description": "e.g. none / monthly / weekly / daily.",
+          "$ref": "common.schema.json#/$defs/enumField"
+        },
+        "landing_pages": { "$ref": "common.schema.json#/$defs/integerField" },
+        "documentation_quality": {
+          "description": "e.g. none / sparse / adequate / excellent.",
+          "$ref": "common.schema.json#/$defs/enumField"
+        },
+        "internal_linking": {
+          "description": "Qualitative strength of internal link structure, e.g. weak / moderate / strong.",
+          "$ref": "common.schema.json#/$defs/enumField"
+        }
+      }
+    }
+  }
+}

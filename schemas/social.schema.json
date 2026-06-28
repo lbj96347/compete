@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://find-competitor.dev/schemas/social.schema.json",
+  "title": "social.json — Online Presence, Social & Developer Channels",
+  "description": "Official online presence per competitor (PRD §Official Online Presence + §Social Media Intelligence). Combines website links, social accounts with engagement signals, and developer channels with package/repo metrics. Joined by `entity_ref`.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "presence"],
+  "properties": {
+    "meta": { "$ref": "common.schema.json#/$defs/datasetMeta" },
+    "presence": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/presence" }
+    }
+  },
+
+  "$defs": {
+    "socialAccount": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "One social platform account with optional engagement metrics.",
+      "properties": {
+        "url": { "$ref": "common.schema.json#/$defs/urlField" },
+        "handle": { "$ref": "common.schema.json#/$defs/stringField" },
+        "followers": { "$ref": "common.schema.json#/$defs/metricField" },
+        "posting_frequency": {
+          "description": "e.g. daily / weekly / monthly / dormant.",
+          "$ref": "common.schema.json#/$defs/enumField"
+        },
+        "content_categories": { "$ref": "common.schema.json#/$defs/stringArrayField" },
+        "engagement_style": { "$ref": "common.schema.json#/$defs/stringField" }
+      }
+    },
+
+    "presence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref"],
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+
+        "website": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Official website sections (PRD §Website).",
+          "properties": {
+            "homepage": { "$ref": "common.schema.json#/$defs/urlField" },
+            "pricing": { "$ref": "common.schema.json#/$defs/urlField" },
+            "documentation": { "$ref": "common.schema.json#/$defs/urlField" },
+            "blog": { "$ref": "common.schema.json#/$defs/urlField" },
+            "changelog": { "$ref": "common.schema.json#/$defs/urlField" },
+            "careers": { "$ref": "common.schema.json#/$defs/urlField" },
+            "api_docs": { "$ref": "common.schema.json#/$defs/urlField" }
+          }
+        },
+
+        "social": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Social media accounts (PRD §Social Media).",
+          "properties": {
+            "x": { "$ref": "#/$defs/socialAccount" },
+            "linkedin": { "$ref": "#/$defs/socialAccount" },
+            "github": { "$ref": "#/$defs/socialAccount" },
+            "youtube": { "$ref": "#/$defs/socialAccount" },
+            "discord": { "$ref": "#/$defs/socialAccount" },
+            "slack": { "$ref": "#/$defs/socialAccount" },
+            "reddit": { "$ref": "#/$defs/socialAccount" },
+            "facebook": { "$ref": "#/$defs/socialAccount" },
+            "instagram": { "$ref": "#/$defs/socialAccount" },
+            "tiktok": { "$ref": "#/$defs/socialAccount" },
+            "product_hunt": { "$ref": "#/$defs/socialAccount" }
+          }
+        },
+
+        "developer_channels": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Developer distribution channels & repo metrics (PRD §Developer Channels).",
+          "properties": {
+            "github_repository": { "$ref": "common.schema.json#/$defs/urlField" },
+            "github_stars": { "$ref": "common.schema.json#/$defs/integerField" },
+            "github_forks": { "$ref": "common.schema.json#/$defs/integerField" },
+            "github_issues": { "$ref": "common.schema.json#/$defs/integerField" },
+            "github_releases": { "$ref": "common.schema.json#/$defs/integerField" },
+            "npm_package": { "$ref": "common.schema.json#/$defs/urlField" },
+            "pypi_package": { "$ref": "common.schema.json#/$defs/urlField" },
+            "docker_hub": { "$ref": "common.schema.json#/$defs/urlField" },
+            "vscode_marketplace": { "$ref": "common.schema.json#/$defs/urlField" }
+          }
+        }
+      }
+    }
+  }
+}

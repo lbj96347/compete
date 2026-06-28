@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://find-competitor.dev/schemas/competitors.schema.json",
+  "title": "competitors.json — Discovered & Classified Competitors",
+  "description": "The roster produced by Competitor Discovery (PRD §Competitor Discovery). Each entry's `id` is the canonical join key (entityRef) used by every other per-competitor dataset.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "competitors"],
+  "properties": {
+    "meta": { "$ref": "common.schema.json#/$defs/datasetMeta" },
+    "competitors": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/competitor" }
+    }
+  },
+
+  "$defs": {
+    "competitor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "classification"],
+      "properties": {
+        "id": {
+          "description": "Stable slug join key referenced by companies/social/marketing/techstack/seo/pricing/report datasets.",
+          "$ref": "common.schema.json#/$defs/entityRef"
+        },
+        "name": {
+          "description": "Display name (not confidence-wrapped: identity of the entry itself).",
+          "type": "string"
+        },
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "website": { "$ref": "common.schema.json#/$defs/urlField" },
+        "classification": {
+          "description": "Competitor type. Allowed values constrain the enumField value; 'unknown' is the explicit fallback.",
+          "allOf": [
+            { "$ref": "common.schema.json#/$defs/enumField" },
+            {
+              "properties": {
+                "value": {
+                  "enum": [
+                    "direct",
+                    "indirect",
+                    "enterprise",
+                    "open_source",
+                    "emerging_startup",
+                    "adjacent",
+                    "unknown",
+                    null
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "similarity_score": {
+          "description": "0..1 overlap with the own product; drives ranking on the executive dashboard.",
+          "$ref": "common.schema.json#/$defs/numberField"
+        },
+        "relationship_notes": { "$ref": "common.schema.json#/$defs/textField" },
+        "discovery_source": {
+          "description": "How this competitor surfaced (search query, 'alternatives to' page, GitHub topic, etc.).",
+          "$ref": "common.schema.json#/$defs/stringField"
+        }
+      }
+    }
+  }
+}

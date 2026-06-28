@@ -1,0 +1,226 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://find-competitor.dev/schemas/common.schema.json",
+  "title": "InsightKit Common Definitions",
+  "description": "Shared building blocks for every InsightKit dataset. The core idea is the confidence-wrapped field: no raw scalar is ever stored bare. Every collected value is wrapped in an object carrying its value, a confidence score in [0,1], an explicit `unknown` flag, and provenance. Downstream phases (knowledge graph, visualizations, report) MUST treat any field with `unknown: true` as missing data and SHOULD weight or annotate rendered values by `confidence`.",
+
+  "$defs": {
+    "confidence": {
+      "title": "Confidence Score",
+      "description": "How much the collector trusts this value. 0 = pure guess / no evidence, 1 = directly stated by an authoritative first-party source. When `unknown` is true, confidence MUST be 0.",
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+
+    "sourceType": {
+      "title": "Source Type",
+      "description": "Where the value came from, used to reason about trust.",
+      "type": "string",
+      "enum": [
+        "repository",
+        "official_website",
+        "official_docs",
+        "pricing_page",
+        "github_api",
+        "package_registry",
+        "social_profile",
+        "press_release",
+        "third_party_db",
+        "search_result",
+        "inference",
+        "manual",
+        "unknown"
+      ]
+    },
+
+    "provenance": {
+      "title": "Provenance",
+      "description": "Optional evidence trail for an individual field. Allows a reviewer to audit how a value was obtained.",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "description": "Human-readable origin, typically a URL or file path.",
+          "type": ["string", "null"]
+        },
+        "source_type": { "$ref": "#/$defs/sourceType" },
+        "as_of": {
+          "description": "ISO-8601 date the value was observed/collected.",
+          "type": ["string", "null"],
+          "format": "date"
+        },
+        "method": {
+          "description": "Short note on how the value was derived (e.g. 'parsed package.json', 'inferred from hero copy', 'GitHub REST /repos').",
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "baseField": {
+      "title": "Base Confidence Field",
+      "description": "Abstract shape every typed field extends. Concrete fields override `value`. Required keys are always present so consumers can rely on the contract without existence checks.",
+      "type": "object",
+      "required": ["value", "confidence", "unknown"],
+      "properties": {
+        "confidence": { "$ref": "#/$defs/confidence" },
+        "unknown": {
+          "description": "True when the value could not be determined. When true, `value` MUST be null and `confidence` MUST be 0.",
+          "type": "boolean",
+          "default": false
+        },
+        "source": {
+          "description": "Convenience pointer to the primary source (URL or path). Use `provenance` for richer detail.",
+          "type": ["string", "null"]
+        },
+        "provenance": { "$ref": "#/$defs/provenance" },
+        "notes": {
+          "description": "Free-form analyst annotation.",
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "stringField": {
+      "title": "String Field",
+      "description": "Confidence-wrapped string. `value` is null when unknown.",
+      "allOf": [{ "$ref": "#/$defs/baseField" }],
+      "properties": {
+        "value": { "type": ["string", "null"] }
+      }
+    },
+
+    "textField": {
+      "title": "Text Field",
+      "description": "Confidence-wrapped long-form text (descriptions, summaries).",
+      "allOf": [{ "$ref": "#/$defs/baseField" }],
+      "properties": {
+        "value": { "type": ["string", "null"] }
+      }
+    },
+
+    "urlField": {
+      "title": "URL Field",
+      "description": "Confidence-wrapped URL. `value` is null when unknown.",
+      "allOf": [{ "$ref": "#/$defs/baseField" }],
+      "properties": {
+        "value": { "type": ["string", "null"], "format": "uri" }
+      }
+    },
+
+    "numberField": {
+      "title": "Number Field",
+      "description": "Confidence-wrapped number (may be an estimate; use `confidence` to express precision).",
+      "allOf": [{ "$ref": "#/$defs/baseField" }],
+      "properties": {
+        "value": { "type": ["number", "null"] }
+      }
+    },
+
+    "integerField": {
+      "title": "Integer Field",
+      "description": "Confidence-wrapped integer (counts, years, follower totals).",
+      "allOf": [{ "$ref": "#/$defs/baseField" }],
+      "properties": {
+        "value": { "type": ["integer", "null"] }
+      }
+    },
+
+    "booleanField": {
+      "title": "Boolean Field",
+      "description": "Confidence-wrapped tri-state boolean. `value` null + `unknown` true means 'not determined'; this is distinct from a confident false.",
+      "allOf": [{ "$ref": "#/$defs/baseField" }],
+      "properties": {
+        "value": { "type": ["boolean", "null"] }
+      }
+    },
+
+    "dateField": {
+      "title": "Date Field",
+      "description": "Confidence-wrapped ISO-8601 date string.",
+      "allOf": [{ "$ref": "#/$defs/baseField" }],
+      "properties": {
+        "value": { "type": ["string", "null"], "format": "date" }
+      }
+    },
+
+    "enumField": {
+      "title": "Enum Field",
+      "description": "Confidence-wrapped categorical value. The set of allowed strings is constrained at each use site via an additional allOf in the consuming schema; the literal string 'unknown' is always permitted as a fallback in addition to setting `unknown: true`.",
+      "allOf": [{ "$ref": "#/$defs/baseField" }],
+      "properties": {
+        "value": { "type": ["string", "null"] }
+      }
+    },
+
+    "stringArrayField": {
+      "title": "String Array Field",
+      "description": "Confidence-wrapped list of strings (features, integrations, investors). When unknown, `value` is null (not []), so an empty list confidently means 'none' while null means 'not determined'.",
+      "allOf": [{ "$ref": "#/$defs/baseField" }],
+      "properties": {
+        "value": {
+          "type": ["array", "null"],
+          "items": { "type": "string" }
+        }
+      }
+    },
+
+    "metricField": {
+      "title": "Metric Field",
+      "description": "Confidence-wrapped numeric metric that may be exact or estimated, with an optional range and unit. Used for soft figures like employee count, ARR, or follower counts.",
+      "allOf": [{ "$ref": "#/$defs/baseField" }],
+      "properties": {
+        "value": { "type": ["number", "null"] },
+        "is_estimate": { "type": "boolean", "default": false },
+        "range_low": { "type": ["number", "null"] },
+        "range_high": { "type": ["number", "null"] },
+        "unit": { "type": ["string", "null"] }
+      }
+    },
+
+    "datasetMeta": {
+      "title": "Dataset Metadata",
+      "description": "Standard envelope metadata present on every top-level dataset.",
+      "type": "object",
+      "required": ["schema_version", "dataset", "generated_at"],
+      "properties": {
+        "schema_version": {
+          "description": "SemVer of the InsightKit data contract this file conforms to.",
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+        },
+        "dataset": {
+          "description": "Identifier of the dataset, equal to the file stem.",
+          "type": "string",
+          "enum": [
+            "product",
+            "competitors",
+            "companies",
+            "social",
+            "marketing",
+            "techstack",
+            "seo",
+            "pricing",
+            "report"
+          ]
+        },
+        "generated_at": {
+          "description": "ISO-8601 timestamp when the dataset was produced.",
+          "type": "string",
+          "format": "date-time"
+        },
+        "generator": {
+          "description": "Tool/version that produced the dataset.",
+          "type": ["string", "null"]
+        }
+      }
+    },
+
+    "entityRef": {
+      "title": "Entity Reference",
+      "description": "Stable join key linking per-competitor records across datasets. Equal to a competitor `id` from competitors.json, or the reserved literal 'self' for the analyzed product.",
+      "type": "string",
+      "pattern": "^(self|[a-z0-9][a-z0-9-]{0,63})$"
+    }
+  }
+}

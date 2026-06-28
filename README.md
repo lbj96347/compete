@@ -1,0 +1,230 @@
+# find-competitor
+
+> A Claude Code Skill that turns your repository into a complete competitive
+> intelligence report.
+
+`find-competitor` analyzes the current repository to identify your product, then
+discovers competitors and builds a complete competitive intelligence database
+spanning product, technology, business, marketing, SEO, social media, customers,
+sales, hiring, funding, and brand positioning. It is an AI product research
+assistant — not just a comparison generator.
+
+Everything is collected into normalized, **confidence-annotated** JSON datasets
+and rendered into a self-contained interactive HTML report (the **InsightKit**
+report) with dashboards, comparison matrices, capability radars, pricing
+ladders, a positioning scatter, SWOT accordions, and prioritized
+recommendations.
+
+![InsightKit competitive landscape report](insightkit-output/screenshots/overview.png)
+
+---
+
+## Highlights
+
+- **Repo-aware** — reads your code, manifests, and README to identify the
+  product before searching the web. No manual product brief required.
+- **Multi-dimensional intelligence** — company profile, pricing, tech stack,
+  social presence, marketing, and SEO for every competitor.
+- **Confidence everywhere** — every field is wrapped with a confidence score,
+  source, provenance, and an explicit `unknown` fallback. Nothing is asserted
+  without showing its work. Verify before acting.
+- **Normalized data contract** — all stages write JSON validated against the
+  schemas in [`schemas/`](schemas/), joined by `entity_ref`. Visualizations
+  consume the data, never scrape directly.
+- **Self-contained report** — one `report.html` file (~570 KB) opens standalone
+  in any browser. The only external dependencies are the Chart.js and D3 CDN
+  bundles.
+
+---
+
+## Installation
+
+`find-competitor` is a Claude Code Skill. Install it by placing this directory
+under your Claude skills folder.
+
+### Personal (all projects)
+
+```bash
+git clone https://github.com/libingjun/find-competitor.git \
+  ~/.claude/skills/find-competitor
+```
+
+### Project-scoped (one repository)
+
+```bash
+git clone https://github.com/libingjun/find-competitor.git \
+  /path/to/your-repo/.claude/skills/find-competitor
+```
+
+Either way the skill must live at `.../.claude/skills/find-competitor/` with
+`SKILL.md` at its root. Claude Code discovers it automatically on the next
+session — confirm with `/skills` (it should appear as `find-competitor`).
+
+### Requirements
+
+- **Claude Code** with web access (`WebSearch` / `WebFetch`) for competitor
+  discovery and intelligence collection.
+- **Python 3.9+** for the helper scripts in [`scripts/`](scripts/). The
+  collection and rendering scripts use only the standard library — no `pip
+  install` required.
+
+---
+
+## Usage
+
+Open Claude Code in the repository you want analyzed and ask in natural
+language. The skill triggers on phrases such as:
+
+> "Find my competitors"
+> "Run a competitive analysis on this repo"
+> "Who are my competitors and how do I compare?"
+> "Build me a competitive landscape / positioning matrix / SWOT"
+
+Claude runs the pipeline end to end. You can also drive any stage manually:
+
+```bash
+# 1. Product Intelligence — analyze the repo, write product.json
+python scripts/analyze_repo.py --repo . --validate
+
+# 2. Competitor Discovery — plan searches, then normalize results
+python scripts/discover_competitors.py plan  --product product.json
+#    (Claude runs the plan with WebSearch/WebFetch → candidates.json)
+python scripts/discover_competitors.py build --product product.json \
+  --candidates candidates.json --validate
+
+# 3. Intelligence Collection — per-competitor company/pricing/tech/social/marketing/SEO
+python scripts/collect_intelligence.py plan  --competitors competitors.json
+#    (Claude runs the plan with WebSearch/WebFetch → findings.json)
+python scripts/collect_intelligence.py build --competitors competitors.json \
+  --findings findings.json --validate
+
+# 4 + 5. Knowledge Graph + Visualization — synthesize report.json and render report.html
+python scripts/build_report.py --input-dir . --output-dir ./insightkit-output
+#    add --open to also launch the report in a browser
+```
+
+Open the result:
+
+```bash
+open ./insightkit-output/report.html
+```
+
+---
+
+## Sample output
+
+A fully rendered example ships in [`insightkit-output/`](insightkit-output/) so
+you can see the report without running the pipeline:
+
+| File | What it is |
+| --- | --- |
+| [`report.html`](insightkit-output/report.html) | Self-contained interactive report — open in any browser. |
+| [`report.json`](insightkit-output/report.json) | Synthesized analytic layer (executive summary, SWOT, positioning, gaps, recommendations), schema-valid. |
+| [`screenshots/overview.png`](insightkit-output/screenshots/overview.png) | The overview dashboard pictured above. |
+
+The sample analyzes this very repository (`find-competitor`) against **17
+discovered competitors**, classifying each by type and competitive threat. The
+report has seven tabbed views:
+
+- **Overview** — stat cards, competitor-classification and threat-distribution
+  doughnuts, and the executive summary.
+- **Comparison** — sortable matrix with confidence-bar cells per dimension.
+- **Radar** — six transparent 0–100 capability axes, self vs. competitors,
+  toggleable series.
+- **Pricing** — entry-price bar chart plus a plan-ladder table.
+- **Positioning** — D3 scatter of price × scale, bubble size = similarity,
+  color = threat.
+- **SWOT** — expandable strengths/weaknesses/opportunities/threats per
+  competitor.
+- **Opportunities** — market gaps and prioritized recommendations.
+
+Every judgment in the report carries a `method` note explaining the heuristic
+behind it.
+
+---
+
+## How it works
+
+```
+repo ──▶ analyze_repo.py ──▶ product.json
+                                 │
+                                 ▼
+        discover_competitors.py ──▶ competitors.json
+                                 │
+                                 ▼
+        collect_intelligence.py ──▶ companies/pricing/techstack/
+                                 │   social/marketing/seo.json
+                                 ▼
+            build_report.py ──▶ report.json ──▶ report.html
+```
+
+The normalized JSON datasets are the contract between stages. Each is validated
+against a schema in [`schemas/`](schemas/); the rules (confidence-wrapped
+fields, `unknown` fallback, `entity_ref` joins) are documented in
+[`references/data-schema.md`](references/data-schema.md).
+
+---
+
+## Project structure
+
+| Path | Purpose |
+| --- | --- |
+| [`SKILL.md`](SKILL.md) | Skill definition, trigger keywords, and high-level workflow. |
+| [`PRD.md`](PRD.md) | Full research scope and product vision. |
+| [`references/`](references/) | Detailed instructions for each pipeline stage. |
+| [`scripts/`](scripts/) | Python helpers for collection, normalization, and rendering. |
+| [`templates/`](templates/) | The self-contained `report.html` template. |
+| [`schemas/`](schemas/) | JSON schemas for every normalized dataset. |
+| [`insightkit-output/`](insightkit-output/) | Sample rendered report. |
+
+---
+
+## Roadmap
+
+`find-competitor` v1 ships the full **one-shot** pipeline: product
+intelligence → discovery → multi-dimensional collection → knowledge graph →
+interactive report. The following are deliberately deferred to **v2**.
+
+### Deeper intelligence per dimension
+
+v1 collects a solid breadth-first profile across all dimensions. v2 goes deep:
+
+- **Deep SEO** — keyword universe and rankings, backlink graph and authority,
+  content gap analysis, SERP-feature ownership, and traffic-trend estimates
+  (beyond v1's meta/structure snapshot).
+- **Deep social** — engagement-rate and follower-growth time series, share-of-
+  voice, sentiment, and channel-mix breakdowns per competitor.
+- **Hiring intelligence** — open-roles tracking, team-growth and org-shape
+  signals, and the strategic bets implied by what each competitor is hiring for.
+- **Sales intelligence** — go-to-market motion (PLG vs. sales-led), funnel and
+  packaging signals, win/loss themes, and target-segment inference.
+
+### `/watch-competitors` — continuous monitoring
+
+v1 produces a point-in-time report. v2 adds a monitoring mode that re-runs the
+pipeline on a schedule and surfaces **diffs** — turning InsightKit from a
+one-time report generator into a continuous competitive-intelligence platform.
+Daily or weekly it would track:
+
+- pricing changes
+- new features
+- new blog posts
+- hiring trends
+- GitHub releases
+- social-media activity
+- funding news
+- SEO changes
+
+See [`PRD.md`](PRD.md) for the complete v1 research scope and the v2 vision.
+
+---
+
+## Contributing
+
+Contributions are welcome — see [`CONTRIBUTING.md`](CONTRIBUTING.md) for the
+data-contract rules, schema-validation workflow, and how to regenerate the
+sample report.
+
+## License
+
+[MIT](LICENSE) © 2026 libingjun

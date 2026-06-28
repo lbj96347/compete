@@ -1,0 +1,5375 @@
+{
+  "meta": {
+    "schema_version": "1.0.0",
+    "dataset": "social",
+    "generated_at": "2026-06-27T20:45:15Z",
+    "generator": "find-competitor/collect_intelligence 0.1.0"
+  },
+  "presence": [
+    {
+      "entity_ref": "competely",
+      "website": {
+        "homepage": {
+          "value": "https://competely.ai",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://competely.ai/pricing",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": "https://competely.ai/info/help",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "blog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://twitter.com/competely_ai",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "@competely_ai",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "product-focused",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        "product_hunt": {
+          "url": {
+            "value": "https://www.producthunt.com/products/competely",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": 454,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "product launches"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "launch announcements",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "comperator",
+      "website": {
+        "homepage": {
+          "value": "https://github.com/Procycons/Comperator",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://github.com/Procycons/Comperator",
+          "provenance": {
+            "source": "https://github.com/Procycons/Comperator",
+            "source_type": "repository",
+            "as_of": "2026-06-28",
+            "method": "Repository URL"
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "documentation": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "blog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {
+        "github": {
+          "url": {
+            "value": "https://github.com/Procycons",
+            "confidence": 0.85,
+            "unknown": false,
+            "source": "https://github.com/Procycons/Comperator",
+            "provenance": {
+              "source": "https://github.com/Procycons/Comperator",
+              "source_type": "repository",
+              "as_of": "2026-06-28",
+              "method": "Owning GitHub org/user of the repo"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "Procycons",
+            "confidence": 0.85,
+            "unknown": false,
+            "source": "https://github.com/Procycons/Comperator",
+            "provenance": {
+              "source": "https://github.com/Procycons/Comperator",
+              "source_type": "repository",
+              "as_of": "2026-06-28",
+              "method": "GitHub org/user handle"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": "https://github.com/Procycons/Comperator",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://github.com/Procycons/Comperator",
+          "provenance": {
+            "source": "https://github.com/Procycons/Comperator",
+            "source_type": "repository",
+            "as_of": "2026-06-28",
+            "method": "Repository URL"
+          },
+          "notes": null
+        },
+        "github_stars": {
+          "value": 14,
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://github.com/Procycons/Comperator",
+          "provenance": {
+            "source": "https://github.com/Procycons/Comperator",
+            "source_type": "repository",
+            "as_of": "2026-06-28",
+            "method": "Star count read from repo page"
+          },
+          "notes": null
+        },
+        "github_forks": {
+          "value": 5,
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://github.com/Procycons/Comperator",
+          "provenance": {
+            "source": "https://github.com/Procycons/Comperator",
+            "source_type": "repository",
+            "as_of": "2026-06-28",
+            "method": "Fork count read from repo page"
+          },
+          "notes": null
+        },
+        "github_issues": {
+          "value": 0,
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://github.com/Procycons/Comperator",
+          "provenance": {
+            "source": "https://github.com/Procycons/Comperator",
+            "source_type": "repository",
+            "as_of": "2026-06-28",
+            "method": "Open issues count read from repo page"
+          },
+          "notes": null
+        },
+        "github_releases": {
+          "value": 0,
+          "confidence": 0.85,
+          "unknown": false,
+          "source": "https://github.com/Procycons/Comperator",
+          "provenance": {
+            "source": "https://github.com/Procycons/Comperator",
+            "source_type": "repository",
+            "as_of": "2026-06-28",
+            "method": "No releases published per repo page"
+          },
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "rivalsense",
+      "website": {
+        "homepage": {
+          "value": "https://rivalsense.co/",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://rivalsense.co/pricing",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "blog": {
+          "value": "https://rivalsense.co/intel/",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://x.com/rivalsenseco",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "@rivalsenseco",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/101502495",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "product_hunt": {
+          "url": {
+            "value": "https://www.producthunt.com/products/rivalsense",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "competitor-analyst",
+      "website": {
+        "homepage": {
+          "value": "https://github.com/0xmetaschool/competitor-analyst",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://github.com/0xmetaschool/competitor-analyst",
+          "provenance": {
+            "source": "https://github.com/0xmetaschool/competitor-analyst",
+            "source_type": "repository",
+            "as_of": "2026-06-28",
+            "method": "Repo is canonical home"
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "documentation": {
+          "value": "https://github.com/0xmetaschool/competitor-analyst#readme",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://github.com/0xmetaschool/competitor-analyst",
+          "provenance": {
+            "source": "https://github.com/0xmetaschool/competitor-analyst",
+            "source_type": "repository",
+            "as_of": "2026-06-28",
+            "method": "README is the documentation"
+          },
+          "notes": null
+        },
+        "blog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {
+        "github": {
+          "url": {
+            "value": "https://github.com/0xmetaschool",
+            "confidence": 0.97,
+            "unknown": false,
+            "source": "https://github.com/0xmetaschool/competitor-analyst",
+            "provenance": {
+              "source": "https://github.com/0xmetaschool/competitor-analyst",
+              "source_type": "repository",
+              "as_of": "2026-06-28",
+              "method": "Repo owner org page"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "0xmetaschool",
+            "confidence": 0.98,
+            "unknown": false,
+            "source": "https://github.com/0xmetaschool/competitor-analyst",
+            "provenance": {
+              "source": "https://github.com/0xmetaschool/competitor-analyst",
+              "source_type": "repository",
+              "as_of": "2026-06-28",
+              "method": "GitHub org handle"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": "https://github.com/0xmetaschool/competitor-analyst",
+          "confidence": 0.99,
+          "unknown": false,
+          "source": "https://github.com/0xmetaschool/competitor-analyst",
+          "provenance": {
+            "source": "https://github.com/0xmetaschool/competitor-analyst",
+            "source_type": "repository",
+            "as_of": "2026-06-28",
+            "method": "Repo URL"
+          },
+          "notes": null
+        },
+        "github_stars": {
+          "value": 9,
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://api.github.com/repos/0xmetaschool/competitor-analyst",
+          "provenance": {
+            "source": "https://api.github.com/repos/0xmetaschool/competitor-analyst",
+            "source_type": "github_api",
+            "as_of": "2026-06-28",
+            "method": "stargazers_count from GitHub API"
+          },
+          "notes": null
+        },
+        "github_forks": {
+          "value": 5,
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://api.github.com/repos/0xmetaschool/competitor-analyst",
+          "provenance": {
+            "source": "https://api.github.com/repos/0xmetaschool/competitor-analyst",
+            "source_type": "github_api",
+            "as_of": "2026-06-28",
+            "method": "forks_count from GitHub API"
+          },
+          "notes": null
+        },
+        "github_issues": {
+          "value": 0,
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://api.github.com/repos/0xmetaschool/competitor-analyst",
+          "provenance": {
+            "source": "https://api.github.com/repos/0xmetaschool/competitor-analyst",
+            "source_type": "github_api",
+            "as_of": "2026-06-28",
+            "method": "open_issues_count from GitHub API"
+          },
+          "notes": null
+        },
+        "github_releases": {
+          "value": 0,
+          "confidence": 0.85,
+          "unknown": false,
+          "source": "https://github.com/0xmetaschool/competitor-analyst",
+          "provenance": {
+            "source": "https://github.com/0xmetaschool/competitor-analyst",
+            "source_type": "repository",
+            "as_of": "2026-06-28",
+            "method": "No releases published per repo page"
+          },
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "crayon",
+      "website": {
+        "homepage": {
+          "value": "https://www.crayon.co",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://www.crayon.co",
+          "provenance": {
+            "source": "https://www.crayon.co",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "direct"
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://www.crayon.co/pricing",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://www.crayon.co/pricing",
+          "provenance": {
+            "source": "https://www.crayon.co/pricing",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "direct"
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "blog": {
+          "value": "https://www.crayon.co/blog",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://www.crayon.co/blog",
+          "provenance": {
+            "source": "https://www.crayon.co/blog",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "linked from homepage"
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": "https://www.crayon.co/careers",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://www.crayon.co/careers",
+          "provenance": {
+            "source": "https://www.crayon.co/careers",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "linked from homepage"
+          },
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/crayon-co",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://www.linkedin.com/company/crayon-co",
+            "provenance": {
+              "source": "https://www.linkedin.com/company/crayon-co",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "search result, primary channel"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "crayon-co",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://www.linkedin.com/company/crayon-co",
+            "provenance": {
+              "source": "https://www.linkedin.com/company/crayon-co",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "URL slug"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 16752,
+            "confidence": 0.5,
+            "unknown": false,
+            "source": "https://www.linkedin.com/company/crayon-co",
+            "provenance": {
+              "source": "https://www.linkedin.com/company/crayon-co",
+              "source_type": "search_result",
+              "as_of": "2026-06-28",
+              "method": "search-reported count"
+            },
+            "notes": null,
+            "is_estimate": true,
+            "range_low": 16000,
+            "range_high": 18000,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": "weekly",
+            "confidence": 0.5,
+            "unknown": false,
+            "source": "https://www.linkedin.com/company/crayon-co",
+            "provenance": {
+              "source": "https://www.linkedin.com/company/crayon-co",
+              "source_type": "inference",
+              "as_of": "2026-06-28",
+              "method": "active B2B marketing channel"
+            },
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "competitive intelligence",
+              "sales enablement",
+              "product marketing",
+              "go-to-market"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": "https://www.crayon.co/blog",
+            "provenance": {
+              "source": "https://www.crayon.co/blog",
+              "source_type": "official_website",
+              "as_of": "2026-06-28",
+              "method": "blog topic alignment"
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "facebook": {
+          "url": {
+            "value": "https://www.facebook.com/CrayonDotCo/",
+            "confidence": 0.85,
+            "unknown": false,
+            "source": "https://www.facebook.com/CrayonDotCo/",
+            "provenance": {
+              "source": "https://www.facebook.com/CrayonDotCo/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "search result"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "CrayonDotCo",
+            "confidence": 0.85,
+            "unknown": false,
+            "source": "https://www.facebook.com/CrayonDotCo/",
+            "provenance": {
+              "source": "https://www.facebook.com/CrayonDotCo/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "URL slug"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 282,
+            "confidence": 0.45,
+            "unknown": false,
+            "source": "https://www.facebook.com/CrayonDotCo/",
+            "provenance": {
+              "source": "https://www.facebook.com/CrayonDotCo/",
+              "source_type": "search_result",
+              "as_of": "2026-06-28",
+              "method": "search-reported"
+            },
+            "notes": null,
+            "is_estimate": true,
+            "range_low": 250,
+            "range_high": 350,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "instagram": {
+          "url": {
+            "value": "https://www.instagram.com/crayondotco/",
+            "confidence": 0.85,
+            "unknown": false,
+            "source": "https://www.instagram.com/crayondotco/",
+            "provenance": {
+              "source": "https://www.instagram.com/crayondotco/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "search result"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "crayondotco",
+            "confidence": 0.85,
+            "unknown": false,
+            "source": "https://www.instagram.com/crayondotco/",
+            "provenance": {
+              "source": "https://www.instagram.com/crayondotco/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "URL slug"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 310,
+            "confidence": 0.45,
+            "unknown": false,
+            "source": "https://www.instagram.com/crayondotco/",
+            "provenance": {
+              "source": "https://www.instagram.com/crayondotco/",
+              "source_type": "search_result",
+              "as_of": "2026-06-28",
+              "method": "search-reported"
+            },
+            "notes": null,
+            "is_estimate": true,
+            "range_low": 250,
+            "range_high": 400,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "klue",
+      "website": {
+        "homepage": {
+          "value": "https://klue.com",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://klue.com",
+          "provenance": {
+            "source": "https://klue.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "direct"
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://klue.com/pricing",
+          "confidence": 0.8,
+          "unknown": false,
+          "source": "https://klue.com/pricing",
+          "provenance": {
+            "source": "https://klue.com/pricing",
+            "source_type": "pricing_page",
+            "as_of": "2026-06-28",
+            "method": "direct"
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "blog": {
+          "value": "https://klue.com/blog",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://klue.com/blog",
+          "provenance": {
+            "source": "https://klue.com/blog",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "direct"
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": "https://klue.com/careers",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://klue.com/careers",
+          "provenance": {
+            "source": "https://klue.com/careers",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "direct"
+          },
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://twitter.com/kluein",
+            "confidence": 0.85,
+            "unknown": false,
+            "source": "https://twitter.com/kluein",
+            "provenance": {
+              "source": "https://twitter.com/kluein",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "search"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "@kluein",
+            "confidence": 0.85,
+            "unknown": false,
+            "source": "https://twitter.com/kluein",
+            "provenance": {
+              "source": "https://twitter.com/kluein",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "search"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/klue",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://ca.linkedin.com/company/klue",
+            "provenance": {
+              "source": "https://ca.linkedin.com/company/klue",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "search"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "klue",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://ca.linkedin.com/company/klue",
+            "provenance": {
+              "source": "https://ca.linkedin.com/company/klue",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "URL slug"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 32526,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": "https://ca.linkedin.com/company/klue",
+            "provenance": {
+              "source": "https://ca.linkedin.com/company/klue",
+              "source_type": "third_party_db",
+              "as_of": "2026-06-28",
+              "method": "search snippet"
+            },
+            "notes": null,
+            "is_estimate": true,
+            "range_low": 32000,
+            "range_high": 33000,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "youtube": {
+          "url": {
+            "value": "https://www.youtube.com/@kluecompetenetwork",
+            "confidence": 0.85,
+            "unknown": false,
+            "source": "https://www.youtube.com/@kluecompetenetwork",
+            "provenance": {
+              "source": "https://www.youtube.com/@kluecompetenetwork",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "search"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "@kluecompetenetwork",
+            "confidence": 0.85,
+            "unknown": false,
+            "source": "https://www.youtube.com/@kluecompetenetwork",
+            "provenance": {
+              "source": "https://www.youtube.com/@kluecompetenetwork",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "search"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "instagram": {
+          "url": {
+            "value": "https://www.instagram.com/klue",
+            "confidence": 0.45,
+            "unknown": false,
+            "source": "https://klue.com",
+            "provenance": {
+              "source": "https://klue.com",
+              "source_type": "official_website",
+              "as_of": "2026-06-28",
+              "method": "Instagram link present in homepage footer; exact handle inferred"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "unkover",
+      "website": {
+        "homepage": {
+          "value": "https://unkover.com",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://unkover.com/pricing/",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "blog": {
+          "value": "https://unkover.com/blog/",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": "https://roadmap.unkover.com/",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "careers": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://x.com/MassimoCw",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "MassimoCw",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "founder-led thought leadership on competitive intelligence",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/unkoverai",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "unkoverai",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "kompyte",
+      "website": {
+        "homepage": {
+          "value": "https://www.kompyte.com",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://www.kompyte.com/plans",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "blog": {
+          "value": "https://www.kompyte.com/blog",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/kompyte",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "kompyte",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 3167,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "competitive intelligence",
+              "sales enablement",
+              "product marketing"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "B2B thought leadership",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "contify",
+      "website": {
+        "homepage": {
+          "value": "https://www.contify.com",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "documentation": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "blog": {
+          "value": "https://www.contify.com/resources/blog/",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": "https://www.contify.com/careers/",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://twitter.com/contify",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "contify",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/contify",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "contify",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 26409,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "competitive intelligence",
+              "market intelligence",
+              "product updates",
+              "AI/ML"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "B2B thought leadership",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "valona-intelligence",
+      "website": {
+        "homepage": {
+          "value": "https://valonaintelligence.com",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://valonaintelligence.com",
+          "provenance": {
+            "source": "https://valonaintelligence.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "direct"
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://valonaintelligence.com/market-intelligence-software/pricing",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://valonaintelligence.com",
+          "provenance": {
+            "source": "https://valonaintelligence.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "nav link"
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "blog": {
+          "value": "https://valonaintelligence.com/resources/blog",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://valonaintelligence.com",
+          "provenance": {
+            "source": "https://valonaintelligence.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "nav link"
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": "https://valonaintelligence.com/careers",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://valonaintelligence.com",
+          "provenance": {
+            "source": "https://valonaintelligence.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "nav link"
+          },
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://x.com/valonaintel",
+            "confidence": 0.55,
+            "unknown": false,
+            "source": "https://x.com/valonaintel",
+            "provenance": {
+              "source": "https://x.com/valonaintel",
+              "source_type": "search_result",
+              "as_of": "2026-06-28",
+              "method": "X profile @valonaintel found via search; not linked from homepage footer"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/valonaintelligence/",
+            "confidence": 0.95,
+            "unknown": false,
+            "source": "https://valonaintelligence.com",
+            "provenance": {
+              "source": "https://valonaintelligence.com",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "homepage footer link"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": 14503,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": "https://fi.linkedin.com/company/valonaintelligence",
+            "provenance": {
+              "source": "https://fi.linkedin.com/company/valonaintelligence",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "LinkedIn company page follower count"
+            },
+            "notes": null,
+            "is_estimate": true,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "youtube": {
+          "url": {
+            "value": "https://www.youtube.com/channel/UCvL0gkHoBzywLCSgfxPWgvA",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://valonaintelligence.com",
+            "provenance": {
+              "source": "https://valonaintelligence.com",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "homepage footer link"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "facebook": {
+          "url": {
+            "value": "https://www.facebook.com/valonaintell",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://valonaintelligence.com",
+            "provenance": {
+              "source": "https://valonaintelligence.com",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "homepage footer link"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "semrush",
+      "website": {
+        "homepage": {
+          "value": "https://www.semrush.com",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://www.semrush.com",
+          "provenance": {
+            "source": "https://www.semrush.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "direct"
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://www.semrush.com/pricing/",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://www.semrush.com",
+          "provenance": {
+            "source": "https://www.semrush.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "homepage link"
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": "https://www.semrush.com/kb/",
+          "confidence": 0.85,
+          "unknown": false,
+          "source": "https://www.semrush.com",
+          "provenance": {
+            "source": "https://www.semrush.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "knowledge base link"
+          },
+          "notes": null
+        },
+        "blog": {
+          "value": "https://www.semrush.com/blog/",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://www.semrush.com",
+          "provenance": {
+            "source": "https://www.semrush.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "homepage link"
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": "https://careers.semrush.com/",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://www.semrush.com",
+          "provenance": {
+            "source": "https://www.semrush.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "homepage link"
+          },
+          "notes": null
+        },
+        "api_docs": {
+          "value": "https://developer.semrush.com/api/",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://www.semrush.com",
+          "provenance": {
+            "source": "https://www.semrush.com",
+            "source_type": "official_docs",
+            "as_of": "2026-06-28",
+            "method": "homepage link"
+          },
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://twitter.com/semrush",
+            "confidence": 0.7,
+            "unknown": false,
+            "source": "https://www.semrush.com",
+            "provenance": {
+              "source": "https://www.semrush.com",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "known handle @semrush"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "@semrush",
+            "confidence": 0.7,
+            "unknown": false,
+            "source": "https://twitter.com/semrush",
+            "provenance": {
+              "source": "https://twitter.com/semrush",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "known handle"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/semrush",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://www.linkedin.com/company/semrush",
+            "provenance": {
+              "source": "https://www.linkedin.com/company/semrush",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "direct"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": 400000,
+            "confidence": 0.55,
+            "unknown": false,
+            "source": "https://www.linkedin.com/company/semrush",
+            "provenance": {
+              "source": "https://www.linkedin.com/company/semrush",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "search; ~395K-405K reported"
+            },
+            "notes": null,
+            "is_estimate": true,
+            "range_low": 395000,
+            "range_high": 405000,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "youtube": {
+          "url": {
+            "value": "https://www.youtube.com/c/Semrush",
+            "confidence": 0.7,
+            "unknown": false,
+            "source": "https://www.semrush.com",
+            "provenance": {
+              "source": "https://www.semrush.com",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "known channel"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "facebook": {
+          "url": {
+            "value": "https://www.facebook.com/Semrush/",
+            "confidence": 0.7,
+            "unknown": false,
+            "source": "https://www.semrush.com",
+            "provenance": {
+              "source": "https://www.semrush.com",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "known profile"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "instagram": {
+          "url": {
+            "value": "https://www.instagram.com/semrush/",
+            "confidence": 0.7,
+            "unknown": false,
+            "source": "https://www.semrush.com",
+            "provenance": {
+              "source": "https://www.semrush.com",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "known profile"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "similarweb",
+      "website": {
+        "homepage": {
+          "value": "https://www.similarweb.com",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://www.similarweb.com/corp/pricing/",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": "https://developers.similarweb.com/docs",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "blog": {
+          "value": "https://www.similarweb.com/blog/",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": "https://www.similarweb.com/corp/careers/",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        },
+        "api_docs": {
+          "value": "https://developers.similarweb.com/docs",
+          "confidence": 0.6,
+          "unknown": false,
+          "source": null,
+          "provenance": {
+            "source": null,
+            "source_type": "social_profile",
+            "as_of": "2026-06-28",
+            "method": null
+          },
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://x.com/similarweb",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "@Similarweb",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 55400,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "digital intelligence",
+              "market trends",
+              "product updates"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "insights/brand",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/similarweb",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "similarweb",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 92095,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "company news",
+              "research reports",
+              "hiring",
+              "thought leadership"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "B2B professional",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        "youtube": {
+          "url": {
+            "value": "https://www.youtube.com/c/similarweb",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "Similarweb",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "product tutorials",
+              "webinars",
+              "research"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "educational",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        "facebook": {
+          "url": {
+            "value": "https://www.facebook.com/similarweb",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "similarweb",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "company news",
+              "insights"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "brand",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        "instagram": {
+          "url": {
+            "value": "https://www.instagram.com/similarwebinsights/",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "@similarwebinsights",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 30000,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "culture",
+              "data insights"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "brand/culture",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "owler",
+      "website": {
+        "homepage": {
+          "value": "https://www.owler.com",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://www.owler.com",
+          "provenance": {
+            "source": "https://www.owler.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "primary domain"
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://corp.owler.com/pricing",
+          "confidence": 0.85,
+          "unknown": false,
+          "source": "https://corp.owler.com/pricing",
+          "provenance": {
+            "source": "https://corp.owler.com/pricing",
+            "source_type": "pricing_page",
+            "as_of": "2026-06-28",
+            "method": "pricing entry point"
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "blog": {
+          "value": "https://corp.owler.com/blog",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://corp.owler.com/sitemap.xml",
+          "provenance": {
+            "source": "https://corp.owler.com/sitemap.xml",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "blog hub in sitemap"
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_docs": {
+          "value": "https://developers.owler.com/",
+          "confidence": 0.85,
+          "unknown": false,
+          "source": "https://developers.owler.com/",
+          "provenance": {
+            "source": "https://developers.owler.com/",
+            "source_type": "official_docs",
+            "as_of": "2026-06-28",
+            "method": "developer portal"
+          },
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://twitter.com/owler",
+            "confidence": 0.75,
+            "unknown": false,
+            "source": "https://corp.owler.com/",
+            "provenance": {
+              "source": "https://corp.owler.com/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "X/Twitter linked from corp homepage"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/owler",
+            "confidence": 0.8,
+            "unknown": false,
+            "source": "https://corp.owler.com/",
+            "provenance": {
+              "source": "https://corp.owler.com/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "linked from corp homepage"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "youtube": {
+          "url": {
+            "value": "https://www.youtube.com/user/owler",
+            "confidence": 0.7,
+            "unknown": false,
+            "source": "https://corp.owler.com/",
+            "provenance": {
+              "source": "https://corp.owler.com/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "YouTube linked from corp homepage"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "crunchbase",
+      "website": {
+        "homepage": {
+          "value": "https://www.crunchbase.com",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://www.crunchbase.com",
+          "provenance": {
+            "source": "https://www.crunchbase.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "direct"
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://www.crunchbase.com/buy/select-product",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://www.crunchbase.com",
+          "provenance": {
+            "source": "https://www.crunchbase.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "homepage CTA"
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": "https://data.crunchbase.com/docs",
+          "confidence": 0.85,
+          "unknown": false,
+          "source": "https://data.crunchbase.com/docs/using-the-api",
+          "provenance": {
+            "source": "https://data.crunchbase.com/docs/using-the-api",
+            "source_type": "official_docs",
+            "as_of": "2026-06-28",
+            "method": "API docs subdomain"
+          },
+          "notes": null
+        },
+        "blog": {
+          "value": "https://about.crunchbase.com/blog",
+          "confidence": 0.8,
+          "unknown": false,
+          "source": "https://www.crunchbase.com",
+          "provenance": {
+            "source": "https://www.crunchbase.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "footer blog link; also news.crunchbase.com"
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": "https://about.crunchbase.com/about-us/careers",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://about.crunchbase.com/about-us/careers",
+          "provenance": {
+            "source": "https://about.crunchbase.com/about-us/careers",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "careers page"
+          },
+          "notes": null
+        },
+        "api_docs": {
+          "value": "https://data.crunchbase.com/docs",
+          "confidence": 0.85,
+          "unknown": false,
+          "source": "https://data.crunchbase.com/docs/using-the-api",
+          "provenance": {
+            "source": "https://data.crunchbase.com/docs/using-the-api",
+            "source_type": "official_docs",
+            "as_of": "2026-06-28",
+            "method": "developer docs"
+          },
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://twitter.com/crunchbase",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://twitter.com/crunchbase",
+            "provenance": {
+              "source": "https://twitter.com/crunchbase",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "official handle"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "@crunchbase",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://twitter.com/crunchbase",
+            "provenance": {
+              "source": "https://twitter.com/crunchbase",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "verified, joined Apr 2008"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 154700,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": "https://twitter.com/crunchbase",
+            "provenance": {
+              "source": "https://twitter.com/crunchbase",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "~154.7K"
+            },
+            "notes": null,
+            "is_estimate": true,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/crunchbase",
+            "confidence": 0.95,
+            "unknown": false,
+            "source": "https://www.linkedin.com/company/crunchbase",
+            "provenance": {
+              "source": "https://www.linkedin.com/company/crunchbase",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "official page"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": 161509,
+            "confidence": 0.7,
+            "unknown": false,
+            "source": "https://www.linkedin.com/company/crunchbase",
+            "provenance": {
+              "source": "https://www.linkedin.com/company/crunchbase",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "LinkedIn page"
+            },
+            "notes": null,
+            "is_estimate": true,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "facebook": {
+          "url": {
+            "value": "https://www.facebook.com/crunchbase",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://www.facebook.com/crunchbase/followers/",
+            "provenance": {
+              "source": "https://www.facebook.com/crunchbase/followers/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "official page"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": 37092,
+            "confidence": 0.55,
+            "unknown": false,
+            "source": "https://www.facebook.com/crunchbase/followers/",
+            "provenance": {
+              "source": "https://www.facebook.com/crunchbase/followers/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "~37K likes"
+            },
+            "notes": null,
+            "is_estimate": true,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "instagram": {
+          "url": {
+            "value": "https://www.instagram.com/crunchbase/",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://www.instagram.com/crunchbase/",
+            "provenance": {
+              "source": "https://www.instagram.com/crunchbase/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "official handle"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "@crunchbase",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://www.instagram.com/crunchbase/",
+            "provenance": {
+              "source": "https://www.instagram.com/crunchbase/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "direct"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 52000,
+            "confidence": 0.5,
+            "unknown": false,
+            "source": "https://www.instagram.com/crunchbase/",
+            "provenance": {
+              "source": "https://www.instagram.com/crunchbase/",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "~52K"
+            },
+            "notes": null,
+            "is_estimate": true,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "visualping",
+      "website": {
+        "homepage": {
+          "value": "https://visualping.io",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://visualping.io",
+          "provenance": {
+            "source": "https://visualping.io",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "Direct"
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://visualping.io/pricing",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://visualping.io/pricing",
+          "provenance": {
+            "source": "https://visualping.io/pricing",
+            "source_type": "pricing_page",
+            "as_of": "2026-06-28",
+            "method": "Direct"
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": "https://help.visualping.io/en/",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://visualping.io",
+          "provenance": {
+            "source": "https://visualping.io",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "Help center linked in footer"
+          },
+          "notes": null
+        },
+        "blog": {
+          "value": "https://visualping.io/blog",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://visualping.io",
+          "provenance": {
+            "source": "https://visualping.io",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "Footer link"
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": "https://visualping.io/careers",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://visualping.io/careers",
+          "provenance": {
+            "source": "https://visualping.io/careers",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "Footer link"
+          },
+          "notes": null
+        },
+        "api_docs": {
+          "value": "https://api.visualping.io/",
+          "confidence": 0.85,
+          "unknown": false,
+          "source": "https://api.visualping.io/",
+          "provenance": {
+            "source": "https://api.visualping.io/",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "API endpoint referenced on site"
+          },
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://twitter.com/visualping",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://visualping.io",
+            "provenance": {
+              "source": "https://visualping.io",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "Footer social link"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "@visualping",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://visualping.io",
+            "provenance": {
+              "source": "https://visualping.io",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "From URL"
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/visualping",
+            "confidence": 0.95,
+            "unknown": false,
+            "source": "https://ca.linkedin.com/company/visualping",
+            "provenance": {
+              "source": "https://ca.linkedin.com/company/visualping",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "Footer link / LinkedIn page"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": 15638,
+            "confidence": 0.75,
+            "unknown": false,
+            "source": "https://ca.linkedin.com/company/visualping",
+            "provenance": {
+              "source": "https://ca.linkedin.com/company/visualping",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "LinkedIn company page follower count"
+            },
+            "notes": null,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "youtube": {
+          "url": {
+            "value": "https://www.youtube.com/channel/UCgyjvEr5OWQ10DR82_HWgjg",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://visualping.io",
+            "provenance": {
+              "source": "https://visualping.io",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "Footer social link"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        "facebook": {
+          "url": {
+            "value": "https://www.facebook.com/visualping.io",
+            "confidence": 0.9,
+            "unknown": false,
+            "source": "https://visualping.io",
+            "provenance": {
+              "source": "https://visualping.io",
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": "Footer social link"
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "engagement_style": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "alphasense",
+      "website": {
+        "homepage": {
+          "value": "https://www.alpha-sense.com",
+          "confidence": 0.95,
+          "unknown": false,
+          "source": "https://www.alpha-sense.com",
+          "provenance": {
+            "source": "https://www.alpha-sense.com",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "direct"
+          },
+          "notes": null
+        },
+        "pricing": {
+          "value": "https://www.alpha-sense.com/pricing",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://www.alpha-sense.com/pricing",
+          "provenance": {
+            "source": "https://www.alpha-sense.com/pricing",
+            "source_type": "pricing_page",
+            "as_of": "2026-06-28",
+            "method": "direct"
+          },
+          "notes": null
+        },
+        "documentation": {
+          "value": "https://developer.alpha-sense.com/",
+          "confidence": 0.85,
+          "unknown": false,
+          "source": "https://developer.alpha-sense.com/",
+          "provenance": {
+            "source": "https://developer.alpha-sense.com/",
+            "source_type": "official_docs",
+            "as_of": "2026-06-28",
+            "method": "developer portal"
+          },
+          "notes": null
+        },
+        "blog": {
+          "value": "https://www.alpha-sense.com/blog/",
+          "confidence": 0.8,
+          "unknown": false,
+          "source": "https://www.alpha-sense.com/blog/product/alphasense-mobile-app/",
+          "provenance": {
+            "source": "https://www.alpha-sense.com/blog/product/alphasense-mobile-app/",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "blog path confirmed via posts"
+          },
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": "https://www.alpha-sense.com/careers/",
+          "confidence": 0.9,
+          "unknown": false,
+          "source": "https://www.alpha-sense.com/careers/",
+          "provenance": {
+            "source": "https://www.alpha-sense.com/careers/",
+            "source_type": "official_website",
+            "as_of": "2026-06-28",
+            "method": "nav link"
+          },
+          "notes": null
+        },
+        "api_docs": {
+          "value": "https://developer.alpha-sense.com/api/getting-started",
+          "confidence": 0.85,
+          "unknown": false,
+          "source": "https://developer.alpha-sense.com/api/getting-started",
+          "provenance": {
+            "source": "https://developer.alpha-sense.com/api/getting-started",
+            "source_type": "official_docs",
+            "as_of": "2026-06-28",
+            "method": "API getting-started page"
+          },
+          "notes": null
+        }
+      },
+      "social": {
+        "x": {
+          "url": {
+            "value": "https://x.com/alphasenseinc",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "@AlphaSenseInc",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 34400,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null,
+            "is_estimate": true,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "product news",
+              "market insights",
+              "events"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "announcements",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        "linkedin": {
+          "url": {
+            "value": "https://www.linkedin.com/company/alphasense",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": "alphasense",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "followers": {
+            "value": 120962,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null,
+            "is_estimate": true,
+            "unit": "followers"
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "market intelligence",
+              "product",
+              "thought leadership",
+              "hiring"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "corporate / professional",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        "youtube": {
+          "url": {
+            "value": "https://www.youtube.com/channel/UClqFz8aiVfSV2PviLcQrIbA",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "handle": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "followers": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "posting_frequency": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "content_categories": {
+            "value": [
+              "product demos",
+              "webinars",
+              "customer stories"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "engagement_style": {
+            "value": "educational / product",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "social_profile",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      },
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
+    {
+      "entity_ref": "nexusai",
+      "website": {
+        "homepage": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pricing": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "documentation": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "blog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {},
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    }
+  ]
+}

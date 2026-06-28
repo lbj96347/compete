@@ -1,0 +1,4515 @@
+{
+  "meta": {
+    "schema_version": "1.0.0",
+    "dataset": "pricing",
+    "generated_at": "2026-06-27T20:45:15Z",
+    "generator": "find-competitor/collect_intelligence 0.1.0"
+  },
+  "pricing": [
+    {
+      "entity_ref": "competely",
+      "pricing_page": {
+        "value": "https://competely.ai/pricing",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://competely.ai/pricing",
+        "provenance": {
+          "source": "https://competely.ai/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Direct"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "subscription",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://competely.ai/pricing",
+        "provenance": {
+          "source": "https://competely.ai/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Monthly/annual tiered subscriptions"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://competely.ai/pricing",
+        "provenance": {
+          "source": "https://competely.ai/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Prices shown in $"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": false,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://competely.ai/pricing",
+        "provenance": {
+          "source": "https://competely.ai/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "No free plan; FAQ states no free trial due to AI costs"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": false,
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://competely.ai/pricing",
+        "provenance": {
+          "source": "https://competely.ai/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "No enterprise/contact-sales tier listed; highest is Scale at $99/mo"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": 39,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://competely.ai/pricing",
+        "provenance": {
+          "source": "https://competely.ai/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Starter plan billed monthly"
+        },
+        "notes": null,
+        "unit": "USD"
+      },
+      "plans": [
+        {
+          "name": "Starter",
+          "monthly_price": {
+            "value": 39,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "3 active projects",
+              "Up to 10 competitors per project",
+              "Competitive briefs every 2 weeks (up to 10 recipients)",
+              "3 analysis runs/month",
+              "Export CSV & PDF",
+              "1 user"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "3 projects",
+              "10 competitors/project",
+              "3 analysis runs/month",
+              "1 user"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Pro",
+          "monthly_price": {
+            "value": 59,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "6 active projects",
+              "Up to 15 competitors per project",
+              "Weekly competitive briefs (up to 15 recipients)",
+              "4 analysis runs/month",
+              "Export CSV & PDF",
+              "1 user"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "6 projects",
+              "15 competitors/project",
+              "4 analysis runs/month",
+              "1 user"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Scale",
+          "monthly_price": {
+            "value": 99,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "10 active projects",
+              "Up to 15 competitors per project",
+              "Weekly competitive briefs (up to 30 recipients)",
+              "5 analysis runs/month",
+              "Export CSV & PDF",
+              "3 users included ($20/mo per additional user)"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "10 projects",
+              "15 competitors/project",
+              "5 analysis runs/month",
+              "3 users"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "comperator",
+      "pricing_page": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "open_source",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://github.com/Procycons/Comperator",
+        "provenance": {
+          "source": "https://github.com/Procycons/Comperator",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": "MIT license; freely usable source"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": true,
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://github.com/Procycons/Comperator",
+        "provenance": {
+          "source": "https://github.com/Procycons/Comperator",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": "Free/open-source under MIT (user supplies own OpenAI API key)"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "rivalsense",
+      "pricing_page": {
+        "value": "https://rivalsense.co/pricing",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://coldiq.com/tools/rivalsense",
+        "provenance": {
+          "source": "https://coldiq.com/tools/rivalsense",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Standard pricing path; tiers documented by third-party reviews (site itself behind Cloudflare challenge)"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "subscription",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://coldiq.com/tools/rivalsense",
+        "provenance": {
+          "source": "https://coldiq.com/tools/rivalsense",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Flat monthly subscription tiers"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://coldiq.com/tools/rivalsense",
+        "provenance": {
+          "source": "https://coldiq.com/tools/rivalsense",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Prices quoted in USD ($) by reviewers; some EU sources cite EUR equivalents"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": false,
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://coldiq.com/tools/rivalsense",
+        "provenance": {
+          "source": "https://coldiq.com/tools/rivalsense",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Reviewers state no free plan; only a 14-day free trial"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": false,
+        "confidence": 0.55,
+        "unknown": false,
+        "source": "https://coldiq.com/tools/rivalsense",
+        "provenance": {
+          "source": "https://coldiq.com/tools/rivalsense",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "No enterprise/contact-sales tier listed; positioning explicitly rejects enterprise lock-in"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": 44.99,
+        "confidence": 0.65,
+        "unknown": false,
+        "source": "https://coldiq.com/tools/rivalsense",
+        "provenance": {
+          "source": "https://coldiq.com/tools/rivalsense",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Basic plan $44.99/mo per reviews; note some sources cite $37.49 (possibly annual/promo)"
+        },
+        "notes": null
+      },
+      "plans": [
+        {
+          "name": "Basic",
+          "monthly_price": {
+            "value": 44.99,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Weekly AI email updates",
+              "Slack integration",
+              "Role management",
+              "24/7 support"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "4 companies monitored",
+              "1 email recipient",
+              "Add-on companies $10.99 each"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Pro",
+          "monthly_price": {
+            "value": 104.99,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Weekly AI email updates",
+              "Slack integration",
+              "Role management",
+              "24/7 support"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "10 companies monitored",
+              "Up to 5 email recipients",
+              "Add-on companies $8.99 each"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Business",
+          "monthly_price": {
+            "value": 222.99,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Weekly AI email updates",
+              "Slack integration",
+              "Role management",
+              "24/7 support"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "20 companies monitored",
+              "Unlimited email recipients",
+              "Add-on companies $5.99 each"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "competitor-analyst",
+      "pricing_page": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "open_source",
+        "confidence": 0.97,
+        "unknown": false,
+        "source": "https://github.com/0xmetaschool/competitor-analyst",
+        "provenance": {
+          "source": "https://github.com/0xmetaschool/competitor-analyst",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": "MIT license, free self-host template"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": true,
+        "confidence": 0.97,
+        "unknown": false,
+        "source": "https://github.com/0xmetaschool/competitor-analyst",
+        "provenance": {
+          "source": "https://github.com/0xmetaschool/competitor-analyst",
+          "source_type": "repository",
+          "as_of": "2026-06-28",
+          "method": "Free open-source code; user supplies own OpenAI key"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
+    {
+      "entity_ref": "crayon",
+      "pricing_page": {
+        "value": "https://www.crayon.co/pricing",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.crayon.co/pricing",
+        "provenance": {
+          "source": "https://www.crayon.co/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "direct"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "contact_sales",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.crayon.co/pricing",
+        "provenance": {
+          "source": "https://www.crayon.co/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "page states pricing is tailored; 'Request an Estimate' form, no public tiers"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://www.crayon.co/pricing",
+        "provenance": {
+          "source": "https://www.crayon.co/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "US-based company; inferred from market"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": false,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.crayon.co/pricing",
+        "provenance": {
+          "source": "https://www.crayon.co/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "no free plan offered; demo-only entry"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.businesswire.com/news/home/20210504005148/en/Crayon-Raises-%2422-Million-Series-B-to-Empower-Mid-market-Large-Enterprises-With-Competitive-Intelligence",
+        "provenance": {
+          "source": "https://www.businesswire.com/news/home/20210504005148/en/Crayon-Raises-%2422-Million-Series-B-to-Empower-Mid-market-Large-Enterprises-With-Competitive-Intelligence",
+          "source_type": "press_release",
+          "as_of": "2026-06-28",
+          "method": "targets mid-market and large enterprises; custom quotes"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "plans": [
+        {
+          "name": "Custom",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": "custom",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Competitor monitoring",
+              "Automated insights",
+              "Battlecards",
+              "Salesforce/Slack/Teams integration",
+              "Win-rate measurement"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Pricing scales with number of competitive assets and stakeholders"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "klue",
+      "pricing_page": {
+        "value": "https://klue.com/pricing",
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://klue.com/pricing",
+        "provenance": {
+          "source": "https://klue.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "page exists but shows no public pricing, only demo CTA"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "contact_sales",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://klue.com/pricing",
+        "provenance": {
+          "source": "https://klue.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "no public prices; only GET A DEMO / contact"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": false,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://klue.com/pricing",
+        "provenance": {
+          "source": "https://klue.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "no free plan offered; demo-only enterprise sales motion"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://klue.com/llm-info",
+        "provenance": {
+          "source": "https://klue.com/llm-info",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "enterprise B2B platform, custom contracts"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "plans": [
+        {
+          "name": "Enterprise / Custom",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": "custom",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Competitive Intelligence",
+              "Compete Agent",
+              "Win-Loss Suite",
+              "AI Interviewer",
+              "Battlecards",
+              "Integrations"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "unkover",
+      "pricing_page": {
+        "value": "https://unkover.com/pricing/",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://unkover.com/pricing/",
+        "provenance": {
+          "source": "https://unkover.com/pricing/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Direct fetch"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "subscription",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://unkover.com/pricing/",
+        "provenance": {
+          "source": "https://unkover.com/pricing/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Tiered plans with free trial; no permanent free plan"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://unkover.com/pricing/",
+        "provenance": {
+          "source": "https://unkover.com/pricing/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Prices listed in $"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": false,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://unkover.com/pricing/",
+        "provenance": {
+          "source": "https://unkover.com/pricing/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Only a 14-day free trial offered, no permanent free tier"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://unkover.com/pricing/",
+        "provenance": {
+          "source": "https://unkover.com/pricing/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Enterprise tier with custom pricing listed"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": 79,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://unkover.com/pricing/",
+        "provenance": {
+          "source": "https://unkover.com/pricing/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Base plan billed annually = $79/mo (or $99/mo monthly)"
+        },
+        "notes": null,
+        "unit": "USD"
+      },
+      "plans": [
+        {
+          "name": "Base",
+          "monthly_price": {
+            "value": 99,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "5 competitors",
+              "50 pages monitored",
+              "10 email workflows",
+              "3-day data refresh"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Up to 5 competitors",
+              "50 pages",
+              "3-day refresh"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Professional",
+          "monthly_price": {
+            "value": 199,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "10 competitors",
+              "100 pages monitored",
+              "20 email workflows",
+              "1-day data refresh"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Up to 10 competitors",
+              "100 pages",
+              "1-day refresh"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Enterprise",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Custom competitors",
+              "Custom pages monitored",
+              "Custom email workflows",
+              "Hourly data refresh"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Custom"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "kompyte",
+      "pricing_page": {
+        "value": "https://www.kompyte.com/plans",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://www.kompyte.com/plans",
+        "provenance": {
+          "source": "https://www.kompyte.com/plans",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "direct fetch"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "contact_sales",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.kompyte.com/plans",
+        "provenance": {
+          "source": "https://www.kompyte.com/plans",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "prices not disclosed; 'Request a Breakdown' CTA, annual contracts"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://www.kompyte.com/plans",
+        "provenance": {
+          "source": "https://www.kompyte.com/plans",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "inferred from US HQ; no price shown"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": false,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.kompyte.com/plans",
+        "provenance": {
+          "source": "https://www.kompyte.com/plans",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "no free plan listed"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.kompyte.com/plans",
+        "provenance": {
+          "source": "https://www.kompyte.com/plans",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "'Unlimited' tier with SSO/advanced permissions serves enterprise"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "plans": [
+        {
+          "name": "Essentials",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Unlimited battlecards, reports, listening alerts",
+              "Dedicated CSM",
+              "Integrations",
+              "AI automations"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "10 companies tracked",
+              "25 user licenses",
+              "50 URLs per company",
+              "25 keywords monitored"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Professional",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Unlimited battlecards, reports, listening alerts",
+              "Unlimited companies database access",
+              "Dedicated CSM"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "20 companies tracked",
+              "100 user licenses",
+              "100 URLs per company",
+              "100 keywords monitored"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Unlimited",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Unlimited battlecards, reports, listening alerts",
+              "SSO",
+              "Advanced permission management"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Unlimited companies tracked",
+              "Unlimited user licenses",
+              "150 URLs per company",
+              "200 keywords monitored"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "contify",
+      "pricing_page": {
+        "value": "https://www.contify.com",
+        "confidence": 0.4,
+        "unknown": false,
+        "source": "https://www.contify.com",
+        "provenance": {
+          "source": "https://www.contify.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "No public /pricing page found; pricing is gated behind sales/demo. Primary CTA is 'Free trial'"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "contact_sales",
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://www.vendr.com/marketplace/contify",
+        "provenance": {
+          "source": "https://www.vendr.com/marketplace/contify",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "No published price tiers; quote-based / custom per organization size per third-party marketplaces"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.5,
+        "unknown": false,
+        "source": "https://www.itqlick.com/contify/pricing",
+        "provenance": {
+          "source": "https://www.itqlick.com/contify/pricing",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Third-party pricing references quoted in USD"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": false,
+        "confidence": 0.5,
+        "unknown": false,
+        "source": "https://www.contify.com",
+        "provenance": {
+          "source": "https://www.contify.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "Offers free trial but no permanent free plan observed"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.contify.com",
+        "provenance": {
+          "source": "https://www.contify.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "Positioned as enterprise M&CI platform; per-seat enterprise pricing per third-party"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "plans": [
+        {
+          "name": "Free trial",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": "trial",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Access to M&CI platform trial"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          }
+        },
+        {
+          "name": "Enterprise / custom (contact sales)",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": "annual",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "M&CI platform",
+              "Business News API",
+              "Athena AI agentic insights",
+              "Managed analyst support",
+              "Custom source monitoring",
+              "Battlecards & newsletters"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Quote-based; price scales with number of users"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "valona-intelligence",
+      "pricing_page": {
+        "value": "https://valonaintelligence.com/market-intelligence-software/pricing",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/market-intelligence-software/pricing",
+        "provenance": {
+          "source": "https://valonaintelligence.com/market-intelligence-software/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "direct"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "contact_sales",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/market-intelligence-software/pricing",
+        "provenance": {
+          "source": "https://valonaintelligence.com/market-intelligence-software/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "no public prices; 'Get in touch and explore our packages'"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": false,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/market-intelligence-software/pricing",
+        "provenance": {
+          "source": "https://valonaintelligence.com/market-intelligence-software/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "no free plan listed; enterprise contact-sales only"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://valonaintelligence.com/market-intelligence-software/pricing",
+        "provenance": {
+          "source": "https://valonaintelligence.com/market-intelligence-software/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "tailored enterprise packages, serves 500+ organizations and Fortune 500"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "plans": [
+        {
+          "name": "Custom / Tailored package",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": "custom",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "AI competitive & market intelligence platform",
+              "200,000+ verified sources",
+              "competitor monitoring",
+              "trend radars",
+              "alerts & newsletters",
+              "dashboards",
+              "AI research assistant"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "pricing only via sales contact"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "semrush",
+      "pricing_page": {
+        "value": "https://www.semrush.com/pricing/",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.semrush.com",
+        "provenance": {
+          "source": "https://www.semrush.com",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "homepage link"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "freemium",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.semrush.com/prices/",
+        "provenance": {
+          "source": "https://www.semrush.com/prices/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "free account + 7-day free trial + paid subscription tiers"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.semrush.com/prices/",
+        "provenance": {
+          "source": "https://www.semrush.com/prices/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "US pricing in USD"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": true,
+        "confidence": 0.8,
+        "unknown": false,
+        "source": "https://www.semrush.com/prices/",
+        "provenance": {
+          "source": "https://www.semrush.com/prices/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "free limited account; 7-day free trial offered"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.semrush.com/prices/",
+        "provenance": {
+          "source": "https://www.semrush.com/prices/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Semrush Enterprise offering referenced on pricing page"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": 139.95,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.demandsage.com/semrush-pricing/",
+        "provenance": {
+          "source": "https://www.demandsage.com/semrush-pricing/",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Pro plan monthly price; corroborated across multiple 2026 pricing reviews"
+        },
+        "notes": null,
+        "unit": "USD"
+      },
+      "plans": [
+        {
+          "name": "Pro",
+          "monthly_price": {
+            "value": 139.95,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Keyword research",
+              "Site audit",
+              "Rank tracking",
+              "Competitor analysis"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "5 projects",
+              "500 keywords to track",
+              "10,000 results per report"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Guru",
+          "monthly_price": {
+            "value": 249.95,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Content Marketing Toolkit",
+              "Historical data",
+              "Multi-location tracking",
+              "Looker Studio integration"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "15 projects",
+              "1,500 keywords to track",
+              "30,000 results per report"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Business",
+          "monthly_price": {
+            "value": 499.95,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "API access",
+              "Share of Voice",
+              "PLA analytics",
+              "Highest data limits"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "40 projects",
+              "5,000 keywords to track",
+              "50,000 results per report"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "similarweb",
+      "pricing_page": {
+        "value": "https://www.similarweb.com/corp/pricing/",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.similarweb.com/corp/pricing/",
+        "provenance": {
+          "source": "https://www.similarweb.com/corp/pricing/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "pricing page fetch"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "subscription + contact_sales",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.similarweb.com/corp/pricing/",
+        "provenance": {
+          "source": "https://www.similarweb.com/corp/pricing/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "self-service tiers plus 'Talk to sales' for business/enterprise"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://tekpon.com/software/similarweb/pricing/",
+        "provenance": {
+          "source": "https://tekpon.com/software/similarweb/pricing/",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "prices quoted in USD"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": true,
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.similarweb.com/corp/pricing/",
+        "provenance": {
+          "source": "https://www.similarweb.com/corp/pricing/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "limited free sample data on similarweb.com + free trial; no full free plan"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.similarweb.com/corp/pricing/",
+        "provenance": {
+          "source": "https://www.similarweb.com/corp/pricing/",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "enterprise custom packages via sales"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": 199,
+        "confidence": 0.55,
+        "unknown": false,
+        "source": "https://tekpon.com/software/similarweb/pricing/",
+        "provenance": {
+          "source": "https://tekpon.com/software/similarweb/pricing/",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Starter ~$199/mo per third-party listings"
+        },
+        "notes": null,
+        "is_estimate": true,
+        "unit": "USD/month"
+      },
+      "plans": [
+        {
+          "name": "Free / Limited",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "is_free": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "High-level sample website traffic data",
+              "Free tools (Website Traffic Checker, Keyword Tool, App Analytics)"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Very limited data depth",
+              "Sample-level metrics only"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Starter",
+          "monthly_price": {
+            "value": 199,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly or annual",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Web Intelligence core metrics",
+              "Keyword research",
+              "Limited history/users"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Reduced data history",
+              "Single/limited users"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Professional",
+          "monthly_price": {
+            "value": 399,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly or annual",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Expanded Web Intelligence",
+              "More keywords/exports"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Usage-based data credits"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Team",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": "annual",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "~5 users",
+              "Advanced reporting",
+              "Custom dashboards"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Custom/annual pricing, ~$14k-$35k+/yr"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Enterprise",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": "annual",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "API/Data feeds",
+              "MCP integration",
+              "SSO",
+              "Custom packages",
+              "Dedicated support"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Contact sales / custom contract"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "owler",
+      "pricing_page": {
+        "value": "https://corp.owler.com/pricing",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://corp.owler.com/pricing",
+        "provenance": {
+          "source": "https://corp.owler.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "official pricing entry (redirects to checkout)"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "freemium",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://corp.owler.com/owler-community",
+        "provenance": {
+          "source": "https://corp.owler.com/owler-community",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "free Community tier + paid subscriptions"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://corp.owler.com/pricing",
+        "provenance": {
+          "source": "https://corp.owler.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "US-based pricing"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": true,
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://corp.owler.com/owler-community",
+        "provenance": {
+          "source": "https://corp.owler.com/owler-community",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "Owler Community free-forever plan"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.uplead.com/owler-pricing/",
+        "provenance": {
+          "source": "https://www.uplead.com/owler-pricing/",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Owler Max enterprise tier with custom pricing"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": 39,
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.uplead.com/owler-pricing/",
+        "provenance": {
+          "source": "https://www.uplead.com/owler-pricing/",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Owler Pro $39/user/mo billed annually"
+        },
+        "notes": null,
+        "is_estimate": true,
+        "unit": "USD"
+      },
+      "plans": [
+        {
+          "name": "Community",
+          "monthly_price": {
+            "value": 0,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "free",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Follow up to 5 companies",
+              "Competitive Graph access",
+              "Daily Snapshot newsletter",
+              "Instant Insight alerts"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "~5 companies followed",
+              "limited company profile views per month",
+              "alerts on 3 event types"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Pro",
+          "monthly_price": {
+            "value": 39,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "annual",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Revenue estimates",
+              "Funding & acquisition data",
+              "CEO approval ratings",
+              "Employee counts",
+              "Chrome extension integration with Salesforce & HubSpot"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Max",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": "custom",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "CRM & Slack integrations",
+              "Contact data",
+              "Enterprise API"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "minimum 5 seats",
+              "custom pricing / contact sales"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "crunchbase",
+      "pricing_page": {
+        "value": "https://www.crunchbase.com/buy/select-product",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.crunchbase.com",
+        "provenance": {
+          "source": "https://www.crunchbase.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "homepage CTA links to /buy/select-product"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "freemium",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/buy/select-product",
+        "provenance": {
+          "source": "https://www.crunchbase.com/buy/select-product",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "free limited account + paid subscription tiers"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.crunchbase.com/buy/select-product",
+        "provenance": {
+          "source": "https://www.crunchbase.com/buy/select-product",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "prices quoted in USD"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": true,
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://www.crunchbase.com",
+        "provenance": {
+          "source": "https://www.crunchbase.com",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "free limited account available"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://about.crunchbase.com/products/data-licensing",
+        "provenance": {
+          "source": "https://about.crunchbase.com/products/data-licensing",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "Enterprise + data licensing with custom pricing"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": 49,
+        "confidence": 0.7,
+        "unknown": false,
+        "source": "https://www.g2.com/products/crunchbase/pricing",
+        "provenance": {
+          "source": "https://www.g2.com/products/crunchbase/pricing",
+          "source_type": "third_party_db",
+          "as_of": "2026-06-28",
+          "method": "Pro $49/mo billed annually ($588/yr), $99/mo monthly"
+        },
+        "notes": null,
+        "is_estimate": true,
+        "unit": "USD"
+      },
+      "plans": [
+        {
+          "name": "Free",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "is_free": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Limited company profiles",
+              "Basic search"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Limited search results",
+              "No exports"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Pro",
+          "monthly_price": {
+            "value": 49,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null,
+            "unit": "USD"
+          },
+          "billing_period": {
+            "value": "annual ($588/yr); $99/mo monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Full search across 4M+ companies",
+              "Growth signals",
+              "AI-powered insights",
+              "Saved searches",
+              "Alerts"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Export limits"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Business",
+          "monthly_price": {
+            "value": 199,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null,
+            "unit": "USD"
+          },
+          "billing_period": {
+            "value": "annual ($2,388/yr)",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Salesforce integration",
+              "Higher export limits",
+              "Team features"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Enterprise",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Full Crunchbase API access",
+              "Data licensing",
+              "Highest export limits",
+              "Dedicated support"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Custom pricing, contact sales"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "visualping",
+      "pricing_page": {
+        "value": "https://visualping.io/pricing",
+        "confidence": 0.95,
+        "unknown": false,
+        "source": "https://visualping.io/pricing",
+        "provenance": {
+          "source": "https://visualping.io/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Direct"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "freemium",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://visualping.io/pricing",
+        "provenance": {
+          "source": "https://visualping.io/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Free tier plus paid subscription tiers"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.85,
+        "unknown": false,
+        "source": "https://visualping.io/pricing",
+        "provenance": {
+          "source": "https://visualping.io/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Prices quoted in USD"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": true,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://visualping.io/pricing",
+        "provenance": {
+          "source": "https://visualping.io/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Free plan 150 checks/mo, up to 5 pages"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://visualping.io/enterprise",
+        "provenance": {
+          "source": "https://visualping.io/enterprise",
+          "source_type": "official_website",
+          "as_of": "2026-06-28",
+          "method": "Solutions/Enterprise custom plan"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": 10,
+        "confidence": 0.6,
+        "unknown": false,
+        "source": "https://visualping.io/pricing",
+        "provenance": {
+          "source": "https://visualping.io/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Search results: paid plans start from $10/month"
+        },
+        "notes": null,
+        "unit": "USD"
+      },
+      "plans": [
+        {
+          "name": "Free",
+          "monthly_price": {
+            "value": 0,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Website change monitoring",
+              "Email alerts",
+              "Before/after screenshots"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "150 checks/month",
+              "Up to 5 pages",
+              "Non-commercial use"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Personal",
+          "monthly_price": {
+            "value": 50,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Higher check frequency",
+              "Multiple alert channels"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Up to ~10K checks/month",
+              "Up to 200 pages",
+              "Plans range $10-$250/mo by tier"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Business",
+          "monthly_price": {
+            "value": 105,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "billing_period": {
+            "value": "monthly",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Team collaboration",
+              "Workspace organization",
+              "API integrations",
+              "Support"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Minimum spend ~$900/yr ($105/mo)"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Solutions (Enterprise)",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": "annual",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Fully managed custom solution",
+              "2-minute monitoring",
+              "Enterprise tools and support",
+              "Premium AI models"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Custom pricing / contact sales"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "alphasense",
+      "pricing_page": {
+        "value": "https://www.alpha-sense.com/pricing",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/pricing",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "direct fetch"
+        },
+        "notes": null
+      },
+      "pricing_model": {
+        "value": "contact_sales",
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/pricing",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "'Connect with our sales team for scalable pricing'; quote-based"
+        },
+        "notes": null
+      },
+      "currency": {
+        "value": "USD",
+        "confidence": 0.5,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/pricing",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "US-HQ enterprise; currency not published, inferred"
+        },
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": false,
+        "confidence": 0.55,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/pricing",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "only annual subscriptions sold; 'Get Started for Free' is a trial/demo CTA, not a free tier"
+        },
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": true,
+        "confidence": 0.9,
+        "unknown": false,
+        "source": "https://www.alpha-sense.com/pricing",
+        "provenance": {
+          "source": "https://www.alpha-sense.com/pricing",
+          "source_type": "pricing_page",
+          "as_of": "2026-06-28",
+          "method": "Enterprise Intelligence plan listed"
+        },
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "plans": [
+        {
+          "name": "Market Intelligence",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": "custom",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Comprehensive business/financial data",
+              "AI workflows (Generative Search, Deep Research)",
+              "ETL integration",
+              "24/7 support"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Annual subscription",
+              "Per-seat or enterprise packages",
+              "Price on quote"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        },
+        {
+          "name": "Enterprise Intelligence",
+          "monthly_price": {
+            "value": null,
+            "confidence": 0,
+            "unknown": true,
+            "source": null,
+            "notes": null
+          },
+          "billing_period": {
+            "value": "custom",
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_free": {
+            "value": false,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "is_enterprise": {
+            "value": true,
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "key_features": {
+            "value": [
+              "Everything in Market Intelligence",
+              "Internal/proprietary data integration",
+              "API uploads",
+              "Customized IT support"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          },
+          "limits": {
+            "value": [
+              "Annual subscription",
+              "Price on quote"
+            ],
+            "confidence": 0.6,
+            "unknown": false,
+            "source": null,
+            "provenance": {
+              "source": null,
+              "source_type": "pricing_page",
+              "as_of": "2026-06-28",
+              "method": null
+            },
+            "notes": null
+          }
+        }
+      ]
+    },
+    {
+      "entity_ref": "nexusai",
+      "pricing_page": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "pricing_model": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "currency": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_free_plan": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "has_enterprise_plan": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "lowest_paid_monthly": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    }
+  ]
+}

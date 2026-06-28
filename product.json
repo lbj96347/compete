@@ -1,0 +1,184 @@
+{
+  "meta": {
+    "schema_version": "1.0.0",
+    "dataset": "product",
+    "generated_at": "2026-06-27T20:14:45Z",
+    "generator": "find-competitor/analyze_repo 0.1.0"
+  },
+  "entity_ref": "self",
+  "identity": {
+    "name": {
+      "value": "find-competitor",
+      "confidence": 0.6,
+      "unknown": false,
+      "source": "README.md",
+      "provenance": {
+        "source": "README.md",
+        "source_type": "repository",
+        "as_of": "2026-06-28",
+        "method": "README H1 heading"
+      },
+      "notes": null
+    },
+    "tagline": {
+      "value": "find-competitor analyzes the current repository to identify your product, then",
+      "confidence": 0.5,
+      "unknown": false,
+      "source": "README.md",
+      "provenance": {
+        "source": "README.md",
+        "source_type": "repository",
+        "as_of": "2026-06-28",
+        "method": "first README prose line"
+      },
+      "notes": null
+    },
+    "description": {
+      "value": "find-competitor analyzes the current repository to identify your product, then discovers competitors and builds a complete competitive intelligence database spanning product, technology, business, marketing, SEO, social media, customers, sales, hiring, funding, and brand positioning. It is an AI product research assistant — not just a comparison generator.",
+      "confidence": 0.55,
+      "unknown": false,
+      "source": "README.md",
+      "provenance": {
+        "source": "README.md",
+        "source_type": "repository",
+        "as_of": "2026-06-28",
+        "method": "README intro paragraph"
+      },
+      "notes": null
+    },
+    "category": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "Insufficient signal to classify product category."
+    },
+    "stage": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "No version found in any manifest."
+    },
+    "deployment_model": {
+      "value": "oss",
+      "confidence": 0.45,
+      "unknown": false,
+      "source": "LICENSE",
+      "provenance": {
+        "source": "LICENSE",
+        "source_type": "inference",
+        "as_of": "2026-06-28",
+        "method": "open-source license file present"
+      },
+      "notes": null
+    },
+    "business_model": {
+      "value": "open source",
+      "confidence": 0.4,
+      "unknown": false,
+      "source": "LICENSE",
+      "provenance": {
+        "source": "LICENSE",
+        "source_type": "inference",
+        "as_of": "2026-06-28",
+        "method": "open-source license present"
+      },
+      "notes": null
+    },
+    "pricing_model": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "Pricing is not derivable from source; collected later from the website/pricing page."
+    }
+  },
+  "features": {
+    "core_features": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "No Features/Highlights bullet list found in README."
+    },
+    "ai_capabilities": {
+      "value": [],
+      "confidence": 0.5,
+      "unknown": false,
+      "source": null,
+      "provenance": {
+        "source": null,
+        "source_type": "inference",
+        "as_of": "2026-06-28",
+        "method": "scanned manifest dependencies for AI SDKs"
+      },
+      "notes": "No AI/LLM dependencies detected — confident 'none', not unknown."
+    },
+    "platforms": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "No recognised manifests to infer platforms from."
+    },
+    "integrations": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "No recognised third-party integration SDKs in dependencies."
+    },
+    "apis": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "No API framework dependency or API spec file found."
+    },
+    "target_workflow": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "Target workflow is a narrative judgment; left for analyst/report synthesis."
+    }
+  },
+  "customers": {
+    "target_users": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "No explicit target-audience cues in README."
+    },
+    "industries": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "Industry targeting is not reliably derivable from source."
+    },
+    "company_size": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "Customer company size is not derivable from source."
+    },
+    "personas": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "Buyer personas require market research, collected later."
+    },
+    "use_cases": {
+      "value": null,
+      "confidence": 0,
+      "unknown": true,
+      "source": null,
+      "notes": "Use cases require website/marketing analysis, collected later."
+    }
+  }
+}
