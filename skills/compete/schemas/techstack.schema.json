@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://find-competitor.dev/schemas/techstack.schema.json",
+  "$id": "https://compete.dev/schemas/techstack.schema.json",
   "title": "techstack.json — Technology Intelligence",
   "description": "Inferred technology stack per competitor (PRD §Technology Intelligence). Most values are inferred from page markup, headers, DNS, job posts, or open-source code, so `confidence` and provenance.method matter heavily here. Joined by `entity_ref`.",
   "type": "object",

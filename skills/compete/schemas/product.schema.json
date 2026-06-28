@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://find-competitor.dev/schemas/product.schema.json",
+  "$id": "https://compete.dev/schemas/product.schema.json",
   "title": "product.json — Own Product Intelligence",
   "description": "Intelligence extracted from the analyzed local repository: the product whose competitive landscape InsightKit is mapping. Exactly one product. Every leaf is a confidence-wrapped field from common.schema.json.",
   "type": "object",

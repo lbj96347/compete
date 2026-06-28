@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-analyze_repo.py — Product Intelligence step of the find-competitor pipeline.
+analyze_repo.py — Product Intelligence step of the compete pipeline.
 
 Scans a local repository (README, package manifests, config files, and source)
 to extract the analyzed product's identity, features, tech stack signals, and
@@ -39,7 +39,7 @@ except ModuleNotFoundError:  # pragma: no cover - older interpreters
     tomllib = None  # type: ignore
 
 SCHEMA_VERSION = "1.0.0"
-DEFAULT_GENERATOR = "find-competitor/analyze_repo 0.1.0"
+DEFAULT_GENERATOR = "compete/analyze_repo 0.1.0"
 
 # Directories never worth walking for source-level signals.
 IGNORE_DIRS = {

@@ -1,6 +1,6 @@
 # Intelligence Dimensions
 
-**Step 3 of the find-competitor pipeline.** Take the classified roster
+**Step 3 of the compete pipeline.** Take the classified roster
 (`competitors.json`, whose `id`s are the join keys — produced by
 [Competitor Discovery](competitor-discovery.md)) and, for **every** competitor,
 collect a multi-dimensional intelligence profile across six datasets:

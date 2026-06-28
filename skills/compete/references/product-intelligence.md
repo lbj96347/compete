@@ -1,6 +1,6 @@
 # Product Intelligence
 
-**Step 1 of the find-competitor pipeline.** Analyze the *local repository* to
+**Step 1 of the compete pipeline.** Analyze the *local repository* to
 extract the product whose competitive landscape we are about to map, and emit
 `product.json` — the `entity_ref: "self"` record that every later phase compares
 competitors against.
@@ -21,7 +21,7 @@ python scripts/analyze_repo.py --repo . --validate
 | --- | --- | --- |
 | `--repo PATH` | `.` | Repository to analyze. |
 | `--output PATH` | `<repo>/product.json` | Where to write the dataset. |
-| `--generator NAME` | `find-competitor/analyze_repo 0.1.0` | Recorded in `meta.generator`. |
+| `--generator NAME` | `compete/analyze_repo 0.1.0` | Recorded in `meta.generator`. |
 | `--validate` | off | Validate output against `schemas/` before writing (needs `jsonschema` + `referencing`). |
 | `--quiet` | off | Suppress the human-readable summary. |
 

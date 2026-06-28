@@ -3,7 +3,7 @@
     "schema_version": "1.0.0",
     "dataset": "competitors",
     "generated_at": "2026-06-27T20:23:28Z",
-    "generator": "find-competitor/discover_competitors 0.1.0"
+    "generator": "compete/discover_competitors 0.1.0"
   },
   "competitors": [
     {
@@ -49,7 +49,7 @@
         "notes": null
       },
       "relationship_notes": {
-        "value": "Closest SaaS functional twin: generative-AI 'instant competitive analysis' — you input competitors and get a structured comparison across positioning, features, and pricing in minutes, plus continuous monitoring. Same job as find-competitor but a hosted product, not repo-driven or open source.",
+        "value": "Closest SaaS functional twin: generative-AI 'instant competitive analysis' — you input competitors and get a structured comparison across positioning, features, and pricing in minutes, plus continuous monitoring. Same job as compete but a hosted product, not repo-driven or open source.",
         "confidence": 0.7,
         "unknown": false,
         "source": "https://competely.ai",
@@ -118,7 +118,7 @@
         "notes": null
       },
       "relationship_notes": {
-        "value": "Open-source LLM competitor-analysis app: crawls competitor sites, extracts and classifies content, and compares their product features against yours via a Streamlit UI. The nearest open-source analog to find-competitor's approach, though narrower in dimensions.",
+        "value": "Open-source LLM competitor-analysis app: crawls competitor sites, extracts and classifies content, and compares their product features against yours via a Streamlit UI. The nearest open-source analog to compete's approach, though narrower in dimensions.",
         "confidence": 0.7,
         "unknown": false,
         "source": "https://github.com/Procycons/Comperator",
@@ -751,7 +751,7 @@
         "notes": null
       },
       "relationship_notes": {
-        "value": "SEO and marketing-intelligence suite with competitor-research modules (and owner of Kompyte). Overlaps on SEO/marketing dimensions of find-competitor's report.",
+        "value": "SEO and marketing-intelligence suite with competitor-research modules (and owner of Kompyte). Overlaps on SEO/marketing dimensions of compete's report.",
         "confidence": 0.6,
         "unknown": false,
         "source": "https://www.semrush.com",
@@ -820,7 +820,7 @@
         "notes": null
       },
       "relationship_notes": {
-        "value": "Digital/traffic intelligence — website analytics and audience data. Covers one dimension (web performance) of find-competitor's broader teardown; commonly used as a quick competitor 'sniff test'.",
+        "value": "Digital/traffic intelligence — website analytics and audience data. Covers one dimension (web performance) of compete's broader teardown; commonly used as a quick competitor 'sniff test'.",
         "confidence": 0.7,
         "unknown": false,
         "source": "https://www.similarweb.com",
@@ -958,7 +958,7 @@
         "notes": null
       },
       "relationship_notes": {
-        "value": "Company/funding database (financials, investors, acquisitions). Feeds the company-profile dimension of a competitive report; complements rather than replaces find-competitor.",
+        "value": "Company/funding database (financials, investors, acquisitions). Feeds the company-profile dimension of a competitive report; complements rather than replaces compete.",
         "confidence": 0.65,
         "unknown": false,
         "source": "https://www.crunchbase.com",

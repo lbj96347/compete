@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://find-competitor.dev/schemas/social.schema.json",
+  "$id": "https://compete.dev/schemas/social.schema.json",
   "title": "social.json — Online Presence, Social & Developer Channels",
   "description": "Official online presence per competitor (PRD §Official Online Presence + §Social Media Intelligence). Combines website links, social accounts with engagement signals, and developer channels with package/repo metrics. Joined by `entity_ref`.",
   "type": "object",

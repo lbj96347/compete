@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://find-competitor.dev/schemas/pricing.schema.json",
+  "$id": "https://compete.dev/schemas/pricing.schema.json",
   "title": "pricing.json — Pricing Intelligence",
   "description": "Pricing model and plan breakdown per competitor (PRD §Product Information). Feeds the Pricing Matrix visualization. Joined by `entity_ref`. Each plan's price is a metricField so estimated/quote-based tiers can be represented honestly.",
   "type": "object",

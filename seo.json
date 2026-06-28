@@ -3,7 +3,7 @@
     "schema_version": "1.0.0",
     "dataset": "seo",
     "generated_at": "2026-06-27T20:45:15Z",
-    "generator": "find-competitor/collect_intelligence 0.1.0"
+    "generator": "compete/collect_intelligence 0.1.0"
   },
   "seo": [
     {

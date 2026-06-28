@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://find-competitor.dev/schemas/companies.schema.json",
+  "$id": "https://compete.dev/schemas/companies.schema.json",
   "title": "companies.json — Company Profiles",
   "description": "Business/company profile per competitor (PRD §Company Profile). Joined to competitors.json by `entity_ref`. Funding, ARR, and headcount are typically estimates — express precision via `confidence` and the metricField range/is_estimate fields.",
   "type": "object",

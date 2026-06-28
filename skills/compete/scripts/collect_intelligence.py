@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-collect_intelligence.py — Intelligence Collection step of the find-competitor pipeline.
+collect_intelligence.py — Intelligence Collection step of the compete pipeline.
 
 Step 3 takes the discovered roster (``competitors.json``, whose ``id``s are the
 join keys) and, for every competitor, gathers a multi-dimensional intelligence
@@ -53,7 +53,7 @@ from pathlib import Path
 from typing import Any, Optional
 
 SCHEMA_VERSION = "1.0.0"
-DEFAULT_GENERATOR = "find-competitor/collect_intelligence 0.1.0"
+DEFAULT_GENERATOR = "compete/collect_intelligence 0.1.0"
 
 _SOURCE_TYPES = {
     "repository", "official_website", "official_docs", "pricing_page",

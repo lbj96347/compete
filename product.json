@@ -3,12 +3,12 @@
     "schema_version": "1.0.0",
     "dataset": "product",
     "generated_at": "2026-06-27T20:14:45Z",
-    "generator": "find-competitor/analyze_repo 0.1.0"
+    "generator": "compete/analyze_repo 0.1.0"
   },
   "entity_ref": "self",
   "identity": {
     "name": {
-      "value": "find-competitor",
+      "value": "compete",
       "confidence": 0.6,
       "unknown": false,
       "source": "README.md",
@@ -21,7 +21,7 @@
       "notes": null
     },
     "tagline": {
-      "value": "find-competitor analyzes the current repository to identify your product, then",
+      "value": "compete analyzes the current repository to identify your product, then",
       "confidence": 0.5,
       "unknown": false,
       "source": "README.md",
@@ -34,7 +34,7 @@
       "notes": null
     },
     "description": {
-      "value": "find-competitor analyzes the current repository to identify your product, then discovers competitors and builds a complete competitive intelligence database spanning product, technology, business, marketing, SEO, social media, customers, sales, hiring, funding, and brand positioning. It is an AI product research assistant — not just a comparison generator.",
+      "value": "compete analyzes the current repository to identify your product, then discovers competitors and builds a complete competitive intelligence database spanning product, technology, business, marketing, SEO, social media, customers, sales, hiring, funding, and brand positioning. It is an AI product research assistant — not just a comparison generator.",
       "confidence": 0.55,
       "unknown": false,
       "source": "README.md",

@@ -1,17 +1,17 @@
-# Contributing to find-competitor
+# Contributing to compete
 
-Thanks for your interest in improving `find-competitor`. This is a Claude Code
+Thanks for your interest in improving `compete`. This is a Claude Code
 Skill: a set of Python helper scripts, JSON schemas, reference docs, and a
-report template, glued together by [`skills/find-competitor/SKILL.md`](skills/find-competitor/SKILL.md). Contributions of all
+report template, glued together by [`skills/compete/SKILL.md`](skills/compete/SKILL.md). Contributions of all
 kinds are welcome — bug fixes, new intelligence dimensions, better heuristics,
 schema refinements, and docs.
 
 ## Ground rules
 
 - **The data contract is authoritative.** Every stage reads and writes JSON that
-  validates against a schema in [`skills/find-competitor/schemas/`](skills/find-competitor/schemas/). If you change a field,
+  validates against a schema in [`skills/compete/schemas/`](skills/compete/schemas/). If you change a field,
   change the schema and the reference doc in the same PR. The contract is
-  documented in [`skills/find-competitor/references/data-schema.md`](skills/find-competitor/references/data-schema.md).
+  documented in [`skills/compete/references/data-schema.md`](skills/compete/references/data-schema.md).
 - **Confidence, not assertion.** Every value is wrapped with a `confidence`
   score, a `source`, `provenance`, and an explicit `unknown` flag. The
   invariant: `unknown: true` ⇒ `value: null`. Never emit a bare value. When you
@@ -28,8 +28,8 @@ schema refinements, and docs.
 ## Development setup
 
 ```bash
-git clone https://github.com/forthrighttech/find-competitor.git
-cd find-competitor
+git clone https://github.com/forthrighttech/compete.git
+cd compete
 ```
 
 Requirements:
@@ -40,18 +40,18 @@ Requirements:
 - A browser, to eyeball the rendered report.
 
 To exercise the skill end to end inside Claude Code, symlink or clone the repo
-into `~/.claude/skills/find-competitor/` (see the README's Installation section).
+into `~/.claude/skills/compete/` (see the README's Installation section).
 
 ## Pipeline & where things live
 
 | Stage | Script | Output | Reference |
 | --- | --- | --- | --- |
-| 1. Product Intelligence | `skills/find-competitor/scripts/analyze_repo.py` | `product.json` | `skills/find-competitor/references/product-intelligence.md` |
-| 2. Competitor Discovery | `skills/find-competitor/scripts/discover_competitors.py` | `competitors.json` | `skills/find-competitor/references/competitor-discovery.md` |
-| 3. Intelligence Collection | `skills/find-competitor/scripts/collect_intelligence.py` | `companies/pricing/techstack/social/marketing/seo.json` | `skills/find-competitor/references/intelligence-dimensions.md` |
-| 4–5. Graph + Report | `skills/find-competitor/scripts/build_report.py` | `report.json`, `report.html` | `skills/find-competitor/references/data-schema.md` |
+| 1. Product Intelligence | `skills/compete/scripts/analyze_repo.py` | `product.json` | `skills/compete/references/product-intelligence.md` |
+| 2. Competitor Discovery | `skills/compete/scripts/discover_competitors.py` | `competitors.json` | `skills/compete/references/competitor-discovery.md` |
+| 3. Intelligence Collection | `skills/compete/scripts/collect_intelligence.py` | `companies/pricing/techstack/social/marketing/seo.json` | `skills/compete/references/intelligence-dimensions.md` |
+| 4–5. Graph + Report | `skills/compete/scripts/build_report.py` | `report.json`, `report.html` | `skills/compete/references/data-schema.md` |
 
-The report UI lives in [`skills/find-competitor/templates/report.html`](skills/find-competitor/templates/report.html) with an
+The report UI lives in [`skills/compete/templates/report.html`](skills/compete/templates/report.html) with an
 `__INSIGHTKIT_DATA__` placeholder that `build_report.py` inlines. Charts use
 Chart.js and D3 from CDN — keep external dependencies to those two.
 
@@ -60,10 +60,10 @@ Chart.js and D3 from CDN — keep external dependencies to those two.
 Each builder script accepts `--validate` to check its output against the schema:
 
 ```bash
-python skills/find-competitor/scripts/analyze_repo.py --repo . --validate
-python skills/find-competitor/scripts/discover_competitors.py build --product product.json \
+python skills/compete/scripts/analyze_repo.py --repo . --validate
+python skills/compete/scripts/discover_competitors.py build --product product.json \
   --candidates candidates.json --validate
-python skills/find-competitor/scripts/collect_intelligence.py build --competitors competitors.json \
+python skills/compete/scripts/collect_intelligence.py build --competitors competitors.json \
   --findings findings.json --validate
 ```
 
@@ -76,7 +76,7 @@ in sync with the template and schemas. To regenerate it from the datasets at the
 repo root:
 
 ```bash
-python skills/find-competitor/scripts/build_report.py --input-dir . --output-dir ./insightkit-output
+python skills/compete/scripts/build_report.py --input-dir . --output-dir ./insightkit-output
 ```
 
 Then verify it renders. To refresh the screenshot used in the README (macOS):

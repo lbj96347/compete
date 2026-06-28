@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://find-competitor.dev/schemas/marketing.schema.json",
+  "$id": "https://compete.dev/schemas/marketing.schema.json",
   "title": "marketing.json — Marketing & Content Intelligence",
   "description": "Positioning, demand-gen, content marketing, and sales-motion signals per competitor (PRD §Marketing Intelligence, §Content Marketing, §Sales Intelligence). Joined by `entity_ref`.",
   "type": "object",

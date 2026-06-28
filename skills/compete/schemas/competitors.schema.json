@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://find-competitor.dev/schemas/competitors.schema.json",
+  "$id": "https://compete.dev/schemas/competitors.schema.json",
   "title": "competitors.json — Discovered & Classified Competitors",
   "description": "The roster produced by Competitor Discovery (PRD §Competitor Discovery). Each entry's `id` is the canonical join key (entityRef) used by every other per-competitor dataset.",
   "type": "object",

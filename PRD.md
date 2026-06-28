@@ -38,7 +38,7 @@ analyzed:
 - `/competitor <url-or-name>` — additionally seed Discovery with a known
   competitor, anchoring the product's market/category.
 
-The same workflow is also exposed as the `find-competitor` skill, which Claude
+The same workflow is also exposed as the `compete` skill, which Claude
 triggers from natural-language requests ("find my competitors", "run a
 competitive analysis on this repo").
 

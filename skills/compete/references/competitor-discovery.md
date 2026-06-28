@@ -1,6 +1,6 @@
 # Competitor Discovery
 
-**Step 2 of the find-competitor pipeline.** Take the own product
+**Step 2 of the compete pipeline.** Take the own product
 (`product.json`, `entity_ref: "self"`, produced by
 [Product Intelligence](product-intelligence.md)) and turn it into a **classified
 roster of competitors** — `competitors.json`, whose `id`s are the canonical
@@ -183,7 +183,7 @@ Accepted on input either as a bare list or as `{"candidates": [...]}`. Pipe via
 
 ### Worked run (this repo)
 
-Running the plan against `find-competitor`'s own `product.json` and feeding the
+Running the plan against `compete`'s own `product.json` and feeding the
 researched candidates back through `build` produced a 17-competitor roster from
 18 candidates (one duplicate merged):
 

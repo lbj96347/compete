@@ -1,5 +1,5 @@
 {
-  "name": "find-competitor",
+  "name": "compete",
   "owner": {
     "name": "forthrighttech"
   },
@@ -9,7 +9,7 @@
   },
   "plugins": [
     {
-      "name": "find-competitor",
+      "name": "compete",
       "source": "./",
       "description": "Turn the current repository into a complete competitive intelligence report: discover competitors and render a self-contained interactive HTML report.",
       "version": "0.1.0",

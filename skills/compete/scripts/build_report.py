@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-build_report.py — Visualization Engine of the find-competitor pipeline.
+build_report.py — Visualization Engine of the compete pipeline.
 
 This is the final step of the pipeline (PRD §Visualizations). It consumes every
 normalized dataset produced by the earlier steps —
@@ -539,7 +539,7 @@ def synth_report(data: dict, entities: list, now_iso: str) -> dict:
             "schema_version": "1.0.0",
             "dataset": "report",
             "generated_at": now_iso,
-            "generator": "find-competitor/build_report 0.1.0",
+            "generator": "compete/build_report 0.1.0",
         },
         "executive_summary": executive_summary,
         "competitor_analysis": competitor_analysis,
@@ -886,7 +886,7 @@ def main(argv: Optional[list] = None) -> int:
     payload = {
         "meta": {
             "generated_at": now_iso,
-            "generator": "find-competitor/build_report 0.1.0",
+            "generator": "compete/build_report 0.1.0",
             "product": {
                 "name": next((e["name"] for e in entities if e["is_self"]),
                              "This product"),

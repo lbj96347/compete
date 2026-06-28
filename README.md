@@ -1,9 +1,9 @@
-# find-competitor
+# compete
 
 > A Claude Code Skill that turns your repository into a complete competitive
 > intelligence report.
 
-`find-competitor` analyzes the current repository to identify your product, then
+`compete` analyzes the current repository to identify your product, then
 discovers competitors and builds a complete competitive intelligence database
 spanning product, technology, business, marketing, SEO, social media, customers,
 sales, hiring, funding, and brand positioning. It is an AI product research
@@ -29,7 +29,7 @@ recommendations.
   source, provenance, and an explicit `unknown` fallback. Nothing is asserted
   without showing its work. Verify before acting.
 - **Normalized data contract** — all stages write JSON validated against the
-  schemas in [`skills/find-competitor/schemas/`](skills/find-competitor/schemas/), joined by `entity_ref`. Visualizations
+  schemas in [`skills/compete/schemas/`](skills/compete/schemas/), joined by `entity_ref`. Visualizations
   consume the data, never scrape directly.
 - **Self-contained report** — one `report.html` file (~570 KB) opens standalone
   in any browser. The only external dependencies are the Chart.js and D3 CDN
@@ -39,33 +39,33 @@ recommendations.
 
 ## Installation
 
-`find-competitor` is packaged as a **Claude Code plugin**. The plugin bundles
+`compete` is packaged as a **Claude Code plugin**. The plugin bundles
 three things that work together:
 
-- the **`find-competitor` skill** (`skills/find-competitor/`) — the workflow,
+- the **`compete` skill** (`skills/compete/`) — the workflow,
   scripts, schemas, and report template;
-- the **`/competitor` slash command** (`commands/competitor.md`) — a one-shot
+- the **`/compete` slash command** (`commands/compete.md`) — a one-shot
   entry point that drives the whole pipeline;
 - the plugin manifest (`.claude-plugin/plugin.json`).
 
 ### Recommended — install from the marketplace
 
 ```text
-/plugin marketplace add forthrighttech/find-competitor
-/plugin install find-competitor
+/plugin marketplace add forthrighttech/compete
+/plugin install compete
 ```
 
 The first command registers this repository as a plugin marketplace (it ships a
 [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json)); the second
 installs the plugin. Restart or start a new session and confirm with `/plugin`
-— `find-competitor` should be listed as enabled, the `/competitor` command
-available, and the `find-competitor` skill discoverable via `/skills`.
+— `compete` should be listed as enabled, the `/compete` command
+available, and the `compete` skill discoverable via `/skills`.
 
 ### Manual — clone into your plugins folder
 
 ```bash
-git clone https://github.com/forthrighttech/find-competitor.git \
-  ~/.claude/plugins/find-competitor
+git clone https://github.com/forthrighttech/compete.git \
+  ~/.claude/plugins/compete
 ```
 
 The plugin must live at a directory whose root contains
@@ -79,23 +79,23 @@ subtree into your skills folder:
 
 ```bash
 # Personal (all projects)
-git clone https://github.com/forthrighttech/find-competitor.git /tmp/find-competitor && \
-  cp -r /tmp/find-competitor/skills/find-competitor ~/.claude/skills/find-competitor
+git clone https://github.com/forthrighttech/compete.git /tmp/compete && \
+  cp -r /tmp/compete/skills/compete ~/.claude/skills/compete
 
 # Project-scoped (one repository)
-cp -r /tmp/find-competitor/skills/find-competitor \
-  /path/to/your-repo/.claude/skills/find-competitor
+cp -r /tmp/compete/skills/compete \
+  /path/to/your-repo/.claude/skills/compete
 ```
 
-The skill must live at `.../.claude/skills/find-competitor/` with `SKILL.md` at
-its root. Confirm with `/skills` (it should appear as `find-competitor`). You
-trigger it in natural language rather than with `/competitor`.
+The skill must live at `.../.claude/skills/compete/` with `SKILL.md` at
+its root. Confirm with `/skills` (it should appear as `compete`). You
+trigger it in natural language rather than with `/compete`.
 
 ### Requirements
 
 - **Claude Code** with web access (`WebSearch` / `WebFetch`) for competitor
   discovery and intelligence collection.
-- **Python 3.9+** for the helper scripts in [`skills/find-competitor/scripts/`](skills/find-competitor/scripts/). The
+- **Python 3.9+** for the helper scripts in [`skills/compete/scripts/`](skills/compete/scripts/). The
   collection and rendering scripts use only the standard library — no `pip
   install` required.
 
@@ -103,12 +103,12 @@ trigger it in natural language rather than with `/competitor`.
 
 ## Usage
 
-### The `/competitor` command (recommended)
+### The `/compete` command (recommended)
 
 Open Claude Code in the repository you want analyzed and run:
 
 ```text
-/competitor
+/compete
 ```
 
 With no argument, Stage 1 **auto-detects** the product from the current repo and
@@ -118,8 +118,8 @@ the command runs the full pipeline end to end, writing the report to
 You can also pass an **optional seed** — a competitor URL or name:
 
 ```text
-/competitor https://www.crayon.co
-/competitor Klue
+/compete https://www.crayon.co
+/compete Klue
 ```
 
 A seed is folded into Discovery as a known competitor candidate and is used to
@@ -143,22 +143,22 @@ Claude runs the pipeline end to end. You can also drive any stage yourself:
 
 ```bash
 # 1. Product Intelligence — analyze the repo, write product.json
-python skills/find-competitor/scripts/analyze_repo.py --repo . --validate
+python skills/compete/scripts/analyze_repo.py --repo . --validate
 
 # 2. Competitor Discovery — plan searches, then normalize results
-python skills/find-competitor/scripts/discover_competitors.py plan  --product product.json
+python skills/compete/scripts/discover_competitors.py plan  --product product.json
 #    (Claude runs the plan with WebSearch/WebFetch → candidates.json)
-python skills/find-competitor/scripts/discover_competitors.py build --product product.json \
+python skills/compete/scripts/discover_competitors.py build --product product.json \
   --candidates candidates.json --validate
 
 # 3. Intelligence Collection — per-competitor company/pricing/tech/social/marketing/SEO
-python skills/find-competitor/scripts/collect_intelligence.py plan  --competitors competitors.json
+python skills/compete/scripts/collect_intelligence.py plan  --competitors competitors.json
 #    (Claude runs the plan with WebSearch/WebFetch → findings.json)
-python skills/find-competitor/scripts/collect_intelligence.py build --competitors competitors.json \
+python skills/compete/scripts/collect_intelligence.py build --competitors competitors.json \
   --findings findings.json --validate
 
 # 4 + 5. Knowledge Graph + Visualization — synthesize report.json and render report.html
-python skills/find-competitor/scripts/build_report.py --input-dir . --output-dir ./insightkit-output
+python skills/compete/scripts/build_report.py --input-dir . --output-dir ./insightkit-output
 #    add --open to also launch the report in a browser
 ```
 
@@ -181,7 +181,7 @@ you can see the report without running the pipeline:
 | [`report.json`](insightkit-output/report.json) | Synthesized analytic layer (executive summary, SWOT, positioning, gaps, recommendations), schema-valid. |
 | [`screenshots/overview.png`](insightkit-output/screenshots/overview.png) | The overview dashboard pictured above. |
 
-The sample analyzes this very repository (`find-competitor`) against **17
+The sample analyzes this very repository (`compete`) against **17
 discovered competitors**, classifying each by type and competitive threat. The
 report has seven tabbed views:
 
@@ -218,9 +218,9 @@ repo ──▶ analyze_repo.py ──▶ product.json
 ```
 
 The normalized JSON datasets are the contract between stages. Each is validated
-against a schema in [`skills/find-competitor/schemas/`](skills/find-competitor/schemas/); the rules (confidence-wrapped
+against a schema in [`skills/compete/schemas/`](skills/compete/schemas/); the rules (confidence-wrapped
 fields, `unknown` fallback, `entity_ref` joins) are documented in
-[`skills/find-competitor/references/data-schema.md`](skills/find-competitor/references/data-schema.md).
+[`skills/compete/references/data-schema.md`](skills/compete/references/data-schema.md).
 
 ---
 
@@ -230,20 +230,20 @@ fields, `unknown` fallback, `entity_ref` joins) are documented in
 | --- | --- |
 | [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json) | Plugin manifest (name, version, author, license). |
 | [`.claude-plugin/marketplace.json`](.claude-plugin/marketplace.json) | Marketplace entry for one-step `/plugin install`. |
-| [`commands/competitor.md`](commands/competitor.md) | The `/competitor` slash command (optional seed argument). |
-| [`skills/find-competitor/SKILL.md`](skills/find-competitor/SKILL.md) | Skill definition, trigger keywords, and high-level workflow. |
+| [`commands/compete.md`](commands/compete.md) | The `/compete` slash command (optional seed argument). |
+| [`skills/compete/SKILL.md`](skills/compete/SKILL.md) | Skill definition, trigger keywords, and high-level workflow. |
 | [`PRD.md`](PRD.md) | Full research scope and product vision. |
-| [`skills/find-competitor/references/`](skills/find-competitor/references/) | Detailed instructions for each pipeline stage. |
-| [`skills/find-competitor/scripts/`](skills/find-competitor/scripts/) | Python helpers for collection, normalization, and rendering. |
-| [`skills/find-competitor/templates/`](skills/find-competitor/templates/) | The self-contained `report.html` template. |
-| [`skills/find-competitor/schemas/`](skills/find-competitor/schemas/) | JSON schemas for every normalized dataset. |
+| [`skills/compete/references/`](skills/compete/references/) | Detailed instructions for each pipeline stage. |
+| [`skills/compete/scripts/`](skills/compete/scripts/) | Python helpers for collection, normalization, and rendering. |
+| [`skills/compete/templates/`](skills/compete/templates/) | The self-contained `report.html` template. |
+| [`skills/compete/schemas/`](skills/compete/schemas/) | JSON schemas for every normalized dataset. |
 | [`insightkit-output/`](insightkit-output/) | Sample rendered report. |
 
 ---
 
 ## Roadmap
 
-`find-competitor` v1 ships the full **one-shot** pipeline: product
+`compete` v1 ships the full **one-shot** pipeline: product
 intelligence → discovery → multi-dimensional collection → knowledge graph →
 interactive report. The following are deliberately deferred to **v2**.
 

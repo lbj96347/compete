@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://find-competitor.dev/schemas/common.schema.json",
+  "$id": "https://compete.dev/schemas/common.schema.json",
   "title": "InsightKit Common Definitions",
   "description": "Shared building blocks for every InsightKit dataset. The core idea is the confidence-wrapped field: no raw scalar is ever stored bare. Every collected value is wrapped in an object carrying its value, a confidence score in [0,1], an explicit `unknown` flag, and provenance. Downstream phases (knowledge graph, visualizations, report) MUST treat any field with `unknown: true` as missing data and SHOULD weight or annotate rendered values by `confidence`.",
 

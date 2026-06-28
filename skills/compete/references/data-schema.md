@@ -101,7 +101,7 @@ Every dataset is a JSON object with a `meta` block conforming to
   "schema_version": "1.0.0",
   "dataset": "techstack",
   "generated_at": "2026-06-28T12:00:00Z",
-  "generator": "find-competitor/0.1.0"
+  "generator": "compete/0.1.0"
 }
 ```
 

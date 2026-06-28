@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-discover_competitors.py — Competitor Discovery step of the find-competitor pipeline.
+discover_competitors.py — Competitor Discovery step of the compete pipeline.
 
 Step 2 turns the own product (``product.json``, ``entity_ref: "self"``) into a
 classified roster of competitors (``competitors.json``). Unlike Step 1, discovery
@@ -50,7 +50,7 @@ from typing import Any, Iterable, Optional
 from urllib.parse import urlparse
 
 SCHEMA_VERSION = "1.0.0"
-DEFAULT_GENERATOR = "find-competitor/discover_competitors 0.1.0"
+DEFAULT_GENERATOR = "compete/discover_competitors 0.1.0"
 
 # The classification taxonomy from competitors.schema.json. 'unknown' is the
 # explicit fallback and is expressed via the `unknown: true` flag, not the value.
@@ -171,7 +171,7 @@ def load_json(path: str) -> Any:
 def _content_tokens(text: str, exclude: set[str]) -> list[tuple[int, str]]:
     """(original-position, word) for content words, dropping stop/name tokens.
 
-    A hyphenated token (e.g. the product's own ``find-competitor`` name) is
+    A hyphenated token (e.g. a multi-part product name like ``acme-cli``) is
     dropped when *every* alnum part of it is excluded, so the name never leaks
     into the topic even though it survives the word regex as one token.
     """

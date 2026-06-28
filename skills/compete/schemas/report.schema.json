@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://find-competitor.dev/schemas/report.schema.json",
+  "$id": "https://compete.dev/schemas/report.schema.json",
   "title": "report.json — Synthesized Competitive Analysis",
   "description": "The analytical layer that consumes all other datasets and produces the narrative consumed by visualizations (Executive Dashboard, SWOT, Positioning Matrix, Opportunity Gap, Recommendation Engine — PRD §Visualizations). All analytic judgments remain confidence-wrapped so the report can surface its own uncertainty.",
   "type": "object",

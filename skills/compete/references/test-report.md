@@ -3,7 +3,7 @@
 **Date:** 2026-06-28 · **Runner:** manual end-to-end harness · **Python:** 3.13
 (scripts target 3.9+, stdlib + optional `jsonschema`) · **Status:** ✅ pass
 
-This records a full run of the `find-competitor` pipeline against sample inputs,
+This records a full run of the `compete` pipeline against sample inputs,
 verifying that every phase emits schema-valid JSON, the report renders, and the
 `unknown` / confidence fallbacks degrade gracefully. Two bugs were found and
 fixed; one prompt/UX gap was tightened.

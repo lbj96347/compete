@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://find-competitor.dev/schemas/seo.schema.json",
+  "$id": "https://compete.dev/schemas/seo.schema.json",
   "title": "seo.json — SEO Intelligence",
   "description": "Search-presence signals per competitor (PRD §SEO Intelligence). Feeds the SEO Scorecard visualization. Joined by `entity_ref`.",
   "type": "object",
