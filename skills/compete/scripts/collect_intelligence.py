@@ -54,11 +54,13 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any, Optional
 
-try:  # sibling module in scripts/ — shared progress reporter
+try:  # sibling modules in scripts/ — shared progress reporter + taxonomy loader
     from _progress import Progress
+    import _taxonomy
 except ImportError:  # pragma: no cover - allow import from another cwd
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from _progress import Progress
+    import _taxonomy
 
 SCHEMA_VERSION = "1.2.0"
 DEFAULT_GENERATOR = "compete/collect_intelligence 0.1.0"
@@ -245,34 +247,34 @@ DATASETS = [
 ]
 
 # ---------------------------------------------------------------------------
-# Features & Services dimension — a FIXED canonical taxonomy (features.schema.json).
-# Unlike the six spec-driven datasets above, features.json is a single per-competitor
-# `matrix[]` of confidence-wrapped capability cells, every competitor scored against
-# the same axes so the report renders a true side-by-side grid. The two taxonomies
-# are closed sets; their union is the only allowed matrix axes. Order = features
-# first, then services (the order cells are emitted in each matrix).
+# Features & Services dimension — a CONFIGURABLE capability taxonomy loaded from
+# capability_taxonomy.json (override per run with --taxonomy or $COMPETE_TAXONOMY).
+# The axes are DATA, not code: edit that file to retarget compete to a new market
+# without changing this script. features.json is a single per-competitor `matrix[]`
+# of confidence-wrapped capability cells, every competitor scored against the same
+# axes so the report renders a true side-by-side grid. Order = features first, then
+# services (the order cells are emitted in each matrix).
 # ---------------------------------------------------------------------------
 
-FEATURE_KEYS = [
-    "multi_platform_publishing", "post_scheduling", "content_calendar",
-    "bulk_scheduling", "ai_content_generation", "ai_image_generation",
-    "content_idea_planning", "unified_social_inbox", "social_listening",
-    "analytics_and_reporting", "team_collaboration", "content_approval_workflows",
-    "link_in_bio", "third_party_integrations", "browser_extension", "mobile_app",
-]
-SERVICE_KEYS = [
-    "onboarding_and_training", "dedicated_account_manager", "priority_sla_support",
-    "managed_social_services", "content_creation_services",
-    "social_strategy_consulting", "white_label_program", "community_and_education",
-]
-# Ordered union (axes) + key→category lookup. category MUST match the taxonomy a
-# key belongs to (the schema enforces this with a oneOf).
-CAPABILITY_KEYS = FEATURE_KEYS + SERVICE_KEYS
-_CAPABILITY_CATEGORY = {
-    **{k: "feature" for k in FEATURE_KEYS},
-    **{k: "service" for k in SERVICE_KEYS},
-}
+# Loaded once at import (respects $COMPETE_TAXONOMY); main() re-applies it after
+# parsing so a --taxonomy flag can override. The module globals below are what the
+# plan/build functions read, so _apply_taxonomy() simply rebinds them.
+_TAXONOMY = _taxonomy.load()
+FEATURE_KEYS = _TAXONOMY.feature_keys
+SERVICE_KEYS = _TAXONOMY.service_keys
+CAPABILITY_KEYS = _TAXONOMY.keys
+_CAPABILITY_CATEGORY = _TAXONOMY.category
 _CAPABILITY_STATUS = {"has", "partial", "none"}  # the determined status values
+
+
+def _apply_taxonomy(tax: "_taxonomy.Taxonomy") -> None:
+    """Rebind the module-level taxonomy globals (used when --taxonomy/env overrides)."""
+    global _TAXONOMY, FEATURE_KEYS, SERVICE_KEYS, CAPABILITY_KEYS, _CAPABILITY_CATEGORY
+    _TAXONOMY = tax
+    FEATURE_KEYS = tax.feature_keys
+    SERVICE_KEYS = tax.service_keys
+    CAPABILITY_KEYS = tax.keys
+    _CAPABILITY_CATEGORY = tax.category
 # (dataset name, array property) for every emitted dataset — the six spec-driven
 # ones plus features. Drives validation, writing, and the coverage summary.
 FEATURES_DATASET = ("features", "features")
@@ -673,9 +675,13 @@ def build_plan(competitors: dict, progress: Optional[Progress] = None) -> dict:
         "roster_size": len(comps),
         "dimensions": [d[0] for d in DATASETS] + ["features"],
         "capability_taxonomy": {
-            "note": "Fixed, closed axes for the features dimension — score EVERY "
-                    "competitor (and self) against these exact keys. category is "
-                    "implied by the list a key appears in.",
+            "note": "Active axes for the features dimension — score EVERY competitor "
+                    "(and self) against these exact keys. category is implied by the "
+                    "list a key appears in. These are loaded from capability_taxonomy.json "
+                    "(override with --taxonomy/$COMPETE_TAXONOMY); edit that file to "
+                    "retarget compete to your market.",
+            "source": _TAXONOMY.source,
+            "name": _TAXONOMY.name,
             "feature": FEATURE_KEYS,
             "service": SERVICE_KEYS,
         },
@@ -803,6 +809,9 @@ def main(argv: Optional[list[str]] = None) -> int:
     p_plan.add_argument("--competitors", default="competitors.json",
                         help="Path to competitors.json (default: ./competitors.json).")
     p_plan.add_argument("--output", default=None, help="Write the plan JSON here (default: stdout).")
+    p_plan.add_argument("--taxonomy", default=None,
+                        help="Path to a capability_taxonomy.json overriding the bundled default "
+                             "(also settable via $COMPETE_TAXONOMY).")
 
     p_build = sub.add_parser("build", help="Normalize collected findings into the six datasets.")
     p_build.add_argument("--competitors", default="competitors.json",
@@ -814,9 +823,15 @@ def main(argv: Optional[list[str]] = None) -> int:
     p_build.add_argument("--generator", default=DEFAULT_GENERATOR, help="meta.generator string.")
     p_build.add_argument("--validate", action="store_true", help="Validate each dataset against schemas/.")
     p_build.add_argument("--quiet", action="store_true", help="Suppress the summary.")
+    p_build.add_argument("--taxonomy", default=None,
+                         help="Path to a capability_taxonomy.json overriding the bundled default "
+                              "(also settable via $COMPETE_TAXONOMY).")
 
     args = parser.parse_args(argv)
     schemas_dir = Path(__file__).resolve().parent.parent / "schemas"
+    # Re-resolve the taxonomy now that flags are parsed (--taxonomy > $COMPETE_TAXONOMY
+    # > bundled default) so plan/build score against the chosen axes.
+    _apply_taxonomy(_taxonomy.load(getattr(args, "taxonomy", None)))
 
     if args.cmd == "plan":
         try:

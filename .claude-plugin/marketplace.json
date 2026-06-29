@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Competitive intelligence report generator for Claude Code.",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "plugins": [
     {
       "name": "compete",
       "source": "./",
       "description": "Turn the current repository into a complete competitive intelligence report: discover competitors and render a self-contained interactive HTML report.",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "author": {
         "name": "forthrighttech"
       },

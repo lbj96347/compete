@@ -203,9 +203,12 @@ and `estimated_users` (metrics — soft figures, set `is_estimate: true` with a
 Array of `features[]` keyed by `entity_ref`. Each record carries a single
 `matrix[]` — **one matrix that holds both product features and human/professional
 services**, distinguished by the `category` tag (enum: `feature` | `service`).
-Every cell is drawn from a **fixed canonical taxonomy** of capability keys, so all
-competitors are scored against the same axes and the report can render a true
-side-by-side grid.
+Every cell is drawn from a **configurable taxonomy** of capability keys
+(`capability_taxonomy.json`; override with `--taxonomy` / `$COMPETE_TAXONOMY`), so
+all competitors are scored against the same axes and the report can render a true
+side-by-side grid. The schema validates a key's *shape* (snake_case); the taxonomy
+file owns the closed set, so you retarget the matrix to a new market by editing
+data, not code.
 
 Each cell is a confidence-wrapped field (the standard `value` / `confidence` /
 `unknown` / `source?` / `provenance?` / `notes?` envelope) extended with three
@@ -255,8 +258,9 @@ Consumes every other dataset.
   `related_entities[]`.
 - **recommendations[]** — `title`, `rationale`, `priority` (enum), `confidence`.
 - **feature_analysis** *(v1.3.0)* — the feature/service union matrix derived from
-  `features.json` over the fixed capability taxonomy (no render-time scraping):
-  - **`axes[]`** — the fixed taxonomy rows: `key`, `category` (`feature`|`service`),
+  `features.json` over the active capability taxonomy (axes come from the data, no
+  render-time scraping):
+  - **`axes[]`** — the taxonomy rows present in the data: `key`, `category` (`feature`|`service`),
     `label`.
   - **`columns[]`** — entity columns (self first): `entity_ref`, `name`,
     `is_self`, `threat_level`.

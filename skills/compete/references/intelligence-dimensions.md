@@ -13,7 +13,7 @@ collect a multi-dimensional intelligence profile across seven datasets:
 | **Social / presence** | `social.json` | `social.schema.json` | website sections, social accounts, developer channels |
 | **Marketing** | `marketing.json` | `marketing.schema.json` | positioning, programs, content, sales motion, hiring |
 | **SEO** (v1-light) | `seo.json` | `seo.schema.json` | meta tags, sitemap/robots, indexed-page scale, keyword focus |
-| **Features & services** | `features.json` | `features.schema.json` | per-competitor capability `matrix[]` scored against a fixed feature/service taxonomy |
+| **Features & services** | `features.json` | `features.schema.json` | per-competitor capability `matrix[]` scored against a configurable feature/service taxonomy (`capability_taxonomy.json`) |
 
 Each dimension is its **own file** so a single slow or failed collector degrades
 one dataset, not the whole graph (`references/data-schema.md` §2). Every record is
@@ -140,32 +140,33 @@ a confidence, and provenance; the script wraps it into the contract envelope.
   estimated), `keyword_focus[]`, `blog_frequency`, `landing_pages`,
   `documentation_quality`, `internal_linking`.
 - **Features & services** (`features.json`) — a single per-competitor `matrix[]`
-  of capability cells, scored against a **fixed canonical taxonomy** so every
+  of capability cells, scored against a **configurable taxonomy** so every
   competitor sits on the same axes and the report renders a true side-by-side
   grid. Each cell IS a confidence-wrapped field plus three discriminators: `key`
   (from the taxonomy), `category` (`feature` | `service`), and `status`
   (`has` = fully supported, `partial` = limited/beta/add-on, `none` = a verified
   absence, `null` = not determined). The cell's `value` is the tri-state boolean
   "supported at all" (`has`/`partial` ⇒ `true`, `none` ⇒ `false`, unknown ⇒
-  `null`). The two taxonomies are **closed sets** — the `plan` emits them under
-  `capability_taxonomy`:
-  - **16 product features** — `competitor_tracking`, `battlecards`,
-    `win_loss_analysis`, `market_trend_analysis`, `news_and_alerts`,
-    `pricing_intelligence`, `seo_keyword_tracking`, `social_listening`,
-    `website_change_monitoring`, `ai_insights_summarization`,
-    `dashboards_and_reporting`, `data_export`, `public_api`,
-    `third_party_integrations`, `browser_extension`, `mobile_app`.
-  - **8 human/professional services** — `managed_research`, `analyst_support`,
-    `onboarding_and_training`, `custom_report_services`, `consulting_advisory`,
-    `dedicated_account_manager`, `premium_sla_support`, `data_enrichment_service`.
+  `null`).
+
+  The axes are **data, not code**: they live in
+  [`capability_taxonomy.json`](../capability_taxonomy.json) — a `features` array
+  (product capabilities) and a `services` array (human/professional services), each
+  a list of snake_case keys, plus optional `labels`. **Retarget compete to your
+  market by editing that file** — no script changes. Override per run with
+  `--taxonomy <path>` or the `$COMPETE_TAXONOMY` env var. The `plan` echoes the
+  active axes under `capability_taxonomy` (with their `source` and `name`) so the
+  collector scores against exactly that set, and the report derives its grid axes
+  straight from the produced `features.json` — the two never drift. The shipped
+  default targets social-media management; swap in your own keys for any domain.
 
   In `findings.json`, the `features` block is keyed by capability key; each value
   is a status string (`"has"`) or `{status, confidence, source, source_type,
-  method, notes}`. Score the **whole** taxonomy for every competitor — but only
-  assert `none` for a **verified** absence; omit a key (or set `unknown:true`)
-  when you can't confirm it. Keys outside the taxonomy are ignored (with a build
-  warning), and the build always emits all 24 cells per competitor (the matrix is
-  dense — absent keys degrade to the unknown cell).
+  method, notes}`. Score the **whole** active taxonomy for every competitor — but
+  only assert `none` for a **verified** absence; omit a key (or set `unknown:true`)
+  when you can't confirm it. Keys outside the active taxonomy are ignored (with a
+  build warning), and the build always emits one cell per taxonomy key per
+  competitor (the matrix is dense — absent keys degrade to the unknown cell).
 
 **Confident negatives matter.** "This product has no free plan" is
 `{value:false, confidence:0.8, unknown:false}` — *distinct* from "couldn't tell"

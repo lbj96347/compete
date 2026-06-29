@@ -46,11 +46,20 @@ import webbrowser
 from pathlib import Path
 from typing import Any, Optional
 
-try:  # sibling module in scripts/ — shared progress reporter
+try:  # sibling modules in scripts/ — shared progress reporter + taxonomy loader
     from _progress import Progress
+    import _taxonomy
 except ImportError:  # pragma: no cover - allow import from another cwd
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from _progress import Progress
+    import _taxonomy
+
+# Optional human-label overrides for capability axes. The report derives the axis
+# SET (keys/order/category) from features.json itself, but reads display-label
+# overrides from the taxonomy (capability_taxonomy.json / $COMPETE_TAXONOMY) when
+# present, falling back to the snake_case humanizer. Labels-only: it never changes
+# which axes render, so the report stays faithful to the data.
+_LABEL_OVERRIDES = _taxonomy.load().labels
 
 # --------------------------------------------------------------------------- #
 # Confidence-envelope helpers
@@ -256,31 +265,38 @@ DATASETS = [
 ]
 
 # --------------------------------------------------------------------------- #
-# Feature/service taxonomy — mirrors collect_intelligence.py (the closed axes
-# the features.json matrix is scored on). Kept in lock-step so the report scores
-# every entity on the same fixed rows. Order = display order (features, then
-# services).
+# Feature/service taxonomy — derived from the features.json data itself, NOT a
+# hard-coded list. Whatever axes collect_intelligence.py scored (per its
+# capability_taxonomy.json) are exactly what the report renders, so the two stay
+# in lock-step without sharing a constant. Order = features first, then services,
+# preserving first-seen order within each category.
 # --------------------------------------------------------------------------- #
 
-FEATURE_KEYS = [
-    "multi_platform_publishing", "post_scheduling", "content_calendar",
-    "bulk_scheduling", "ai_content_generation", "ai_image_generation",
-    "content_idea_planning", "unified_social_inbox", "social_listening",
-    "analytics_and_reporting", "team_collaboration", "content_approval_workflows",
-    "link_in_bio", "third_party_integrations", "browser_extension", "mobile_app",
-]
-SERVICE_KEYS = [
-    "onboarding_and_training", "dedicated_account_manager", "priority_sla_support",
-    "managed_social_services", "content_creation_services",
-    "social_strategy_consulting", "white_label_program", "community_and_education",
-]
-CAPABILITY_KEYS = FEATURE_KEYS + SERVICE_KEYS
-_CAPABILITY_CATEGORY = {
-    **{k: "feature" for k in FEATURE_KEYS},
-    **{k: "service" for k in SERVICE_KEYS},
-}
+
+def derive_axes(features_dataset: Optional[dict]) -> tuple[list, dict]:
+    """Return (ordered capability keys, key→category map) read from features.json.
+
+    Each matrix cell carries its own ``key`` and ``category`` ('feature'|'service'),
+    so the report needs no separate taxonomy file: it follows the data. Features
+    are emitted before services; within a category, first-seen order is kept.
+    """
+    category: dict = {}
+    order: list = []
+    records = (features_dataset or {}).get("features", []) if isinstance(features_dataset, dict) else []
+    for rec in records or []:
+        for cell in rec.get("matrix", []) or []:
+            key = cell.get("key")
+            if not key or key in category:
+                continue
+            category[key] = cell.get("category") or "feature"
+            order.append(key)
+    features = [k for k in order if category.get(k) != "service"]
+    services = [k for k in order if category.get(k) == "service"]
+    return features + services, category
+
+
 # Words that should be cased specially when humanizing a snake_case key.
-_LABEL_SPECIAL = {"api": "API", "seo": "SEO", "sla": "SLA", "ai": "AI"}
+_LABEL_SPECIAL = {"api": "API", "seo": "SEO", "sla": "SLA", "ai": "AI", "id": "ID"}
 # Competitive weight a held capability carries by the holder's threat level — a
 # gap owned by a high-threat rival is more urgent than the same gap from a
 # low-threat one. Unknown/absent threat is treated as low.
@@ -291,7 +307,11 @@ _STATUS_WEIGHT = {"has": 1.0, "partial": 0.5, "none": 0.0}
 
 
 def capability_label(key: str) -> str:
-    """Humanize a snake_case capability key for display (API/SEO/SLA/AI kept)."""
+    """Display label for a capability key: a taxonomy `labels` override if one
+    exists, else the snake_case key humanized (API/SEO/SLA/AI/ID kept upper)."""
+    override = _LABEL_OVERRIDES.get(key)
+    if override:
+        return override
     return " ".join(_LABEL_SPECIAL.get(w, w.capitalize()) for w in key.split("_"))
 
 
@@ -918,8 +938,10 @@ def synth_feature_analysis(data: dict, entities: list, enriched: dict) -> dict:
     self_name = self_e["name"] if self_e else "This product"
     competitors = [e for e in entities if not e["is_self"]]
 
-    axes = [{"key": k, "category": _CAPABILITY_CATEGORY[k], "label": capability_label(k)}
-            for k in CAPABILITY_KEYS]
+    # Axes come straight from the data — whatever taxonomy produced features.json.
+    capability_keys, category_map = derive_axes(data.get("features"))
+    axes = [{"key": k, "category": category_map[k], "label": capability_label(k)}
+            for k in capability_keys]
     columns = [{
         "entity_ref": e["ref"],
         "name": e["name"],
@@ -929,8 +951,8 @@ def synth_feature_analysis(data: dict, entities: list, enriched: dict) -> dict:
 
     rows = []
     opportunities = []
-    for key in CAPABILITY_KEYS:
-        category = _CAPABILITY_CATEGORY[key]
+    for key in capability_keys:
+        category = category_map[key]
         label = capability_label(key)
         self_status = _status_of(matrix_by_ref.get("self", {}).get(key))
 
@@ -1036,10 +1058,10 @@ def synth_feature_analysis(data: dict, entities: list, enriched: dict) -> dict:
     alternatives = []
     for e in competitors:
         caps = []
-        for key in CAPABILITY_KEYS:
+        for key in capability_keys:
             st = _status_of(matrix_by_ref.get(e["ref"], {}).get(key))
             if st in ("has", "partial"):
-                caps.append({"key": key, "category": _CAPABILITY_CATEGORY[key],
+                caps.append({"key": key, "category": category_map[key],
                              "label": capability_label(key), "status": st})
         alternatives.append({
             "entity_ref": e["ref"], "name": e["name"],

@@ -1,0 +1,33 @@
+{
+  "$comment": "Capability taxonomy for the features.json dimension. This is DATA, not code — edit it to retarget compete to your product's market without touching any script. 'features' = product capabilities; 'services' = human/professional services. Keys are snake_case (^[a-z][a-z0-9_]*$); the report humanizes them for display (override a key's label in 'labels'). Override the active taxonomy per run with `--taxonomy <path>` or the $COMPETE_TAXONOMY env var. The shipped default targets the social-media-management domain; swap the arrays below for your own axes.",
+  "name": "social-media-management",
+  "features": [
+    "multi_platform_publishing",
+    "post_scheduling",
+    "content_calendar",
+    "bulk_scheduling",
+    "ai_content_generation",
+    "ai_image_generation",
+    "content_idea_planning",
+    "unified_social_inbox",
+    "social_listening",
+    "analytics_and_reporting",
+    "team_collaboration",
+    "content_approval_workflows",
+    "link_in_bio",
+    "third_party_integrations",
+    "browser_extension",
+    "mobile_app"
+  ],
+  "services": [
+    "onboarding_and_training",
+    "dedicated_account_manager",
+    "priority_sla_support",
+    "managed_social_services",
+    "content_creation_services",
+    "social_strategy_consulting",
+    "white_label_program",
+    "community_and_education"
+  ],
+  "labels": {}
+}

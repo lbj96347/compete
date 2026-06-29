@@ -15,53 +15,11 @@
   },
 
   "$defs": {
-    "featureKey": {
-      "title": "Canonical Feature Key",
-      "description": "Fixed taxonomy of product-feature axes. category MUST be 'feature' for these keys.",
-      "type": "string",
-      "enum": [
-        "multi_platform_publishing",
-        "post_scheduling",
-        "content_calendar",
-        "bulk_scheduling",
-        "ai_content_generation",
-        "ai_image_generation",
-        "content_idea_planning",
-        "unified_social_inbox",
-        "social_listening",
-        "analytics_and_reporting",
-        "team_collaboration",
-        "content_approval_workflows",
-        "link_in_bio",
-        "third_party_integrations",
-        "browser_extension",
-        "mobile_app"
-      ]
-    },
-
-    "serviceKey": {
-      "title": "Canonical Service Key",
-      "description": "Fixed taxonomy of human/professional-service axes. category MUST be 'service' for these keys.",
-      "type": "string",
-      "enum": [
-        "onboarding_and_training",
-        "dedicated_account_manager",
-        "priority_sla_support",
-        "managed_social_services",
-        "content_creation_services",
-        "social_strategy_consulting",
-        "white_label_program",
-        "community_and_education"
-      ]
-    },
-
     "capabilityKey": {
       "title": "Capability Key",
-      "description": "Union of the fixed feature and service taxonomies — the complete set of allowed matrix axes.",
-      "anyOf": [
-        { "$ref": "#/$defs/featureKey" },
-        { "$ref": "#/$defs/serviceKey" }
-      ]
+      "description": "A capability axis key (a feature or service). The taxonomy is CONFIGURABLE data, not a fixed enum: it lives in capability_taxonomy.json (override with --taxonomy / $COMPETE_TAXONOMY), so the schema validates the key's SHAPE (snake_case) and lets the taxonomy file own the closed set. The sibling `category` field tags whether a key is a feature or a service; collect_intelligence.py derives that category from the taxonomy, so cells are category-consistent by construction.",
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
     },
 
     "capabilityStatus": {
@@ -90,22 +48,6 @@
           "type": ["boolean", "null"]
         }
       },
-      "oneOf": [
-        {
-          "title": "feature row",
-          "properties": {
-            "category": { "const": "feature" },
-            "key": { "$ref": "#/$defs/featureKey" }
-          }
-        },
-        {
-          "title": "service row",
-          "properties": {
-            "category": { "const": "service" },
-            "key": { "$ref": "#/$defs/serviceKey" }
-          }
-        }
-      ],
       "if": {
         "properties": { "unknown": { "const": true } },
         "required": ["unknown"]
@@ -127,7 +69,7 @@
       "properties": {
         "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
         "matrix": {
-          "description": "The capability matrix: an array of cells spanning the fixed feature + service taxonomy. A key omitted from the array is equivalent to an all-unknown cell (a missing record == all fields unknown).",
+          "description": "The capability matrix: an array of cells spanning the active feature + service taxonomy (capability_taxonomy.json). A key omitted from the array is equivalent to an all-unknown cell (a missing record == all fields unknown).",
           "type": "array",
           "items": { "$ref": "#/$defs/matrixEntry" }
         }
