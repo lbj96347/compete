@@ -1,8 +1,8 @@
 {
   "meta": {
-    "schema_version": "1.1.0",
+    "schema_version": "1.2.0",
     "dataset": "product",
-    "generated_at": "2026-06-28T10:59:14Z",
+    "generated_at": "2026-06-28T21:25:48Z",
     "generator": "compete/analyze_repo 0.1.0"
   },
   "entity_ref": "self",
@@ -15,7 +15,7 @@
       "provenance": {
         "source": "README.md",
         "source_type": "repository",
-        "as_of": "2026-06-28",
+        "as_of": "2026-06-29",
         "method": "README H1 heading"
       },
       "notes": null
@@ -28,7 +28,7 @@
       "provenance": {
         "source": "README.md",
         "source_type": "repository",
-        "as_of": "2026-06-28",
+        "as_of": "2026-06-29",
         "method": "first README prose line"
       },
       "notes": null
@@ -41,7 +41,7 @@
       "provenance": {
         "source": "README.md",
         "source_type": "repository",
-        "as_of": "2026-06-28",
+        "as_of": "2026-06-29",
         "method": "README intro paragraph"
       },
       "notes": null
@@ -54,7 +54,7 @@
       "provenance": {
         "source": "README",
         "source_type": "inference",
-        "as_of": "2026-06-28",
+        "as_of": "2026-06-29",
         "method": "README mentions 'dashboard'"
       },
       "notes": null
@@ -74,7 +74,7 @@
       "provenance": {
         "source": "LICENSE",
         "source_type": "inference",
-        "as_of": "2026-06-28",
+        "as_of": "2026-06-29",
         "method": "open-source license file present"
       },
       "notes": null
@@ -87,7 +87,7 @@
       "provenance": {
         "source": "LICENSE",
         "source_type": "inference",
-        "as_of": "2026-06-28",
+        "as_of": "2026-06-29",
         "method": "open-source license present"
       },
       "notes": null
@@ -115,7 +115,7 @@
       "provenance": {
         "source": "README.md",
         "source_type": "repository",
-        "as_of": "2026-06-28",
+        "as_of": "2026-06-29",
         "method": "bullets under README Features heading"
       },
       "notes": null
@@ -128,7 +128,7 @@
       "provenance": {
         "source": null,
         "source_type": "inference",
-        "as_of": "2026-06-28",
+        "as_of": "2026-06-29",
         "method": "scanned manifest dependencies for AI SDKs"
       },
       "notes": "No AI/LLM dependencies detected — confident 'none', not unknown."

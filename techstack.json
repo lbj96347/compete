@@ -1,11 +1,163 @@
 {
   "meta": {
-    "schema_version": "1.1.0",
+    "schema_version": "1.2.0",
     "dataset": "techstack",
-    "generated_at": "2026-06-28T11:33:34Z",
+    "generated_at": "2026-06-28T21:25:55Z",
     "generator": "compete/collect_intelligence 0.1.0"
   },
   "techstack": [
+    {
+      "entity_ref": "self",
+      "frontend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "backend": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "framework": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "database": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "hosting": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cloud_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cdn": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "deployment": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "authentication": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "analytics": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "payments": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "monitoring": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "cms": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "llm_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "inference_provider": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "product_surface": {
+        "ai_models": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_availability": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "sdks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "mobile_apps": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "browser_extension": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "integrations": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
     {
       "entity_ref": "klue",
       "frontend": {
@@ -18,7 +170,7 @@
         "provenance": {
           "source": "https://stackshare.io/klue/klue",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -89,7 +241,7 @@
         "provenance": {
           "source": "https://stackshare.io/klue/klue",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -277,7 +429,7 @@
         "provenance": {
           "source": "https://www.crayon.co/blog/crayon-launches-first-competitive-intelligence-mcp-server",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -347,7 +499,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/kompyte/technology",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -418,7 +570,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/kompyte/technology",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -454,7 +606,7 @@
         "provenance": {
           "source": "https://www.kompyte.com/blog/competitive-intelligence-kompyte-gpt",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -614,7 +766,7 @@
         "provenance": {
           "source": "https://www.dataversity.net/contify-relies-nlp-ai-machine-learning-new-competitive-intelligence-platform/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -774,7 +926,7 @@
         "provenance": {
           "source": "https://caelian.ai/about",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "inferred from MCP integration"
         },
         "notes": null
@@ -843,7 +995,7 @@
         "provenance": {
           "source": "https://comintelli.com/wp-content/uploads/2021/11/Comintelli-White-Paper-Technical-Architecture-of-Intelligence2day-S-0133-K-1.pdf",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -942,7 +1094,7 @@
         "provenance": {
           "source": "https://news.cision.com/comintelli/r/comintelli-launches-telli",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1102,7 +1254,7 @@
         "provenance": {
           "source": "https://industry-lens.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1171,7 +1323,7 @@
         "provenance": {
           "source": "https://prospeo.io/c/rivalsense-uncover-strategic-signals",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1242,7 +1394,7 @@
         "provenance": {
           "source": "https://prospeo.io/c/rivalsense-uncover-strategic-signals",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1450,7 +1602,7 @@
           "provenance": {
             "source": "https://seeto.ai/",
             "source_type": "inference",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null
@@ -1561,7 +1713,7 @@
         "provenance": {
           "source": "https://www.getapp.com/all-software/a/valona-intelligence/",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1597,7 +1749,7 @@
         "provenance": {
           "source": "https://valonaintelligence.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1777,7 +1929,7 @@
           "provenance": {
             "source": "https://competely.ai/",
             "source_type": "inference",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null
@@ -1825,7 +1977,7 @@
         "provenance": {
           "source": "https://stackshare.io/alphasense/alphasense",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1927,7 +2079,7 @@
         "provenance": {
           "source": "https://www.alpha-sense.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2045,7 +2197,7 @@
         "provenance": {
           "source": "https://www.prnewswire.com/news-releases/northern-light-offers-cloud-deployment-options-for-singlepoint-enterprise-knowledge-management-portals-using-kubernetes-301944594.html",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2158,7 +2310,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2173,7 +2325,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2202,7 +2354,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2274,7 +2426,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2343,7 +2495,7 @@
         "provenance": {
           "source": "https://stackshare.io/feedly/feedly",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2414,7 +2566,7 @@
         "provenance": {
           "source": "https://stackshare.io/feedly/feedly",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2450,7 +2602,7 @@
         "provenance": {
           "source": "https://feedly.com/new-features/posts/feedly-mcp-server-automate-cti-workflows-with-claude-and-the-feedly-threat-graph",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2547,7 +2699,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/blog/chapsvision-chooses-scaleway-as-its-sovereign-cloud-partner/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2619,7 +2771,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/blog/chapsvision-chooses-scaleway-as-its-sovereign-cloud-partner/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2688,7 +2840,7 @@
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2704,7 +2856,7 @@
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2796,7 +2948,7 @@
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2930,7 +3082,7 @@
         "provenance": {
           "source": "https://improvado.io/blog/semrush-analytics",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2966,7 +3118,7 @@
         "provenance": {
           "source": "https://www.semrush.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3063,7 +3215,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3134,7 +3286,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/blog/go-beyond-chatgpt-accelerate-business-growth-with-domain-specific-generative-ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3205,7 +3357,7 @@
         "provenance": {
           "source": "https://ahrefs.com/tech",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3221,7 +3373,7 @@
         "provenance": {
           "source": "https://ahrefs.com/tech",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3285,7 +3437,7 @@
         "provenance": {
           "source": "https://stackshare.io/ahrefs/ahrefs",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3323,7 +3475,7 @@
         "provenance": {
           "source": "https://ahrefs.com/blog/how-i-do-content-engineering-with-claude-code/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3394,7 +3546,7 @@
         "provenance": {
           "source": "https://github.com/quid",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3411,7 +3563,7 @@
         "provenance": {
           "source": "https://github.com/quid",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3435,7 +3587,7 @@
         "provenance": {
           "source": "https://www.quid.com/products/technology",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3506,7 +3658,7 @@
         "provenance": {
           "source": "https://www.quid.com/",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3524,7 +3676,7 @@
         "provenance": {
           "source": "https://www.quid.com/products/technology",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3594,7 +3746,7 @@
         "provenance": {
           "source": "https://stackshare.io/crunchbase/crunchbase",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3610,7 +3762,7 @@
         "provenance": {
           "source": "https://stackshare.io/crunchbase/crunchbase",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null

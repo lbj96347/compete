@@ -5,7 +5,8 @@ collect_intelligence.py — Intelligence Collection step of the compete pipeline
 Step 3 takes the discovered roster (``competitors.json``, whose ``id``s are the
 join keys) and, for every competitor, gathers a multi-dimensional intelligence
 profile: **company**, **pricing**, **techstack**, **social/online presence**,
-**marketing**, and (v1-light) **SEO**. Each dimension is its own dataset file so a
+**marketing**, (v1-light) **SEO**, and a **features & services** matrix scored
+against a fixed canonical taxonomy. Each dimension is its own dataset file so a
 single slow or failed collector degrades one file, not the whole graph
 (``references/data-schema.md`` §2).
 
@@ -14,11 +15,12 @@ Like Step 2, the actual finding is web research — an agent runs ``WebSearch`` 
 this script owns the two halves that *can* be deterministic and contract-safe:
 
   plan   Read competitors.json and emit a structured, per-competitor research
-         plan: the WebSearch queries and WebFetch hints for each of the six
-         dimensions, plus the findings input format. No network access.
+         plan: the WebSearch queries and WebFetch hints for each of the seven
+         dimensions, plus the fixed feature/service taxonomy and the findings
+         input format. No network access.
 
   build  Take the agent's collected **findings** (keyed by ``entity_ref``) and
-         normalize them into the six schema-conformant datasets — wrapping every
+         normalize them into the seven schema-conformant datasets — wrapping every
          raw value in the confidence envelope, applying the
          ``unknown: true ⇒ value null, confidence 0`` invariant, and emitting an
          explicit record for *every* competitor in the roster (missing findings
@@ -36,10 +38,10 @@ Usage:
     python scripts/collect_intelligence.py build \
         --competitors competitors.json --findings findings.json --validate
     # writes ./companies.json ./pricing.json ./techstack.json ./social.json
-    #        ./marketing.json ./seo.json  (each conforming to schemas/)
+    #        ./marketing.json ./seo.json ./features.json  (each conforming to schemas/)
 
 Findings may be piped in (``--findings -``). With no findings the build still
-succeeds, writing six valid all-``unknown`` skeletons keyed to the roster — the
+succeeds, writing seven valid all-``unknown`` skeletons keyed to the roster — the
 graceful "collection yielded nothing" fallback.
 """
 
@@ -58,7 +60,7 @@ except ImportError:  # pragma: no cover - allow import from another cwd
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from _progress import Progress
 
-SCHEMA_VERSION = "1.1.0"
+SCHEMA_VERSION = "1.2.0"
 DEFAULT_GENERATOR = "compete/collect_intelligence 0.1.0"
 
 _SOURCE_TYPES = {
@@ -149,6 +151,7 @@ _DEFAULT_SRC = {
     "social": "social_profile",
     "marketing": "official_website",
     "seo": "inference",
+    "features": "official_website",
 }
 
 COMPANY_SPEC = {
@@ -240,6 +243,40 @@ DATASETS = [
     ("marketing", "marketing", "marketing", MARKETING_SPEC),
     ("seo", "seo", "seo", SEO_SPEC),
 ]
+
+# ---------------------------------------------------------------------------
+# Features & Services dimension — a FIXED canonical taxonomy (features.schema.json).
+# Unlike the six spec-driven datasets above, features.json is a single per-competitor
+# `matrix[]` of confidence-wrapped capability cells, every competitor scored against
+# the same axes so the report renders a true side-by-side grid. The two taxonomies
+# are closed sets; their union is the only allowed matrix axes. Order = features
+# first, then services (the order cells are emitted in each matrix).
+# ---------------------------------------------------------------------------
+
+FEATURE_KEYS = [
+    "competitor_tracking", "battlecards", "win_loss_analysis",
+    "market_trend_analysis", "news_and_alerts", "pricing_intelligence",
+    "seo_keyword_tracking", "social_listening", "website_change_monitoring",
+    "ai_insights_summarization", "dashboards_and_reporting", "data_export",
+    "public_api", "third_party_integrations", "browser_extension", "mobile_app",
+]
+SERVICE_KEYS = [
+    "managed_research", "analyst_support", "onboarding_and_training",
+    "custom_report_services", "consulting_advisory", "dedicated_account_manager",
+    "premium_sla_support", "data_enrichment_service",
+]
+# Ordered union (axes) + key→category lookup. category MUST match the taxonomy a
+# key belongs to (the schema enforces this with a oneOf).
+CAPABILITY_KEYS = FEATURE_KEYS + SERVICE_KEYS
+_CAPABILITY_CATEGORY = {
+    **{k: "feature" for k in FEATURE_KEYS},
+    **{k: "service" for k in SERVICE_KEYS},
+}
+_CAPABILITY_STATUS = {"has", "partial", "none"}  # the determined status values
+# (dataset name, array property) for every emitted dataset — the six spec-driven
+# ones plus features. Drives validation, writing, and the coverage summary.
+FEATURES_DATASET = ("features", "features")
+ALL_DATASETS = [(d[1], d[2]) for d in DATASETS] + [FEATURES_DATASET]
 
 
 # ---------------------------------------------------------------------------
@@ -420,9 +457,83 @@ def build_dataset(dim: str, dataset: str, array_key: str, spec: dict,
     return _envelope(dataset, array_key, records, generator), warnings
 
 
+def _features_cell(key: str, category: str, raw: Any, default_src_type: str) -> dict:
+    """Build one matrix cell from a raw finding, reusing ``field()``/``unknown()``.
+
+    The finding carries a ``status`` (``has`` | ``partial`` | ``none``) which drives
+    the tri-state ``value``: ``has``/``partial`` ⇒ ``True``, ``none`` ⇒ ``False``. A
+    bare scalar finding is tolerated — a status string (``"has"``) or a boolean
+    (``true`` ⇒ ``has``, ``false`` ⇒ ``none``). A missing/null status, an explicit
+    ``unknown: true``, or an unparsable value all collapse to the canonical unknown
+    cell (``value null, confidence 0, status null``) — the schema's invariant.
+    """
+    if isinstance(raw, str):
+        s = raw.strip().lower()
+        raw = {"status": s} if s in _CAPABILITY_STATUS else {"value": raw}
+    elif isinstance(raw, bool):
+        raw = {"value": raw}
+    elif not isinstance(raw, dict):
+        raw = {}
+
+    def _unknown_cell(notes: Optional[str]) -> dict:
+        cell = {"key": key, "category": category, "status": None}
+        cell.update(unknown(notes=notes))
+        return cell
+
+    if raw.get("unknown"):
+        return _unknown_cell(raw.get("notes"))
+
+    status = raw.get("status")
+    status = status.strip().lower() if isinstance(status, str) else None
+    val = raw.get("value")
+    if status in ("has", "partial"):
+        val = True
+    elif status == "none":
+        val = False
+    elif isinstance(val, bool):  # status omitted — infer it from a boolean value
+        status = "has" if val else "none"
+    else:
+        return _unknown_cell(raw.get("notes"))
+
+    cell = {"key": key, "category": category, "status": status}
+    cell.update(field(
+        val, raw.get("confidence", 0.6),
+        source=raw.get("source"),
+        source_type=raw.get("source_type") or default_src_type,
+        method=raw.get("method"),
+        notes=raw.get("notes"),
+    ))
+    return cell
+
+
+def build_features(refs: list[str], findings: dict, generator: str) -> tuple[dict, list[str]]:
+    """Assemble features.json: one record per ref, each holding a full ``matrix[]``
+    spanning the fixed feature + service taxonomy (every key emitted, unknown where
+    a finding is absent). Returns (dataset, unrecognized-key warnings)."""
+    src_type = _DEFAULT_SRC.get("features", "official_website")
+    records = []
+    warnings: list[str] = []
+    for ref in refs:
+        raw = (findings.get(ref) or {}).get("features") or {}
+        if isinstance(raw, dict):
+            for k in raw:
+                if k not in _CAPABILITY_CATEGORY:
+                    warnings.append(
+                        f"{ref}/features: unrecognized capability '{k}' — ignored "
+                        "(not in the fixed feature/service taxonomy)")
+        matrix = [
+            _features_cell(key, _CAPABILITY_CATEGORY[key],
+                           raw.get(key) if isinstance(raw, dict) else None, src_type)
+            for key in CAPABILITY_KEYS
+        ]
+        records.append({"entity_ref": ref, "matrix": matrix})
+    return _envelope("features", "features", records, generator), warnings
+
+
 def build_all(competitors: dict, findings: dict, generator: str,
               progress: Optional[Progress] = None) -> tuple[dict, list[str]]:
-    """Build all six datasets. Returns ({dataset_name: dataset_object}, warnings)."""
+    """Build all seven datasets (six spec-driven + features). Returns
+    ({dataset_name: dataset_object}, warnings)."""
     refs = [c["id"] for c in competitors.get("competitors", []) if c.get("id")]
     if "self" in findings and "self" not in refs:
         refs.insert(0, "self")
@@ -434,6 +545,11 @@ def build_all(competitors: dict, findings: dict, generator: str,
         if progress is not None:
             n, known, total = _coverage(out[dataset], array_key)
             progress.step(f"built {dataset}.json ({n} records, {known}/{total} fields known)")
+    out["features"], feat_warns = build_features(refs, findings, generator)
+    warnings.extend(feat_warns)
+    if progress is not None:
+        n, known, total = _coverage(out["features"], "features")
+        progress.step(f"built features.json ({n} records, {known}/{total} fields known)")
     return out, warnings
 
 
@@ -525,6 +641,22 @@ def _competitor_plan(comp: dict) -> dict:
         dims["seo"].append(fetch(base, "<title> + meta description + keyword focus"))
     dims["seo"] += web(f"{name} blog frequency how often publish")
 
+    # Features & Services — map evidence onto the FIXED capability_taxonomy (below).
+    # Mark each as has | partial | none; only assert `none` when you've verified an
+    # absence, else leave the key out (it normalizes to unknown).
+    dims["features"] = web(
+        f"{name} features list capabilities",
+        f"{name} integrations API export mobile app",
+        f"{name} managed research analyst services support plans",
+    )
+    if base and not is_repo:
+        dims["features"].insert(0, fetch(base + "/features",
+            "feature list → map onto the feature/service taxonomy (has/partial/none)"))
+        dims["features"].append(fetch(base + "/pricing",
+            "per-plan feature gating + professional/managed services tiers"))
+    if base:
+        dims["features"].append(fetch(base, "homepage capability claims + API/extension/mobile signals"))
+
     return {"entity_ref": comp.get("id"), "name": name, "website": site, "dimensions": dims}
 
 
@@ -539,7 +671,14 @@ def build_plan(competitors: dict, progress: Optional[Progress] = None) -> dict:
             progress.step(f"planned {c.get('name') or c.get('id')}")
     return {
         "roster_size": len(comps),
-        "dimensions": [d[0] for d in DATASETS],
+        "dimensions": [d[0] for d in DATASETS] + ["features"],
+        "capability_taxonomy": {
+            "note": "Fixed, closed axes for the features dimension — score EVERY "
+                    "competitor (and self) against these exact keys. category is "
+                    "implied by the list a key appears in.",
+            "feature": FEATURE_KEYS,
+            "service": SERVICE_KEYS,
+        },
         "per_competitor": per_competitor,
         "input_format": _INPUT_FORMAT,
         "instructions": (
@@ -556,7 +695,7 @@ def build_plan(competitors: dict, progress: Optional[Progress] = None) -> dict:
 
 _INPUT_FORMAT = {
     "shape": "{ <entity_ref>: { company:{}, pricing:{}, techstack:{}, social:{}, "
-             "marketing:{}, seo:{} } }",
+             "marketing:{}, seo:{}, features:{} } }",
     "field_value": "Each leaf is either a bare scalar or "
                    "{value, confidence:0..1, source, source_type, method, notes}. "
                    "Metric fields (employee_estimate, total_funding, estimated_arr, "
@@ -571,6 +710,13 @@ _INPUT_FORMAT = {
     "social.social": "object keyed by platform (" + ", ".join(_SOCIAL_PLATFORMS) +
                      "); each value is { url, handle, followers, posting_frequency, "
                      "content_categories, engagement_style }",
+    "features": "object keyed by a capability key from capability_taxonomy; each "
+                "value is a status string ('has'|'partial'|'none') or "
+                "{ status, confidence, source, source_type, method, notes }. status "
+                "drives the cell value (has/partial=true, none=false). Score the "
+                "whole taxonomy; OMIT a key (or set unknown:true) when you can't "
+                "verify it — only assert 'none' for a verified absence. Keys outside "
+                "the taxonomy are ignored.",
     "omission": "An omitted field, a null value, or unknown:true all normalize to "
                 "the canonical unknown envelope (value null, confidence 0).",
 }
@@ -631,7 +777,7 @@ def _coverage(dataset: dict, array_key: str) -> tuple[int, int, int]:
 
 def summarize(built: dict) -> str:
     lines = ["Intelligence Collection — per-dataset coverage (known / total leaf fields):"]
-    for _dim, dataset, array_key, _spec in DATASETS:
+    for dataset, array_key in ALL_DATASETS:
         n, known, total = _coverage(built[dataset], array_key)
         pct = (100 * known / total) if total else 0.0
         lines.append(f"  {dataset:<11} {n:>2} records  {known:>4}/{total:<4} known ({pct:4.0f}%)")
@@ -718,8 +864,8 @@ def main(argv: Optional[list[str]] = None) -> int:
               "roster (graceful 'collection yielded nothing' fallback).", file=sys.stderr)
 
     progress = Progress("Intelligence Collection — build", script="collect_intelligence",
-                        total=len(DATASETS), enabled=not args.quiet).start(
-        f"normalizing findings into {len(DATASETS)} datasets")
+                        total=len(ALL_DATASETS), enabled=not args.quiet).start(
+        f"normalizing findings into {len(ALL_DATASETS)} datasets")
     built, key_warnings = build_all(competitors, findings, args.generator, progress)
     if key_warnings:
         shown = key_warnings[:15]
@@ -735,24 +881,24 @@ def main(argv: Optional[list[str]] = None) -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     if args.validate and schemas_dir.is_dir():
-        for _dim, dataset, _key, _spec in DATASETS:
+        for dataset, _key in ALL_DATASETS:
             err = validate(built[dataset], f"{dataset}.schema.json", schemas_dir)
             if err and not err.startswith("SKIP"):
                 print(f"error: {dataset}.json failed schema validation: {err}", file=sys.stderr)
                 return 1
             if not args.quiet:
                 print(f"validation: {dataset}.json {'passed' if not err else err}", file=sys.stderr)
-        progress.log(f"schema validation done ({len(DATASETS)} datasets)")
+        progress.log(f"schema validation done ({len(ALL_DATASETS)} datasets)")
 
-    for _dim, dataset, _key, _spec in DATASETS:
+    for dataset, _key in ALL_DATASETS:
         path = out_dir / f"{dataset}.json"
         path.write_text(json.dumps(built[dataset], indent=2, ensure_ascii=False) + "\n",
                         encoding="utf-8")
-    progress.finish(f"Intelligence Collection complete: {len(DATASETS)} datasets written")
+    progress.finish(f"Intelligence Collection complete: {len(ALL_DATASETS)} datasets written")
 
     if not args.quiet:
         print(summarize(built), file=sys.stderr)
-        print(f"\nwrote {', '.join(d[1] + '.json' for d in DATASETS)} to {out_dir}/", file=sys.stderr)
+        print(f"\nwrote {', '.join(d[0] + '.json' for d in ALL_DATASETS)} to {out_dir}/", file=sys.stderr)
     return 0
 
 

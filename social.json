@@ -1,11 +1,131 @@
 {
   "meta": {
-    "schema_version": "1.1.0",
+    "schema_version": "1.2.0",
     "dataset": "social",
-    "generated_at": "2026-06-28T11:33:34Z",
+    "generated_at": "2026-06-28T21:25:55Z",
     "generator": "compete/collect_intelligence 0.1.0"
   },
   "presence": [
+    {
+      "entity_ref": "self",
+      "website": {
+        "homepage": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pricing": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "documentation": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "blog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "changelog": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "careers": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "api_docs": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      },
+      "social": {},
+      "developer_channels": {
+        "github_repository": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_stars": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_forks": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_issues": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "github_releases": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "npm_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "pypi_package": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "docker_hub": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        },
+        "vscode_marketplace": {
+          "value": null,
+          "confidence": 0,
+          "unknown": true,
+          "source": null,
+          "notes": null
+        }
+      }
+    },
     {
       "entity_ref": "klue",
       "website": {
@@ -69,7 +189,7 @@
             "provenance": {
               "source": "https://ca.linkedin.com/company/klue",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -89,7 +209,7 @@
             "provenance": {
               "source": "https://ca.linkedin.com/company/klue",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null,
@@ -129,7 +249,7 @@
             "provenance": {
               "source": "https://github.com/kluein",
               "source_type": "repository",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -179,7 +299,7 @@
             "provenance": {
               "source": "https://www.instagram.com/kluein/",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -199,7 +319,7 @@
             "provenance": {
               "source": "https://www.instagram.com/kluein/",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -356,7 +476,7 @@
             "provenance": {
               "source": "https://x.com/Crayon",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -406,7 +526,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/crayon-co",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -426,7 +546,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/crayon-co",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null,
@@ -466,7 +586,7 @@
             "provenance": {
               "source": "https://www.youtube.com/@crayoncompetitiveintelligence",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -516,7 +636,7 @@
             "provenance": {
               "source": "https://www.instagram.com/crayondotco/",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -687,7 +807,7 @@
             "provenance": {
               "source": "https://x.com/kompyte",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -737,7 +857,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/kompyte",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -757,7 +877,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/kompyte",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -914,7 +1034,7 @@
             "provenance": {
               "source": "https://x.com/contify",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -934,7 +1054,7 @@
             "provenance": {
               "source": "https://x.com/contify",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -970,7 +1090,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/contify",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -990,7 +1110,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/contify",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null,
@@ -1030,7 +1150,7 @@
             "provenance": {
               "source": "https://www.contify.com/",
               "source_type": "official_website",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -1321,7 +1441,7 @@
             "provenance": {
               "source": "https://x.com/comintelli",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -1371,7 +1491,7 @@
             "provenance": {
               "source": "https://se.linkedin.com/company/comintelli",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -1391,7 +1511,7 @@
             "provenance": {
               "source": "https://se.linkedin.com/company/comintelli",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -1427,7 +1547,7 @@
             "provenance": {
               "source": "https://www.youtube.com/channel/UCacYc9BdLbHcM_Tt6LwGUGA",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -1598,7 +1718,7 @@
             "provenance": {
               "source": "https://de.linkedin.com/company/industrylens",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -1618,7 +1738,7 @@
             "provenance": {
               "source": "https://uk.linkedin.com/company/industrylens",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -1775,7 +1895,7 @@
             "provenance": {
               "source": "https://x.com/rivalsenseco",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -1795,7 +1915,7 @@
             "provenance": {
               "source": "https://x.com/rivalsenseco",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -1831,7 +1951,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/rivalsense/",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -1881,7 +2001,7 @@
             "provenance": {
               "source": "https://www.youtube.com/@RivalSenseco",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -2000,7 +2120,7 @@
           "provenance": {
             "source": "https://seeto.ai/",
             "source_type": "official_website",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null
@@ -2178,7 +2298,7 @@
             "provenance": {
               "source": "https://x.com/valonaintel",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -2228,7 +2348,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/valonaintelligence",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -2248,7 +2368,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/valonaintelligence",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -2284,7 +2404,7 @@
             "provenance": {
               "source": "https://www.youtube.com/@ValonaIntel",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -2334,7 +2454,7 @@
             "provenance": {
               "source": "https://www.facebook.com/valonaintell/",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -2354,7 +2474,7 @@
             "provenance": {
               "source": "https://www.facebook.com/valonaintell/",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -2511,7 +2631,7 @@
             "provenance": {
               "source": "https://x.com/LiorGrossman",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -2561,7 +2681,7 @@
             "provenance": {
               "source": "https://www.producthunt.com/products/competely",
               "source_type": "third_party_db",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -2732,7 +2852,7 @@
             "provenance": {
               "source": "https://twitter.com/alphasense",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -2782,7 +2902,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/alphasense",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -2802,7 +2922,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/alphasense",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null,
@@ -2842,7 +2962,7 @@
             "provenance": {
               "source": "https://www.youtube.com/c/AlphasenseInc/",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3013,7 +3133,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/northern-light-singlepoint",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3033,7 +3153,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/northern-light-singlepoint",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3190,7 +3310,7 @@
             "provenance": {
               "source": "https://github.com/exa-labs/company-researcher",
               "source_type": "repository",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3210,7 +3330,7 @@
             "provenance": {
               "source": "https://github.com/exa-labs/company-researcher",
               "source_type": "repository",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null,
@@ -3251,7 +3371,7 @@
           "provenance": {
             "source": "https://github.com/exa-labs/company-researcher",
             "source_type": "repository",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null
@@ -3264,7 +3384,7 @@
           "provenance": {
             "source": "https://github.com/exa-labs/company-researcher",
             "source_type": "repository",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null
@@ -3383,7 +3503,7 @@
             "provenance": {
               "source": "https://feedly.com",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3433,7 +3553,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/feedly",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3453,7 +3573,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/feedly",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3489,7 +3609,7 @@
             "provenance": {
               "source": "https://github.com/feedly",
               "source_type": "repository",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3540,7 +3660,7 @@
           "provenance": {
             "source": "https://github.com/feedly",
             "source_type": "repository",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null
@@ -3666,7 +3786,7 @@
             "provenance": {
               "source": "https://x.com/chapsvision",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3716,7 +3836,7 @@
             "provenance": {
               "source": "https://fr.linkedin.com/company/chapsvision",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3736,7 +3856,7 @@
             "provenance": {
               "source": "https://fr.linkedin.com/company/chapsvision",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3772,7 +3892,7 @@
             "provenance": {
               "source": "https://www.youtube.com/@chapsvision",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3943,7 +4063,7 @@
             "provenance": {
               "source": "https://github.com/Procycons/Comperator",
               "source_type": "repository",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -3963,7 +4083,7 @@
             "provenance": {
               "source": "https://github.com/Procycons/Comperator",
               "source_type": "repository",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null,
@@ -4001,7 +4121,7 @@
           "provenance": {
             "source": "https://github.com/Procycons/Comperator",
             "source_type": "repository",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null
@@ -4014,7 +4134,7 @@
           "provenance": {
             "source": "https://github.com/Procycons/Comperator",
             "source_type": "repository",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null
@@ -4027,7 +4147,7 @@
           "provenance": {
             "source": "https://github.com/Procycons/Comperator",
             "source_type": "repository",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null
@@ -4139,7 +4259,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/semrush",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -4159,7 +4279,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/semrush",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null,
@@ -4320,7 +4440,7 @@
             "provenance": {
               "source": "https://x.com/evalueserve_usa",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -4370,7 +4490,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/evalueserve",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -4390,7 +4510,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/evalueserve",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null,
@@ -4430,7 +4550,7 @@
             "provenance": {
               "source": "https://www.youtube.com/@evalueserve",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -4601,7 +4721,7 @@
             "provenance": {
               "source": "https://twitter.com/ahrefs",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -4651,7 +4771,7 @@
             "provenance": {
               "source": "https://sg.linkedin.com/company/ahrefs",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -4671,7 +4791,7 @@
             "provenance": {
               "source": "https://sg.linkedin.com/company/ahrefs",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null,
@@ -4711,7 +4831,7 @@
             "provenance": {
               "source": "https://github.com/ahrefs",
               "source_type": "repository",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -4761,7 +4881,7 @@
             "provenance": {
               "source": "https://www.youtube.com/c/AhrefsCom",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -4812,7 +4932,7 @@
           "provenance": {
             "source": "https://github.com/ahrefs",
             "source_type": "repository",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null
@@ -4938,7 +5058,7 @@
             "provenance": {
               "source": "https://twitter.com/quid_official",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -4988,7 +5108,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/quidofficial",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -5008,7 +5128,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/quidofficial",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null,
@@ -5048,7 +5168,7 @@
             "provenance": {
               "source": "https://github.com/quid",
               "source_type": "repository",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -5099,7 +5219,7 @@
           "provenance": {
             "source": "https://github.com/quid",
             "source_type": "repository",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null
@@ -5225,7 +5345,7 @@
             "provenance": {
               "source": "https://twitter.com/crunchbase",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -5245,7 +5365,7 @@
             "provenance": {
               "source": "https://twitter.com/crunchbase",
               "source_type": "third_party_db",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -5281,7 +5401,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/crunchbase",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null
@@ -5301,7 +5421,7 @@
             "provenance": {
               "source": "https://www.linkedin.com/company/crunchbase",
               "source_type": "social_profile",
-              "as_of": "2026-06-28",
+              "as_of": "2026-06-29",
               "method": null
             },
             "notes": null,
@@ -5342,7 +5462,7 @@
           "provenance": {
             "source": "https://data.crunchbase.com/docs",
             "source_type": "official_website",
-            "as_of": "2026-06-28",
+            "as_of": "2026-06-29",
             "method": null
           },
           "notes": null

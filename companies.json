@@ -1,11 +1,91 @@
 {
   "meta": {
-    "schema_version": "1.1.0",
+    "schema_version": "1.2.0",
     "dataset": "companies",
-    "generated_at": "2026-06-28T11:33:34Z",
+    "generated_at": "2026-06-28T21:25:55Z",
     "generator": "compete/collect_intelligence 0.1.0"
   },
   "companies": [
+    {
+      "entity_ref": "self",
+      "company_name": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "website": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "headquarters": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "founded_year": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "founders": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "employee_estimate": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "funding_stage": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "total_funding": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "investors": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "estimated_arr": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      },
+      "commercial_model": {
+        "value": null,
+        "confidence": 0,
+        "unknown": true,
+        "source": null,
+        "notes": null
+      }
+    },
     {
       "entity_ref": "klue",
       "company_name": {
@@ -16,7 +96,7 @@
         "provenance": {
           "source": "https://www.cbinsights.com/company/klue",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "registered name"
         },
         "notes": null
@@ -29,7 +109,7 @@
         "provenance": {
           "source": "https://www.klue.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -42,7 +122,7 @@
         "provenance": {
           "source": "https://www.cbinsights.com/company/klue",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -55,7 +135,7 @@
         "provenance": {
           "source": "https://www.cbinsights.com/company/klue",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -72,7 +152,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/klue",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -85,7 +165,7 @@
         "provenance": {
           "source": "https://www.cbinsights.com/company/klue",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -102,7 +182,7 @@
         "provenance": {
           "source": "https://techcrunch.com/2021/12/01/ai-powered-competitive-enablement-platform-klue-lands-62-million-led-by-tiger-global/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -115,7 +195,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/klue",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -139,7 +219,7 @@
         "provenance": {
           "source": "https://techcrunch.com/2021/12/01/ai-powered-competitive-enablement-platform-klue-lands-62-million-led-by-tiger-global/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -159,7 +239,7 @@
         "provenance": {
           "source": "https://www.klue.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -175,7 +255,7 @@
         "provenance": {
           "source": "https://www.crayon.co/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -188,7 +268,7 @@
         "provenance": {
           "source": "https://www.crayon.co/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -201,7 +281,7 @@
         "provenance": {
           "source": "https://www.crayon.co/about",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -214,7 +294,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/crayon-2",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -230,7 +310,7 @@
         "provenance": {
           "source": "https://www.crayon.co/about/jonah-lopin",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -243,7 +323,7 @@
         "provenance": {
           "source": "https://www.linkedin.com/company/crayon-co",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -260,7 +340,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/crayon-2",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -273,7 +353,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/crayon-2",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -295,7 +375,7 @@
         "provenance": {
           "source": "https://www.crayon.co/about",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -308,7 +388,7 @@
         "provenance": {
           "source": "https://getlatka.com/companies/crayon",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "2021 figure, likely higher now"
         },
         "notes": null,
@@ -325,7 +405,7 @@
         "provenance": {
           "source": "https://www.crayon.co/pricing-inquiry",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -341,7 +421,7 @@
         "provenance": {
           "source": "https://www.kompyte.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -354,7 +434,7 @@
         "provenance": {
           "source": "https://www.kompyte.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -367,7 +447,7 @@
         "provenance": {
           "source": "https://www.linkedin.com/company/kompyte",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -380,7 +460,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/kompyte",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -397,7 +477,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/kompyte",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -410,7 +490,7 @@
         "provenance": {
           "source": "https://pitchbook.com/profiles/company/101662-75",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -427,7 +507,7 @@
         "provenance": {
           "source": "https://investors.semrush.com/news/news-details/2022/Semrush-To-Acquire-Kompyte",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "acquired by Semrush Feb 2022"
         },
         "notes": null
@@ -440,7 +520,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/kompyte",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -459,7 +539,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/kompyte",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -479,7 +559,7 @@
         "provenance": {
           "source": "https://www.kompyte.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -495,7 +575,7 @@
         "provenance": {
           "source": "https://www.contify.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -508,7 +588,7 @@
         "provenance": {
           "source": "https://www.contify.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -521,7 +601,7 @@
         "provenance": {
           "source": "https://www.linkedin.com/company/contify",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -534,7 +614,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/contify",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -549,7 +629,7 @@
         "provenance": {
           "source": "https://in.linkedin.com/in/mbhakuni",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -562,7 +642,7 @@
         "provenance": {
           "source": "https://www.linkedin.com/company/contify",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -579,7 +659,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/contify",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -592,7 +672,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/contify",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -612,7 +692,7 @@
         "provenance": {
           "source": "https://getlatka.com/companies/contify",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -629,7 +709,7 @@
         "provenance": {
           "source": "https://www.contify.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -645,7 +725,7 @@
         "provenance": {
           "source": "https://caelian.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -658,7 +738,7 @@
         "provenance": {
           "source": "https://caelian.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -671,7 +751,7 @@
         "provenance": {
           "source": "https://caelian.ai/about",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -733,7 +813,7 @@
         "provenance": {
           "source": "https://caelian.ai/pricing",
           "source_type": "pricing_page",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -749,7 +829,7 @@
         "provenance": {
           "source": "https://comintelli.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -762,7 +842,7 @@
         "provenance": {
           "source": "https://comintelli.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -775,7 +855,7 @@
         "provenance": {
           "source": "https://comintelli.com/company-contact/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -788,7 +868,7 @@
         "provenance": {
           "source": "https://se.linkedin.com/company/comintelli",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -804,7 +884,7 @@
         "provenance": {
           "source": "https://comintelli.com/company-leadership/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -817,7 +897,7 @@
         "provenance": {
           "source": "https://se.linkedin.com/company/comintelli",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -834,7 +914,7 @@
         "provenance": {
           "source": "https://news.cision.com/comintelli/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "acquired by Dahlgren Capital Jan 2026"
         },
         "notes": null
@@ -856,7 +936,7 @@
         "provenance": {
           "source": "https://se.linkedin.com/posts/dahlgren-capital-ab",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -876,7 +956,7 @@
         "provenance": {
           "source": "https://comintelli.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -892,7 +972,7 @@
         "provenance": {
           "source": "https://industry-lens.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -905,7 +985,7 @@
         "provenance": {
           "source": "https://industry-lens.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -918,7 +998,7 @@
         "provenance": {
           "source": "https://uk.linkedin.com/company/industrylens",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -931,7 +1011,7 @@
         "provenance": {
           "source": "https://startup-map.berlin/companies/industrylens",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -951,7 +1031,7 @@
         "provenance": {
           "source": "https://uk.linkedin.com/company/industrylens",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -968,7 +1048,7 @@
         "provenance": {
           "source": "https://prospeo.io/c/industrylens-revenue",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1002,7 +1082,7 @@
         "provenance": {
           "source": "https://industry-lens.com/pricing",
           "source_type": "pricing_page",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1018,7 +1098,7 @@
         "provenance": {
           "source": "https://rivalsense.co/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1031,7 +1111,7 @@
         "provenance": {
           "source": "https://rivalsense.co/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1044,7 +1124,7 @@
         "provenance": {
           "source": "https://www.cbinsights.com/company/rivalsense",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1057,7 +1137,7 @@
         "provenance": {
           "source": "https://arcticstartup.com/rivalsense-raises-funding/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1073,7 +1153,7 @@
         "provenance": {
           "source": "https://arcticstartup.com/rivalsense-raises-funding/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1086,7 +1166,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/rivalsense",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -1103,7 +1183,7 @@
         "provenance": {
           "source": "https://siliconcanals.com/rivalsense-raises-funding/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "angel round led by Change Ventures, Jun 2024"
         },
         "notes": null
@@ -1126,7 +1206,7 @@
         "provenance": {
           "source": "https://siliconcanals.com/rivalsense-raises-funding/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1146,7 +1226,7 @@
         "provenance": {
           "source": "https://rivalsense.co/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1162,7 +1242,7 @@
         "provenance": {
           "source": "https://seeto.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1175,7 +1255,7 @@
         "provenance": {
           "source": "https://seeto.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1195,7 +1275,7 @@
         "provenance": {
           "source": "https://seeto.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1250,7 +1330,7 @@
         "provenance": {
           "source": "https://seeto.ai/pricing",
           "source_type": "pricing_page",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1266,7 +1346,7 @@
         "provenance": {
           "source": "https://valonaintelligence.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1279,7 +1359,7 @@
         "provenance": {
           "source": "https://valonaintelligence.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1292,7 +1372,7 @@
         "provenance": {
           "source": "https://www.cbinsights.com/company/valona-intelligence",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1305,7 +1385,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/valona-intelligence",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1320,7 +1400,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/valona-intelligence",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1333,7 +1413,7 @@
         "provenance": {
           "source": "https://www.cbinsights.com/company/valona-intelligence",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -1350,7 +1430,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/valona-intelligence",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "merged with A-INSIGHTS 2025"
         },
         "notes": null
@@ -1363,7 +1443,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/valona-intelligence",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -1383,7 +1463,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/valona-intelligence",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1403,7 +1483,7 @@
         "provenance": {
           "source": "https://valonaintelligence.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1419,7 +1499,7 @@
         "provenance": {
           "source": "https://competely.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1432,7 +1512,7 @@
         "provenance": {
           "source": "https://competely.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1445,7 +1525,7 @@
         "provenance": {
           "source": "https://www.linkedin.com/in/liorgrossman/",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1458,7 +1538,7 @@
         "provenance": {
           "source": "https://x.com/LiorGrossman",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1473,7 +1553,7 @@
         "provenance": {
           "source": "https://www.linkedin.com/in/liorgrossman/",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1521,7 +1601,7 @@
         "provenance": {
           "source": "https://competely.ai/pricing",
           "source_type": "pricing_page",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1537,7 +1617,7 @@
         "provenance": {
           "source": "https://www.alpha-sense.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1550,7 +1630,7 @@
         "provenance": {
           "source": "https://www.alpha-sense.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1563,7 +1643,7 @@
         "provenance": {
           "source": "https://www.alpha-sense.com/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1576,7 +1656,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/alphasense",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1592,7 +1672,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/alphasense",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1605,7 +1685,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/alphasense",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -1622,7 +1702,7 @@
         "provenance": {
           "source": "https://www.alpha-sense.com/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "$350M at $7.5B valuation"
         },
         "notes": null
@@ -1635,7 +1715,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/alphasense",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -1659,7 +1739,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/alphasense",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1672,7 +1752,7 @@
         "provenance": {
           "source": "https://www.alpha-sense.com/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -1689,7 +1769,7 @@
         "provenance": {
           "source": "https://www.alpha-sense.com/pricing/",
           "source_type": "pricing_page",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1705,7 +1785,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1718,7 +1798,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1731,7 +1811,7 @@
         "provenance": {
           "source": "https://www.linkedin.com/company/northern-light-singlepoint",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1744,7 +1824,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Northern_Light_Group",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1759,7 +1839,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Northern_Light_Group",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1772,7 +1852,7 @@
         "provenance": {
           "source": "https://www.linkedin.com/company/northern-light-singlepoint",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -1789,7 +1869,7 @@
         "provenance": {
           "source": "https://www.prnewswire.com/news-releases/northern-light-announces-23-million-investment-from-lonetree-capital-302343846.html",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1802,7 +1882,7 @@
         "provenance": {
           "source": "https://www.prnewswire.com/news-releases/northern-light-announces-23-million-investment-from-lonetree-capital-302343846.html",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -1819,7 +1899,7 @@
         "provenance": {
           "source": "https://www.prnewswire.com/news-releases/northern-light-announces-23-million-investment-from-lonetree-capital-302343846.html",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1832,7 +1912,7 @@
         "provenance": {
           "source": "https://www.owler.com/company/northernlight",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -1849,7 +1929,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1865,7 +1945,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1878,7 +1958,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1891,7 +1971,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/exa-1b30",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "Exa Labs parent"
         },
         "notes": null
@@ -1904,7 +1984,7 @@
         "provenance": {
           "source": "https://www.ycombinator.com/companies/exa",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "Exa Labs founding"
         },
         "notes": null
@@ -1959,7 +2039,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1975,7 +2055,7 @@
         "provenance": {
           "source": "https://feedly.com/market-intelligence",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -1988,7 +2068,7 @@
         "provenance": {
           "source": "https://feedly.com",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2001,7 +2081,7 @@
         "provenance": {
           "source": "https://craft.co/feedly/locations",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2014,7 +2094,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/feedly",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2031,7 +2111,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/feedly",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2044,7 +2124,7 @@
         "provenance": {
           "source": "https://getlatka.com/companies/feedly.com",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2089,7 +2169,7 @@
         "provenance": {
           "source": "https://feedly.com/market-intelligence/pricing",
           "source_type": "pricing_page",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2105,7 +2185,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2118,7 +2198,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2131,7 +2211,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/en-us/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2144,7 +2224,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/en-us/about-us/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2159,7 +2239,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/en-us/about-us/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2172,7 +2252,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/chapsvision/",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2189,7 +2269,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/chapsvision",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2202,7 +2282,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/chapsvision",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2224,7 +2304,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/chapsvision",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2237,7 +2317,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/chapsvision/",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2254,7 +2334,7 @@
         "provenance": {
           "source": "https://app.dealroom.co/companies/chapsvision",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2270,7 +2350,7 @@
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2283,7 +2363,7 @@
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2352,7 +2432,7 @@
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
           "source_type": "repository",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2368,7 +2448,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Semrush",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2381,7 +2461,7 @@
         "provenance": {
           "source": "https://www.semrush.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2394,7 +2474,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Semrush",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2407,7 +2487,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Semrush",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2423,7 +2503,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Semrush",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2436,7 +2516,7 @@
         "provenance": {
           "source": "https://investors.semrush.com/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2451,7 +2531,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Semrush",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2478,7 +2558,7 @@
         "provenance": {
           "source": "https://investors.semrush.com/financials/quarterly-results/default.aspx",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2493,7 +2573,7 @@
         "provenance": {
           "source": "https://www.semrush.com/pricing/",
           "source_type": "pricing_page",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2509,7 +2589,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2522,7 +2602,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2535,7 +2615,7 @@
         "provenance": {
           "source": "https://www.linkedin.com/company/evalueserve",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2548,7 +2628,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2564,7 +2644,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2577,7 +2657,7 @@
         "provenance": {
           "source": "https://www.linkedin.com/company/evalueserve",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2615,7 +2695,7 @@
         "provenance": {
           "source": "https://growjo.com/company/Evalueserve",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2632,7 +2712,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2648,7 +2728,7 @@
         "provenance": {
           "source": "https://ahrefs.com",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2661,7 +2741,7 @@
         "provenance": {
           "source": "https://ahrefs.com",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2674,7 +2754,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/ahrefs",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2687,7 +2767,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/ahrefs",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2703,7 +2783,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/ahrefs",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2716,7 +2796,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/ahrefs",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2733,7 +2813,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/ahrefs",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2746,7 +2826,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/ahrefs",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2767,7 +2847,7 @@
         "provenance": {
           "source": "https://getlatka.com/companies/ahrefs",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2782,7 +2862,7 @@
         "provenance": {
           "source": "https://ahrefs.com/pricing",
           "source_type": "pricing_page",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2798,7 +2878,7 @@
         "provenance": {
           "source": "https://www.quid.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2811,7 +2891,7 @@
         "provenance": {
           "source": "https://www.quid.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2824,7 +2904,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Quid_Inc.",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2837,7 +2917,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Quid_Inc.",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2853,7 +2933,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Quid_Inc.",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2866,7 +2946,7 @@
         "provenance": {
           "source": "https://www.linkedin.com/company/quidofficial",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2883,7 +2963,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/netbase-quid",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "acquired by Fibonacci/APAX Jan 2025"
         },
         "notes": null
@@ -2896,7 +2976,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/quid",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -2918,7 +2998,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/organization/quid",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2938,7 +3018,7 @@
         "provenance": {
           "source": "https://www.quid.com/",
           "source_type": "press_release",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "Outcomes-as-a-Service / enterprise"
         },
         "notes": null
@@ -2954,7 +3034,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2967,7 +3047,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2980,7 +3060,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/crunchbase",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -2993,7 +3073,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Crunchbase",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3008,7 +3088,7 @@
         "provenance": {
           "source": "https://en.wikipedia.org/wiki/Crunchbase",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3021,7 +3101,7 @@
         "provenance": {
           "source": "https://tracxn.com/d/companies/crunchbase",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -3038,7 +3118,7 @@
         "provenance": {
           "source": "https://clay.com/dossier/crunchbase-funding",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3051,7 +3131,7 @@
         "provenance": {
           "source": "https://clay.com/dossier/crunchbase-funding",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null,
@@ -3073,7 +3153,7 @@
         "provenance": {
           "source": "https://clay.com/dossier/crunchbase-funding",
           "source_type": "third_party_db",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null
@@ -3093,7 +3173,7 @@
         "provenance": {
           "source": "https://about.crunchbase.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": null
         },
         "notes": null

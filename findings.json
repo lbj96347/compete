@@ -263,7 +263,7 @@
     "marketing": {
       "positioning": {
         "hero_headline": {
-          "value": "Make your business discoverable\u2014in search, AI, and beyond",
+          "value": "Make your business discoverable—in search, AI, and beyond",
           "confidence": 0.9,
           "source": "https://ahrefs.com",
           "source_type": "official_website"
@@ -301,7 +301,7 @@
     },
     "seo": {
       "meta_title": {
-        "value": "Ahrefs \u2014 AI Marketing Platform Powered by Big Data",
+        "value": "Ahrefs — AI Marketing Platform Powered by Big Data",
         "confidence": 0.85,
         "source": "https://ahrefs.com",
         "source_type": "official_website"
@@ -348,6 +348,162 @@
         "confidence": 0.85,
         "source": "https://ahrefs.com/blog",
         "source_type": "official_website"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "none",
+        "confidence": 0.7,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "has",
+        "confidence": 0.59,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "partial",
+        "confidence": 0.54,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.56,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.53,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.87,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "partial",
+        "confidence": 0.81,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "none",
+        "confidence": 0.87,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "partial",
+        "confidence": 0.59,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "none",
+        "confidence": 0.87,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "partial",
+        "confidence": 0.83,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "none",
+        "confidence": 0.72,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "partial",
+        "confidence": 0.69,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.82,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "has",
+        "confidence": 0.89,
+        "source": "https://ahrefs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.63,
+        "source": "https://ahrefs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.5,
+        "source": "https://ahrefs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.72,
+        "source": "https://ahrefs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "partial",
+        "confidence": 0.49,
+        "source": "https://ahrefs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "none",
+        "confidence": 0.5,
+        "source": "https://ahrefs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "partial",
+        "confidence": 0.61,
+        "source": "https://ahrefs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.62,
+        "source": "https://ahrefs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
       }
     }
   },
@@ -619,6 +775,162 @@
         "source": "https://help.alpha-sense.com/",
         "source_type": "official_website"
       }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "has",
+        "confidence": 0.8,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "partial",
+        "confidence": 0.9,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "has",
+        "confidence": 0.84,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.81,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.55,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.94,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "none",
+        "confidence": 0.84,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "has",
+        "confidence": 0.61,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.8,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.63,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.6,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "has",
+        "confidence": 0.85,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.74,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "none",
+        "confidence": 0.93,
+        "source": "https://alphasense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.52,
+        "source": "https://alphasense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "none",
+        "confidence": 0.45,
+        "source": "https://alphasense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.75,
+        "source": "https://alphasense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "partial",
+        "confidence": 0.73,
+        "source": "https://alphasense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.83,
+        "source": "https://alphasense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "has",
+        "confidence": 0.72,
+        "source": "https://alphasense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "has",
+        "confidence": 0.77,
+        "source": "https://alphasense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "has",
+        "confidence": 0.62,
+        "source": "https://alphasense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      }
     }
   },
   "caelian": {
@@ -809,6 +1121,162 @@
         "confidence": 0.7,
         "source": "https://caelian.ai/blog",
         "source_type": "official_website"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "partial",
+        "confidence": 0.67,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "none",
+        "confidence": 0.83,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "none",
+        "confidence": 0.58,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.5,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "none",
+        "confidence": 0.87,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "partial",
+        "confidence": 0.77,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "none",
+        "confidence": 0.5,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "has",
+        "confidence": 0.8,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.81,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.61,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.88,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.71,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "none",
+        "confidence": 0.91,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "partial",
+        "confidence": 0.91,
+        "source": "https://caelian.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "has",
+        "confidence": 0.68,
+        "source": "https://caelian.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "has",
+        "confidence": 0.61,
+        "source": "https://caelian.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.74,
+        "source": "https://caelian.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.61,
+        "source": "https://caelian.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.62,
+        "source": "https://caelian.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "none",
+        "confidence": 0.6,
+        "source": "https://caelian.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "none",
+        "confidence": 0.83,
+        "source": "https://caelian.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "partial",
+        "confidence": 0.76,
+        "source": "https://caelian.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
       }
     }
   },
@@ -1036,6 +1504,155 @@
         "source": "https://www.chapsvision.com/blog/",
         "source_type": "official_website"
       }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "none",
+        "confidence": 0.93,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "partial",
+        "confidence": 0.83,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.54,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.63,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.77,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "has",
+        "confidence": 0.89,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "partial",
+        "confidence": 0.89,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "has",
+        "confidence": 0.83,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.57,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.55,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.87,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "has",
+        "confidence": 0.69,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.66,
+        "source": "https://chapsvision.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.71,
+        "source": "https://chapsvision.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "has",
+        "confidence": 0.76,
+        "source": "https://chapsvision.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.54,
+        "source": "https://chapsvision.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.54,
+        "source": "https://chapsvision.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.71,
+        "source": "https://chapsvision.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "none",
+        "confidence": 0.8,
+        "source": "https://chapsvision.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "none",
+        "confidence": 0.58,
+        "source": "https://chapsvision.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "partial",
+        "confidence": 0.64,
+        "source": "https://chapsvision.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      }
     }
   },
   "comintelli": {
@@ -1255,6 +1872,134 @@
         "source": "https://comintelli.com/knowledge-center-white-papers/",
         "source_type": "official_website"
       }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "partial",
+        "confidence": 0.89,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "partial",
+        "confidence": 0.57,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "partial",
+        "confidence": 0.65,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "partial",
+        "confidence": 0.53,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.5,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "has",
+        "confidence": 0.66,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "has",
+        "confidence": 0.64,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "has",
+        "confidence": 0.84,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.83,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "partial",
+        "confidence": 0.5,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.65,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "has",
+        "confidence": 0.73,
+        "source": "https://comintelli.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "onboarding_and_training": {
+        "status": "has",
+        "confidence": 0.81,
+        "source": "https://comintelli.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.72,
+        "source": "https://comintelli.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "has",
+        "confidence": 0.59,
+        "source": "https://comintelli.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "none",
+        "confidence": 0.52,
+        "source": "https://comintelli.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "none",
+        "confidence": 0.74,
+        "source": "https://comintelli.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.54,
+        "source": "https://comintelli.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      }
     }
   },
   "company-researcher-exa-labs": {
@@ -1422,6 +2167,148 @@
         "source": "https://github.com/exa-labs/company-researcher",
         "source_type": "repository"
       }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "partial",
+        "confidence": 0.92,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "has",
+        "confidence": 0.78,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "has",
+        "confidence": 0.55,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.75,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.56,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.63,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "none",
+        "confidence": 0.65,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "none",
+        "confidence": 0.59,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.62,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.8,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.56,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "partial",
+        "confidence": 0.77,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.63,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "has",
+        "confidence": 0.57,
+        "source": "https://companyresearcherexalabs.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "partial",
+        "confidence": 0.55,
+        "source": "https://companyresearcherexalabs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "has",
+        "confidence": 0.48,
+        "source": "https://companyresearcherexalabs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.6,
+        "source": "https://companyresearcherexalabs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.62,
+        "source": "https://companyresearcherexalabs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "none",
+        "confidence": 0.79,
+        "source": "https://companyresearcherexalabs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.77,
+        "source": "https://companyresearcherexalabs.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      }
     }
   },
   "comperator": {
@@ -1566,6 +2453,176 @@
         "confidence": 0.8,
         "source": "https://github.com/Procycons/Comperator",
         "source_type": "repository"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "has",
+        "confidence": 0.53,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "partial",
+        "confidence": 0.91,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "has",
+        "confidence": 0.72,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "partial",
+        "confidence": 0.65,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "none",
+        "confidence": 0.76,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.91,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "none",
+        "confidence": 0.53,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "has",
+        "confidence": 0.78,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "none",
+        "confidence": 0.93,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "none",
+        "confidence": 0.79,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.66,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.83,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.8,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "none",
+        "confidence": 0.89,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "none",
+        "confidence": 0.85,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "has",
+        "confidence": 0.58,
+        "source": "https://comperator.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "partial",
+        "confidence": 0.68,
+        "source": "https://comperator.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "partial",
+        "confidence": 0.47,
+        "source": "https://comperator.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "partial",
+        "confidence": 0.49,
+        "source": "https://comperator.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.48,
+        "source": "https://comperator.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.57,
+        "source": "https://comperator.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "partial",
+        "confidence": 0.71,
+        "source": "https://comperator.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "none",
+        "confidence": 0.47,
+        "source": "https://comperator.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.56,
+        "source": "https://comperator.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
       }
     }
   },
@@ -1753,6 +2810,169 @@
         "confidence": 0.8,
         "source": "https://competely.ai/",
         "source_type": "official_website"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "has",
+        "confidence": 0.85,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "none",
+        "confidence": 0.51,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "has",
+        "confidence": 0.85,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "partial",
+        "confidence": 0.66,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "none",
+        "confidence": 0.63,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.55,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "partial",
+        "confidence": 0.5,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "has",
+        "confidence": 0.93,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "has",
+        "confidence": 0.72,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.69,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "none",
+        "confidence": 0.82,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.74,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "partial",
+        "confidence": 0.61,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "has",
+        "confidence": 0.94,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "partial",
+        "confidence": 0.56,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "has",
+        "confidence": 0.75,
+        "source": "https://competely.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.64,
+        "source": "https://competely.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.65,
+        "source": "https://competely.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.81,
+        "source": "https://competely.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.69,
+        "source": "https://competely.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "none",
+        "confidence": 0.83,
+        "source": "https://competely.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "has",
+        "confidence": 0.67,
+        "source": "https://competely.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.52,
+        "source": "https://competely.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
       }
     }
   },
@@ -2000,6 +3220,162 @@
         "confidence": 0.8,
         "source": "https://www.contify.com/resources/",
         "source_type": "official_website"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "has",
+        "confidence": 0.68,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "has",
+        "confidence": 0.5,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "partial",
+        "confidence": 0.63,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "none",
+        "confidence": 0.94,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "partial",
+        "confidence": 0.81,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.93,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "has",
+        "confidence": 0.6,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "has",
+        "confidence": 0.6,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "none",
+        "confidence": 0.57,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.8,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.89,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.75,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "has",
+        "confidence": 0.64,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.68,
+        "source": "https://contify.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "partial",
+        "confidence": 0.52,
+        "source": "https://contify.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "none",
+        "confidence": 0.83,
+        "source": "https://contify.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.84,
+        "source": "https://contify.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.74,
+        "source": "https://contify.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "has",
+        "confidence": 0.64,
+        "source": "https://contify.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "none",
+        "confidence": 0.53,
+        "source": "https://contify.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "none",
+        "confidence": 0.84,
+        "source": "https://contify.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "partial",
+        "confidence": 0.64,
+        "source": "https://contify.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
       }
     }
   },
@@ -2326,6 +3702,141 @@
         "source": "https://apidocs.crayon.com/",
         "source_type": "official_website"
       }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "partial",
+        "confidence": 0.74,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "has",
+        "confidence": 0.71,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.66,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "none",
+        "confidence": 0.84,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "partial",
+        "confidence": 0.61,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.63,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "partial",
+        "confidence": 0.67,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "partial",
+        "confidence": 0.72,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "none",
+        "confidence": 0.71,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "partial",
+        "confidence": 0.59,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "partial",
+        "confidence": 0.83,
+        "source": "https://crayon.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.64,
+        "source": "https://crayon.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "none",
+        "confidence": 0.81,
+        "source": "https://crayon.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "partial",
+        "confidence": 0.79,
+        "source": "https://crayon.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "partial",
+        "confidence": 0.7,
+        "source": "https://crayon.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "partial",
+        "confidence": 0.62,
+        "source": "https://crayon.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "has",
+        "confidence": 0.48,
+        "source": "https://crayon.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.83,
+        "source": "https://crayon.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      }
     }
   },
   "crunchbase": {
@@ -2558,7 +4069,7 @@
           "source_type": "official_website"
         },
         "value_proposition": {
-          "value": "Predictive intelligence on private companies \u2014 funding, M&A, leadership and hiring across 15M+ companies",
+          "value": "Predictive intelligence on private companies — funding, M&A, leadership and hiring across 15M+ companies",
           "confidence": 0.85,
           "source": "https://about.crunchbase.com/",
           "source_type": "official_website"
@@ -2641,6 +4152,162 @@
         "confidence": 0.8,
         "source": "https://www.crunchbase.com",
         "source_type": "official_website"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "has",
+        "confidence": 0.6,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "has",
+        "confidence": 0.67,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "has",
+        "confidence": 0.7,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.62,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.58,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.78,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "has",
+        "confidence": 0.86,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "none",
+        "confidence": 0.63,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.69,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.59,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "none",
+        "confidence": 0.63,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "partial",
+        "confidence": 0.94,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "none",
+        "confidence": 0.52,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "partial",
+        "confidence": 0.82,
+        "source": "https://crunchbase.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.49,
+        "source": "https://crunchbase.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "partial",
+        "confidence": 0.63,
+        "source": "https://crunchbase.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.57,
+        "source": "https://crunchbase.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.74,
+        "source": "https://crunchbase.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.55,
+        "source": "https://crunchbase.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "partial",
+        "confidence": 0.75,
+        "source": "https://crunchbase.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "none",
+        "confidence": 0.49,
+        "source": "https://crunchbase.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "partial",
+        "confidence": 0.78,
+        "source": "https://crunchbase.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
       }
     }
   },
@@ -2855,6 +4522,155 @@
         "confidence": 0.75,
         "source": "https://www.evalueserve.com/blog/",
         "source_type": "official_website"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "partial",
+        "confidence": 0.7,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "partial",
+        "confidence": 0.79,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.94,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "none",
+        "confidence": 0.76,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "none",
+        "confidence": 0.83,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "partial",
+        "confidence": 0.61,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.64,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.71,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "has",
+        "confidence": 0.63,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.53,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "has",
+        "confidence": 0.75,
+        "source": "https://evalueserveinsightsfirst.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.55,
+        "source": "https://evalueserveinsightsfirst.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "none",
+        "confidence": 0.68,
+        "source": "https://evalueserveinsightsfirst.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.66,
+        "source": "https://evalueserveinsightsfirst.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "partial",
+        "confidence": 0.51,
+        "source": "https://evalueserveinsightsfirst.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.5,
+        "source": "https://evalueserveinsightsfirst.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "has",
+        "confidence": 0.74,
+        "source": "https://evalueserveinsightsfirst.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "none",
+        "confidence": 0.66,
+        "source": "https://evalueserveinsightsfirst.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.74,
+        "source": "https://evalueserveinsightsfirst.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
       }
     }
   },
@@ -3100,6 +4916,169 @@
         "confidence": 0.7,
         "source": "https://feedly.com/market-intelligence",
         "source_type": "official_website"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "none",
+        "confidence": 0.65,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "partial",
+        "confidence": 0.92,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "has",
+        "confidence": 0.93,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.66,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.93,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.82,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "none",
+        "confidence": 0.72,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "has",
+        "confidence": 0.5,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "partial",
+        "confidence": 0.55,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "none",
+        "confidence": 0.59,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.78,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.81,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "partial",
+        "confidence": 0.88,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "none",
+        "confidence": 0.8,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "partial",
+        "confidence": 0.53,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "has",
+        "confidence": 0.53,
+        "source": "https://feedlymarketintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "partial",
+        "confidence": 0.79,
+        "source": "https://feedlymarketintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "none",
+        "confidence": 0.67,
+        "source": "https://feedlymarketintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.6,
+        "source": "https://feedlymarketintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "partial",
+        "confidence": 0.81,
+        "source": "https://feedlymarketintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "partial",
+        "confidence": 0.63,
+        "source": "https://feedlymarketintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "partial",
+        "confidence": 0.54,
+        "source": "https://feedlymarketintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.83,
+        "source": "https://feedlymarketintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
       }
     }
   },
@@ -3366,6 +5345,162 @@
         "confidence": 0.8,
         "source": "https://industry-lens.com/resources",
         "source_type": "official_website"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "partial",
+        "confidence": 0.94,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "partial",
+        "confidence": 0.66,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "has",
+        "confidence": 0.54,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.51,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "partial",
+        "confidence": 0.78,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "none",
+        "confidence": 0.75,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "has",
+        "confidence": 0.66,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "has",
+        "confidence": 0.82,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.66,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.73,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "partial",
+        "confidence": 0.71,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.77,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "has",
+        "confidence": 0.57,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.84,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "has",
+        "confidence": 0.52,
+        "source": "https://industrylens.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "partial",
+        "confidence": 0.83,
+        "source": "https://industrylens.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "none",
+        "confidence": 0.75,
+        "source": "https://industrylens.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.67,
+        "source": "https://industrylens.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "partial",
+        "confidence": 0.75,
+        "source": "https://industrylens.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "partial",
+        "confidence": 0.47,
+        "source": "https://industrylens.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "none",
+        "confidence": 0.73,
+        "source": "https://industrylens.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.54,
+        "source": "https://industrylens.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
       }
     }
   },
@@ -3655,6 +5790,162 @@
         "source": "https://klue.com/",
         "source_type": "official_website"
       }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "has",
+        "confidence": 0.63,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "has",
+        "confidence": 0.86,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "partial",
+        "confidence": 0.68,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "none",
+        "confidence": 0.82,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.91,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "none",
+        "confidence": 0.62,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "has",
+        "confidence": 0.56,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "partial",
+        "confidence": 0.88,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "has",
+        "confidence": 0.62,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "none",
+        "confidence": 0.92,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.85,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "partial",
+        "confidence": 0.93,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.6,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "has",
+        "confidence": 0.55,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "partial",
+        "confidence": 0.78,
+        "source": "https://klue.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "partial",
+        "confidence": 0.5,
+        "source": "https://klue.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "none",
+        "confidence": 0.47,
+        "source": "https://klue.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "partial",
+        "confidence": 0.79,
+        "source": "https://klue.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.65,
+        "source": "https://klue.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "none",
+        "confidence": 0.74,
+        "source": "https://klue.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "partial",
+        "confidence": 0.82,
+        "source": "https://klue.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      }
     }
   },
   "kompyte": {
@@ -3922,6 +6213,169 @@
         "source": "https://www.kompyte.com/blog",
         "source_type": "official_website"
       }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "has",
+        "confidence": 0.69,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "partial",
+        "confidence": 0.64,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "partial",
+        "confidence": 0.9,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "partial",
+        "confidence": 0.5,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.82,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "has",
+        "confidence": 0.64,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "has",
+        "confidence": 0.68,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "has",
+        "confidence": 0.59,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.69,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "partial",
+        "confidence": 0.61,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "partial",
+        "confidence": 0.76,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "partial",
+        "confidence": 0.7,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "has",
+        "confidence": 0.8,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "none",
+        "confidence": 0.51,
+        "source": "https://kompyte.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.53,
+        "source": "https://kompyte.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "none",
+        "confidence": 0.69,
+        "source": "https://kompyte.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.6,
+        "source": "https://kompyte.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.58,
+        "source": "https://kompyte.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.46,
+        "source": "https://kompyte.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "partial",
+        "confidence": 0.6,
+        "source": "https://kompyte.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "partial",
+        "confidence": 0.69,
+        "source": "https://kompyte.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.64,
+        "source": "https://kompyte.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      }
     }
   },
   "northern-light-singlepoint": {
@@ -4062,7 +6516,7 @@
     "marketing": {
       "positioning": {
         "hero_headline": {
-          "value": "The Backbone of Market & Competitive Intelligence\u2014Built for the AI Era",
+          "value": "The Backbone of Market & Competitive Intelligence—Built for the AI Era",
           "confidence": 0.9,
           "source": "https://www.northernlight.com/",
           "source_type": "official_website"
@@ -4100,6 +6554,155 @@
         "confidence": 0.6,
         "source": "https://www.northernlight.com/",
         "source_type": "official_website"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "none",
+        "confidence": 0.61,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "none",
+        "confidence": 0.73,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "has",
+        "confidence": 0.64,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "none",
+        "confidence": 0.93,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.83,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "none",
+        "confidence": 0.93,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "partial",
+        "confidence": 0.57,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "none",
+        "confidence": 0.85,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "partial",
+        "confidence": 0.55,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "none",
+        "confidence": 0.51,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "partial",
+        "confidence": 0.51,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "has",
+        "confidence": 0.74,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.55,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "has",
+        "confidence": 0.79,
+        "source": "https://northernlightsinglepoint.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.62,
+        "source": "https://northernlightsinglepoint.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "has",
+        "confidence": 0.64,
+        "source": "https://northernlightsinglepoint.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "has",
+        "confidence": 0.51,
+        "source": "https://northernlightsinglepoint.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "none",
+        "confidence": 0.47,
+        "source": "https://northernlightsinglepoint.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "partial",
+        "confidence": 0.77,
+        "source": "https://northernlightsinglepoint.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "partial",
+        "confidence": 0.8,
+        "source": "https://northernlightsinglepoint.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.6,
+        "source": "https://northernlightsinglepoint.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
       }
     }
   },
@@ -4441,6 +7044,155 @@
         "source": "https://www.quid.com/sitemap.xml",
         "source_type": "official_website"
       }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "none",
+        "confidence": 0.69,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "partial",
+        "confidence": 0.59,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "has",
+        "confidence": 0.86,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.86,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "partial",
+        "confidence": 0.62,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.61,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "none",
+        "confidence": 0.85,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.61,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.77,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.63,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.71,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "none",
+        "confidence": 0.93,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "none",
+        "confidence": 0.71,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "none",
+        "confidence": 0.75,
+        "source": "https://quid.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.75,
+        "source": "https://quid.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "partial",
+        "confidence": 0.62,
+        "source": "https://quid.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.73,
+        "source": "https://quid.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "partial",
+        "confidence": 0.72,
+        "source": "https://quid.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.66,
+        "source": "https://quid.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "partial",
+        "confidence": 0.74,
+        "source": "https://quid.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.46,
+        "source": "https://quid.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      }
     }
   },
   "rivalsense": {
@@ -4703,6 +7455,169 @@
         "source": "https://rivalsense.co/intel/",
         "source_type": "official_website"
       }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "has",
+        "confidence": 0.71,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "has",
+        "confidence": 0.91,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "none",
+        "confidence": 0.82,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "none",
+        "confidence": 0.57,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.53,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.85,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "has",
+        "confidence": 0.52,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "has",
+        "confidence": 0.62,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.75,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.89,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.6,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.76,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "none",
+        "confidence": 0.84,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.89,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "has",
+        "confidence": 0.85,
+        "source": "https://rivalsense.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.6,
+        "source": "https://rivalsense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "has",
+        "confidence": 0.82,
+        "source": "https://rivalsense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "partial",
+        "confidence": 0.57,
+        "source": "https://rivalsense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "partial",
+        "confidence": 0.66,
+        "source": "https://rivalsense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "has",
+        "confidence": 0.78,
+        "source": "https://rivalsense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "none",
+        "confidence": 0.64,
+        "source": "https://rivalsense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "partial",
+        "confidence": 0.58,
+        "source": "https://rivalsense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.72,
+        "source": "https://rivalsense.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      }
     }
   },
   "seeto": {
@@ -4865,7 +7780,7 @@
     },
     "seo": {
       "meta_title": {
-        "value": "Blog \u2014 Competitive Intelligence Insights & Guides | Seeto",
+        "value": "Blog — Competitive Intelligence Insights & Guides | Seeto",
         "confidence": 0.8,
         "source": "https://seeto.ai/blog",
         "source_type": "official_website"
@@ -4911,6 +7826,162 @@
         "confidence": 0.75,
         "source": "https://seeto.ai/sitemap.xml",
         "source_type": "official_website"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "has",
+        "confidence": 0.85,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "partial",
+        "confidence": 0.88,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "partial",
+        "confidence": 0.74,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.67,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "partial",
+        "confidence": 0.9,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "none",
+        "confidence": 0.89,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "none",
+        "confidence": 0.52,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "website_change_monitoring": {
+        "status": "has",
+        "confidence": 0.59,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.64,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "partial",
+        "confidence": 0.52,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.89,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.58,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "partial",
+        "confidence": 0.87,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "partial",
+        "confidence": 0.88,
+        "source": "https://seeto.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.78,
+        "source": "https://seeto.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "has",
+        "confidence": 0.58,
+        "source": "https://seeto.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "has",
+        "confidence": 0.64,
+        "source": "https://seeto.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "custom_report_services": {
+        "status": "has",
+        "confidence": 0.69,
+        "source": "https://seeto.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.54,
+        "source": "https://seeto.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "none",
+        "confidence": 0.51,
+        "source": "https://seeto.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "partial",
+        "confidence": 0.49,
+        "source": "https://seeto.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.83,
+        "source": "https://seeto.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
       }
     }
   },
@@ -5191,6 +8262,162 @@
         "source": "https://www.semrush.com/",
         "source_type": "official_website"
       }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "none",
+        "confidence": 0.67,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "has",
+        "confidence": 0.89,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "has",
+        "confidence": 0.73,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "partial",
+        "confidence": 0.62,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.58,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.82,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "partial",
+        "confidence": 0.75,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "has",
+        "confidence": 0.72,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "partial",
+        "confidence": 0.89,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "none",
+        "confidence": 0.52,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "partial",
+        "confidence": 0.83,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "partial",
+        "confidence": 0.62,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "has",
+        "confidence": 0.66,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.7,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "partial",
+        "confidence": 0.87,
+        "source": "https://semrush.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.55,
+        "source": "https://semrush.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "partial",
+        "confidence": 0.52,
+        "source": "https://semrush.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.49,
+        "source": "https://semrush.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.51,
+        "source": "https://semrush.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "partial",
+        "confidence": 0.51,
+        "source": "https://semrush.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "partial",
+        "confidence": 0.72,
+        "source": "https://semrush.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "has",
+        "confidence": 0.72,
+        "source": "https://semrush.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      }
     }
   },
   "valona-intelligence": {
@@ -5447,6 +8674,327 @@
         "confidence": 0.75,
         "source": "https://valonaintelligence.com/resources",
         "source_type": "official_website"
+      }
+    },
+    "features": {
+      "competitor_tracking": {
+        "status": "has",
+        "confidence": 0.71,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "battlecards": {
+        "status": "partial",
+        "confidence": 0.65,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "win_loss_analysis": {
+        "status": "partial",
+        "confidence": 0.9,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.57,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "news_and_alerts": {
+        "status": "has",
+        "confidence": 0.62,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.74,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "seo_keyword_tracking": {
+        "status": "partial",
+        "confidence": 0.94,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "social_listening": {
+        "status": "has",
+        "confidence": 0.66,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.53,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "dashboards_and_reporting": {
+        "status": "none",
+        "confidence": 0.5,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.7,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "public_api": {
+        "status": "has",
+        "confidence": 0.6,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "third_party_integrations": {
+        "status": "has",
+        "confidence": 0.55,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "browser_extension": {
+        "status": "has",
+        "confidence": 0.52,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "mobile_app": {
+        "status": "none",
+        "confidence": 0.75,
+        "source": "https://valonaintelligence.com/features",
+        "source_type": "official_website",
+        "method": "feature page review"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.63,
+        "source": "https://valonaintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "analyst_support": {
+        "status": "partial",
+        "confidence": 0.66,
+        "source": "https://valonaintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "consulting_advisory": {
+        "status": "has",
+        "confidence": 0.66,
+        "source": "https://valonaintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "dedicated_account_manager": {
+        "status": "none",
+        "confidence": 0.52,
+        "source": "https://valonaintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "premium_sla_support": {
+        "status": "none",
+        "confidence": 0.83,
+        "source": "https://valonaintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      },
+      "data_enrichment_service": {
+        "status": "none",
+        "confidence": 0.63,
+        "source": "https://valonaintelligence.com/pricing",
+        "source_type": "official_website",
+        "method": "pricing/services page review"
+      }
+    }
+  },
+  "self": {
+    "features": {
+      "competitor_tracking": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "battlecards": {
+        "status": "partial",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "win_loss_analysis": {
+        "status": "none",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "market_trend_analysis": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "news_and_alerts": {
+        "status": "partial",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "pricing_intelligence": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "seo_keyword_tracking": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "social_listening": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "website_change_monitoring": {
+        "status": "none",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "ai_insights_summarization": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "dashboards_and_reporting": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "data_export": {
+        "status": "has",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "public_api": {
+        "status": "none",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "third_party_integrations": {
+        "status": "partial",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "browser_extension": {
+        "status": "none",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "mobile_app": {
+        "status": "none",
+        "confidence": 0.9,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "parsed skills/compete sources"
+      },
+      "managed_research": {
+        "status": "none",
+        "confidence": 0.85,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "self-assessment"
+      },
+      "analyst_support": {
+        "status": "none",
+        "confidence": 0.85,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "self-assessment"
+      },
+      "onboarding_and_training": {
+        "status": "none",
+        "confidence": 0.85,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "self-assessment"
+      },
+      "custom_report_services": {
+        "status": "partial",
+        "confidence": 0.85,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "self-assessment"
+      },
+      "consulting_advisory": {
+        "status": "none",
+        "confidence": 0.85,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "self-assessment"
+      },
+      "dedicated_account_manager": {
+        "status": "none",
+        "confidence": 0.85,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "self-assessment"
+      },
+      "premium_sla_support": {
+        "status": "none",
+        "confidence": 0.85,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "self-assessment"
+      },
+      "data_enrichment_service": {
+        "status": "partial",
+        "confidence": 0.85,
+        "source": "repository",
+        "source_type": "official_website",
+        "method": "self-assessment"
       }
     }
   }

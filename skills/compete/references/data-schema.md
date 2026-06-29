@@ -17,6 +17,7 @@ The contract lives as JSON Schema (Draft 2020-12) files:
 | `techstack.json` | `schemas/techstack.schema.json` | many | `entity_ref` |
 | `seo.json` | `schemas/seo.schema.json` | many | `entity_ref` |
 | `pricing.json` | `schemas/pricing.schema.json` | many | `entity_ref` |
+| `features.json` | `schemas/features.schema.json` | many | `entity_ref` |
 | `report.json` | `schemas/report.schema.json` | one (synthesis) | `entity_ref` |
 
 Shared building blocks live in `schemas/common.schema.json` and are referenced by
@@ -105,8 +106,9 @@ Every dataset is a JSON object with a `meta` block conforming to
 }
 ```
 
-- `schema_version` is the SemVer of this contract (currently **1.1.0**). Bump
-  minor for additive fields, major for breaking changes.
+- `schema_version` is the SemVer of this contract (latest **1.3.0** —
+  `report.json`'s `feature_analysis`). Bump minor for additive fields, major for
+  breaking changes.
 - `dataset` equals the file stem and is enumerated.
 
 **`entity_ref` is the universal join key.** It is a slug matching
@@ -197,7 +199,50 @@ and `estimated_users` (metrics — soft figures, set `is_estimate: true` with a
 (enum), `is_free`, `is_enterprise`, `key_features`, `limits`. *(v1.1.0:
 `estimated_mrr`/`estimated_users` added.)*
 
-### report.json — synthesized analysis
+### features.json — feature & service matrix *(v1.2.0)*
+Array of `features[]` keyed by `entity_ref`. Each record carries a single
+`matrix[]` — **one matrix that holds both product features and human/professional
+services**, distinguished by the `category` tag (enum: `feature` | `service`).
+Every cell is drawn from a **fixed canonical taxonomy** of capability keys, so all
+competitors are scored against the same axes and the report can render a true
+side-by-side grid.
+
+Each cell is a confidence-wrapped field (the standard `value` / `confidence` /
+`unknown` / `source?` / `provenance?` / `notes?` envelope) extended with three
+discriminators:
+- **`key`** — one taxonomy key (see below). A feature key MUST carry
+  `category: "feature"`; a service key MUST carry `category: "service"` (enforced
+  by the schema's `oneOf`).
+- **`category`** — `feature` | `service`.
+- **`status`** — support level enum: **`has`** (fully supported) | **`partial`**
+  (limited / beta / paid add-on) | **`none`** (confidently absent) | `null` (only
+  when `unknown: true`).
+- **`value`** — the tri-state boolean "supported at all": `true` ⇔ `status` is
+  `has` or `partial`; `false` ⇔ `status` is `none`; `null` ⇔ `unknown: true`.
+
+The unknown invariant is enforced **in-schema** here (via `if`/`then`):
+`unknown: true` ⇒ `value: null` **and** `confidence: 0` **and** `status: null`.
+Fields are always present in the `unknown` form; a key omitted from `matrix` is
+equivalent to an all-`unknown` cell (a missing record == all fields unknown).
+
+**Canonical taxonomy** (fixed; defined in `schemas/features.schema.json` as
+`featureKey` / `serviceKey`):
+
+- **Features (`category: feature`)** — `competitor_tracking`, `battlecards`,
+  `win_loss_analysis`, `market_trend_analysis`, `news_and_alerts`,
+  `pricing_intelligence`, `seo_keyword_tracking`, `social_listening`,
+  `website_change_monitoring`, `ai_insights_summarization`,
+  `dashboards_and_reporting`, `data_export`, `public_api`,
+  `third_party_integrations`, `browser_extension`, `mobile_app`.
+- **Services (`category: service`)** — `managed_research`, `analyst_support`,
+  `onboarding_and_training`, `custom_report_services`, `consulting_advisory`,
+  `dedicated_account_manager`, `premium_sla_support`, `data_enrichment_service`.
+
+Extending the taxonomy is an additive change: add the key to the relevant enum in
+`schemas/features.schema.json`, document it here, and bump `schema_version`
+(minor).
+
+### report.json — synthesized analysis *(v1.3.0)*
 Consumes every other dataset.
 - **executive_summary** — `summary`, `market_overview`, `key_findings`,
   `competitor_count`.
@@ -209,6 +254,30 @@ Consumes every other dataset.
 - **opportunity_gaps[]** — `title`, `description`, `impact` (enum),
   `related_entities[]`.
 - **recommendations[]** — `title`, `rationale`, `priority` (enum), `confidence`.
+- **feature_analysis** *(v1.3.0)* — the feature/service union matrix derived from
+  `features.json` over the fixed capability taxonomy (no render-time scraping):
+  - **`axes[]`** — the fixed taxonomy rows: `key`, `category` (`feature`|`service`),
+    `label`.
+  - **`columns[]`** — entity columns (self first): `entity_ref`, `name`,
+    `is_self`, `threat_level`.
+  - **`matrix[]`** — one row per taxonomy item: `key`, `category`, `label`,
+    `cells[]` (per-entity `{entity_ref, status, value, confidence, unknown}` — the
+    same tri-state as `features.json`), and a **`difference`** block computed vs.
+    `self`: `self_status`, `is_gap` (self ∈ {none,partial} ∧ ≥1 rival `has`),
+    `self_leads` (self `has` ∧ ≤50% of rivals offer it), `alternatives[]` (rivals
+    offering it, with `status` + `threat_level`), `competitors_without[]`, a
+    threat-weighted `score`, and a `method` note.
+  - **`alternatives[]`** — per competitor: the capabilities they offer
+    (`has`|`partial`) and a `capability_count`, ranked — what a buyer evaluating
+    that alternative would get.
+  - **`opportunities[]`** — threat-weighted gap records (highest `score` first):
+    `key`, `category`, `title`, `description`, `impact` (enum, tiered **relative**
+    to the strongest gap this run), `score`, `self_status`, `related_entities[]`,
+    and a `method` note. **Weighting:** `score = Σ threat_weight(rival) ×
+    status_weight` over rivals offering the capability, where `threat_weight` is
+    high=3 / medium=2 / low=1 (unknown→low) and `status_weight` is has=1.0 /
+    partial=0.5 — so a gap held by high-threat rivals outranks the same gap from
+    low-threat ones.
 
 ---
 

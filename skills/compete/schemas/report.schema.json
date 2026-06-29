@@ -89,10 +89,182 @@
           "confidence": { "$ref": "common.schema.json#/$defs/confidence" }
         }
       }
+    },
+
+    "feature_analysis": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Feature & service union matrix (from features.json) laid out as taxonomy rows × entity columns, with per-row differences vs. the analyzed product, per-competitor alternative offerings, and threat-weighted opportunity records. Feeds the Feature Comparison + Opportunity visualizations. Synthesized from the normalized features dataset only — no render-time scraping.",
+      "properties": {
+        "axes": {
+          "type": "array",
+          "description": "The fixed taxonomy rows (feature + service axes) in display order.",
+          "items": { "$ref": "#/$defs/capabilityAxis" }
+        },
+        "columns": {
+          "type": "array",
+          "description": "Entity columns (self first, then competitors).",
+          "items": { "$ref": "#/$defs/featureColumn" }
+        },
+        "matrix": {
+          "type": "array",
+          "description": "One row per taxonomy item: the per-entity cells plus the computed difference analysis.",
+          "items": { "$ref": "#/$defs/featureRow" }
+        },
+        "alternatives": {
+          "type": "array",
+          "description": "Per-competitor list of the capabilities they offer (has|partial) — the substitute a buyer evaluating that alternative would get.",
+          "items": { "$ref": "#/$defs/competitorAlternative" }
+        },
+        "opportunities": {
+          "type": "array",
+          "description": "Threat-weighted feature/service gap records, highest score first.",
+          "items": { "$ref": "#/$defs/featureOpportunity" }
+        },
+        "method": {
+          "description": "How the whole feature_analysis block was derived.",
+          "type": "string"
+        }
+      }
     }
   },
 
   "$defs": {
+    "capabilityAxis": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "category"],
+      "properties": {
+        "key": { "$ref": "features.schema.json#/$defs/capabilityKey" },
+        "category": { "type": "string", "enum": ["feature", "service"] },
+        "label": { "type": "string" }
+      }
+    },
+
+    "featureColumn": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref"],
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+        "name": { "type": "string" },
+        "is_self": { "type": "boolean" },
+        "threat_level": { "type": ["string", "null"], "enum": ["high", "medium", "low", null] }
+      }
+    },
+
+    "featureMatrixCell": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref", "status", "value", "confidence", "unknown"],
+      "description": "A status+confidence matrix cell for one entity at one row. Mirrors the tri-state of features.json: has|partial ⇒ value true, none ⇒ false, unknown ⇒ null.",
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+        "status": { "$ref": "features.schema.json#/$defs/capabilityStatus" },
+        "value": { "type": ["boolean", "null"] },
+        "confidence": { "$ref": "common.schema.json#/$defs/confidence" },
+        "unknown": { "type": "boolean" }
+      }
+    },
+
+    "capabilityHolder": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref"],
+      "description": "A competitor offering a capability (an alternative for that row).",
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+        "name": { "type": "string" },
+        "status": { "$ref": "features.schema.json#/$defs/capabilityStatus" },
+        "threat_level": { "type": ["string", "null"], "enum": ["high", "medium", "low", null] }
+      }
+    },
+
+    "featureRow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "category", "cells"],
+      "properties": {
+        "key": { "$ref": "features.schema.json#/$defs/capabilityKey" },
+        "category": { "type": "string", "enum": ["feature", "service"] },
+        "label": { "type": "string" },
+        "cells": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/featureMatrixCell" }
+        },
+        "difference": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Computed difference vs. the analyzed product for this capability row. Carries a `method` note per the heuristic-shows-its-work rule.",
+          "required": ["method"],
+          "properties": {
+            "self_status": { "$ref": "features.schema.json#/$defs/capabilityStatus" },
+            "is_gap": { "type": "boolean" },
+            "self_leads": { "type": "boolean" },
+            "rivals_with_count": { "type": "integer", "minimum": 0 },
+            "rivals_fully_supporting": { "type": "integer", "minimum": 0 },
+            "alternatives": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/capabilityHolder" }
+            },
+            "competitors_without": {
+              "type": "array",
+              "items": { "$ref": "common.schema.json#/$defs/entityRef" }
+            },
+            "score": { "type": "number", "minimum": 0 },
+            "method": { "type": "string" }
+          }
+        }
+      }
+    },
+
+    "competitorAlternative": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref"],
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+        "name": { "type": "string" },
+        "threat_level": { "type": ["string", "null"], "enum": ["high", "medium", "low", null] },
+        "capability_count": { "type": "integer", "minimum": 0 },
+        "capabilities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["key"],
+            "properties": {
+              "key": { "$ref": "features.schema.json#/$defs/capabilityKey" },
+              "category": { "type": "string", "enum": ["feature", "service"] },
+              "label": { "type": "string" },
+              "status": { "$ref": "features.schema.json#/$defs/capabilityStatus" }
+            }
+          }
+        }
+      }
+    },
+
+    "featureOpportunity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "method"],
+      "description": "A feature/service gap the analyzed product trails on, scored by the threat level of the rivals that hold it. The `method` note explains the weighting.",
+      "properties": {
+        "key": { "$ref": "features.schema.json#/$defs/capabilityKey" },
+        "category": { "type": "string", "enum": ["feature", "service"] },
+        "title": { "type": "string" },
+        "description": { "$ref": "common.schema.json#/$defs/textField" },
+        "impact": { "$ref": "common.schema.json#/$defs/enumField" },
+        "score": { "type": "number", "minimum": 0 },
+        "self_status": { "$ref": "features.schema.json#/$defs/capabilityStatus" },
+        "related_entities": {
+          "type": "array",
+          "items": { "$ref": "common.schema.json#/$defs/entityRef" }
+        },
+        "method": { "type": "string" }
+      }
+    },
+
     "competitorAnalysis": {
       "type": "object",
       "additionalProperties": false,

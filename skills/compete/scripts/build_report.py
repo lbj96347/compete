@@ -252,8 +252,47 @@ def metric_view(field: Any) -> dict:
 
 DATASETS = [
     "product", "competitors", "companies", "social",
-    "marketing", "techstack", "seo", "pricing",
+    "marketing", "techstack", "seo", "pricing", "features",
 ]
+
+# --------------------------------------------------------------------------- #
+# Feature/service taxonomy — mirrors collect_intelligence.py (the closed axes
+# the features.json matrix is scored on). Kept in lock-step so the report scores
+# every entity on the same fixed rows. Order = display order (features, then
+# services).
+# --------------------------------------------------------------------------- #
+
+FEATURE_KEYS = [
+    "competitor_tracking", "battlecards", "win_loss_analysis",
+    "market_trend_analysis", "news_and_alerts", "pricing_intelligence",
+    "seo_keyword_tracking", "social_listening", "website_change_monitoring",
+    "ai_insights_summarization", "dashboards_and_reporting", "data_export",
+    "public_api", "third_party_integrations", "browser_extension", "mobile_app",
+]
+SERVICE_KEYS = [
+    "managed_research", "analyst_support", "onboarding_and_training",
+    "custom_report_services", "consulting_advisory", "dedicated_account_manager",
+    "premium_sla_support", "data_enrichment_service",
+]
+CAPABILITY_KEYS = FEATURE_KEYS + SERVICE_KEYS
+_CAPABILITY_CATEGORY = {
+    **{k: "feature" for k in FEATURE_KEYS},
+    **{k: "service" for k in SERVICE_KEYS},
+}
+# Words that should be cased specially when humanizing a snake_case key.
+_LABEL_SPECIAL = {"api": "API", "seo": "SEO", "sla": "SLA", "ai": "AI"}
+# Competitive weight a held capability carries by the holder's threat level — a
+# gap owned by a high-threat rival is more urgent than the same gap from a
+# low-threat one. Unknown/absent threat is treated as low.
+_THREAT_WEIGHT = {"high": 3.0, "medium": 2.0, "low": 1.0}
+# How a status maps to a holder's share of the threat weight (partial counts
+# half — a beta/add-on is a weaker substitute than first-class support).
+_STATUS_WEIGHT = {"has": 1.0, "partial": 0.5, "none": 0.0}
+
+
+def capability_label(key: str) -> str:
+    """Humanize a snake_case capability key for display (API/SEO/SLA/AI kept)."""
+    return " ".join(_LABEL_SPECIAL.get(w, w.capitalize()) for w in key.split("_"))
 
 
 def load_json(path: Path) -> Optional[dict]:
@@ -663,10 +702,11 @@ def synth_report(data: dict, entities: list, now_iso: str) -> dict:
     positioning_matrix = synth_positioning(competitors, enriched)
     opportunity_gaps = synth_gaps(self_e, competitors, enriched)
     recommendations = synth_recommendations(self_e, competitors, enriched)
+    feature_analysis = synth_feature_analysis(data, entities, enriched)
 
     return {
         "meta": {
-            "schema_version": "1.1.0",
+            "schema_version": "1.3.0",
             "dataset": "report",
             "generated_at": now_iso,
             "generator": "compete/build_report 0.1.0",
@@ -676,6 +716,7 @@ def synth_report(data: dict, entities: list, now_iso: str) -> dict:
         "positioning_matrix": positioning_matrix,
         "opportunity_gaps": opportunity_gaps,
         "recommendations": recommendations,
+        "feature_analysis": feature_analysis,
     }, enriched
 
 
@@ -808,6 +849,217 @@ def synth_recommendations(self_e, competitors, enriched) -> list:
             "confidence": 0.55,
         })
     return recs
+
+
+# --------------------------------------------------------------------------- #
+# Feature & service matrix synthesis (report.json → feature_analysis)
+#
+# Loads features.json, lays the fixed taxonomy down as rows and every entity as
+# a column, computes per-row differences (where self trails vs. where it leads),
+# lists which rivals are credible alternatives for each capability, and derives
+# opportunity records WEIGHTED BY THREAT LEVEL. No render-time scraping — the
+# report consumes only the already-normalized features dataset.
+# --------------------------------------------------------------------------- #
+
+# Status values that count as "determined" (vs. unknown/None).
+_DETERMINED_STATUS = {"has", "partial", "none"}
+
+
+def _matrix_by_ref(features_data: Optional[dict]) -> dict:
+    """Index features.json into {entity_ref: {capability_key: cell}}.
+
+    A missing record (or a key absent from a record's matrix) collapses to an
+    all-unknown cell downstream — the same "missing == unknown" rule the
+    upstream datasets follow.
+    """
+    out: dict = {}
+    for rec in (features_data or {}).get("features", []) or []:
+        ref = rec.get("entity_ref")
+        if not ref:
+            continue
+        cells = {}
+        for cellrec in rec.get("matrix", []) or []:
+            key = cellrec.get("key")
+            if key:
+                cells[key] = cellrec
+        out[ref] = cells
+    return out
+
+
+def _status_of(cell: Optional[dict]) -> Optional[str]:
+    """A determined status (has|partial|none) for a matrix cell, else None.
+
+    Honours the unknown invariant: an unknown cell (or a missing one) reads as
+    None, never as a confident 'none'.
+    """
+    if not isinstance(cell, dict) or cell.get("unknown"):
+        return None
+    status = cell.get("status")
+    return status if status in _DETERMINED_STATUS else None
+
+
+def _row_cell(ref: str, cell: Optional[dict]) -> dict:
+    """A {entity_ref, status, value, confidence, unknown} matrix-view cell."""
+    status = _status_of(cell)
+    return {
+        "entity_ref": ref,
+        "status": status,
+        # Tri-state: has|partial ⇒ True, none ⇒ False, unknown ⇒ None.
+        "value": None if status is None else (status != "none"),
+        "confidence": round(conf(cell), 3),
+        "unknown": status is None,
+    }
+
+
+def synth_feature_analysis(data: dict, entities: list, enriched: dict) -> dict:
+    """Build the feature/service union matrix, differences, and weighted gaps."""
+    matrix_by_ref = _matrix_by_ref(data.get("features"))
+    self_e = next((e for e in entities if e["is_self"]), None)
+    self_name = self_e["name"] if self_e else "This product"
+    competitors = [e for e in entities if not e["is_self"]]
+
+    axes = [{"key": k, "category": _CAPABILITY_CATEGORY[k], "label": capability_label(k)}
+            for k in CAPABILITY_KEYS]
+    columns = [{
+        "entity_ref": e["ref"],
+        "name": e["name"],
+        "is_self": e["is_self"],
+        "threat_level": enriched.get(e["ref"], {}).get("threat"),
+    } for e in entities]
+
+    rows = []
+    opportunities = []
+    for key in CAPABILITY_KEYS:
+        category = _CAPABILITY_CATEGORY[key]
+        label = capability_label(key)
+        self_status = _status_of(matrix_by_ref.get("self", {}).get(key))
+
+        cells = [_row_cell(e["ref"], matrix_by_ref.get(e["ref"], {}).get(key))
+                 for e in entities]
+
+        # Rivals that offer this capability at all — the alternatives a buyer
+        # could turn to. Each carries its own threat level so the weighting and
+        # the template can rank them.
+        comp_with, comp_without = [], []
+        for e in competitors:
+            st = _status_of(matrix_by_ref.get(e["ref"], {}).get(key))
+            if st in ("has", "partial"):
+                comp_with.append({
+                    "entity_ref": e["ref"], "name": e["name"], "status": st,
+                    "threat_level": enriched.get(e["ref"], {}).get("threat"),
+                })
+            elif st == "none":
+                comp_without.append(e["ref"])
+
+        determined = sum(1 for e in competitors
+                         if _status_of(matrix_by_ref.get(e["ref"], {}).get(key)) is not None)
+        rivals_has = sum(1 for a in comp_with if a["status"] == "has")
+
+        # A gap exists only when we can honestly say self trails: self is
+        # determined and not fully supporting, while ≥1 rival fully supports it.
+        is_gap = self_status in ("none", "partial") and rivals_has > 0
+        # Self leads when it fully supports a capability most rivals lack.
+        self_leads = (self_status == "has" and determined > 0
+                      and len(comp_with) <= determined * 0.5)
+
+        # Threat-weighted score: each holder contributes its threat weight
+        # scaled by how fully it supports the capability.
+        score = 0.0
+        for a in comp_with:
+            tw = _THREAT_WEIGHT.get(a["threat_level"], _THREAT_WEIGHT["low"])
+            score += tw * _STATUS_WEIGHT.get(a["status"], 0.0)
+        score = round(score, 2)
+
+        weight_method = (
+            "score = Σ threat_weight(rival) × status_weight over rivals offering "
+            "this capability; threat_weight high=3/medium=2/low=1 (unknown→low), "
+            "status_weight has=1.0/partial=0.5. A gap held by high-threat rivals "
+            "outranks the same gap from low-threat ones.")
+
+        rows.append({
+            "key": key,
+            "category": category,
+            "label": label,
+            "cells": cells,
+            "difference": {
+                "self_status": self_status,
+                "is_gap": is_gap,
+                "self_leads": self_leads,
+                "rivals_with_count": len(comp_with),
+                "rivals_fully_supporting": rivals_has,
+                "alternatives": comp_with,
+                "competitors_without": comp_without,
+                "score": score,
+                "method": (
+                    "is_gap ⇔ self∈{none,partial} ∧ ≥1 rival 'has'; self_leads ⇔ "
+                    "self 'has' ∧ ≤50% of rivals (with determined status) offer it. "
+                    + weight_method),
+            },
+        })
+
+        if is_gap:
+            names = ", ".join(a["name"] for a in comp_with[:5]) or "rivals"
+            desc = (
+                f"{rivals_has} competitor(s) fully offer {label} ({names}) while "
+                f"{self_name} is '{self_status}'. Closing this {category} gap is "
+                f"threat-weighted at {score}, so high-threat rivals make it more "
+                f"urgent than the count of rivals alone would suggest.")
+            opportunities.append({
+                "key": key,
+                "category": category,
+                "title": f"Close the {label} gap",
+                "description": wrap(desc, min(0.4 + 0.05 * rivals_has, 0.7),
+                                    method=weight_method),
+                "score": score,
+                "self_status": self_status,
+                "related_entities": [a["entity_ref"] for a in comp_with][:8],
+                "method": weight_method,
+            })
+
+    opportunities.sort(key=lambda o: o["score"], reverse=True)
+
+    # Impact tiers are RELATIVE to the strongest gap in this run, not absolute —
+    # the raw score scales with the competitor count, so a fixed cutoff would
+    # flag every gap "high". Top third of the observed score range ⇒ high,
+    # middle ⇒ medium, bottom ⇒ low. The score itself remains the precise rank.
+    top_score = max((o["score"] for o in opportunities), default=0.0)
+    impact_method = (
+        "impact tier is the gap's threat-weighted score relative to the highest "
+        "gap this run: ≥⅔ of max ⇒ high, ≥⅓ ⇒ medium, else low. " + weight_method)
+    for o in opportunities:
+        frac = (o["score"] / top_score) if top_score else 0.0
+        impact = "high" if frac >= 2 / 3 else "medium" if frac >= 1 / 3 else "low"
+        o["impact"] = wrap(impact, 0.5, method=impact_method)
+
+    # Per-competitor alternative offering: the capabilities each rival supports
+    # (has|partial) — what a buyer evaluating that alternative would get.
+    alternatives = []
+    for e in competitors:
+        caps = []
+        for key in CAPABILITY_KEYS:
+            st = _status_of(matrix_by_ref.get(e["ref"], {}).get(key))
+            if st in ("has", "partial"):
+                caps.append({"key": key, "category": _CAPABILITY_CATEGORY[key],
+                             "label": capability_label(key), "status": st})
+        alternatives.append({
+            "entity_ref": e["ref"], "name": e["name"],
+            "threat_level": enriched.get(e["ref"], {}).get("threat"),
+            "capability_count": len(caps),
+            "capabilities": caps,
+        })
+    alternatives.sort(key=lambda a: a["capability_count"], reverse=True)
+
+    return {
+        "axes": axes,
+        "columns": columns,
+        "matrix": rows,
+        "alternatives": alternatives,
+        "opportunities": opportunities,
+        "method": (
+            "Union feature/service matrix from features.json over the fixed "
+            "capability taxonomy; per-row differences vs. self; opportunities "
+            "weighted by competitor threat level."),
+    }
 
 
 # --------------------------------------------------------------------------- #
@@ -1013,6 +1265,34 @@ def build_view_models(entities: list, enriched: dict) -> dict:
 # Rendering
 # --------------------------------------------------------------------------- #
 
+def validate(instance: dict, schemas_dir: Path) -> Optional[str]:
+    """Validate `report` against report.schema.json; return error string or None.
+
+    Falls back to a SKIP note when jsonschema/referencing aren't installed, the
+    same optional-dependency posture the other builders take.
+    """
+    try:
+        from jsonschema import Draft202012Validator
+        from referencing import Registry, Resource
+    except ModuleNotFoundError:
+        return "SKIP: jsonschema/referencing not installed"
+
+    registry = Registry()
+    for sf in schemas_dir.glob("*.json"):
+        doc = json.loads(sf.read_text(encoding="utf-8"))
+        resource = Resource.from_contents(doc)
+        registry = registry.with_resource(uri=sf.name, resource=resource)
+        if "$id" in doc:
+            registry = registry.with_resource(uri=doc["$id"], resource=resource)
+
+    schema = json.loads((schemas_dir / "report.schema.json").read_text(encoding="utf-8"))
+    validator = Draft202012Validator(schema, registry=registry)
+    errors = sorted(validator.iter_errors(instance), key=lambda e: list(e.path))
+    if errors:
+        return "; ".join(f"{list(e.path)}: {e.message}" for e in errors[:5])
+    return None
+
+
 def render_html(template: str, payload: dict) -> str:
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
     # Prevent premature </script> termination when inlined into the page.
@@ -1033,6 +1313,8 @@ def main(argv: Optional[list] = None) -> int:
                         help="Path to report.html template (default: templates/report.html)")
     parser.add_argument("--open", action="store_true", dest="open_browser",
                         help="Open the generated report in a browser")
+    parser.add_argument("--validate", action="store_true",
+                        help="Validate report.json against schemas/ before writing.")
     parser.add_argument("--quiet", action="store_true",
                         help="Suppress progress reporting.")
     args = parser.parse_args(argv)
@@ -1055,7 +1337,15 @@ def main(argv: Optional[list] = None) -> int:
                   f"({sum(1 for e in entities if not e['is_self'])} competitors + self)")
 
     report, enriched = synth_report(data, entities, now_iso)
-    progress.step("synthesized report.json (SWOT, threat, positioning, gaps)")
+    progress.step("synthesized report.json (SWOT, threat, positioning, gaps, features)")
+
+    if args.validate:
+        err = validate(report, root / "schemas")
+        if err and not err.startswith("SKIP"):
+            print(f"  ! report.json schema validation FAILED: {err}", file=sys.stderr)
+            return 1
+        print(f"  ✓ report.json schema validation: {err or 'OK (0 errors)'}",
+              file=sys.stderr)
 
     views = build_view_models(entities, enriched)
     progress.step("built front-end view models")

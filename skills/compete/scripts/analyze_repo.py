@@ -44,7 +44,7 @@ except ImportError:  # pragma: no cover - allow import from another cwd
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     from _progress import Progress
 
-SCHEMA_VERSION = "1.1.0"
+SCHEMA_VERSION = "1.2.0"
 DEFAULT_GENERATOR = "compete/analyze_repo 0.1.0"
 
 # Directories never worth walking for source-level signals.

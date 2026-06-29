@@ -1,0 +1,137 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://compete.dev/schemas/features.schema.json",
+  "title": "features.json — Feature & Service Matrix",
+  "description": "Per-competitor capability matrix (PRD §Feature & Service Coverage). ONE matrix per competitor holds BOTH product features and human/professional services, distinguished by the `category` tag (feature | service). Cells are drawn from a FIXED canonical taxonomy of capability keys (see references/data-schema.md §features) so every competitor is scored against the same axes and the report can render a true side-by-side grid. Each cell is a confidence-wrapped field whose `status` enum (has | partial | none) captures the support level. Joined by `entity_ref`.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "features"],
+  "properties": {
+    "meta": { "$ref": "common.schema.json#/$defs/datasetMeta" },
+    "features": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/featureSet" }
+    }
+  },
+
+  "$defs": {
+    "featureKey": {
+      "title": "Canonical Feature Key",
+      "description": "Fixed taxonomy of product-feature axes. category MUST be 'feature' for these keys.",
+      "type": "string",
+      "enum": [
+        "competitor_tracking",
+        "battlecards",
+        "win_loss_analysis",
+        "market_trend_analysis",
+        "news_and_alerts",
+        "pricing_intelligence",
+        "seo_keyword_tracking",
+        "social_listening",
+        "website_change_monitoring",
+        "ai_insights_summarization",
+        "dashboards_and_reporting",
+        "data_export",
+        "public_api",
+        "third_party_integrations",
+        "browser_extension",
+        "mobile_app"
+      ]
+    },
+
+    "serviceKey": {
+      "title": "Canonical Service Key",
+      "description": "Fixed taxonomy of human/professional-service axes. category MUST be 'service' for these keys.",
+      "type": "string",
+      "enum": [
+        "managed_research",
+        "analyst_support",
+        "onboarding_and_training",
+        "custom_report_services",
+        "consulting_advisory",
+        "dedicated_account_manager",
+        "premium_sla_support",
+        "data_enrichment_service"
+      ]
+    },
+
+    "capabilityKey": {
+      "title": "Capability Key",
+      "description": "Union of the fixed feature and service taxonomies — the complete set of allowed matrix axes.",
+      "anyOf": [
+        { "$ref": "#/$defs/featureKey" },
+        { "$ref": "#/$defs/serviceKey" }
+      ]
+    },
+
+    "capabilityStatus": {
+      "title": "Capability Status",
+      "description": "Support level for a capability. `has` = fully supported, `partial` = limited/beta/add-on, `none` = confidently absent, `null` = not determined (only when unknown:true).",
+      "type": ["string", "null"],
+      "enum": ["has", "partial", "none", null]
+    },
+
+    "matrixEntry": {
+      "title": "Matrix Entry (confidence-wrapped capability cell)",
+      "description": "One capability cell. It IS a confidence-wrapped field (extends common.baseField: value/confidence/unknown/source?/provenance?/notes?) plus the `key`, `category`, and `status` discriminators. `value` is the tri-state boolean 'is this capability supported at all' (true ⇔ status has|partial; false ⇔ status none; null ⇔ unknown). The unknown invariant is enforced below.",
+      "type": "object",
+      "allOf": [{ "$ref": "common.schema.json#/$defs/baseField" }],
+      "required": ["key", "category", "status", "value", "confidence", "unknown"],
+      "properties": {
+        "key": { "$ref": "#/$defs/capabilityKey" },
+        "category": {
+          "description": "Discriminates a product feature from a human/professional service.",
+          "type": "string",
+          "enum": ["feature", "service"]
+        },
+        "status": { "$ref": "#/$defs/capabilityStatus" },
+        "value": {
+          "description": "Tri-state boolean: supported (has|partial) = true, confidently absent (none) = false, not determined = null.",
+          "type": ["boolean", "null"]
+        }
+      },
+      "oneOf": [
+        {
+          "title": "feature row",
+          "properties": {
+            "category": { "const": "feature" },
+            "key": { "$ref": "#/$defs/featureKey" }
+          }
+        },
+        {
+          "title": "service row",
+          "properties": {
+            "category": { "const": "service" },
+            "key": { "$ref": "#/$defs/serviceKey" }
+          }
+        }
+      ],
+      "if": {
+        "properties": { "unknown": { "const": true } },
+        "required": ["unknown"]
+      },
+      "then": {
+        "properties": {
+          "value": { "const": null },
+          "confidence": { "const": 0 },
+          "status": { "const": null }
+        }
+      }
+    },
+
+    "featureSet": {
+      "title": "Per-competitor feature/service matrix",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["entity_ref"],
+      "properties": {
+        "entity_ref": { "$ref": "common.schema.json#/$defs/entityRef" },
+        "matrix": {
+          "description": "The capability matrix: an array of cells spanning the fixed feature + service taxonomy. A key omitted from the array is equivalent to an all-unknown cell (a missing record == all fields unknown).",
+          "type": "array",
+          "items": { "$ref": "#/$defs/matrixEntry" }
+        }
+      }
+    }
+  }
+}

@@ -186,6 +186,42 @@ td a.ext:hover{border-bottom-color:var(--accent)}
 .kf{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--txt-dim);margin:9px 0}
 .kf .b{color:var(--accent);font-weight:700;margin-top:1px}
 
+/* ---- feature & service matrix ---- */
+.fmatrix table{min-width:920px}
+.fmatrix th.fsticky,.fmatrix td.fsticky{position:sticky;left:0;z-index:2;white-space:normal;min-width:230px;max-width:300px}
+.fmatrix thead th.fsticky{background:var(--panel-2)}
+.fmatrix tbody td.fsticky{background:var(--panel)}
+.fmatrix tbody tr:hover td.fsticky{background:var(--panel-2)}
+.fmatrix td.fc{text-align:center;vertical-align:middle}
+.fmatrix th.fcol{text-align:center;cursor:default}
+.fmatrix th.fself,.fmatrix td.fself{background:rgba(52,211,153,.07)}
+.fmatrix thead th.fself{background:color-mix(in srgb,var(--accent-3) 10%,var(--panel-2))}
+.fmatrix .thdot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px;vertical-align:1px}
+.ficon{display:inline-block;font-size:15px;font-weight:700;line-height:1}
+.ficon.fhas{color:var(--lo)} .ficon.fpartial{color:var(--med)} .ficon.fnone{color:var(--txt-faint);opacity:.6}
+.fmatrix td.fc .funk{color:var(--txt-faint);font-style:italic}
+.confbar.fconf{margin:4px auto 0;max-width:26px}
+.cat-tag{display:inline-block;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;
+  color:var(--accent);border:1px solid rgba(110,168,254,.35);background:rgba(110,168,254,.1);padding:0 4px;border-radius:4px;vertical-align:1px;margin-left:5px}
+.cat-tag.svc{color:var(--accent-2);border-color:rgba(167,139,250,.35);background:rgba(167,139,250,.1)}
+.fflag{display:inline-block;font-size:9.5px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:0 5px;border-radius:4px;margin-left:5px;vertical-align:1px}
+.fflag.gap{color:var(--hi);border:1px solid rgba(248,113,113,.4);background:rgba(248,113,113,.12)}
+.fflag.lead{color:var(--lo);border:1px solid rgba(52,211,153,.4);background:rgba(52,211,153,.12)}
+.fcat-row td{background:var(--bg-soft);color:var(--txt-faint);font-size:11px;text-transform:uppercase;letter-spacing:.06em;font-weight:700}
+.fcat-row td.fsticky{background:var(--bg-soft)}
+.flegend{display:flex;flex-wrap:wrap;gap:16px;color:var(--txt-faint);font-size:12px;margin-top:12px;align-items:center}
+.flegend span.ficon{font-size:14px}
+/* alternatives & differences */
+.fdiff-side ul{margin:0;padding-left:0;list-style:none}
+.fdiff-item{font-size:13px;color:var(--txt-dim);margin:6px 0;display:flex;align-items:center;gap:8px}
+.fdiff-item .ficon{flex:0 0 auto;font-size:13px}
+.fdiff-side .empty{color:var(--txt-faint);font-style:italic;font-size:13px}
+.fdiff-count{font-weight:600;color:var(--txt)}
+/* threat-weighted opportunity method note */
+.opp .opp-meta{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin-top:9px}
+.opp-method{margin-top:10px;font-size:12px;color:var(--txt-faint);border-top:1px dashed var(--line);padding-top:8px;line-height:1.5}
+.opp-method b{color:var(--txt-dim);font-weight:600}
+
 footer{max-width:var(--maxw);margin:0 auto;padding:30px 22px 50px;color:var(--txt-faint);font-size:12.5px;border-top:1px solid var(--line)}
 footer .branding{margin-top:10px;display:flex;gap:16px;flex-wrap:wrap;font-size:12px}
 footer .branding a{color:var(--txt-faint);text-decoration:none}
@@ -283,6 +319,26 @@ footer .branding a:hover{color:var(--txt-dim);text-decoration:underline}
       <div><h3 style="margin-bottom:12px">Recommendations</h3><div id="recList"></div></div>
     </div>
   </section>
+
+  <!-- FEATURES & SERVICES -->
+  <section class="view" id="view-features">
+    <div class="sec-head"><h2>Features &amp; services</h2>
+      <p>A single combined matrix over the fixed capability taxonomy — every feature and service for this product alongside each competitor. <span class="ficon fhas">✓</span> has · <span class="ficon fpartial">◐</span> partial · <span class="ficon fnone">✗</span> none · <i>—</i> not determined. The bar under each mark ∝ collection confidence.</p></div>
+
+    <div class="panel fmatrix" style="margin-bottom:18px">
+      <h3>Capability matrix</h3>
+      <div class="tablewrap" style="margin-top:12px"><table id="featureTable"></table></div>
+      <div class="flegend" id="featureLegend"></div>
+    </div>
+
+    <div class="sec-head"><h2>Threat-weighted opportunities</h2>
+      <p>Capability gaps ranked by competitor threat, not raw rival count — a gap held by high-threat rivals outranks the same gap from low-threat ones. Each carries the method note explaining how its score was derived.</p></div>
+    <div id="featureOpps" style="margin-bottom:18px"></div>
+
+    <div class="sec-head"><h2>Alternatives &amp; differences</h2>
+      <p>Per competitor: capabilities <b>they offer that we don't</b> (where to expect competitive pressure) and capabilities <b>we offer that they don't</b> (our wedge). Click to expand. Ordered by threat, then by their lead count.</p></div>
+    <div id="featureDiff"></div>
+  </section>
 </main>
 
 <footer>
@@ -361,7 +417,8 @@ document.getElementById("footMeta").textContent =
 /* ---------- tabs ---------- */
 const TABS = [
   ["overview","Overview"],["matrix","Comparison"],["radar","Radar"],
-  ["pricing","Pricing"],["positioning","Positioning"],["swot","SWOT"],["opps","Opportunities"]
+  ["pricing","Pricing"],["positioning","Positioning"],["swot","SWOT"],
+  ["opps","Opportunities"],["features","Features"]
 ];
 const tabsEl = document.getElementById("tabs");
 let rendered = {overview:true};
@@ -683,6 +740,134 @@ renderers.opps=function(){
     return `<div class="opp rec"><h4>${esc(rc.title)} <span class="badge ${lvlClass(pr)}">${esc(pr||'—')} priority</span></h4>
       <p>${esc(rat)}</p></div>`;
   }).join("")||'<p class="muted">No recommendations.</p>';
+};
+
+/* ============================================================ FEATURES & SERVICES */
+const FSTATUS={
+  has:{ic:"✓",cls:"fhas",lbl:"Has"},
+  partial:{ic:"◐",cls:"fpartial",lbl:"Partial"},
+  none:{ic:"✗",cls:"fnone",lbl:"None"}
+};
+const FRANK={has:2,partial:1,none:0};
+function fIcon(cell){
+  if(!cell||cell.unknown||cell.status==null) return '<span class="funk" title="Not determined">—</span>';
+  const s=FSTATUS[cell.status]||FSTATUS.none;
+  const cf=Math.max(0,Math.min(1,cell.confidence||0));
+  const bar=cf>0?`<span class="confbar fconf" style="width:${Math.round(cf*26)}px"></span>`:"";
+  return `<span class="ficon ${s.cls}" title="${s.lbl} · confidence ${Math.round(cf*100)}%">${s.ic}</span>${bar}`;
+}
+/* a small status mark used inline in the differences lists */
+function fMark(status){const s=FSTATUS[status];return s?`<span class="ficon ${s.cls}" title="${s.lbl}">${s.ic}</span>`:"";}
+
+renderers.features=function(){
+  const fa=R.feature_analysis;
+  if(!fa||!fa.matrix||!fa.matrix.length){
+    document.getElementById("featureTable").innerHTML="";
+    document.getElementById("featureOpps").innerHTML='<p class="muted">No feature/service data available.</p>';
+    document.getElementById("featureDiff").innerHTML="";
+    return;
+  }
+  const cols=fa.columns||[];
+  const threatDot=l=>{const c=l==="high"?css("--hi"):l==="medium"?css("--med"):l==="low"?css("--lo"):css("--txt-faint");
+    return `<span class="thdot" style="background:${c}" title="threat: ${esc(l||"—")}"></span>`;};
+
+  /* ---- combined matrix: rows = fixed taxonomy, columns = self + competitors ---- */
+  const head="<thead><tr><th class='fsticky'>Capability</th>"+
+    cols.map(c=>`<th class="fcol${c.is_self?' fself':''}">${c.is_self?"":threatDot(c.threat_level)}${esc(c.name)}${c.is_self?" ★":""}</th>`).join("")+
+    "</tr></thead>";
+  let lastCat=null;
+  const bodyRows=fa.matrix.map(row=>{
+    let sep="";
+    if(row.category!==lastCat){ lastCat=row.category;
+      sep=`<tr class="fcat-row"><td class="fsticky">${row.category==="service"?"Services":"Features"}</td>`+
+        cols.map(()=>"<td></td>").join("")+"</tr>";
+    }
+    const df=row.difference||{};
+    const flag=df.is_gap?'<span class="fflag gap" title="self is behind ≥1 rival">gap</span>'
+      :(df.self_leads?'<span class="fflag lead" title="rare strength — ≤half of rivals offer it">lead</span>':"");
+    const tag=`<span class="cat-tag${row.category==="service"?" svc":""}">${row.category==="service"?"svc":"feat"}</span>`;
+    const cells=cols.map(col=>{
+      const cell=(row.cells||[]).find(c=>c.entity_ref===col.entity_ref);
+      return `<td class="fc${col.is_self?' fself':''}">${fIcon(cell)}</td>`;
+    }).join("");
+    return sep+`<tr><td class="fsticky name">${esc(row.label)}${tag}${flag}</td>${cells}</tr>`;
+  }).join("");
+  document.getElementById("featureTable").innerHTML=head+"<tbody>"+bodyRows+"</tbody>";
+  document.getElementById("featureLegend").innerHTML=
+    '<span><span class="ficon fhas">✓</span> has</span>'+
+    '<span><span class="ficon fpartial">◐</span> partial</span>'+
+    '<span><span class="ficon fnone">✗</span> none</span>'+
+    '<span><i>—</i> not determined</span>'+
+    '<span><span class="confbar" style="display:inline-block;width:26px;vertical-align:middle"></span> bar ∝ confidence</span>'+
+    '<span><span class="fflag gap">gap</span> we trail a rival</span>'+
+    '<span><span class="fflag lead">lead</span> rare strength</span>';
+
+  /* ---- threat-weighted opportunities, each with its method note ---- */
+  const opps=fa.opportunities||[];
+  document.getElementById("featureOpps").innerHTML=opps.map(o=>{
+    const imp=(o.impact&&o.impact.value)||"";
+    const desc=(o.description&&o.description.value)||"";
+    const ents=(o.related_entities||[]).map(r=>{const c=cols.find(x=>x.entity_ref===r);return `<span class="badge">${esc(c?c.name:r)}</span>`;}).join("");
+    const score=o.score!=null?`<span class="badge">score ${esc(fmtN(o.score))}</span>`:"";
+    const selfSt=o.self_status?`<span class="badge">we: ${esc(o.self_status)}</span>`:"";
+    return `<div class="opp ${esc(imp)}">
+      <h4>${esc(o.title)} <span class="badge ${lvlClass(imp)}">${esc(imp||"—")} impact</span>${evidenceHTML(o.description)}</h4>
+      <p>${esc(desc)}</p>
+      <div class="opp-meta">${score}${selfSt}${ents}</div>
+      ${o.method?`<div class="opp-method"><b>Method:</b> ${esc(o.method)}</div>`:""}
+    </div>`;
+  }).join("")||'<p class="muted">No feature/service gaps identified.</p>';
+
+  /* ---- alternatives & differences, per competitor, derived from the matrix ---- */
+  // self status per capability key, honoring the unknown invariant (unknown → null)
+  const selfStatus={};
+  fa.matrix.forEach(r=>{const sc=(r.cells||[]).find(c=>c.entity_ref==="self");selfStatus[r.key]=sc&&!sc.unknown?sc.status:null;});
+  const rivals=cols.filter(c=>!c.is_self).map(col=>{
+    const theyLead=[],weLead=[];
+    fa.matrix.forEach(r=>{
+      const cc=(r.cells||[]).find(c=>c.entity_ref===col.entity_ref);
+      const cs=cc&&!cc.unknown?cc.status:null, ss=selfStatus[r.key];
+      const cr=cs?FRANK[cs]:-1, sr=ss?FRANK[ss]:-1;
+      if(cs&&cr>sr) theyLead.push({label:r.label,cat:r.category,their:cs,our:ss});
+      else if(ss&&sr>cr) weLead.push({label:r.label,cat:r.category,their:cs,our:ss});
+    });
+    return {col,theyLead,weLead};
+  });
+  const order={high:0,medium:1,low:2};
+  rivals.sort((a,b)=>{
+    const ta=order[a.col.threat_level]??3, tb=order[b.col.threat_level]??3;
+    if(ta!==tb)return ta-tb;
+    return b.theyLead.length-a.theyLead.length;
+  });
+  const diffItem=(it,markStatus)=>`<li class="fdiff-item">${fMark(markStatus(it))}<span>${esc(it.label)}<span class="cat-tag${it.cat==="service"?" svc":""}">${it.cat==="service"?"svc":"feat"}</span></span></li>`;
+  const sideList=(items,markStatus,emptyTxt)=>items.length
+    ? "<ul>"+items.map(it=>diffItem(it,markStatus)).join("")+"</ul>"
+    : `<div class="empty">${esc(emptyTxt)}</div>`;
+  document.getElementById("featureDiff").innerHTML=rivals.map((rv,i)=>{
+    const c=rv.col;
+    return `<div class="acc" data-i="${i}">
+      <div class="acc-head">
+        <span class="chev">▶</span>
+        <span class="nm">${esc(c.name)}</span>
+        <span class="badge ${lvlClass(c.threat_level)}">threat: ${esc(c.threat_level||"—")}</span>
+        <span class="meta">
+          <span class="muted" style="font-size:12.5px"><span class="fdiff-count" style="color:var(--hi)">${rv.theyLead.length}</span> they lead · <span class="fdiff-count" style="color:var(--lo)">${rv.weLead.length}</span> we lead</span>
+        </span>
+      </div>
+      <div class="acc-body">
+        <div class="swot-cmp">
+          <div class="fdiff-side swot-side">
+            <div class="swot-side-h" style="color:var(--hi)">They have, we don't</div>
+            ${sideList(rv.theyLead,it=>it.their,"Nothing they offer beyond us")}
+          </div>
+          <div class="fdiff-side swot-side us">
+            <div class="swot-side-h">We have, they don't</div>
+            ${sideList(rv.weLead,it=>it.our,"Nothing we offer beyond them")}
+          </div>
+        </div>
+      </div></div>`;
+  }).join("")||'<p class="muted">No competitors to compare.</p>';
+  document.getElementById("featureDiff").querySelectorAll(".acc-head").forEach(h=>h.onclick=()=>h.parentElement.classList.toggle("open"));
 };
 
 /* ---------- Chart.js theming ---------- */

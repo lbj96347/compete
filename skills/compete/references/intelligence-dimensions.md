@@ -3,7 +3,7 @@
 **Step 3 of the compete pipeline.** Take the classified roster
 (`competitors.json`, whose `id`s are the join keys — produced by
 [Competitor Discovery](competitor-discovery.md)) and, for **every** competitor,
-collect a multi-dimensional intelligence profile across six datasets:
+collect a multi-dimensional intelligence profile across seven datasets:
 
 | Dataset | File | Schema | What it captures |
 | --- | --- | --- | --- |
@@ -13,6 +13,7 @@ collect a multi-dimensional intelligence profile across six datasets:
 | **Social / presence** | `social.json` | `social.schema.json` | website sections, social accounts, developer channels |
 | **Marketing** | `marketing.json` | `marketing.schema.json` | positioning, programs, content, sales motion, hiring |
 | **SEO** (v1-light) | `seo.json` | `seo.schema.json` | meta tags, sitemap/robots, indexed-page scale, keyword focus |
+| **Features & services** | `features.json` | `features.schema.json` | per-competitor capability `matrix[]` scored against a fixed feature/service taxonomy |
 
 Each dimension is its **own file** so a single slow or failed collector degrades
 one dataset, not the whole graph (`references/data-schema.md` §2). Every record is
@@ -25,7 +26,7 @@ deterministic, contract-bound half (`scripts/collect_intelligence.py`):
 
 | Half | Owner | What it does |
 | --- | --- | --- |
-| **Research** | the agent, with `WebSearch` / `WebFetch` | gather facts per competitor across the six dimensions |
+| **Research** | the agent, with `WebSearch` / `WebFetch` | gather facts per competitor across the seven dimensions |
 | **Normalization** | `scripts/collect_intelligence.py` | confidence-wrap, apply the `unknown` invariant, one record per competitor, validate against `schemas/` |
 
 ```bash
@@ -34,7 +35,7 @@ python scripts/collect_intelligence.py plan --competitors competitors.json
 
 # 2. ...run the plan with WebSearch/WebFetch, write findings to findings.json...
 
-# 3. normalize → the six datasets (validated)
+# 3. normalize → the seven datasets (validated)
 python scripts/collect_intelligence.py build \
     --competitors competitors.json --findings findings.json --validate
 ```
@@ -87,7 +88,7 @@ reputable third-party profiles (Product Hunt, G2, Tracxn, press) and **lower the
 confidence** accordingly — record the third-party `source` honestly rather than
 claiming a first-party read.
 
-## 3. The six dimensions
+## 3. The seven dimensions
 
 Every leaf below is a confidence-wrapped field. The agent supplies the value,
 a confidence, and provenance; the script wraps it into the contract envelope.
@@ -138,6 +139,33 @@ a confidence, and provenance; the script wraps it into the contract envelope.
   `has_sitemap`, `sitemap_url`, `has_robots_txt`, `indexed_pages` (metric,
   estimated), `keyword_focus[]`, `blog_frequency`, `landing_pages`,
   `documentation_quality`, `internal_linking`.
+- **Features & services** (`features.json`) — a single per-competitor `matrix[]`
+  of capability cells, scored against a **fixed canonical taxonomy** so every
+  competitor sits on the same axes and the report renders a true side-by-side
+  grid. Each cell IS a confidence-wrapped field plus three discriminators: `key`
+  (from the taxonomy), `category` (`feature` | `service`), and `status`
+  (`has` = fully supported, `partial` = limited/beta/add-on, `none` = a verified
+  absence, `null` = not determined). The cell's `value` is the tri-state boolean
+  "supported at all" (`has`/`partial` ⇒ `true`, `none` ⇒ `false`, unknown ⇒
+  `null`). The two taxonomies are **closed sets** — the `plan` emits them under
+  `capability_taxonomy`:
+  - **16 product features** — `competitor_tracking`, `battlecards`,
+    `win_loss_analysis`, `market_trend_analysis`, `news_and_alerts`,
+    `pricing_intelligence`, `seo_keyword_tracking`, `social_listening`,
+    `website_change_monitoring`, `ai_insights_summarization`,
+    `dashboards_and_reporting`, `data_export`, `public_api`,
+    `third_party_integrations`, `browser_extension`, `mobile_app`.
+  - **8 human/professional services** — `managed_research`, `analyst_support`,
+    `onboarding_and_training`, `custom_report_services`, `consulting_advisory`,
+    `dedicated_account_manager`, `premium_sla_support`, `data_enrichment_service`.
+
+  In `findings.json`, the `features` block is keyed by capability key; each value
+  is a status string (`"has"`) or `{status, confidence, source, source_type,
+  method, notes}`. Score the **whole** taxonomy for every competitor — but only
+  assert `none` for a **verified** absence; omit a key (or set `unknown:true`)
+  when you can't confirm it. Keys outside the taxonomy are ignored (with a build
+  warning), and the build always emits all 24 cells per competitor (the matrix is
+  dense — absent keys degrade to the unknown cell).
 
 **Confident negatives matter.** "This product has no free plan" is
 `{value:false, confidence:0.8, unknown:false}` — *distinct* from "couldn't tell"
@@ -146,9 +174,11 @@ a confidence, and provenance; the script wraps it into the contract envelope.
 ## 4. Findings input format
 
 Record findings in one `findings.json` object keyed by `entity_ref`. Each
-competitor maps to up to six dimension blocks; within a block, each leaf is either
-a bare scalar or a rich object — you supply values + confidences, the script wraps
-them into the contract envelope.
+competitor maps to up to seven dimension blocks; within a block, each leaf is
+either a bare scalar or a rich object — you supply values + confidences, the
+script wraps them into the contract envelope. (The `features` block is the one
+exception to the leaf shape: it's keyed by capability key and each value carries a
+`status` — see the Features & services bullet above.)
 
 ```json
 {
@@ -187,7 +217,7 @@ stdin. The script is **forgiving of shape drift** — a bare scalar in an array 
 is lifted to a one-element list, and a container a collector accidentally wrapped
 in a field envelope (`"social": {"value": {…}}`) is transparently unwrapped.
 
-## 5. Normalize → the six datasets
+## 5. Normalize → the seven datasets
 
 `build` performs the deterministic, contract-bound half:
 
@@ -195,7 +225,8 @@ in a field envelope (`"social": {"value": {…}}`) is transparently unwrapped.
   every dataset, in the roster's (similarity-ranked) order. A competitor with **no
   findings** (e.g. `nexusai`, which has no confirmable site) emits a complete
   **all-`unknown`** record — a missing profile degrades to "all fields unknown,"
-  never a broken join. `self` is included only if `findings` contains it.
+  never a broken join (in `features.json`, that's all 24 cells unknown). `self` is
+  included only if `findings` contains it.
 - **Confidence wrapping + the `unknown` invariant.** Every leaf becomes
   `{value, confidence, unknown, source, provenance, notes}`; a determined value
   carries a `provenance` block, while the unknown form is exactly
@@ -208,7 +239,7 @@ in a field envelope (`"social": {"value": {…}}`) is transparently unwrapped.
 - **Per-dataset validation.** `--validate` checks each output against its schema
   (each `$ref`s `common.schema.json`) before writing — needs `jsonschema` +
   `referencing`. Any failure aborts the whole build.
-- **Graceful empty.** With no `--findings`, the build still writes six **valid**
+- **Graceful empty.** With no `--findings`, the build still writes seven **valid**
   all-`unknown` skeletons keyed to the roster — the "collection yielded nothing"
   fallback, contractually distinct from a malformed file.
 
@@ -216,9 +247,10 @@ in a field envelope (`"social": {"value": {…}}`) is transparently unwrapped.
 
 Running the plan against the 17-competitor roster, researching the 16 with a
 confirmable site (16 parallel collectors, one per competitor), and feeding
-`findings.json` back through `build` produced six schema-valid datasets. Coverage
+`findings.json` back through `build` produced seven schema-valid datasets. Coverage
 (known / total leaf fields), highest where data is public, lowest where it's
-inferred or private:
+inferred or private (the `features` line reflects the current 23-record roster —
+24 capability cells × 23 competitors):
 
 ```
 companies   17 records   141/187  (75%)
@@ -227,6 +259,7 @@ techstack   17 records   137/357  (38%)
 social      17 records   193/554  (35%)
 marketing   17 records   356/612  (58%)
 seo         17 records   128/187  (68%)
+features    23 records   500/552  (91%)
 ```
 
 The contract's hard cases all appear in the live data: `nexusai` (no site) is a
@@ -240,10 +273,10 @@ fabricated number.
 ## 6. Contract & hand-off
 
 Each dataset is `{ meta, <array>[] }` with `meta.dataset` equal to the file stem
-and `schema_version: 1.0.0`. The six files join to `competitors.json` (and to each
+and `schema_version: 1.0.0`. The seven files join to `competitors.json` (and to each
 other) by `entity_ref`. They are the substrate the rest of the pipeline consumes:
 the knowledge-graph / normalization step carries `confidence` and `provenance`
 through unchanged, the visualizations render `unknown` as an explicit "—" and
-de-emphasize low-confidence values, and the report synthesizes across all six
+de-emphasize low-confidence values, and the report synthesizes across all seven
 dimensions per competitor (`schemas/report.schema.json`). Add or rename a
 competitor upstream and the per-dimension records follow via the same join.

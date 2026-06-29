@@ -1,8 +1,8 @@
 {
   "meta": {
-    "schema_version": "1.1.0",
+    "schema_version": "1.2.0",
     "dataset": "competitors",
-    "generated_at": "2026-06-28T11:03:53Z",
+    "generated_at": "2026-06-28T21:25:52Z",
     "generator": "compete/discover_competitors 0.1.0"
   },
   "competitors": [
@@ -17,7 +17,7 @@
         "provenance": {
           "source": "https://www.klue.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -30,7 +30,7 @@
         "provenance": {
           "source": "https://www.g2.com/categories/competitive-intelligence",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -43,7 +43,7 @@
         "provenance": {
           "source": "https://www.g2.com/categories/competitive-intelligence",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -56,7 +56,7 @@
         "provenance": {
           "source": "https://www.g2.com/categories/competitive-intelligence",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -69,7 +69,7 @@
         "provenance": {
           "source": "https://www.g2.com/categories/competitive-intelligence",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -86,7 +86,7 @@
         "provenance": {
           "source": "https://www.crayon.co/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -99,7 +99,7 @@
         "provenance": {
           "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -112,7 +112,7 @@
         "provenance": {
           "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -125,7 +125,7 @@
         "provenance": {
           "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -138,7 +138,7 @@
         "provenance": {
           "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -155,7 +155,7 @@
         "provenance": {
           "source": "https://www.kompyte.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -168,7 +168,7 @@
         "provenance": {
           "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -181,7 +181,7 @@
         "provenance": {
           "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -194,7 +194,7 @@
         "provenance": {
           "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -207,7 +207,7 @@
         "provenance": {
           "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -224,7 +224,7 @@
         "provenance": {
           "source": "https://contify.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -237,7 +237,7 @@
         "provenance": {
           "source": "https://unkover.com/blog/competitive-intelligence-tools/",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -250,7 +250,7 @@
         "provenance": {
           "source": "https://unkover.com/blog/competitive-intelligence-tools/",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -263,7 +263,7 @@
         "provenance": {
           "source": "https://unkover.com/blog/competitive-intelligence-tools/",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -276,7 +276,7 @@
         "provenance": {
           "source": "https://unkover.com/blog/competitive-intelligence-tools/",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -293,7 +293,7 @@
         "provenance": {
           "source": "https://caelian.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -306,7 +306,7 @@
         "provenance": {
           "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -319,7 +319,7 @@
         "provenance": {
           "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -332,7 +332,7 @@
         "provenance": {
           "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -345,7 +345,7 @@
         "provenance": {
           "source": "https://caelian.ai/blog/competitive-intelligence-tools-2026",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -365,7 +365,7 @@
         "provenance": {
           "source": "https://comintelli.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -378,7 +378,7 @@
         "provenance": {
           "source": "https://comintelli.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -391,7 +391,7 @@
         "provenance": {
           "source": "https://comintelli.com/",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -404,7 +404,7 @@
         "provenance": {
           "source": "https://comintelli.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -417,7 +417,7 @@
         "provenance": {
           "source": "https://comintelli.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -434,7 +434,7 @@
         "provenance": {
           "source": "https://industry-lens.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -447,7 +447,7 @@
         "provenance": {
           "source": "https://industry-lens.com/intelligence/competitive-intelligence",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -460,7 +460,7 @@
         "provenance": {
           "source": "https://industry-lens.com/intelligence/competitive-intelligence",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -473,7 +473,7 @@
         "provenance": {
           "source": "https://industry-lens.com/intelligence/competitive-intelligence",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -486,7 +486,7 @@
         "provenance": {
           "source": "https://industry-lens.com/intelligence/competitive-intelligence",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -503,7 +503,7 @@
         "provenance": {
           "source": "https://rivalsense.co/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -516,7 +516,7 @@
         "provenance": {
           "source": "https://rivalsense.co/intel/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -529,7 +529,7 @@
         "provenance": {
           "source": "https://rivalsense.co/intel/",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -542,7 +542,7 @@
         "provenance": {
           "source": "https://rivalsense.co/intel/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -555,7 +555,7 @@
         "provenance": {
           "source": "https://rivalsense.co/intel/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -572,7 +572,7 @@
         "provenance": {
           "source": "https://seeto.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -585,7 +585,7 @@
         "provenance": {
           "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -598,7 +598,7 @@
         "provenance": {
           "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -611,7 +611,7 @@
         "provenance": {
           "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -624,7 +624,7 @@
         "provenance": {
           "source": "https://seeto.ai/blog/best-competitor-analysis-tools-saas",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -641,7 +641,7 @@
         "provenance": {
           "source": "https://valonaintelligence.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -654,7 +654,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -667,7 +667,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -680,7 +680,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -693,7 +693,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -710,7 +710,7 @@
         "provenance": {
           "source": "https://competely.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -723,7 +723,7 @@
         "provenance": {
           "source": "https://competely.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -736,7 +736,7 @@
         "provenance": {
           "source": "https://competely.ai/",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -749,7 +749,7 @@
         "provenance": {
           "source": "https://competely.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -762,7 +762,7 @@
         "provenance": {
           "source": "https://competely.ai/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -779,7 +779,7 @@
         "provenance": {
           "source": "https://www.alpha-sense.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -792,7 +792,7 @@
         "provenance": {
           "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -805,7 +805,7 @@
         "provenance": {
           "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -818,7 +818,7 @@
         "provenance": {
           "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -831,7 +831,7 @@
         "provenance": {
           "source": "https://www.gartner.com/reviews/market/competitive-and-market-intelligence-tools",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -848,7 +848,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -861,7 +861,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -874,7 +874,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -887,7 +887,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -900,7 +900,7 @@
         "provenance": {
           "source": "https://www.northernlight.com/blog/the-12-best-competitive-and-market-intelligence-platforms-in-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -917,7 +917,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -930,7 +930,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -943,7 +943,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -956,7 +956,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -969,7 +969,7 @@
         "provenance": {
           "source": "https://github.com/exa-labs/company-researcher",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -986,7 +986,7 @@
         "provenance": {
           "source": "https://feedly.com/market-intelligence",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -999,7 +999,7 @@
         "provenance": {
           "source": "https://feedly.com/market-intelligence",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -1012,7 +1012,7 @@
         "provenance": {
           "source": "https://feedly.com/market-intelligence",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -1025,7 +1025,7 @@
         "provenance": {
           "source": "https://feedly.com/market-intelligence",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -1038,7 +1038,7 @@
         "provenance": {
           "source": "https://feedly.com/market-intelligence",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -1055,7 +1055,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -1068,7 +1068,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -1081,7 +1081,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -1094,7 +1094,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -1107,7 +1107,7 @@
         "provenance": {
           "source": "https://www.chapsvision.com/press-release/chapsvision-named-in-the-2026-gartner-magic-quadrantfor-market-competitive-intelligence",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -1124,7 +1124,7 @@
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -1137,7 +1137,7 @@
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -1150,7 +1150,7 @@
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -1163,7 +1163,7 @@
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -1176,7 +1176,7 @@
         "provenance": {
           "source": "https://github.com/Procycons/Comperator",
           "source_type": "social_profile",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -1193,7 +1193,7 @@
         "provenance": {
           "source": "https://www.semrush.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -1206,7 +1206,7 @@
         "provenance": {
           "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -1219,7 +1219,7 @@
         "provenance": {
           "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -1232,7 +1232,7 @@
         "provenance": {
           "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -1245,7 +1245,7 @@
         "provenance": {
           "source": "https://www.autobound.ai/blog/top-15-competitive-intelligence-tools-2026",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -1266,7 +1266,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -1279,7 +1279,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -1292,7 +1292,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -1305,7 +1305,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -1318,7 +1318,7 @@
         "provenance": {
           "source": "https://www.evalueserve.com/product/insightsfirst-competitive-intelligence/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -1335,7 +1335,7 @@
         "provenance": {
           "source": "https://ahrefs.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -1348,7 +1348,7 @@
         "provenance": {
           "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -1361,7 +1361,7 @@
         "provenance": {
           "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -1374,7 +1374,7 @@
         "provenance": {
           "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -1387,7 +1387,7 @@
         "provenance": {
           "source": "https://www.cswebsolutions.ca/blog/semrush-vs-ahrefs-vs-moz-features-pricing-comparison-2026/",
           "source_type": "search_result",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -1404,7 +1404,7 @@
         "provenance": {
           "source": "https://www.quid.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -1417,7 +1417,7 @@
         "provenance": {
           "source": "https://www.quid.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -1430,7 +1430,7 @@
         "provenance": {
           "source": "https://www.quid.com/",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -1443,7 +1443,7 @@
         "provenance": {
           "source": "https://www.quid.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -1456,7 +1456,7 @@
         "provenance": {
           "source": "https://www.quid.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
@@ -1473,7 +1473,7 @@
         "provenance": {
           "source": "https://www.crunchbase.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "official site / search result"
         },
         "notes": null
@@ -1486,7 +1486,7 @@
         "provenance": {
           "source": "https://about.crunchbase.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "classified per competitor-discovery rubric"
         },
         "notes": null
@@ -1499,7 +1499,7 @@
         "provenance": {
           "source": "https://about.crunchbase.com/",
           "source_type": "inference",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "overlap estimate vs. own product (identity/features/customers)"
         },
         "notes": null
@@ -1512,7 +1512,7 @@
         "provenance": {
           "source": "https://about.crunchbase.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "analyst note"
         },
         "notes": null
@@ -1525,7 +1525,7 @@
         "provenance": {
           "source": "https://about.crunchbase.com/",
           "source_type": "official_website",
-          "as_of": "2026-06-28",
+          "as_of": "2026-06-29",
           "method": "recorded at discovery time"
         },
         "notes": null
