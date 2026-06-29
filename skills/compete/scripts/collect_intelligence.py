@@ -254,16 +254,16 @@ DATASETS = [
 # ---------------------------------------------------------------------------
 
 FEATURE_KEYS = [
-    "competitor_tracking", "battlecards", "win_loss_analysis",
-    "market_trend_analysis", "news_and_alerts", "pricing_intelligence",
-    "seo_keyword_tracking", "social_listening", "website_change_monitoring",
-    "ai_insights_summarization", "dashboards_and_reporting", "data_export",
-    "public_api", "third_party_integrations", "browser_extension", "mobile_app",
+    "multi_platform_publishing", "post_scheduling", "content_calendar",
+    "bulk_scheduling", "ai_content_generation", "ai_image_generation",
+    "content_idea_planning", "unified_social_inbox", "social_listening",
+    "analytics_and_reporting", "team_collaboration", "content_approval_workflows",
+    "link_in_bio", "third_party_integrations", "browser_extension", "mobile_app",
 ]
 SERVICE_KEYS = [
-    "managed_research", "analyst_support", "onboarding_and_training",
-    "custom_report_services", "consulting_advisory", "dedicated_account_manager",
-    "premium_sla_support", "data_enrichment_service",
+    "onboarding_and_training", "dedicated_account_manager", "priority_sla_support",
+    "managed_social_services", "content_creation_services",
+    "social_strategy_consulting", "white_label_program", "community_and_education",
 ]
 # Ordered union (axes) + key→category lookup. category MUST match the taxonomy a
 # key belongs to (the schema enforces this with a oneOf).
